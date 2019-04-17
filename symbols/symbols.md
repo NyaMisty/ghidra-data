@@ -5,8 +5,8 @@ of imported files.
 
 ## How to use?
 
-Linux and MacOS user can copy the symbols directory into their `~/.ghidra/.ghidra-9.0.2/`
-folder.
+Linux and MacOS user can copy the `symbols` directory from this repository into their `~/.ghidra/.ghidra-9.0.2/`
+folder. Ghidra will use these files to resolve ordinal numbers of imports to function names.
 
 If Ghidra is run in Windows there is no need to use the provided files as Ghidra
 can dynamically get the information from the files on the system itself.
