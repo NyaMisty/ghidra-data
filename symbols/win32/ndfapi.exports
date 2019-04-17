@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="ndfapi.dll" PATH="C:\Windows\SysWOW64\NDFAPI.DLL" DATE="Mon Jul 13 06:16:02 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="NdfRunDllDiagnoseIncident" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NdfRunDllDiagnoseNetConnectionIncident" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NdfRunDllDiagnoseWithAnswerFile" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NdfRunDllDuplicateIPDefendingSystem" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NdfRunDllDuplicateIPOffendingSystem" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NdfRunDllHelpTopic" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NdfCancelIncident" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NdfCloseIncident" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NdfCreateConnectivityIncident" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NdfCreateDNSIncident" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NdfCreateGroupingIncident" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NdfCreateInboundIncident" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NdfCreateIncident" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NdfCreatePnrpIncident" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NdfCreateSharingIncident" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NdfCreateWebIncident" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NdfCreateWebIncidentEx" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NdfCreateWinSockIncident" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NdfDiagnoseIncident" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="NdfExecuteDiagnosis" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="NdfGetTraceFile" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NdfRepairIncident" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="345" NAME="Ordinal_345" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="344" NAME="Ordinal_344" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="162" NAME="Ordinal_162" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="277" NAME="Ordinal_277" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="163" NAME="Ordinal_163" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="161" NAME="Ordinal_161" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="186" NAME="Ordinal_186" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="Ordinal_116" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="Ordinal_115" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="Ordinal_5" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="270" NAME="Ordinal_270" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

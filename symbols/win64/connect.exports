@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="connect.dll" PATH="C:\Windows\System32\CONNECT.DLL" DATE="Mon Jul 13 06:40:23 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AddConnectionOptionListEntries" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CreateVPNConnection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="GetInternetConnected" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetNetworkConnected" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetVPNConnected" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="HrIsInternetConnected" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="HrIsInternetConnectedGUID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="IsInternetConnected" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="IsInternetConnectedGUID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="IsUniqueConnectionName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="RegisterPageWithPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="UnregisterPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="UnregisterPagesLink" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Ordinal_23" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="Ordinal_32" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="Ordinal_21" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="893" NAME="Ordinal_893" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-console-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-CONSOLE-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="GetConsoleCP" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="GetConsoleOutputCP" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="GetNumberOfConsoleInputEvents" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="AllocConsole" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="SetConsoleCtrlHandler" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="ReadConsoleInputA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="ReadConsoleW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="ReadConsoleInputW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="PeekConsoleInputA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WriteConsoleA" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SetConsoleMode" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="GetConsoleMode" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="WriteConsoleW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="ReadConsoleA" PURGE="20" COMMENT="" />
+</LIBRARY>
+

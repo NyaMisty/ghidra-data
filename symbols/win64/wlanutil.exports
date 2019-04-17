@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wlanutil.dll" PATH="C:\Windows\System32\WLANUTIL.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="WlanIsActiveConsoleUser" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WlanSsidToDisplayName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WlanStringToSsid" PURGE="0" COMMENT="" />
+</LIBRARY>
+

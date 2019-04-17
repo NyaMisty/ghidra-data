@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-service-winsvc-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-SERVICE-WINSVC-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="ChangeServiceConfigA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ControlService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="ControlServiceExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CreateServiceA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="I_QueryTagInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="I_ScBroadcastServiceControlMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="I_ScPnPGetServiceName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="I_ScIsSecurityProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="I_ScQueryServiceConfig" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="I_ScRpcBindA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="I_ScRpcBindW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="I_ScSendPnPMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="I_ScSendTSMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="I_ScValidatePnPService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NotifyServiceStatusChangeA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="OpenSCManagerA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="OpenServiceA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="QueryServiceConfig2A" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="QueryServiceConfigA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="QueryServiceStatus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="RegisterServiceCtrlHandlerA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="RegisterServiceCtrlHandlerExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="RegisterServiceCtrlHandlerW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="StartServiceA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="StartServiceCtrlDispatcherA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="ChangeServiceConfig2A" PURGE="0" COMMENT="" />
+</LIBRARY>
+

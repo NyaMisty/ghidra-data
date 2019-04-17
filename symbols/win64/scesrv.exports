@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="scesrv.dll" PATH="C:\Windows\System32\SCESRV.DLL" DATE="Sat Nov 20 07:24:15 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="ScesrvInitializeServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ScesrvTerminateServer" PURGE="0" COMMENT="" />
+</LIBRARY>
+

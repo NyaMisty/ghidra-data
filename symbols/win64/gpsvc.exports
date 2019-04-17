@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="gpsvc.dll" PATH="C:\Windows\System32\GPSVC.DLL" DATE="Sat Nov 20 07:24:32 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="106" NAME="Ordinal_106" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="107" NAME="GroupPolicyClientServiceMain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="108" NAME="SvchostPushServiceGlobals" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="109" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="110" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="GenerateRsopPolicy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="112" NAME="ProcessGroupPolicyCompletedExInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="113" NAME="ProcessGroupPolicyCompletedInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="114" NAME="RsopAccessCheckByTypeInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="RsopFileAccessCheckInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="RsopResetPolicySettingStatusInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="117" NAME="RsopSetPolicySettingStatusInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="114" NAME="Ordinal_114" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Ordinal_12" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="Ordinal_27" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="147" NAME="Ordinal_147" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="133" NAME="Ordinal_133" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="Ordinal_26" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="203" NAME="Ordinal_203" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="Ordinal_41" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="73" NAME="Ordinal_73" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="Ordinal_13" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="118" NAME="Ordinal_118" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="88" NAME="Ordinal_88" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="Ordinal_18" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="Ordinal_14" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="145" NAME="Ordinal_145" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="224" NAME="Ordinal_224" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="79" NAME="Ordinal_79" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="142" NAME="Ordinal_142" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="140" NAME="Ordinal_140" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="179" NAME="Ordinal_179" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

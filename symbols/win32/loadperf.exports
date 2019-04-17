@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="loadperf.dll" PATH="C:\Windows\SysWOW64\LOADPERF.DLL" DATE="Mon Jul 13 06:15:36 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="BackupPerfRegistryToFileW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="InstallPerfDllA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="InstallPerfDllW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="LoadPerfCounterTextStringsA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="LoadPerfCounterTextStringsW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="LpAcquireInstallationMutex" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="LpReleaseInstallationMutex" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="RestorePerfRegistryFromFileW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SetServiceAsTrustedA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="SetServiceAsTrustedW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="UnloadPerfCounterTextStringsA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="UnloadPerfCounterTextStringsW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="UpdatePerfNameFilesA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="UpdatePerfNameFilesW" PURGE="16" COMMENT="" />
+</LIBRARY>
+

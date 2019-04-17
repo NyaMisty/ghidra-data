@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="msjter40.dll" PATH="C:\Windows\SysWOW64\MSJTER40.DLL" DATE="Mon Jul 13 06:15:45 PDT 2009" VERSION="4.00.9756.0">
+    <EXPORT ORDINAL="2" NAME="JetErrIDAForError" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="JetErrIDARawMessage" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="JetErrRawMessage" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="JetErrFormattedMessage" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

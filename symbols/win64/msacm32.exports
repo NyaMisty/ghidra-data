@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="msacm32.dll" PATH="C:\Windows\System32\MSACM32.DLL" DATE="Mon Jul 13 06:41:27 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="acmDriverAddA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="acmDriverAddW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="acmDriverClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="acmDriverDetailsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="acmDriverDetailsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="acmDriverEnum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="acmDriverID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="acmDriverMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="acmDriverOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="acmDriverPriority" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="acmDriverRemove" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="acmFilterChooseA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="acmFilterChooseW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="acmFilterDetailsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="acmFilterDetailsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="acmFilterEnumA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="acmFilterEnumW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="acmFilterTagDetailsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="acmFilterTagDetailsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="acmFilterTagEnumA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="acmFilterTagEnumW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="acmFormatChooseA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="acmFormatChooseW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="acmFormatDetailsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="acmFormatDetailsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="acmFormatEnumA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="acmFormatEnumW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="acmFormatSuggest" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="acmFormatTagDetailsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="acmFormatTagDetailsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="acmFormatTagEnumA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="acmFormatTagEnumW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="acmGetVersion" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="acmMetrics" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="acmStreamClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="acmStreamConvert" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="acmStreamMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="acmStreamOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="acmStreamPrepareHeader" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="acmStreamReset" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="acmStreamSize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="acmStreamUnprepareHeader" PURGE="0" COMMENT="" />
+</LIBRARY>
+

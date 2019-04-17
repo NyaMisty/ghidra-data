@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="mswsock.dll" PATH="C:\Windows\SysWOW64\MSWSOCK.DLL" DATE="Sat Nov 20 07:24:09 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="AcceptEx" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="EnumProtocolsA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EnumProtocolsW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="GetAcceptExSockaddrs" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="GetAddressByNameA" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetAddressByNameW" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetNameByTypeA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="GetNameByTypeW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetServiceA" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetServiceW" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="GetTypeByNameA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="GetTypeByNameW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="MigrateWinsockConfiguration" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NPLoadNameSpaces" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NSPStartup" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="SetServiceA" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="SetServiceW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="StartWsdpService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="StopWsdpService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="TransmitFile" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="WSARecvEx" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="WSPStartup" PURGE="76" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="dn_expand" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="getnetbyname" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="inet_network" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="rexec" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="rcmd" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="rresvport" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="s_perror" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="sethostname" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="Ordinal_11" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="57" NAME="Ordinal_57" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="114" NAME="Ordinal_114" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="Ordinal_14" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Ordinal_12" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="112" NAME="Ordinal_112" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="Ordinal_115" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="Ordinal_3" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="Ordinal_116" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="56" NAME="Ordinal_56" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="55" NAME="Ordinal_55" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

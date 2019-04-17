@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-errorhandling-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-CORE-ERRORHANDLING-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="GetLastError" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SetErrorMode" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SetLastError" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="SetUnhandledExceptionFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="RaiseException" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="UnhandledExceptionFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetErrorMode" PURGE="0" COMMENT="" />
+</LIBRARY>
+

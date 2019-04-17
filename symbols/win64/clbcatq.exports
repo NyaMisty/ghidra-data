@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="clbcatq.dll" PATH="C:\Windows\System32\CLBCATQ.DLL" DATE="Mon Jul 13 06:40:15 PDT 2009" VERSION="2001.12.8530.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="ActivatorUpdateForIsRouterChanges" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CoRegCleanup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DeleteAllActivatorsForClsid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DowngradeAPL" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="GetGlobalBabyJITEnabled" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="UpdateFromAppChange" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="UpdateFromComponentChange" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CLSIDFromStringByBitness" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CheckMemoryGates" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="ComPlusEnablePartitions" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="ComPlusEnableRemoteAccess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="ComPlusMigrate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="ComPlusPartitionsEnabled" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="ComPlusRemoteAccessEnabled" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="CreateComponentLibraryEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="GetCatalogObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="GetCatalogObject2" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="GetComputerObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="GetSimpleTableDispenser" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="InprocServer32FromString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="OpenComponentLibraryEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="OpenComponentLibraryOnMemEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="OpenComponentLibraryOnStreamEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="ServerGetApplicationType" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="SetSetupOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="SetSetupSave" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="SetupOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="SetupSave" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="149" NAME="Ordinal_149" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="183" NAME="Ordinal_183" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="150" NAME="Ordinal_150" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="162" NAME="Ordinal_162" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Ordinal_12" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="411" NAME="Ordinal_411" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

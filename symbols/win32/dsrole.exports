@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dsrole.dll" PATH="C:\Windows\SysWOW64\DSROLE.DLL" DATE="Mon Jul 13 06:15:13 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DsRoleAbortDownlevelServerUpgrade" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DsRoleCancel" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DsRoleDcAsDc" PURGE="68" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DsRoleDcAsReplica" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DsRoleDemoteDc" PURGE="44" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DsRoleDnsNameToFlatName" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DsRoleFreeMemory" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DsRoleGetDatabaseFacts" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DsRoleGetDcOperationProgress" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DsRoleGetDcOperationResults" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DsRoleGetPrimaryDomainInformation" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DsRoleIfmHandleFree" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="DsRoleServerSaveStateForUpgrade" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="DsRoleUpgradeDownlevelServer" PURGE="48" COMMENT="" />
+</LIBRARY>
+

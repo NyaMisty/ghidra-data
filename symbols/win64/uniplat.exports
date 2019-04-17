@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="uniplat.dll" PATH="C:\Windows\System32\UNIPLAT.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="100" NAME="UmPlatformInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="101" NAME="UmPlatformDeinitialize" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="102" NAME="UnimodemReadFileEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="103" NAME="UnimodemWriteFileEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="104" NAME="UnimodemDeviceIoControlEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="105" NAME="UnimodemWaitCommEventEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="106" NAME="UnimodemQueueUserAPC" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="107" NAME="CreateUnimodemTimer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="108" NAME="FreeUnimodemTimer" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="109" NAME="SetUnimodemTimer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="110" NAME="CancelUnimodemTimer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="CreateOverStructPool" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="112" NAME="DestroyOverStructPool" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="113" NAME="AllocateOverStructEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="114" NAME="FreeOverStruct" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="ReinitOverStruct" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="SyncDeviceIoControl" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="117" NAME="WinntIsWorkstation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="207" NAME="UnimodemNotifyTSP" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="210" NAME="StartMonitorThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="211" NAME="StopMonitorThread" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="212" NAME="MonitorHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="213" NAME="StopMonitoringHandle" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="214" NAME="CallBeginning" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="215" NAME="CallEnding" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="216" NAME="ResetCallCount" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

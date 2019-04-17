@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="pcwum.dll" PATH="C:\Windows\System32\PCWUM.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="PcwAddQueryItem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="PcwClearCounterSetSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="PcwCollectData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="PcwCompleteNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="PcwCreateNotifier" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="PcwCreateQuery" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="PcwDisconnectCounterSet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="PcwEnumerateInstances" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="PcwIsNotifierAlive" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="PcwQueryCounterSetSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="PcwReadNotificationData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="PcwRegisterCounterSet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="PcwRemoveQueryItem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="PcwSendNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="PcwSendStatelessNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="PcwSetCounterSetSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="PcwSetQueryItemUserData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="PerfCreateInstance" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="PerfDecrementULongCounterValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="PerfDecrementULongLongCounterValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="PerfDeleteInstance" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="PerfIncrementULongCounterValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="PerfIncrementULongLongCounterValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="PerfQueryInstance" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="PerfSetCounterRefValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="PerfSetCounterSetInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="PerfSetULongCounterValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="PerfSetULongLongCounterValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="PerfStartProvider" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="PerfStartProviderEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="PerfStopProvider" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="StmAlignSize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="StmAllocateFlat" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="StmCoalesceChunks" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="StmDeinitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="StmInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="StmReduceSize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="StmReserve" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="StmWrite" PURGE="0" COMMENT="" />
+</LIBRARY>
+

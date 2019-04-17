@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="winsyncmetastore.dll" PATH="C:\Windows\SysWOW64\WINSYNCMETASTORE.DLL" DATE="Mon Jul 13 06:16:19 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="Ordinal_1" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="202" NAME="Ordinal_202" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="201" NAME="Ordinal_201" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="200" NAME="Ordinal_200" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1" NAME="Ordinal_1" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

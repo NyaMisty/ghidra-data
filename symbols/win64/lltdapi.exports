@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="lltdapi.dll" PATH="C:\Windows\System32\LLTDAPI.DLL" DATE="Mon Jul 13 06:41:18 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DllCanUnloadNow" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="LLTDCreateEnumerator" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="LLTDCreateMapFromXML" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="LLTDCreateMapper" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="LLTDCreateNode" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="283" NAME="Ordinal_283" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="284" NAME="Ordinal_284" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="286" NAME="Ordinal_286" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="285" NAME="Ordinal_285" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

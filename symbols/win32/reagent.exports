@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="reagent.dll" PATH="C:\Windows\SysWOW64\REAGENT.DLL" DATE="Sat Nov 20 07:24:26 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="WinRE_Generalize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WinReAddLogFile" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WinReCompleteRecovery" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="WinReCopyLogFilesToRamdisk" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WinReCopySetupFiles" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WinReCreateLogInstance" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="WinReCreateLogInstanceEx" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WinReDeleteLogFiles" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="WinReGetConfig" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WinReGetGroupPolicies" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="WinReGetLogFile" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="WinReGetWIMInfo" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="WinReInstall" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="WinReIsInstallMedia" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="WinReOpenLogInstance" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WinRePostRecovery" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WinReRestoreLogFiles" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WinReSetConfig" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="WinReSetRecoveryAction" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="WinReSetRecoveryActionEx" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="WinReUnInstall" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="WinReUpdateLogInstance" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="winreFindInstallMedia" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="winreGetBinaryArch" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="345" NAME="Ordinal_345" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

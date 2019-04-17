@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="d3d11.dll" PATH="C:\Windows\System32\D3D11.DLL" DATE="Sat Nov 20 07:24:28 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="D3DKMTDestroyAllocation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="D3DKMTDestroyContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="D3DKMTDestroyDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="D3DKMTDestroySynchronizationObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="D3DKMTSetDisplayPrivateDriverFormat" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="D3DKMTQueryAdapterInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="D3DKMTSignalSynchronizationObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="D3DKMTUnlock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="D3DKMTWaitForSynchronizationObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="D3DKMTCreateAllocation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="OpenAdapter10" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="OpenAdapter10_2" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="D3D11CoreCreateDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="D3D11CoreCreateLayeredDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="D3D11CoreGetLayeredDeviceSize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="D3D11CoreRegisterLayers" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="D3D11CreateDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="D3D11CreateDeviceAndSwapChain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="D3DKMTCreateContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="D3DKMTCreateDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="D3DKMTCreateSynchronizationObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="D3DKMTEscape" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="D3DKMTGetContextSchedulingPriority" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="D3DKMTGetDisplayModeList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="D3DKMTGetDeviceState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="D3DKMTGetMultisampleMethodList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="D3DKMTGetRuntimeData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="D3DKMTGetSharedPrimaryHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="D3DKMTLock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="D3DKMTPresent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="D3DKMTOpenAdapterFromHdc" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="D3DKMTQueryResourceInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="D3DKMTQueryAllocationResidency" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="D3DKMTRender" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="D3DKMTOpenResource" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="D3DKMTSetAllocationPriority" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="D3DKMTSetContextSchedulingPriority" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="D3DKMTSetDisplayMode" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="D3DKMTSetGammaRamp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="D3DKMTSetVidPnSourceOwner" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="D3DKMTWaitForVerticalBlankEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="D3DKMTCloseAdapter" PURGE="0" COMMENT="" />
+</LIBRARY>
+

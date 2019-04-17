@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="pla.dll" PATH="C:\Windows\System32\PLA.DLL" DATE="Sat Nov 20 07:24:00 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="ServiceMain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SvchostPushServiceGlobals" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="PlaDeleteReport" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="PlaExpandTaskArguments" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="PlaExtractCabinet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="PlaGetLegacyAlertActionsFlagsFromString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="PlaGetLegacyAlertActionsStringFromFlags" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="PlaGetServerCapabilities" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="PlaHost" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="PlaServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="PlaUpgrade" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="439" NAME="Ordinal_439" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

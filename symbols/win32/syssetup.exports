@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="syssetup.dll" PATH="C:\Windows\SysWOW64\SYSSETUP.DLL" DATE="Sat Nov 20 07:24:28 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="AsrAddSifEntryW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="AsrAddSifEntryA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="AsrCreateStateFileW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="AsrCreateStateFileA" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="AsrFreeContext" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetAnswerFileSetting" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="AsrRestorePlugPlayRegistryData" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="SetupChangeFontSize" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SetupInfObjectInstallActionW" PURGE="16" COMMENT="" FOWARDLIBRARY="SETUPAPI.DLL" FOWARDSYMBOL="InstallHinfSectionW" />
+    <EXPORT ORDINAL="10" NAME="SetupSetDisplay" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="WaitForSamService" PURGE="4" COMMENT="" />
+</LIBRARY>
+

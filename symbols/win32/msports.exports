@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="msports.dll" PATH="C:\Windows\SysWOW64\MSPORTS.DLL" DATE="Mon Jul 13 06:15:47 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="ComDBClaimNextFreePort" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ComDBClaimPort" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="ComDBClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="ComDBGetCurrentPortUsage" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="ComDBOpen" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="ComDBReleasePort" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="ComDBResizeDatabase" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="ParallelPortPropPageProvider" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="PortsClassInstaller" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="SerialDisplayAdvancedSettings" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SerialPortPropPageProvider" PURGE="12" COMMENT="" />
+</LIBRARY>
+

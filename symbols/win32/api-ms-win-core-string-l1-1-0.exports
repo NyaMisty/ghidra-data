@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-string-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-STRING-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CompareStringEx" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="FoldStringW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="MultiByteToWideChar" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="GetStringTypeExW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CompareStringOrdinal" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetStringTypeW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CompareStringW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WideCharToMultiByte" PURGE="32" COMMENT="" />
+</LIBRARY>
+

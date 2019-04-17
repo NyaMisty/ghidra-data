@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="msutb.dll" PATH="C:\Windows\System32\MSUTB.DLL" DATE="Mon Jul 13 06:41:32 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="ClosePopupTipbar" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetChildTipbar" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetPopupTipbar" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="SetRegisterLangBand" PURGE="0" COMMENT="" />
+</LIBRARY>
+

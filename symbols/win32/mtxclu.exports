@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="mtxclu.dll" PATH="C:\Windows\SysWOW64\MTXCLU.DLL" DATE="Sat Nov 20 07:24:28 PST 2010" VERSION="2001.12.8531.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="MtxCluGetComputerNameW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="MtxCluGetDTCStatusW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="MtxCluGetSecurityRegValue" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="MtxCluIsClusterPresent" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="MtxCluIsNetworkNameInLocalClusterW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="MtxCluIsSameClusterW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="MtxCluIsSameNodeW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="MtxCluSetSecurityRegValue" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Startup" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="MtxCluBringOnlineDTCW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="MtxCluCreateClusterProxyTmInstance" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="MtxCluCreateClusterTmInstance" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="MtxCluCreateTmInstanceForVirtualServer" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="MtxCluEnumerateDtcResources" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="MtxCluGetActiveClusterNode" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="MtxCluGetClusterResourceIdFromName" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="MtxCluGetDTCResourceForResource" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="MtxCluGetDTCVirtualServerNameW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="MtxCluGetDefaultClusterResource" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="MtxCluGetDefaultClusterResourceNonAdmin" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="MtxCluGetDtcDiskResourceDrive" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="MtxCluGetNameFromResourceIdString" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="MtxCluGetNameFromResourceIdStringNonAdmin" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="MtxCluGetResourceId" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="MtxCluGetResourceIdStringFromName" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="MtxCluGetTmResource" PURGE="52" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="MtxCluGetVirtualServerToken" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="MtxCluIsClusterPresentExW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="MtxCluSetDefaultClusterResource" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="MtxCluTakeOfflineDTCW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="MtxCluVerifyLogPathInDependantDiskResource" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

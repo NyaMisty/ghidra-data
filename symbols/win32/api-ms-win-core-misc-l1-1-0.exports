@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-misc-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-MISC-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="GlobalAlloc" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="FatalAppExitW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="FatalAppExitA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="FormatMessageW" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="FormatMessageA" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="IsWow64Process" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="LocalFree" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="LocalReAlloc" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="LocalAlloc" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="LCMapStringA" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="lstrcmp" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="LocalLock" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="LocalUnlock" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="lstrcpyn" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NeedCurrentDirectoryForExePathA" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NeedCurrentDirectoryForExePathW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="PulseEvent" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="SetHandleCount" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="Wow64DisableWow64FsRedirection" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="Sleep" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="Wow64RevertWow64FsRedirection" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="lstrlen" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="lstrcmpA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="lstrcmpW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="lstrcmpi" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="lstrcmpiA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="lstrcmpiW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="EnumSystemLocalesA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="lstrcpynA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="lstrcpynW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="IsProcessInJob" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="lstrlenA" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="lstrlenW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="GlobalFree" PURGE="4" COMMENT="" />
+</LIBRARY>
+

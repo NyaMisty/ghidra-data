@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dhcpcsvc6.dll" PATH="C:\Windows\System32\DHCPCSVC6.DLL" DATE="Mon Jul 13 06:40:28 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="Dhcpv6AcquireParameters" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Dhcpv6CancelOperation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="Dhcpv6EnableTracing" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Dhcpv6FreeLeaseInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="Dhcpv6GetTraceArray" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Dhcpv6GetUserClasses" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Dhcpv6IsEnabled" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Dhcpv6QueryLeaseInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Dhcpv6ReleaseParameters" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="Dhcpv6ReleasePrefix" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="Dhcpv6ReleasePrefixEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Dhcpv6RenewPrefix" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="Dhcpv6RenewPrefixEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="Dhcpv6RequestParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Dhcpv6RequestPrefix" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Dhcpv6RequestPrefixEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="Dhcpv6SetUserClass" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="Ordinal_14" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

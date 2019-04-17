@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="netjoin.dll" PATH="C:\Windows\System32\NETJOIN.DLL" DATE="Sat Nov 20 07:24:09 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="NetProvisionComputerAccount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NetRequestOfflineDomainJoin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NetSetuppCloseLog" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NetSetuppOpenLog" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NetpAvoidNetlogonSpnSet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NetpChangeMachineName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NetpCheckOfflineLsaPolicyUpdate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NetpCompleteOfflineDomainJoin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NetpControlServices" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NetpCrackNamesStatus2Win32Error" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NetpCreateComputerObjectInDs" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NetpDecodeProvisioningBlob" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NetpDecodeProvisioningData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NetpDoDomainJoin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NetpDoInitiateOfflineDomainJoin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NetpDomainJoinLicensingCheck" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NetpDumpBlobToLog" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NetpDumpDcInfoToLog" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NetpDumpDnsDomainInfoToLog" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NetpEncodeProvisionData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NetpEncodeProvisioningBlob" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NetpFreeLdapLsaDomainInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NetpFreeODJBlob" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="NetpGetJoinInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="NetpGetListOfJoinableOUs" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NetpGetLogIndentPrefixString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="NetpGetLsaPrimaryDomain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="NetpGetMachineAccountName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="NetpGetNewMachineName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="NetpInitAndPickleBlobWin7" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="NetpIsSetupInProgress" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="NetpLogPrintHelper" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="NetpMachineValidToJoin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="NetpManageIPCConnect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="NetpManageMachineAccountWithSid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="NetpProvisionComputerAccount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="NetpQueryService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="NetpSeparateUserAndDomain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="NetpSetComputerAccountPassword" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="NetpStopService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="NetpStoreInitialDcRecord" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="NetpUnJoinDomain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="NetpUnpickleBlobWin7" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="NetpUpgradePreNT5JoinInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="NetpValidateName" PURGE="0" COMMENT="" />
+</LIBRARY>
+

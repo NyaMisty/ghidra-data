@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="linkinfo.dll" PATH="C:\Windows\SysWOW64\LINKINFO.DLL" DATE="Mon Jul 13 06:15:36 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CompareLinkInfoReferents" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CompareLinkInfoVolumes" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CreateLinkInfoA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CreateLinkInfo" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CreateLinkInfoW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DestroyLinkInfo" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DisconnectLinkInfo" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="GetCanonicalPathInfoA" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetCanonicalPathInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetCanonicalPathInfoW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="GetLinkInfoData" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="IsValidLinkInfo" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="ResolveLinkInfoA" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="ResolveLinkInfo" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="ResolveLinkInfoW" PURGE="24" COMMENT="" />
+</LIBRARY>
+

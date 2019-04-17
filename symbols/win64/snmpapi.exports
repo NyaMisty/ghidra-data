@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="snmpapi.dll" PATH="C:\Windows\System32\SNMPAPI.DLL" DATE="Mon Jul 13 06:41:54 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="SnmpSvcAddrIsIpx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SnmpSvcAddrToSocket" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SnmpSvcGetEnterpriseOID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="SnmpSvcGetUptime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="SnmpSvcGetUptimeFromTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="SnmpSvcInitUptime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="SnmpSvcSetLogLevel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="SnmpSvcSetLogType" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SnmpTfxClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="SnmpTfxOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SnmpTfxQuery" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="SnmpUtilAnsiToUnicode" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="SnmpUtilAsnAnyCpy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="SnmpUtilAsnAnyFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="SnmpUtilDbgPrint" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="SnmpUtilIdsToA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="SnmpUtilMemAlloc" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="SnmpUtilMemFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="SnmpUtilMemReAlloc" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="SnmpUtilOctetsCmp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="SnmpUtilOctetsCpy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="SnmpUtilOctetsFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="SnmpUtilOctetsNCmp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="SnmpUtilOidAppend" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="SnmpUtilOidCmp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="SnmpUtilOidCpy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="SnmpUtilOidFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="SnmpUtilOidNCmp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="SnmpUtilOidToA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="SnmpUtilPrintAsnAny" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="SnmpUtilPrintOid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="SnmpUtilUTF8ToUnicode" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="SnmpUtilUnicodeToAnsi" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="SnmpUtilUnicodeToUTF8" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="SnmpUtilVarBindCpy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="SnmpUtilVarBindFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="SnmpUtilVarBindListCpy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="SnmpUtilVarBindListFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="55" NAME="Ordinal_55" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

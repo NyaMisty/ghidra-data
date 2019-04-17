@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wlanhlp.dll" PATH="C:\Windows\System32\WLANHLP.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="QueryNetconStatus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="QueryNetconVirtualCharacteristic" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WlanCancelPlap" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="WlanConnectWithInput" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WlanDeinitPlapParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WlanDoPlap" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="WlanEnumAllInterfaces" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WlanGenerateProfileXmlBasicSettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="WlanGetProfileEapUserDataInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WlanGetProfileKeyInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="WlanHostedNetworkFreeWCNSettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="WlanHostedNetworkHlpQueryEverUsed" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="WlanHostedNetworkQueryWCNSettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="WlanHostedNetworkSetWCNSettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="WlanInitPlapParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WlanInternalScan" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WlanIsNetworkSuppressed" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WlanIsUIRequestPending" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="WlanParseProfileXmlBasicSettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="WlanPrivateGetAvailableNetworkList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="WlanQueryCreateAllUserProfileRestricted" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="WlanQueryPlapCredentials" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="WlanQueryPreConnectInput" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="WlanQueryVirtualInterfaceType" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="WlanRefreshConnections" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="WlanRemoveUIForwardingNetworkList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="WlanSendUIResponse" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="WlanSetAllUserProfileRestricted" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="WlanSetUIForwardingNetworkList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="Ordinal_32" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="Ordinal_21" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Ordinal_23" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Ordinal_12" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

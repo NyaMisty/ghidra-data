@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="rstrtmgr.dll" PATH="C:\Windows\System32\RSTRTMGR.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="RmAddFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="RmCancelCurrentTask" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="RmEndSession" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="RmGetFilterList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="RmGetList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="RmJoinSession" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="RmRegisterResources" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="RmRemoveFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="RmReserveHeap" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="RmRestart" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="RmShutdown" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="RmStartSession" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="348" NAME="Ordinal_348" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

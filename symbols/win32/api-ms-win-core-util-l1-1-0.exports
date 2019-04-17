@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-util-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-UTIL-L1-1-0.DLL" DATE="Mon Jul 13 04:10:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="Beep" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DecodeSystemPointer" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EncodePointer" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="EncodeSystemPointer" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DecodePointer" PURGE="4" COMMENT="" />
+</LIBRARY>
+

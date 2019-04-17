@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="xpssvcs.dll" PATH="C:\Windows\System32\XPSSVCS.DLL" DATE="Mon Jul 13 06:41:59 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DDLogHelper" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CreateContainerConsumer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CreateContainerProducer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CreateReachPackageReceiver" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CreateReachPackageSender" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CreateSeekableBuffer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CreateStreamReceiverOnFileHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CreateStreamSenderOnFileHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CreateStreamSenderOnIStream" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="200" NAME="Ordinal_200" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="201" NAME="Ordinal_201" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

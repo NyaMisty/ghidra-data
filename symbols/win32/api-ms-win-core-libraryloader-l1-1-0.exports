@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-libraryloader-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-LIBRARYLOADER-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="FreeLibrary" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="LoadStringA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="FindStringOrdinal" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="FreeResource" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="FreeLibraryAndExitThread" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetModuleHandleA" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetModuleFileNameW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="GetModuleHandleExA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetModuleHandleW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetModuleHandleExW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="LoadLibraryExA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="LockResource" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="LoadResource" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="LoadLibraryExW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetModuleFileNameA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="SizeofResource" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="LoadStringW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="FindResourceExW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="DisableThreadLibraryCalls" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="GetProcAddress" PURGE="8" COMMENT="" />
+</LIBRARY>
+

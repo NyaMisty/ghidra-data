@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="iassvcs.dll" PATH="C:\Windows\System32\IASSVCS.DLL" DATE="Mon Jul 13 06:41:05 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllGetClassObject" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="IASAdler32" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="IASAllocateUniqueID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="IASGetDictionary" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="IASGetHostByName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="IASGetLocalDictionary" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="IASGetProductLimits" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="IASGlobalLock" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="IASGlobalUnlock" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="IASInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="IASRadiusCrypt" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="IASRegisterComponent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="IASReportEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="IASReportLicenseViolation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="IASReportSecurityEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="IASRequestThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="IASSetMaxNumberOfThreads" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="IASSetMaxThreadIdle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="IASUninitialize" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="IASVariantChangeType" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="Ordinal_18" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="Ordinal_22" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="Ordinal_21" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="Ordinal_32" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="Ordinal_19" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="162" NAME="Ordinal_162" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="201" NAME="Ordinal_201" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="186" NAME="Ordinal_186" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="Ordinal_24" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="Ordinal_17" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="Ordinal_10" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Ordinal_23" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="411" NAME="Ordinal_411" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="Ordinal_20" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="Ordinal_115" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="Ordinal_116" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

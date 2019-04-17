@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="httpapi.dll" PATH="C:\Windows\System32\HTTPAPI.DLL" DATE="Sat Nov 20 07:24:16 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="HttpAddFragmentToCache" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="HttpAddUrl" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="HttpAddUrlToUrlGroup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="HttpCancelHttpRequest" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="HttpCloseRequestQueue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="HttpCloseServerSession" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="HttpCloseUrlGroup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="HttpControlService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="HttpCreateHttpHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="HttpCreateRequestQueue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="HttpCreateServerSession" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="HttpCreateUrlGroup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="HttpDeleteServiceConfiguration" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="HttpFlushResponseCache" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="HttpGetCounters" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="HttpInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="HttpQueryRequestQueueProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="HttpQueryServerSessionProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="HttpQueryServiceConfiguration" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="HttpQueryUrlGroupProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="HttpReadFragmentFromCache" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="HttpReceiveClientCertificate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="HttpReceiveHttpRequest" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="HttpReceiveRequestEntityBody" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="HttpRemoveUrl" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="HttpRemoveUrlFromUrlGroup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="HttpSendHttpResponse" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="HttpSendResponseEntityBody" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="HttpSetRequestQueueProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="HttpSetServerSessionProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="HttpSetServiceConfiguration" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="HttpSetUrlGroupProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="HttpShutdownRequestQueue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="HttpTerminate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="HttpWaitForDemandStart" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="HttpWaitForDisconnect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="HttpWaitForDisconnectEx" PURGE="0" COMMENT="" />
+</LIBRARY>
+

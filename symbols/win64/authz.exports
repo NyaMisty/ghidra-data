@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="authz.dll" PATH="C:\Windows\System32\AUTHZ.DLL" DATE="Mon Jul 13 06:40:04 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AuthzAccessCheck" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="AuthzAddSidsToContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="AuthzCachedAccessCheck" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="AuthzEnumerateSecurityEventSources" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="AuthzEvaluateSacl" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="AuthzFreeAuditEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="AuthzFreeContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="AuthzFreeHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="AuthzFreeResourceManager" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="AuthzGetInformationFromContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="AuthzInitializeContextFromAuthzContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="AuthzInitializeContextFromSid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="AuthzInitializeContextFromToken" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="AuthzInitializeObjectAccessAuditEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="AuthzInitializeObjectAccessAuditEvent2" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="AuthzInitializeResourceManager" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="AuthzInstallSecurityEventSource" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="AuthzModifySecurityAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="AuthzOpenObjectAudit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="AuthzRegisterSecurityEventSource" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="AuthzReportSecurityEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="AuthzReportSecurityEventFromParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="AuthzUninstallSecurityEventSource" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="AuthzUnregisterSecurityEventSource" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="AuthziAccessCheckEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="AuthziAllocateAuditParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="AuthziCheckContextMembership" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="AuthziFreeAuditEventType" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="AuthziFreeAuditParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="AuthziFreeAuditQueue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="AuthziGenerateAdminAlertAuditW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="AuthziInitializeAuditEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="AuthziInitializeAuditEventType" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="AuthziInitializeAuditParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="AuthziInitializeAuditParamsFromArray" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="AuthziInitializeAuditParamsWithRM" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="AuthziInitializeAuditQueue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="AuthziInitializeContextFromSid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="AuthziLogAuditEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="AuthziModifyAuditEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="AuthziModifyAuditEvent2" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="AuthziModifyAuditEventType" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="AuthziModifyAuditQueue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="AuthziModifySecurityAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="AuthziQuerySecurityAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="AuthziSourceAudit" PURGE="0" COMMENT="" />
+</LIBRARY>
+

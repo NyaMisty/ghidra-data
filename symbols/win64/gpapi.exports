@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="gpapi.dll" PATH="C:\Windows\System32\GPAPI.DLL" DATE="Mon Jul 13 06:40:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="105" NAME="Ordinal_105" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="106" NAME="EnterCriticalPolicySectionInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="107" NAME="Ordinal_107" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="108" NAME="ForceSyncFgPolicyInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="109" NAME="Ordinal_109" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="110" NAME="Ordinal_110" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="112" NAME="FreeGPOListInternalA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="113" NAME="Ordinal_113" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="114" NAME="Ordinal_114" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="Ordinal_115" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="FreeGPOListInternalW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="117" NAME="GetAppliedGPOListInternalA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="118" NAME="GetAppliedGPOListInternalW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="119" NAME="GetGPOListInternalA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="120" NAME="GetGPOListInternalW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="121" NAME="GetNextFgPolicyRefreshInfoInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="122" NAME="GetPreviousFgPolicyRefreshInfoInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="123" NAME="LeaveCriticalPolicySectionInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="124" NAME="RefreshPolicyExInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="125" NAME="RefreshPolicyInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="126" NAME="RegisterGPNotificationInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="127" NAME="RsopLoggingEnabledInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="128" NAME="UnregisterGPNotificationInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="129" NAME="WaitForMachinePolicyForegroundProcessingInternal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="130" NAME="WaitForUserPolicyForegroundProcessingInternal" PURGE="0" COMMENT="" />
+</LIBRARY>
+

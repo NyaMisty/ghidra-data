@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="srvcli.dll" PATH="C:\Windows\SysWOW64\SRVCLI.DLL" DATE="Sat Nov 20 07:24:16 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="I_NetDfsGetVersion" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="I_NetServerSetServiceBits" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="I_NetServerSetServiceBitsEx" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NetConnectionEnum" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NetFileClose" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NetFileEnum" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NetFileGetInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NetRemoteTOD" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NetServerAliasAdd" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NetServerAliasDel" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NetServerAliasEnum" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NetServerComputerNameAdd" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NetServerComputerNameDel" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NetServerDiskEnum" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NetServerGetInfo" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NetServerSetInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NetServerStatisticsGet" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NetServerTransportAdd" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NetServerTransportAddEx" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NetServerTransportDel" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NetServerTransportEnum" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NetSessionDel" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NetSessionEnum" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="NetSessionGetInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="NetShareAdd" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NetShareCheck" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="NetShareDel" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="NetShareDelEx" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="NetShareDelSticky" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="NetShareEnum" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="NetShareEnumSticky" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="NetShareGetInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="NetShareSetInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="NetpsNameCanonicalize" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="NetpsNameCompare" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="NetpsNameValidate" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="NetpsPathCanonicalize" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="NetpsPathCompare" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="NetpsPathType" PURGE="16" COMMENT="" />
+</LIBRARY>
+

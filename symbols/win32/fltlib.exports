@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="fltlib.dll" PATH="C:\Windows\SysWOW64\FLTLIB.DLL" DATE="Mon Jul 13 06:15:21 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="FilterAttach" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="FilterAttachAtAltitude" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="FilterFindClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="FilterConnectCommunicationPort" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="FilterCreate" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="FilterDetach" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="FilterInstanceClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="FilterFindFirst" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="FilterInstanceFindNext" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="FilterGetDosName" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="FilterInstanceGetInformation" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="FilterGetMessage" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="FilterInstanceFindClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="FilterInstanceCreate" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="FilterVolumeClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="FilterInstanceFindFirst" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="FilterVolumeFindNext" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="FilterGetInformation" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="FilterLoad" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="FilterReplyMessage" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="FilterSendMessage" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="FilterUnload" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="FilterVolumeFindClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="FilterVolumeInstanceFindClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="FilterVolumeFindFirst" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="FilterVolumeInstanceFindNext" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="FilterClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="FilterVolumeInstanceFindFirst" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="FilterFindNext" PURGE="20" COMMENT="" />
+</LIBRARY>
+

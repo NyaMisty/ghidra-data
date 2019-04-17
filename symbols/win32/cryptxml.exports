@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="cryptxml.dll" PATH="C:\Windows\SysWOW64\CRYPTXML.DLL" DATE="Mon Jul 13 06:15:07 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CryptXmlAddObject" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CryptXmlClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CryptXmlCreateReference" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CryptXmlDigestReference" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CryptXmlEncode" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CryptXmlEnumAlgorithmInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CryptXmlFindAlgorithmInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CryptXmlGetAlgorithmInfo" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CryptXmlGetDocContext" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CryptXmlGetReference" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CryptXmlGetSignature" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="CryptXmlGetStatus" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="CryptXmlGetTransforms" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="CryptXmlImportPublicKey" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="CryptXmlOpenToDecode" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="CryptXmlOpenToEncode" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="CryptXmlSetHMACSecret" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="CryptXmlSign" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="CryptXmlVerifySignature" PURGE="12" COMMENT="" />
+</LIBRARY>
+

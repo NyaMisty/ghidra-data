@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-interlocked-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-CORE-INTERLOCKED-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="InitializeSListHead" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="InterlockedPopEntrySList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="InterlockedPushEntrySList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="InterlockedPushListSList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="QueryDepthSList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="InterlockedFlushSList" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="csrsrv.dll" PATH="C:\Windows\System32\CSRSRV.DLL" DATE="Mon Jul 13 06:40:24 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CsrAddStaticServerThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CsrCallServerFromServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CsrConnectToUser" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CsrCreateProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CsrCreateRemoteThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CsrCreateThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CsrDeferredCreateProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CsrDereferenceProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CsrDereferenceThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CsrDestroyProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CsrDestroyThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="CsrExecServerThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="CsrGetProcessLuid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="CsrImpersonateClient" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="CsrLockProcessByClientId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="CsrLockThreadByClientId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="CsrLockedReferenceProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="CsrQueryApiPort" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="CsrReferenceThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="CsrRegisterClientThreadSetup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="CsrReplyToMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="CsrRevertToSelf" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="CsrServerInitialization" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="CsrSetBackgroundPriority" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="CsrSetForegroundPriority" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="CsrShutdownProcesses" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="CsrUnhandledExceptionFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="CsrUnlockProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="CsrUnlockThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="CsrValidateMessageBuffer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="CsrValidateMessageString" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="eappprxy.dll" PATH="C:\Windows\SysWOW64\EAPPPRXY.DLL" DATE="Mon Jul 13 06:15:13 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="EapHostPeerBeginSession" PURGE="68" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="EapHostPeerClearConnection" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EapHostPeerEndSession" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="EapHostPeerFreeEapError" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="EapHostPeerFreeRuntimeMemory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="EapHostPeerGetAuthStatus" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="EapHostPeerGetIdentity" PURGE="68" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="EapHostPeerGetResponseAttributes" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="EapHostPeerGetResult" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="EapHostPeerGetSendPacket" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="EapHostPeerGetUIContext" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="EapHostPeerInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="EapHostPeerProcessReceivedPacket" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="EapHostPeerSetResponseAttributes" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="EapHostPeerSetUIContext" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="EapHostPeerUninitialize" PURGE="0" COMMENT="" />
+</LIBRARY>
+

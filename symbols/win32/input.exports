@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="input.dll" PATH="C:\Windows\SysWOW64\INPUT.DLL" DATE="Sat Nov 20 07:23:54 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="100" NAME="CPlApplet" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="101" NAME="Ordinal_101" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="102" NAME="Ordinal_102" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="103" NAME="Ordinal_103" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="104" NAME="InstallLayoutOrTip" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="105" NAME="SaveDefaultUserInputSettings" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="106" NAME="SaveSystemAcctInputSettings" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="107" NAME="SetDefaultLayoutOrTip" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="108" NAME="EnumLayoutOrTipForSetup" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="109" NAME="InstallLayoutOrTipUserReg" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="110" NAME="EnumEnabledLayoutOrTip" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="QueryLayoutOrTipString" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="112" NAME="QueryLayoutOrTipStringUserReg" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="113" NAME="GetDefaultLayout" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="114" NAME="GetLayoutDescription" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="200" NAME="InputDll_DownlevelInitialize" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="201" NAME="InputDll_DownlevelSetUILanguage" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="202" NAME="InputDll_DownlevelUninitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="203" NAME="InputDll_DownlevelEnumLayoutOrTipForSetup" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="Ordinal_17" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="62" NAME="Ordinal_62" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="439" NAME="Ordinal_439" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

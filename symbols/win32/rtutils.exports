@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="rtutils.dll" PATH="C:\Windows\SysWOW64\RTUTILS.DLL" DATE="Sat Nov 20 07:24:01 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="LogErrorA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="LogErrorW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="LogEventA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="LogEventW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="MprSetupProtocolEnum" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="MprSetupProtocolFree" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="RouterAssert" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="RouterGetErrorStringA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="RouterGetErrorStringW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="RouterLogDeregisterW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="RouterLogDeregisterA" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="RouterLogEventA" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="RouterLogEventDataA" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="RouterLogEventDataW" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="RouterLogEventExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="RouterLogEventExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="RouterLogEventStringA" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="RouterLogEventStringW" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="RouterLogEventValistExA" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="RouterLogEventValistExW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="RouterLogEventW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="RouterLogRegisterA" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="RouterLogRegisterW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="TraceDeregisterW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="TraceDeregisterExW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="TraceDeregisterExA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="TraceDeregisterA" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="TraceDumpExA" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="TraceDumpExW" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="TraceGetConsoleW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="TraceGetConsoleA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="TracePrintfA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="TracePrintfExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="TracePrintfExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="TracePrintfW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="TracePutsExA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="TracePutsExW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="TraceRegisterExA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="TraceRegisterExW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="TraceVprintfExA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="TraceVprintfExW" PURGE="16" COMMENT="" />
+</LIBRARY>
+

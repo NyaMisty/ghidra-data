@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wow64cpu.dll" PATH="C:\Windows\System32\WOW64CPU.DLL" DATE="Sat Nov 20 07:24:32 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="CpuFlushInstructionCache" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CpuGetContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CpuGetStackPointer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CpuInitializeStartupContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CpuNotifyAfterFork" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CpuNotifyBeforeFork" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CpuNotifyDllLoad" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CpuPrepareForDebuggerAttach" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CpuNotifyDllUnload" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CpuResetFloatingPoint" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CpuProcessDebugEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="CpuProcessInit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="CpuSuspendThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="CpuNotifyAffinityChange" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="CpuResetToConsistentState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="CpuSetContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="CpuSetInstructionPointer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="CpuSetStackPointer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="CpuSimulate" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="CpuSuspendLocalThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="CpuThreadTerm" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="CpuThreadInit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="CpuProcessTerm" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="TurboDispatchJumpAddressEnd" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="TurboDispatchJumpAddressStart" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="credui.dll" PATH="C:\Windows\System32\CREDUI.DLL" DATE="Sat Nov 20 07:24:15 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="CredUnPackAuthenticationBufferA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CredPackAuthenticationBufferW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CredUICmdLinePromptForCredentialsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CredUICmdLinePromptForCredentialsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CredUIConfirmCredentialsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CredUIConfirmCredentialsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CredUIInitControls" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CredUIParseUserNameA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CredUIParseUserNameW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CredUIPromptForCredentialsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CredUIPromptForCredentialsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="CredUIPromptForWindowsCredentialsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="CredUIPromptForWindowsCredentialsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="CredUIPromptForWindowsCredentialsWorker" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="CredUIReadSSOCredA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="CredUIReadSSOCredW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="CredUIStoreSSOCredA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="CredUIStoreSSOCredW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="CredPackAuthenticationBufferA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="CredUnPackAuthenticationBufferW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="SspiGetCredUIContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="SspiIsPromptingNeeded" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="SspiPromptForCredentialsA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="SspiPromptForCredentialsW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="SspiUnmarshalCredUIContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="SspiUpdateCredentials" PURGE="0" COMMENT="" />
+</LIBRARY>
+

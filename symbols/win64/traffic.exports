@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="traffic.dll" PATH="C:\Windows\System32\TRAFFIC.DLL" DATE="Mon Jul 13 06:41:55 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="TcAddFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="TcAddFlow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="TcCloseInterface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="TcDeleteFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="TcDeleteFlow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="TcDeregisterClient" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="TcEnumerateFlows" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="TcEnumerateInterfaces" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="TcGetFlowNameA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="TcGetFlowNameW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="TcGetInterfaceList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="TcModifyFlow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="TcOpenInterfaceA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="TcOpenInterfaceW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="TcQueryFlowA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="TcQueryFlowW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="TcQueryInterface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="TcRegisterClient" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="TcSetFlowA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="TcSetFlowW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="TcSetInterface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="TcSetSocketFlow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

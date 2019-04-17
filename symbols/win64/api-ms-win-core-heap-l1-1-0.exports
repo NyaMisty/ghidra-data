@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-heap-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-CORE-HEAP-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="GetProcessHeaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="HeapAlloc" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="HeapCompact" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="HeapCreate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="HeapDestroy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="HeapFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="HeapLock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="HeapQueryInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="HeapReAlloc" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="HeapSetInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="HeapSize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="HeapSummary" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="HeapUnlock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="HeapValidate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="HeapWalk" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetProcessHeap" PURGE="0" COMMENT="" />
+</LIBRARY>
+

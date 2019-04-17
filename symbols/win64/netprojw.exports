@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="netprojw.dll" PATH="C:\Windows\System32\NETPROJW.DLL" DATE="Mon Jul 13 06:41:52 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllMain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NetworkProjectionThreadMain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="344" NAME="Ordinal_344" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="345" NAME="Ordinal_345" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="162" NAME="Ordinal_162" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="277" NAME="Ordinal_277" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="161" NAME="Ordinal_161" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="186" NAME="Ordinal_186" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="163" NAME="Ordinal_163" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="314" NAME="Ordinal_314" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

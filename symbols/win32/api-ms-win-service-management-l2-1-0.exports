@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-service-management-l2-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-SERVICE-MANAGEMENT-L2-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="NotifyServiceStatusChangeW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ChangeServiceConfigW" PURGE="44" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SetServiceObjectSecurity" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="QueryServiceObjectSecurity" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="QueryServiceConfigW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="QueryServiceStatusEx" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="QueryServiceConfig2W" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="ChangeServiceConfig2W" PURGE="12" COMMENT="" />
+</LIBRARY>
+

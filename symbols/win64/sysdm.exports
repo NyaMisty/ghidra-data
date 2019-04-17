@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="sysdm.cpl" PATH="C:\Windows\System32\SYSDM.CPL" DATE="Sat Nov 20 07:24:09 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="DisplaySYSDMCPL" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="EditEnvironmentVariables" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EditUserProfiles" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="EnableExecuteProtectionSupportW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="ModifyExecuteProtectionSupportW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NoExecuteAddFileOptOutList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NoExecuteAddFileOptOutListW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NoExecuteProcessExceptionW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NoExecuteRemoveFileOptOutList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NoExecuteRemoveFileOptOutListW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="169" NAME="Ordinal_169" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="730" NAME="Ordinal_730" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="167" NAME="Ordinal_167" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="168" NAME="Ordinal_168" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="100" NAME="Ordinal_100" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="259" NAME="Ordinal_259" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="258" NAME="Ordinal_258" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="195" NAME="Ordinal_195" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="680" NAME="Ordinal_680" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="Ordinal_10" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="388" NAME="Ordinal_388" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="437" NAME="Ordinal_437" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="158" NAME="Ordinal_158" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="154" NAME="Ordinal_154" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="460" NAME="Ordinal_460" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="629" NAME="Ordinal_629" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="209" NAME="Ordinal_209" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="202" NAME="Ordinal_202" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="104" NAME="Ordinal_104" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="ddraw.dll" PATH="C:\Windows\SysWOW64\DDRAW.DLL" DATE="Mon Jul 13 06:15:10 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AcquireDDThreadLock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CompleteCreateSysmemSurface" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="D3DParseUnknownCommand" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DDGetAttachedSurfaceLcl" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DDInternalLock" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DDInternalUnlock" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DSoundHelp" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DirectDrawCreate" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DirectDrawCreateClipper" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DirectDrawCreateEx" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DirectDrawEnumerateA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DirectDrawEnumerateExA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="DirectDrawEnumerateExW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="DirectDrawEnumerateW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="GetDDSurfaceLocal" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="GetOLEThunkData" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="GetSurfaceFromDC" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="RegisterSpecialCase" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="ReleaseDDThreadLock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="SetAppCompatData" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="128" NAME="Ordinal_128" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="100" NAME="Ordinal_100" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="101" NAME="Ordinal_101" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="129" NAME="Ordinal_129" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="130" NAME="Ordinal_130" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

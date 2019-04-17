@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="samcli.dll" PATH="C:\Windows\SysWOW64\SAMCLI.DLL" DATE="Sat Nov 20 07:23:54 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="NetGetDisplayInformationIndex" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NetGroupAdd" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NetGroupAddUser" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NetGroupDel" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NetGroupDelUser" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NetGroupEnum" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NetGroupGetInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NetGroupGetUsers" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NetGroupSetInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NetGroupSetUsers" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NetLocalGroupAdd" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NetLocalGroupAddMember" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NetLocalGroupAddMembers" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NetLocalGroupDel" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NetLocalGroupDelMember" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NetLocalGroupDelMembers" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NetLocalGroupEnum" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NetLocalGroupGetInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NetLocalGroupGetMembers" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NetLocalGroupSetInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NetLocalGroupSetMembers" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NetQueryDisplayInformation" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NetUserAdd" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="NetUserChangePassword" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="NetUserDel" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NetUserEnum" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="NetUserGetGroups" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="NetUserGetInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="NetUserGetLocalGroups" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="NetUserModalsGet" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="NetUserModalsSet" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="NetUserSetGroups" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="NetUserSetInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="NetValidatePasswordPolicy" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="NetValidatePasswordPolicyFree" PURGE="4" COMMENT="" />
+</LIBRARY>
+

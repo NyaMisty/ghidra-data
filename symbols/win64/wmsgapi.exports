@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wmsgapi.dll" PATH="C:\Windows\System32\WMSGAPI.DLL" DATE="Mon Jul 13 06:41:57 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="WmsgBroadcastMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WmsgBroadcastNotifyMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WmsgPostMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="WmsgPostNotifyMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WmsgSendMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WmsgSendPSPMessage" PURGE="0" COMMENT="" />
+</LIBRARY>
+

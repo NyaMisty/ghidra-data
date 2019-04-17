@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="srcore.dll" PATH="C:\Windows\System32\SRCORE.DLL" DATE="Sat Nov 20 07:25:06 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="SysprepCleanup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SysprepGeneralize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="ShutdownContinuation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="SrFreeRestoreStatus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SrFreeRpPropArray" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="277" NAME="Ordinal_277" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

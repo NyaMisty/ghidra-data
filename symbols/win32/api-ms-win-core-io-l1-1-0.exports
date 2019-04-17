@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-io-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-IO-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CancelIoEx" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="GetOverlappedResult" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DeviceIoControl" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="PostQueuedCompletionStatus" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="GetQueuedCompletionStatus" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetQueuedCompletionStatusEx" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CreateIoCompletionPort" PURGE="16" COMMENT="" />
+</LIBRARY>
+

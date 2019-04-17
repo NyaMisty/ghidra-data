@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-delayload-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-DELAYLOAD-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DelayLoadFailureHook" PURGE="8" COMMENT="" />
+</LIBRARY>
+

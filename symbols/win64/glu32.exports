@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="glu32.dll" PATH="C:\Windows\System32\GLU32.DLL" DATE="Mon Jul 13 06:40:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="gluBeginCurve" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="gluBeginPolygon" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="gluBeginSurface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="gluBeginTrim" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="gluBuild1DMipmaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="gluBuild2DMipmaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="gluCylinder" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="gluDeleteNurbsRenderer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="gluDeleteQuadric" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="gluDeleteTess" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="gluDisk" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="gluEndCurve" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="gluEndPolygon" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="gluEndSurface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="gluEndTrim" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="gluErrorString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="gluErrorUnicodeStringEXT" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="gluGetNurbsProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="gluGetString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="gluGetTessProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="gluLoadSamplingMatrices" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="gluLookAt" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="gluNewNurbsRenderer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="gluNewQuadric" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="gluNewTess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="gluNextContour" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="gluNurbsCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="gluNurbsCurve" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="gluNurbsProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="gluNurbsSurface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="gluOrtho2D" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="gluPartialDisk" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="gluPerspective" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="gluPickMatrix" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="gluProject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="gluPwlCurve" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="gluQuadricCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="gluQuadricDrawStyle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="gluQuadricNormals" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="gluQuadricOrientation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="gluQuadricTexture" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="gluScaleImage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="gluSphere" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="gluTessBeginContour" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="gluTessBeginPolygon" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="gluTessCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="gluTessEndContour" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="48" NAME="gluTessEndPolygon" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="49" NAME="gluTessNormal" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="50" NAME="gluTessProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="51" NAME="gluTessVertex" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="52" NAME="gluUnProject" PURGE="0" COMMENT="" />
+</LIBRARY>
+

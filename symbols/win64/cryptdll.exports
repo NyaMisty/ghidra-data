@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="cryptdll.dll" PATH="C:\Windows\System32\CRYPTDLL.DLL" DATE="Mon Jul 13 06:40:24 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CDBuildIntegrityVect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CDBuildVect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CDFindCommonCSystem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CDFindCommonCSystemWithKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CDGenerateRandomBits" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CDGetIntegrityVect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CDLocateCSystem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CDLocateCheckSum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CDLocateRng" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CDRegisterCSystem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CDRegisterCheckSum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="CDRegisterRng" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="HMACwithSHA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="MD5Final" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="MD5Init" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="MD5Update" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="PBKDF2" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="aesCTSDecryptMsg" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="aesCTSEncryptMsg" PURGE="0" COMMENT="" />
+</LIBRARY>
+

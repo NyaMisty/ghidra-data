@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="ncobjapi.dll" PATH="C:\Windows\system32\NCOBJAPI.DLL" DATE="Mon Jul 13 06:41:52 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="WmiCommitObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WmiAddObjectProp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WmiCreateObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="WmiCreateObjectWithFormat" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WmiCreateObjectWithProps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WmiDestroyObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="WmiEventSourceConnect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WmiEventSourceDisconnect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="WmiIsObjectActive" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WmiSetAndCommitObject" PURGE="0" COMMENT="" />
+</LIBRARY>
+

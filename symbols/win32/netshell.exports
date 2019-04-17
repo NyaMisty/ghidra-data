@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="netshell.dll" PATH="C:\Windows\SysWOW64\NETSHELL.DLL" DATE="Sat Nov 20 07:24:07 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="HrCreateDesktopIcon" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="HrGetIconFromMediaType" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="HrGetIconFromMediaTypeEx" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="HrLaunchConnection" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="HrLaunchConnectionEx" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="HrRenameConnection" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NcFreeNetconProperties" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NcIsValidConnectionName" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="StartNCW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="258" NAME="Ordinal_258" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="259" NAME="Ordinal_259" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="192" NAME="Ordinal_192" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="196" NAME="Ordinal_196" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="67" NAME="Ordinal_67" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="195" NAME="Ordinal_195" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="73" NAME="Ordinal_73" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="Ordinal_18" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="83" NAME="Ordinal_83" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="256" NAME="Ordinal_256" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="172" NAME="Ordinal_172" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="727" NAME="Ordinal_727" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="744" NAME="Ordinal_744" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="893" NAME="Ordinal_893" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="Ordinal_25" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="usp10.dll" PATH="C:\Windows\SysWOW64\USP10.DLL" DATE="Sat Nov 20 07:24:16 PST 2010" VERSION="1.0626.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="LpkPresent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ScriptApplyDigitSubstitution" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="ScriptApplyLogicalWidth" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="ScriptBreak" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="ScriptCPtoX" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="ScriptCacheGetHeight" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="ScriptFreeCache" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="ScriptGetCMap" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="ScriptGetFontAlternateGlyphs" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="ScriptGetFontFeatureTags" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="ScriptGetFontLanguageTags" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="ScriptGetFontProperties" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="ScriptGetFontScriptTags" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="ScriptGetGlyphABCWidth" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="ScriptGetLogicalWidths" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="ScriptGetProperties" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="ScriptIsComplex" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="ScriptItemize" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="ScriptItemizeOpenType" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="ScriptJustify" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="ScriptLayout" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="ScriptPlace" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="ScriptPlaceOpenType" PURGE="72" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="ScriptPositionSingleGlyph" PURGE="52" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="ScriptRecordDigitSubstitution" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="ScriptShape" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="ScriptShapeOpenType" PURGE="64" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="ScriptStringAnalyse" PURGE="52" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="ScriptStringCPtoX" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="ScriptStringFree" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="ScriptStringGetLogicalWidths" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="ScriptStringGetOrder" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="ScriptStringOut" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="ScriptStringValidate" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="ScriptStringXtoCP" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="ScriptString_pLogAttr" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="ScriptString_pSize" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="ScriptString_pcOutChars" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="ScriptSubstituteSingleGlyph" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="ScriptTextOut" PURGE="56" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="ScriptXtoCP" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="UspAllocCache" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="UspAllocTemp" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="UspFreeMem" PURGE="4" COMMENT="" />
+</LIBRARY>
+

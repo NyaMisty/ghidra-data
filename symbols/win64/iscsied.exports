@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="iscsied.dll" PATH="C:\Windows\System32\ISCSIED.DLL" DATE="Mon Jul 13 06:41:11 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DiscpLoadGPSettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllMain" PURGE="0" COMMENT="" />
+</LIBRARY>
+

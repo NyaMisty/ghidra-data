@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="mcewmdrmndbootstrap.dll" PATH="C:\Windows\SysWOW64\MCEWMDRMNDBOOTSTRAP.DLL" DATE="Sat Nov 20 07:25:10 PST 2010" VERSION="1.3.2302.0">
+    <EXPORT ORDINAL="1" NAME="CreateMCENDBootstrap" PURGE="37351" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ShutdownMCENDBootstrap" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="StartupMCENDBootstrap" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

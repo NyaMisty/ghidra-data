@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="appidapi.dll" PATH="C:\Windows\SysWOW64\APPIDAPI.DLL" DATE="Mon Jul 13 06:14:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AppIDDecodeAttributeString" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="AppIDEncodeAttributeString" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="AppIDFreeAttributeString" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="AppIDGetFileAttributes" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="AppIDReleaseFileAttributes" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="1000" NAME="Ordinal_1000" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="160" NAME="Ordinal_160" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="159" NAME="Ordinal_159" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="Ordinal_32" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="92" NAME="Ordinal_92" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="157" NAME="Ordinal_157" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="118" NAME="Ordinal_118" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

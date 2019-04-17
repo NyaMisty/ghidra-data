@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wlansec.dll" PATH="C:\Windows\System32\WLANSEC.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="MSMSecConnectionHealthCheck" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="MSMSecCreateDiscoveryProfiles" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="MSMSecDeinitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="MSMSecDeinitializeAdapter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="MSMSecFreeIntfState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="MSMSecFreeMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="MSMSecFreePeerState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="MSMSecFreeProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="MSMSecInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="MSMSecInitializeAdapter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="MSMSecIsUIRequestPending" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="MSMSecPerformCapabilityMatch" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="MSMSecPerformPostAssociateSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="MSMSecPerformPreAssociateSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="MSMSecProcessSessionChange" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="MSMSecQueryAPPeerPSKIndex" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="MSMSecQueryIntfState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="MSMSecQueryPeerState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="MSMSecRecvIndication" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="MSMSecRecvPacket" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="MSMSecRedoSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="MSMSecSendPktCompletion" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="MSMSecSetAPSecondaryPSK" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="MSMSecSetRuntimeState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="MSMSecSetWcnOneXEnable" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="MSMSecStopPostAssociateSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="MSMSecStopSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="MSMSecUIResponse" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

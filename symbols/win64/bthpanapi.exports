@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="bthpanapi.dll" PATH="C:\Windows\System32\BTHPANAPI.DLL" DATE="Mon Jul 13 06:40:13 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="BluetoothCloseNetworkHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="BluetoothConnectToNetwork" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="BluetoothCreateNetworkHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="BluetoothDisconnectFromNetwork" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="BluetoothFindFirstNetwork" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="BluetoothFindNetworkClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="BluetoothFindNextNetwork" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="BluetoothGetIncompleteConnectedNetworkHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="BluetoothGetNetworkAddress" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="BluetoothGetNetworkAvailableRoles" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="BluetoothGetNetworkContainerId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="BluetoothGetNetworkInterfaceId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="BluetoothGetNetworkName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="BluetoothGetNetworkStatus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="BluetoothRegisterNetworkNotifications" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="BluetoothUnregisterNetworkNotifications" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="hid.dll" PATH="C:\Windows\System32\HID.DLL" DATE="Mon Jul 13 06:41:00 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="HidD_FlushQueue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="HidD_FreePreparsedData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="HidD_GetAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="HidD_GetConfiguration" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="HidD_GetFeature" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="HidD_GetHidGuid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="HidD_GetIndexedString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="HidD_GetInputReport" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="HidD_GetManufacturerString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="HidD_GetMsGenreDescriptor" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="HidD_GetNumInputBuffers" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="HidD_GetPhysicalDescriptor" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="HidD_GetPreparsedData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="HidD_GetProductString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="HidD_GetSerialNumberString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="HidD_Hello" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="HidD_SetConfiguration" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="HidD_SetFeature" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="HidD_SetNumInputBuffers" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="HidD_SetOutputReport" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="HidP_GetButtonCaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="HidP_GetCaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="HidP_GetData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="HidP_GetExtendedAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="HidP_GetLinkCollectionNodes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="HidP_GetScaledUsageValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="HidP_GetSpecificButtonCaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="HidP_GetSpecificValueCaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="HidP_GetUsageValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="HidP_GetUsageValueArray" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="HidP_GetUsages" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="HidP_GetUsagesEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="HidP_GetValueCaps" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="HidP_InitializeReportForID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="HidP_MaxDataListLength" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="HidP_MaxUsageListLength" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="HidP_SetData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="HidP_SetScaledUsageValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="HidP_SetUsageValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="HidP_SetUsageValueArray" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="HidP_SetUsages" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="HidP_TranslateUsagesToI8042ScanCodes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="HidP_UnsetUsages" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="HidP_UsageListDifference" PURGE="0" COMMENT="" />
+</LIBRARY>
+

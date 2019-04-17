@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="sppcommdlg.dll" PATH="C:\Windows\System32\SPPCOMMDLG.DLL" DATE="Mon Jul 13 06:41:54 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="SLUXActivationWizard" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="345" NAME="Ordinal_345" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="344" NAME="Ordinal_344" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="185" NAME="Ordinal_185" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

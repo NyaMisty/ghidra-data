@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="msdtcprx.dll" PATH="C:\Windows\SysWOW64\MSDTCPRX.DLL" DATE="Mon Jul 13 06:15:43 PDT 2009" VERSION="2001.12.8530.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="4" NAME="DllGetDTCProxy" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="?Create@CNameService@@SGJPAPAV1@@Z" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="?CreateInstance@CTmProxyCore@@SGJPAPAV1@PAUIUnknown@@@Z" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="?DeployDtc@@YGJXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="?GetDtcLogPath@@YGHKPAG@Z" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="?InstallContacts@@YGJPAUITmInstance@@@Z" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DTC_XaOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DTC_XaStart" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DTC_XaEnd" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="DTC_XaPrepare" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="DTC_XaCommit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="DTC_XaRollback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="DTC_XaRecover" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="DTC_XaForget" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="DTC_XaComplete" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="DTC_XaClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="?InstallDtc@@YGJPAUITmInstance@@PAG111KK1H@Z" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="?InstallDtcClient@@YGJPAGKK@Z" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="?RemoveDtc@@YGJPAG00@Z" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="UpgradeApplySuccess" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="ShutDownCM" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="DllGetDTCConnectionManager" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="DllGetDTCUtilObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="ContactToNameObject" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="SysPrepDtcCleanup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="SysPrepDtcGeneralize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="SysPrepDtcSpecialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="CreateLegacyTmInstance" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="CreateLocalTmInstance" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="CreateRemoteProxyTmInstance" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="CreateTmInstanceForRemoteAdmin" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="DllGetTransactionManagerCore" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="GetTmInstance" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="Ordinal_116" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="Ordinal_115" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

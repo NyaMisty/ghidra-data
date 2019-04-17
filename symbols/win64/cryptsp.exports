@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="cryptsp.dll" PATH="C:\Windows\System32\CRYPTSP.DLL" DATE="Mon Jul 13 06:40:24 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="SystemFunction035" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CryptAcquireContextA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CryptAcquireContextW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CryptContextAddRef" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CryptCreateHash" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CryptDecrypt" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CryptDeriveKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CryptDestroyHash" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CryptDestroyKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CryptDuplicateHash" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CryptDuplicateKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="CryptEncrypt" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="CryptEnumProviderTypesA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="CryptEnumProviderTypesW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="CryptEnumProvidersA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="CryptEnumProvidersW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="CryptExportKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="CryptGenKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="CryptGenRandom" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="CryptGetDefaultProviderA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="CryptGetDefaultProviderW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="CryptGetHashParam" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="CryptGetKeyParam" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="CryptGetProvParam" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="CryptGetUserKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="CryptHashData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="CryptHashSessionKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="CryptImportKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="CryptReleaseContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="CryptSetHashParam" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="CryptSetKeyParam" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="CryptSetProvParam" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="CryptSetProviderA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="CryptSetProviderExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="CryptSetProviderExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="CryptSetProviderW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="CryptSignHashA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="CryptSignHashW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="CryptVerifySignatureA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="CryptVerifySignatureW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="CheckSignatureInFile" PURGE="0" COMMENT="" />
+</LIBRARY>
+

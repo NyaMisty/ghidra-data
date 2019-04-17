@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="cryptbase.dll" PATH="C:\Windows\System32\CRYPTBASE.DLL" DATE="Mon Jul 13 06:40:24 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="SystemFunction001" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SystemFunction002" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SystemFunction003" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="SystemFunction004" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="SystemFunction005" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="SystemFunction028" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="SystemFunction029" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="SystemFunction034" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SystemFunction036" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="SystemFunction040" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SystemFunction041" PURGE="0" COMMENT="" />
+</LIBRARY>
+

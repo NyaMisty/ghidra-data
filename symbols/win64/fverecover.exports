@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="fverecover.dll" PATH="C:\Windows\System32\FVERECOVER.DLL" DATE="Mon Jul 13 06:40:55 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="??0VolumeFveStatus@@IEAA@XZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="??0VolumeFveStatus@@QEAA@KJ@Z" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="??4BuiVolume@@QEAAAEAV0@AEBV0@@Z" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="??4VolumeFveStatus@@QEAAAEAV0@AEBV0@@Z" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="?FailedDryRun@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="?GetLastConvertStatus@VolumeFveStatus@@QEAAJXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="?GetStatusFlags@VolumeFveStatus@@QEAAKXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="?HasExternalKey@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="?HasPassphraseProtector@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="?HasPinProtector@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="?HasRecoveryData@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="?HasRecoveryPassword@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="?HasSmartCardProtector@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="?HasStartupKeyProtector@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="?HasTpmProtector@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="?IsConverting@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="?IsDecrypted@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="?IsDecrypting@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="?IsDisabled@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="?IsEncrypted@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="?IsEncrypting@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="?IsFveNotifyNecessary@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="?IsLocked@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="?IsOn@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="?IsOsVolume@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="?IsPartiallyConverted@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="?IsPaused@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="?IsRoamingDevice@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="?IsSecure@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="?NO_DRIVE_LETTER@BuiVolume@@2IB" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="?NeedsRestart@VolumeFveStatus@@QEAA_NXZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="FveRecoverWizard" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="344" NAME="Ordinal_344" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="413" NAME="Ordinal_413" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="410" NAME="Ordinal_410" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="155" NAME="Ordinal_155" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="644" NAME="Ordinal_644" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="645" NAME="Ordinal_645" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

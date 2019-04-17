@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="prntvpt.dll" PATH="C:\Windows\SysWOW64\PRNTVPT.DLL" DATE="Sat Nov 20 07:24:32 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="PTQuerySchemaVersionSupport" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="PTOpenProvider" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="PTOpenProviderEx" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="PTCloseProvider" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="BindPTProviderThunk" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="PTGetPrintCapabilities" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="PTMergeAndValidatePrintTicket" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="PTConvertPrintTicketToDevMode" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="PTConvertDevModeToPrintTicket" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="PTReleaseMemory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="ConvertDevModeToPrintTicketThunk2" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="ConvertDevModeToPrintTicketThunk" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="ConvertPrintTicketToDevModeThunk2" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="ConvertPrintTicketToDevModeThunk" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="DllMain" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="GetDeviceNamespacesThunk" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="GetDeviceDefaultPrintTicketThunk" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="GetPrintCapabilitiesThunk2" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="GetPrintCapabilitiesThunk" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="GetSchemaVersionThunk" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="MergeAndValidatePrintTicketThunk2" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="MergeAndValidatePrintTicketThunk" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="UnbindPTProviderThunk" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="285" NAME="Ordinal_285" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="284" NAME="Ordinal_284" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="283" NAME="Ordinal_283" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="277" NAME="Ordinal_277" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Ordinal_12" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="286" NAME="Ordinal_286" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

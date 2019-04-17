@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="psapi.dll" PATH="C:\Windows\SysWOW64\PSAPI.DLL" DATE="Mon Jul 13 06:16:12 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="EmptyWorkingSet" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="EnumDeviceDrivers" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EnumPageFilesA" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="EnumPageFilesW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="EnumProcessModules" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="EnumProcessModulesEx" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="EnumProcesses" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="GetDeviceDriverBaseNameA" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetDeviceDriverBaseNameW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetDeviceDriverFileNameA" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="GetDeviceDriverFileNameW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="GetMappedFileNameA" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GetMappedFileNameW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetModuleBaseNameA" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetModuleBaseNameW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetModuleFileNameExA" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="GetModuleFileNameExW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="GetModuleInformation" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="GetPerformanceInfo" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="GetProcessImageFileNameA" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="GetProcessImageFileNameW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="GetProcessMemoryInfo" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="GetWsChanges" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="GetWsChangesEx" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="InitializeProcessForWsWatch" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="QueryWorkingSet" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="QueryWorkingSetEx" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

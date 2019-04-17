@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="eappcfg.dll" PATH="C:\Windows\SysWOW64\EAPPCFG.DLL" DATE="Mon Jul 13 06:15:13 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="EapHostPeerConfigBlob2Xml" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="EapHostPeerConfigXml2Blob" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EapHostPeerCredentialsXml2Blob" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="EapHostPeerFreeErrorMemory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="EapHostPeerFreeMemory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="EapHostPeerGetMethodProperties" PURGE="52" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="EapHostPeerGetMethods" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="EapHostPeerInvokeConfigUI" PURGE="44" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="EapHostPeerInvokeIdentityUI" PURGE="64" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="EapHostPeerInvokeInteractiveUI" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="EapHostPeerQueryCredentialInputFields" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="EapHostPeerQueryInteractiveUIInputFields" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="EapHostPeerQueryUIBlobFromInteractiveUIInputFields" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="EapHostPeerQueryUserBlobFromCredentialInputFields" PURGE="48" COMMENT="" />
+</LIBRARY>
+

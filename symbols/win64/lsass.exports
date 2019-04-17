@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="lsass.exe" PATH="C:\Windows\System32\LSASS.EXE" DATE="Mon Jul 13 06:39:16 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="LsaGetInterface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="LsaRegisterExtension" PURGE="0" COMMENT="" />
+</LIBRARY>
+

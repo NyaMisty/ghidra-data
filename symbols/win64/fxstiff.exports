@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="fxstiff.dll" PATH="C:\Windows\System32\FXSTIFF.DLL" DATE="Sat Nov 20 07:25:14 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="ConvMmrPageHiResToMrLoRes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ConvMmrPageToMh" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="ConvMmrPageToMrSameRes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="ConvertTiffFileToValidFaxFormat" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="FXSTIFFInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="FindNextEol" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="FreeMsTagInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="GetMsTagFileTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetMsTagDwordLong" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetMsTagString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="GetW2kMsTiffTags" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="MemoryMapTiffFile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="MergeTiffFiles" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="MmrAddBranding" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="PrintTiffFile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="ScanMhSegment" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="ScanMrSegment" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="TiffAddMsTags" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="TiffClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="TiffCreate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="TiffEncodeLinesMmrCompression" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="TiffEndPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="TiffEndPageForInMemoryConversion" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="TiffExtractFirstPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="TiffGetCurrentPageData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="TiffGetIFDData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="TiffGetIFDSize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="TiffLimitTagNumber" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="TiffOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="TiffPostProcessFast" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="TiffPrint" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="TiffPrintDC" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="TiffRead" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="TiffRecoverGoodPages" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="TiffSeekToPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="TiffSetCurrentPageParams" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="TiffSetNextIFDOffset" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="TiffStartPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="TiffStartPageForInMemoryConversion" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="TiffUncompressMmrPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="TiffUncompressMmrPageRaw" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="TiffWriteRaw" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="487" NAME="Ordinal_487" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

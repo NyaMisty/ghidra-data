@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="ssdpapi.dll" PATH="C:\Windows\SysWOW64\SSDPAPI.DLL" DATE="Mon Jul 13 06:16:15 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CleanupCache" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DHSetICSInterfaces" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DHSetICSOff" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DeregisterNotification" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DeregisterService" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="FindServices" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="FindServicesCallback" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="FindServicesCallbackEx" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="FindServicesCancel" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="FindServicesClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="FindServicesEx" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="FreeSsdpMessage" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="FreeSsdpMessageEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetFirstService" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetFirstServiceEx" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetNextService" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="GetNextServiceEx" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="RegisterNotification" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="RegisterNotificationEx" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="RegisterService" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="RegisterServiceEx" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="SsdpCleanup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="SsdpStartup" PURGE="0" COMMENT="" />
+</LIBRARY>
+

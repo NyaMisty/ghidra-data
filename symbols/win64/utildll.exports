@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="utildll.dll" PATH="C:\Windows\System32\UTILDLL.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AsyncDeviceEnumerate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CachedGetUserFromSid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CalculateDiffTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CalculateElapsedTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CompareElapsedTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="ConfigureModem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CtxGetAnyDCName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CurrentDateTimeString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DateTimeString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="ElapsedTimeString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="EnumerateMultiUserServers" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="FormDecoratedAsyncDeviceName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GetAssociatedPortName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetSystemMessageA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetSystemMessageW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetUnknownString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="GetUserFromSid" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="HaveAnonymousUsersChanged" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="InitializeAnonymousUserCompareList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="InstallModem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="IsPartOfDomain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NetBIOSDeviceEnumerate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NetworkDeviceEnumerate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="ParseDecoratedAsyncDeviceName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="QueryCurrentWinStation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="RegGetNetworkDeviceName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="RegGetNetworkServiceName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="SetupAsyncCdConfig" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="StandardErrorMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="StrAsyncConnectState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="StrConnectState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="StrProcessState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="StrSdClass" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="StrSystemWaitReason" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="TestUserForAdmin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="WinEnumerateDevices" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1" NAME="Ordinal_1" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

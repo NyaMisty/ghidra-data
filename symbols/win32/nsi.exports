@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="nsi.dll" PATH="C:\Windows\SysWOW64\NSI.DLL" DATE="Mon Jul 13 06:16:11 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="NsiAllocateAndGetPersistentDataWithMaskTable" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NsiAllocateAndGetTable" PURGE="52" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NsiCancelChangeNotification" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NsiDeregisterChangeNotification" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NsiDeregisterChangeNotificationEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NsiEnumerateObjectsAllParameters" PURGE="52" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NsiEnumerateObjectsAllParametersEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NsiEnumerateObjectsAllPersistentParametersWithMask" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NsiFreePersistentDataWithMaskTable" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NsiFreeTable" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NsiGetAllParameters" PURGE="44" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NsiGetAllParametersEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NsiGetAllPersistentParametersWithMask" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NsiGetObjectSecurity" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NsiGetParameter" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NsiGetParameterEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NsiRegisterChangeNotification" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NsiRegisterChangeNotificationEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NsiRequestChangeNotification" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NsiRequestChangeNotificationEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NsiSetAllParameters" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NsiSetAllParametersEx" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NsiSetAllPersistentParametersWithMask" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="NsiSetObjectSecurity" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="NsiSetParameter" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NsiSetParameterEx" PURGE="4" COMMENT="" />
+</LIBRARY>
+

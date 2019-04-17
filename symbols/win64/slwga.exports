@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="slwga.dll" PATH="C:\Windows\System32\SLWGA.DLL" DATE="Sat Nov 20 07:24:21 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="227" NAME="Ordinal_227" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="228" NAME="SLIsGenuineLocal" PURGE="0" COMMENT="" />
+</LIBRARY>
+

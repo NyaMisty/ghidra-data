@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wscui.cpl" PATH="C:\Windows\SysWOW64\WSCUI.CPL" DATE="Mon Jul 13 06:14:09 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="?DoesActionRequireElevation@@YG_NW4SecurityAction@@@Z" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="?ExecuteSecurityActionHandler@@YG_NPAUHWND__@@W4SecurityAction@@PAVSecurityLogicState@@_N@Z" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="?ExecuteSecurityActionHandlerById@@YG_NPAUHWND__@@PBGPAVSecurityLogicState@@@Z" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="?GetSecondaryListViewHwnd@@YGPAUHWND__@@XZ" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="487" NAME="Ordinal_487" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

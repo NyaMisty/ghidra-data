@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="appmgmts.dll" PATH="C:\Windows\SysWOW64\APPMGMTS.DLL" DATE="Mon Jul 13 06:14:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CsSetOptions" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CsCreateClassStore" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CsEnumApps" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CsGetAppCategories" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CsGetClassAccess" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CsGetClassStore" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CsGetClassStorePath" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CsRegisterAppCategory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CsServerGetClassStore" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CsUnregisterAppCategory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GenerateGroupPolicy" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="IID_IClassAdmin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="ProcessGroupPolicyObjectsEx" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="ReleaseAppCategoryInfoList" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="ReleasePackageDetail" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="ReleasePackageInfo" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="ServiceMain" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="Ordinal_26" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

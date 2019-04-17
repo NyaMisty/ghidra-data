@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="davhlpr.dll" PATH="C:\Windows\SysWOW64\DAVHLPR.DLL" DATE="Mon Jul 13 06:15:08 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DavAddConnection" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DavCheckAndConvertHttpUrlToUncName" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DavDeleteConnection" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DavFlushFile" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DavGetExtendedError" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DavGetHTTPFromUNCPath" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DavGetServerPortAndPhysicalName" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DavGetUNCFromHTTPPath" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DavRemoveDummyShareFromFileName" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DavRemoveDummyShareFromFileNameEx" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="UtfUrlStrToWideStr" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="WideStrToUtfUrlStr" PURGE="16" COMMENT="" />
+</LIBRARY>
+

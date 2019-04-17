@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dinput.dll" PATH="C:\Windows\SysWOW64\DINPUT.DLL" DATE="Mon Jul 13 06:15:11 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DirectInputCreateA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DirectInputCreateEx" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DirectInputCreateW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+</LIBRARY>
+

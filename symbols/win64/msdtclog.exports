@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="msdtclog.dll" PATH="C:\Windows\System32\MSDTCLOG.DLL" DATE="Mon Jul 13 06:41:28 PDT 2009" VERSION="2001.12.8530.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="?CreateInstance@CLogMgr@@SAJPEAPEAV1@PEAUIUnknown@@@Z" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="?DeleteInstance@CLogMgr@@SAXPEAV1@@Z" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllGetDTCLOG2" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="?DllGetDTCLOG@@YAHAEBU_GUID@@0PEAPEAX@Z" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="newdev.dll" PATH="C:\Windows\System32\NEWDEV.DLL" DATE="Mon Jul 13 06:41:52 PDT 2009" VERSION="6.0.5054.0">
+    <EXPORT ORDINAL="1" NAME="DeviceInternetSettingUiW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DiInstallDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DiInstallDriverA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DiInstallDriverW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DiRollbackDriver" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DiShowUpdateDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DiUninstallDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="InstallNewDevice" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="InstallSelectedDriver" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="InstallWindowsUpdateDriver" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SetInternetPolicies" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="UpdateDriverForPlugAndPlayDevicesA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="UpdateDriverForPlugAndPlayDevicesW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="pDiDeviceInstallActionW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="pDiDeviceInstallNotificationW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="pDiDoDeviceInstallAsAdmin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="pDiDoFinishInstallAsAdmin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="pDiDoNullDriverInstall" PURGE="0" COMMENT="" />
+</LIBRARY>
+

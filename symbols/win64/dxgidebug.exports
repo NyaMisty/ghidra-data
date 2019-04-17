@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dxgidebug.dll" PATH="C:\Windows\System32\DXGIDEBUG.DLL" DATE="Wed Jul 25 08:10:32 PDT 2012" VERSION="9.30.9200.16384">
+    <EXPORT ORDINAL="1" NAME="DXGI_SDK_MESSAGE" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DXGIGetDebugInterface" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="winsync.dll" PATH="C:\Windows\System32\WINSYNC.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="Ordinal_1" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="201" NAME="Ordinal_201" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="202" NAME="Ordinal_202" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="200" NAME="Ordinal_200" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

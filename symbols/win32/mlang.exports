@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="mlang.dll" PATH="C:\Windows\SysWOW64\MLANG.DLL" DATE="Mon Jul 13 06:15:40 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="110" NAME="IsConvertINetStringAvailable" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="ConvertINetString" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="112" NAME="ConvertINetUnicodeToMultiByte" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="113" NAME="ConvertINetMultiByteToUnicode" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="114" NAME="ConvertINetReset" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="117" NAME="GetGlobalFontLinkObject" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="120" NAME="LcidToRfc1766A" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="121" NAME="LcidToRfc1766W" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="122" NAME="Rfc1766ToLcidA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="123" NAME="Rfc1766ToLcidW" PURGE="8" COMMENT="" />
+</LIBRARY>
+

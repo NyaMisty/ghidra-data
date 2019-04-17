@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="version.dll" PATH="C:\Windows\SysWOW64\VERSION.DLL" DATE="Mon Jul 13 06:16:17 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="GetFileVersionInfoA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="GetFileVersionInfoByHandle" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="GetFileVersionInfoExW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="GetFileVersionInfoSizeA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="GetFileVersionInfoSizeExW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetFileVersionInfoSizeW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetFileVersionInfoW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="VerFindFileA" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="VerFindFileW" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="VerInstallFileA" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="VerInstallFileW" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="VerLanguageNameA" PURGE="-1" COMMENT="" FOWARDLIBRARY="KERNEL32.DLL" FOWARDSYMBOL="VerLanguageNameA" />
+    <EXPORT ORDINAL="13" NAME="VerLanguageNameW" PURGE="-1" COMMENT="" FOWARDLIBRARY="KERNEL32.DLL" FOWARDSYMBOL="VerLanguageNameW" />
+    <EXPORT ORDINAL="14" NAME="VerQueryValueA" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="VerQueryValueW" PURGE="16" COMMENT="" />
+</LIBRARY>
+

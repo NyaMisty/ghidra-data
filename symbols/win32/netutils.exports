@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="netutils.dll" PATH="C:\Windows\SysWOW64\NETUTILS.DLL" DATE="Sat Nov 20 07:24:16 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="NetApiBufferAllocate" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NetApiBufferFree" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NetApiBufferReallocate" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NetApiBufferSize" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NetRemoteComputerSupports" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NetapipBufferAllocate" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NetpIsComputerNameValid" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NetpIsDomainNameValid" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NetpIsGroupNameValid" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NetpIsRemote" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NetpIsRemoteNameValid" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NetpIsShareNameValid" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NetpIsUncComputerNameValid" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NetpIsUserNameValid" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NetpwListCanonicalize" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NetpwListTraverse" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NetpwNameCanonicalize" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NetpwNameCompare" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NetpwNameValidate" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NetpwPathCanonicalize" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NetpwPathCompare" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NetpwPathType" PURGE="12" COMMENT="" />
+</LIBRARY>
+

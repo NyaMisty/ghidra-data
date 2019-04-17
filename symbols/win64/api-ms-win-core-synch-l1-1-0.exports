@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-synch-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-CORE-SYNCH-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AcquireSRWLockShared" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DeleteCriticalSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CreateEventA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CreateEventExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CreateEventExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CreateEventW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CreateMutexA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CreateMutexExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CreateMutexExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CreateMutexW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CreateSemaphoreExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="CreateWaitableTimerExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="InitializeCriticalSectionAndSpinCount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="EnterCriticalSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="InitializeCriticalSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="InitializeSRWLock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="InitializeCriticalSectionEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="OpenEventA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="LeaveCriticalSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="ReleaseSRWLockExclusive" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="OpenEventW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="OpenMutexW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="OpenProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="OpenSemaphoreW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="OpenWaitableTimerW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="ReleaseMutex" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="ReleaseSemaphore" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="ReleaseSRWLockShared" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="AcquireSRWLockExclusive" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="ResetEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="SetCriticalSectionSpinCount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="SetEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="SetWaitableTimer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="SetWaitableTimerEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="SleepEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="TryEnterCriticalSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="TryAcquireSRWLockShared" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="TryAcquireSRWLockExclusive" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="WaitForMultipleObjectsEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="WaitForSingleObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="WaitForSingleObjectEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="CancelWaitableTimer" PURGE="0" COMMENT="" />
+</LIBRARY>
+

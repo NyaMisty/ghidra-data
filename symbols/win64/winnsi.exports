@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="winnsi.dll" PATH="C:\Windows\System32\WINNSI.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="NsiConnectToServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NsiDisconnectFromServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NsiRpcDeregisterChangeNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NsiRpcDeregisterChangeNotificationEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NsiRpcEnumerateObjectsAllParameters" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NsiRpcGetAllParameters" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NsiRpcGetAllParametersEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NsiRpcGetParameter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NsiRpcGetParameterEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NsiRpcRegisterChangeNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NsiRpcRegisterChangeNotificationEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NsiRpcSetAllParameters" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NsiRpcSetAllParametersEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NsiRpcSetParameter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NsiRpcSetParameterEx" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="d3d10_1.dll" PATH="C:\Windows\System32\D3D10_1.DLL" DATE="Mon Jul 13 06:40:25 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="D3D10CompileEffectFromMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="D3D10CompileShader" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="D3D10CreateBlob" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="D3D10CreateDevice1" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="D3D10CreateDeviceAndSwapChain1" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="D3D10CreateEffectFromMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="D3D10CreateEffectPoolFromMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="D3D10CreateStateBlock" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="D3D10DisassembleEffect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="D3D10DisassembleShader" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="D3D10GetGeometryShaderProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="D3D10GetInputAndOutputSignatureBlob" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="D3D10GetInputSignatureBlob" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="D3D10GetOutputSignatureBlob" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="D3D10GetPixelShaderProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="D3D10GetShaderDebugInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="D3D10GetVersion" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="D3D10GetVertexShaderProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="D3D10PreprocessShader" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="D3D10ReflectShader" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="D3D10RegisterLayers" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="D3D10StateBlockMaskDifference" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="D3D10StateBlockMaskDisableAll" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="D3D10StateBlockMaskDisableCapture" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="D3D10StateBlockMaskEnableAll" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="D3D10StateBlockMaskEnableCapture" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="D3D10StateBlockMaskGetSetting" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="D3D10StateBlockMaskIntersect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="D3D10StateBlockMaskUnion" PURGE="0" COMMENT="" />
+</LIBRARY>
+

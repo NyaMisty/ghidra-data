@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="tbs.dll" PATH="C:\Windows\system32\TBS.DLL" DATE="Mon Jul 13 06:41:55 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="Tbsi_Context_Create" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Tbsi_Get_TCG_Log" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="Tbsi_Physical_Presence_Command" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Tbsip_Cancel_Commands" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="Tbsip_Context_Close" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Tbsip_Submit_Command" PURGE="0" COMMENT="" />
+</LIBRARY>
+

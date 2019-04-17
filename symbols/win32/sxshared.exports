@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="sxshared.dll" PATH="C:\Windows\SysWOW64\SXSHARED.DLL" DATE="Mon Jul 13 06:16:15 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="GetLastFailureAsHRESULT" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="HRESULTFromNTSTATUS" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="Win32FromHRESULT" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Win32FromNTSTATUS" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SxTracerDebuggerBreak" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="SxTracerGetThreadContextDebug" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SxTracerGetThreadContextRetail" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="SxTracerShouldTrackFailure" PURGE="4" COMMENT="" />
+</LIBRARY>
+

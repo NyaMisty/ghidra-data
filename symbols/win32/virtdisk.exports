@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="virtdisk.dll" PATH="C:\Windows\SysWOW64\VIRTDISK.DLL" DATE="Mon Jul 13 06:16:17 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AttachVirtualDisk" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CompactVirtualDisk" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CreateVirtualDisk" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DetachVirtualDisk" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="ExpandVirtualDisk" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="GetStorageDependencyInformation" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetVirtualDiskInformation" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="GetVirtualDiskOperationProgress" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetVirtualDiskPhysicalPath" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="MergeVirtualDisk" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="OpenVirtualDisk" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="SetVirtualDiskInformation" PURGE="8" COMMENT="" />
+</LIBRARY>
+

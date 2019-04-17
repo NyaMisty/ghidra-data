@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dwmredir.dll" PATH="C:\Windows\System32\DWMREDIR.DLL" DATE="Sat Nov 20 07:24:27 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="DwmInitializeTransport" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DwmRedirectionManagerDispatchMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DwmRedirectionManagerEnableMMCSS" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DwmRedirectionManagerFailMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DwmRedirectionManagerInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DwmRedirectionManagerLockMemoryAllocations" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DwmRedirectionManagerPlayingVideo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DwmRedirectionManagerSetClientChannel" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DwmRedirectionManagerSetClientRenderTarget" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DwmRedirectionManagerShouldRemainOnHibernate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DwmRedirectionManagerShutdown" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DwmRedirectionManagerWaitForMultipleObjects" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="DwmShutdownTransport" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="DwmVersionCheck" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1553" NAME="Ordinal_1553" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1007" NAME="Ordinal_1007" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1001" NAME="Ordinal_1001" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wecapi.dll" PATH="C:\Windows\System32\WECAPI.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="EcIsConfigRequired" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="EcQuickConfig" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EcClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="EcDeleteSubscription" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="EcEnumNextSubscription" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="EcGetObjectArrayProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="EcGetObjectArraySize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="EcGetSubscriptionProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="EcGetSubscriptionRunTimeStatus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="EcInsertObjectArrayElement" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="EcOpenSubscription" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="EcOpenSubscriptionEnum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="EcRemoveObjectArrayElement" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="EcRetrySubscription" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="EcSaveSubscription" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="EcSetObjectArrayProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="EcSetSubscriptionProperty" PURGE="0" COMMENT="" />
+</LIBRARY>
+

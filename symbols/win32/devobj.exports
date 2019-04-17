@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="devobj.dll" PATH="C:\Windows\SysWOW64\DEVOBJ.DLL" DATE="Mon Jul 13 06:15:11 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DevObjBuildClassInfoList" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DevObjClassGuidsFromName" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DevObjClassNameFromGuid" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DevObjCreateDevRegKey" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DevObjCreateDeviceInfo" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DevObjCreateDeviceInfoList" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DevObjCreateDeviceInterface" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DevObjCreateDeviceInterfaceRegKey" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DevObjDeleteAllInterfacesForDevice" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DevObjDeleteDevRegKey" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DevObjDeleteDevice" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DevObjDeleteDeviceInfo" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="DevObjDeleteDeviceInterfaceData" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="DevObjDeleteDeviceInterfaceRegKey" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="DevObjDestroyDeviceInfoList" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="DevObjEnumDeviceInfo" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="DevObjEnumDeviceInterfaces" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="DevObjGetClassDescription" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="DevObjGetClassDevs" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="DevObjGetClassProperty" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="DevObjGetClassPropertyKeys" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="DevObjGetClassRegistryProperty" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="DevObjGetDeviceInfoDetail" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="DevObjGetDeviceInfoListClass" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="DevObjGetDeviceInfoListDetail" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="DevObjGetDeviceInstanceId" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="DevObjGetDeviceInterfaceAlias" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="DevObjGetDeviceInterfaceDetail" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="DevObjGetDeviceInterfaceProperty" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="DevObjGetDeviceInterfacePropertyKeys" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="DevObjGetDeviceProperty" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="DevObjGetDevicePropertyKeys" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="DevObjGetDeviceRegistryProperty" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="DevObjLocateDevice" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="DevObjOpenClassRegKey" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="DevObjOpenDevRegKey" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="DevObjOpenDeviceInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="DevObjOpenDeviceInterface" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="DevObjOpenDeviceInterfaceRegKey" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="DevObjRegisterDeviceInfo" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="DevObjRemoveDeviceInterface" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="DevObjSetClassProperty" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="DevObjSetClassRegistryProperty" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="DevObjSetDeviceInfoDetail" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="DevObjSetDeviceInterfaceDefault" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="DevObjSetDeviceInterfaceProperty" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="DevObjSetDeviceProperty" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="48" NAME="DevObjSetDeviceRegistryProperty" PURGE="20" COMMENT="" />
+</LIBRARY>
+

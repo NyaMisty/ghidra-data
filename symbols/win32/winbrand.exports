@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="winbrand.dll" PATH="C:\Windows\SysWOW64\WINBRAND.DLL" DATE="Mon Jul 13 06:16:18 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="BrandingFormatString" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="BrandingLoadBitmap" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="BrandingLoadCursor" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="BrandingLoadIcon" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="BrandingLoadImage" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="BrandingLoadString" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetHinstanceByNameSpace" PURGE="4" COMMENT="" />
+</LIBRARY>
+

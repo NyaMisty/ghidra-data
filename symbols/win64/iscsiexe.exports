@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="iscsiexe.dll" PATH="C:\Windows\System32\ISCSIEXE.DLL" DATE="Mon Jul 13 06:41:11 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DiscpEstablishServiceLinkage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ServiceMain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SvchostPushServiceGlobals" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="Ordinal_17" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="Ordinal_21" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="Ordinal_20" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="Ordinal_18" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Ordinal_23" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="115" NAME="Ordinal_115" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="116" NAME="Ordinal_116" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="Ordinal_22" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="Ordinal_3" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="Ordinal_19" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="Ordinal_13" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1" NAME="Ordinal_1" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Ordinal_12" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="Ordinal_11" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

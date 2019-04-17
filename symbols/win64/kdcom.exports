@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="kdcom.dll" PATH="C:\Windows\System32\KDCOM.DLL" DATE="Mon Jul 13 06:48:04 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="KdD3Transition" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="KdD0Transition" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="KdDebuggerInitialize0" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="KdDebuggerInitialize1" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="KdReceivePacket" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="KdRestore" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="KdSave" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="KdSendPacket" PURGE="0" COMMENT="" />
+</LIBRARY>
+

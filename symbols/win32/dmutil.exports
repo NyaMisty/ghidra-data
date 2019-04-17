@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dmutil.dll" PATH="C:\Windows\SysWOW64\DMUTIL.DLL" DATE="Mon Jul 13 06:15:12 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CoDisableDynamicVolumes" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="GetSystemVolume" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="AddEntryBootFileGpt" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="AddEntryBootFileMbr" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DisplayError" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DisplayErrorRgszw" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DllMain" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DmCommonNtOpenFile" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DynamicSupport" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="FTrace" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="FTraceValist" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="FreeRgszw" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GetErrorData" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetInstallDirectoryPath" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="IsPersonalSKU" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="LowAcquirePrivilege" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="LowGetPartitionInfo" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="LowNtAddBootEntry" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="LowNtReadFile" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="LowNtReadOnlyAttributeOff" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="LowNtWriteFile" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="RgszwDupRgszw" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="RgszwFromArgs" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="RgszwFromValist" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="SafeLoadVdsService" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="ShowMessage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="ShowMessageValist" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="SzwDupSzw" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="SzwFromSza" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="TranslateError" PURGE="4" COMMENT="" />
+</LIBRARY>
+

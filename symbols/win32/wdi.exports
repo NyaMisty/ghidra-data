@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wdi.dll" PATH="C:\Windows\SysWOW64\WDI.DLL" DATE="Mon Jul 13 06:16:18 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="ServiceMain" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WdipLaunchRunDLLUserHost" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WdiAddFileToInstance" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WdiAddParameter" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="WdiCancel" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WdiCloseInstance" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="WdiCreateInstance" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WdiDeleteQueuedResolution" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="WdiDiagnose" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="WdiGetClientActivityId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="WdiGetClientLCID" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="WdiGetDiagnosticModuleId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="WdiGetEvent" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WdiGetInstanceFilePath" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WdiGetInstanceId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WdiGetLoggerSnapshotPath" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="WdiGetParameterByIndex" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="WdiGetParameterByName" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="WdiGetParameterCount" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="WdiGetParameterData" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="WdiGetParameterDataLength" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="WdiGetParameterDiagnosticModuleId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="WdiGetParameterFlags" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="WdiGetParameterName" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="WdiGetProgress" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="WdiGetQueuedResolutionAudience" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="WdiGetQueuedResolutionExpirationDate" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="WdiGetQueuedResolutionId" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="WdiGetQueuedResolutionName" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="WdiGetQueuedResolutionPriority" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="WdiGetResult" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="WdiGetScenarioIcon" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="WdiGetScenarioInfo" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="WdiGetScenarioInstanceCreatedDate" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="WdiGetScenarioInstanceFilePath" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="WdiGetScenarioInstanceId" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="WdiGetScenarioInstances" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="WdiGetScenarioSourceName" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="WdiGetScenarioTypeName" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="WdiImpersonateClient" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="WdiIsQueuedResolutionAdmin" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="WdiLaunchQueuedResolution" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="WdiOpenInstance" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="WdiQueueCurrentResolution" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="WdiResolve" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="48" NAME="WdiRevertToSelf" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="49" NAME="WdiSetFeedback" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="50" NAME="WdiSetProblemDetectionResult" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="51" NAME="WdiSetProgress" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="52" NAME="WdiSetResolution" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="53" NAME="WdipLaunchLocalHost" PURGE="4" COMMENT="" />
+</LIBRARY>
+

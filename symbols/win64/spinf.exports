@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="spinf.dll" PATH="C:\Windows\System32\SPINF.DLL" DATE="Mon Jul 13 06:41:54 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="SpInfDetermineInfStyle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SpInfDoesInfContainString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SpInfEnumInfSections" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="SpInfFileFullPathFromLineContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="SpInfFindFirstLine" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="SpInfFindNextMatchLine" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="SpInfFindValueInSectionList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="SpInfFreeInfFile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SpInfGetBestInstallSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="SpInfGetBestModelsSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SpInfGetDirIdHandler" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="SpInfGetDriverVer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="SpInfGetField" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="SpInfGetIndirectString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="SpInfGetInfInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="SpInfGetInfLineNumber" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="SpInfGetInfSections" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="SpInfGetInfStyle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="SpInfGetLanguageId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="SpInfGetLineByIndex" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="SpInfGetLineCount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="SpInfGetLineCountFromSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="SpInfGetLineFieldCount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="SpInfGetLineTextWithKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="SpInfGetLogToken" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="SpInfGetNextInf" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="SpInfGetOriginalInfName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="SpInfGetPathFromDirId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="SpInfGetPrevInf" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="SpInfGetStringField" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="SpInfGetStringsSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="SpInfGetTargetPath" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="SpInfGetVersionDatum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="SpInfGetVersionNode" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="SpInfIsIndirectString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="SpInfLineFromContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="SpInfLineIsSearchable" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="SpInfLoadInfFile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="SpInfLocateLine" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="SpInfLocateSection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="SpInfLockInf" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="SpInfQueryInfFileInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="SpInfQueryInfVersionInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="SpInfSectionNameFromLineContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="SpInfSetDirIdHandler" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="SpInfSetDirectoryId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="SpInfSourcePathFromHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="48" NAME="SpInfUnlockInf" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="49" NAME="SpInfVersionNodeFromInfInformation" PURGE="0" COMMENT="" />
+</LIBRARY>
+

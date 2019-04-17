@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dssec.dll" PATH="C:\Windows\System32\DSSEC.DLL" DATE="Mon Jul 13 06:40:34 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DSCreateISecurityInfoObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DSCreateSecurityPage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DSEditSecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DSCreateISecurityInfoObjectEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="338" NAME="Ordinal_338" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="339" NAME="Ordinal_339" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="386" NAME="Ordinal_386" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="329" NAME="Ordinal_329" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="334" NAME="Ordinal_334" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="328" NAME="Ordinal_328" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="336" NAME="Ordinal_336" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="Ordinal_11" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="Ordinal_24" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Ordinal_23" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="Ordinal_20" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="Ordinal_3" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

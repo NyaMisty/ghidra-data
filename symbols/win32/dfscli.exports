@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dfscli.dll" PATH="C:\Windows\SysWOW64\DFSCLI.DLL" DATE="Mon Jul 13 06:15:11 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="I_NetDfsIsThisADomainName" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NetDfsAdd" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NetDfsAddFtRoot" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NetDfsAddRootTarget" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NetDfsAddStdRoot" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NetDfsAddStdRootForced" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NetDfsEnum" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NetDfsGetClientInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NetDfsGetDcAddress" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NetDfsGetFtContainerSecurity" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NetDfsGetInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NetDfsGetSecurity" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NetDfsGetStdContainerSecurity" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NetDfsGetSupportedNamespaceVersion" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NetDfsManagerGetConfigInfo" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NetDfsManagerInitialize" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NetDfsManagerSendSiteInfo" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NetDfsMove" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NetDfsRemove" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NetDfsRemoveFtRoot" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NetDfsRemoveFtRootForced" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NetDfsRemoveRootTarget" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NetDfsRemoveStdRoot" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="NetDfsRename" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="NetDfsSetClientInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NetDfsSetFtContainerSecurity" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="NetDfsSetInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="NetDfsSetSecurity" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="NetDfsSetStdContainerSecurity" PURGE="12" COMMENT="" />
+</LIBRARY>
+

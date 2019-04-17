@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wkscli.dll" PATH="C:\Windows\System32\WKSCLI.DLL" DATE="Sat Nov 20 07:24:26 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="NetAddAlternateComputerName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NetEnumerateComputerNames" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NetGetJoinInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NetGetJoinableOUs" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NetJoinDomain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NetRemoveAlternateComputerName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NetRenameMachineInDomain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NetSetPrimaryComputerName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NetUnjoinDomain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NetUseAdd" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NetUseDel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NetUseEnum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NetUseGetInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NetValidateName" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NetWkstaGetInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NetWkstaSetInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NetWkstaStatisticsGet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NetWkstaTransportAdd" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NetWkstaTransportDel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NetWkstaTransportEnum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NetWkstaUserEnum" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NetWkstaUserGetInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NetWkstaUserSetInfo" PURGE="0" COMMENT="" />
+</LIBRARY>
+

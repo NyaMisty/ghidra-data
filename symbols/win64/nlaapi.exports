@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="nlaapi.dll" PATH="C:\Windows\System32\NLAAPI.DLL" DATE="Sat Nov 20 07:23:54 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="NSPStartup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="NlaAddToPluginRequests" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="NlaAddToTypeSet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="NlaAnd" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="NlaCloseQuery" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="NlaComposeNetSignature" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="NlaCreateFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="NlaCreatePluginRequests" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="NlaCreateTypeSet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="NlaDecomposeNetSignature" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="NlaDeleteDataSet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="NlaDeleteTypeSet" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="NlaDeletePluginRequests" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="NlaDeleteFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="NlaEqual" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="NlaEqualNetSignatures" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="NlaGetInternetCapability" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="NlaGetIntranetCapability" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="NlaNotEqual" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="NlaOpenQuery" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="NlaOr" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="NlaQueryNetData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="NlaQueryNetDataEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="NlaQueryNetSignatures" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="NlaRefreshQuery" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NlaRegisterQuery" PURGE="0" COMMENT="" />
+</LIBRARY>
+

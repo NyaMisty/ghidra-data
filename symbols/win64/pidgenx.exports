@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="pidgenx.dll" PATH="C:\Windows\System32\PIDGENX.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="117" NAME="Ordinal_117" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="118" NAME="PidGenX" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

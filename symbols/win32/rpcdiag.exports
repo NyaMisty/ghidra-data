@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="rpcdiag.dll" PATH="C:\Windows\SysWOW64\RPCDIAG.DLL" DATE="Mon Jul 13 06:16:13 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="I_RpcSetupDiagCallback" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="RpcDiagnoseError" PURGE="24" COMMENT="" />
+</LIBRARY>
+

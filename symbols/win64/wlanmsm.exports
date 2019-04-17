@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wlanmsm.dll" PATH="C:\Windows\System32\WLANMSM.DLL" DATE="Sat Nov 20 07:24:33 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="Dot11MsmDeInit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Dot11MsmInit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="FatMsmDeInit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="FatMsmInit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="InitializeDll" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="pcaui.dll" PATH="C:\Windows\System32\PCAUI.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DisplayApphelpDialog" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="PcaDisplayUserInterfaceForScenario" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="PcaLaunchApplicationWithConsent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="PcaLogUnsignedDriverEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="PcaPersistSettingsAndLaunchApplication" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="345" NAME="Ordinal_345" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

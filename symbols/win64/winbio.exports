@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="winbio.dll" PATH="C:\Windows\System32\WINBIO.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="_BioLogonIdentifiedUser" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WinBioAcquireFocus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WinBioCancel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="WinBioCaptureSample" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WinBioCaptureSampleWithCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WinBioCloseSession" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="WinBioControlUnit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WinBioControlUnitPrivileged" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="WinBioDeleteTemplate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WinBioEnrollBegin" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="WinBioEnrollCapture" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="WinBioEnrollCaptureWithCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="WinBioEnrollCommit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="WinBioEnrollDiscard" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="WinBioEnumBiometricUnits" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WinBioEnumDatabases" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WinBioEnumEnrollments" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WinBioEnumServiceProviders" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="WinBioFree" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="WinBioGetCredentialState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="WinBioGetDomainLogonSetting" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="WinBioGetEnabledSetting" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="WinBioGetLogonSetting" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="WinBioGetProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="WinBioIdentify" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="WinBioIdentifyWithCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="WinBioLocateSensor" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="WinBioLocateSensorWithCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="WinBioLockUnit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="WinBioLogonIdentifiedUser" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="WinBioOpenSession" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="WinBioRegisterEventMonitor" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="WinBioUnregisterServiceMonitor" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="WinBioReleaseFocus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="WinBioRemoveAllCredentials" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="WinBioRemoveAllDomainCredentials" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="WinBioRemoveCredential" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="WinBioSetCredential" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="WinBioUnlockUnit" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="WinBioUnregisterEventMonitor" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="WinBioRegisterServiceMonitor" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="WinBioVerify" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="WinBioVerifyWithCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="WinBioWait" PURGE="0" COMMENT="" />
+</LIBRARY>
+

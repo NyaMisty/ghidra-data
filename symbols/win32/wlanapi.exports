@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wlanapi.dll" PATH="C:\Windows\SysWOW64\WLANAPI.DLL" DATE="Mon Jul 13 06:16:19 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="WlanAllocateMemory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WlanCloseHandle" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WlanConnect" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="WlanDeleteProfile" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WlanDisconnect" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WlanEnumInterfaces" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="WlanExtractPsdIEDataList" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WlanFreeMemory" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="WlanGetAvailableNetworkList" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WlanGetFilterList" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="WlanGetInterfaceCapability" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="WlanGetNetworkBssList" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="WlanGetProfile" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="WlanGetProfileCustomUserData" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="WlanGetProfileList" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WlanGetSecuritySettings" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WlanHostedNetworkForceStart" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WlanHostedNetworkForceStop" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="WlanHostedNetworkInitSettings" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="WlanHostedNetworkQueryProperty" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="WlanHostedNetworkQuerySecondaryKey" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="WlanHostedNetworkQueryStatus" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="WlanHostedNetworkRefreshSecuritySettings" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="WlanHostedNetworkSetProperty" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="WlanHostedNetworkSetSecondaryKey" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="WlanHostedNetworkStartUsing" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="WlanHostedNetworkStopUsing" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="WlanIhvControl" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="WlanOpenHandle" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="WlanQueryAutoConfigParameter" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="WlanQueryInterface" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="WlanReasonCodeToString" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="WlanRegisterNotification" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="WlanRegisterVirtualStationNotification" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="WlanRenameProfile" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="WlanSaveTemporaryProfile" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="WlanScan" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="WlanSetAutoConfigParameter" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="WlanSetFilterList" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="WlanSetInterface" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="WlanSetProfile" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="WlanSetProfileCustomUserData" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="WlanSetProfileEapUserData" PURGE="44" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="WlanSetProfileEapXmlUserData" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="WlanSetProfileList" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="WlanSetProfilePosition" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="WlanSetPsdIEDataList" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="48" NAME="WlanSetSecuritySettings" PURGE="12" COMMENT="" />
+</LIBRARY>
+

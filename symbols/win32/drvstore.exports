@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="drvstore.dll" PATH="C:\Windows\SysWOW64\DRVSTORE.DLL" DATE="Sat Nov 20 07:24:15 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="DriverPackageClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DriverPackageEnumDriversW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DriverPackageEnumFilesW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DriverPackageEnumRegKeysW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DriverPackageEnumServicesW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DriverPackageGetVersionInfoW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DriverPackageOpenW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DriverStoreClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DriverStoreDeleteW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DriverStoreEnumW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DriverStoreFindW" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DriverStoreImportW" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="DriverStoreOfflineAddDriverPackageA" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="DriverStoreOfflineAddDriverPackageW" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="DriverStoreOfflineDeleteDriverPackageA" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="DriverStoreOfflineDeleteDriverPackageW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="DriverStoreOfflineEnumDriverPackageA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="DriverStoreOfflineEnumDriverPackageW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="DriverStoreOfflineEnumPublishedInfA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="DriverStoreOfflineEnumPublishedInfW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="DriverStoreOfflineFindDriverPackageA" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="DriverStoreOfflineFindDriverPackageW" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="DriverStoreOpenW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="DriverStorePublishW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="DriverStoreReflectCriticalW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="DriverStoreReflectW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="DriverStoreSetLogContext" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="DriverStoreUnpublishW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="DriverStoreUnreflectCriticalW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="DriverStoreUnreflectW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="pServerDeleteDriverPackage" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="pServerImportDriverPackage" PURGE="36" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-rtlsupport-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-CORE-RTLSUPPORT-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="RtlDeleteFunctionTable" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="RtlRaiseException" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="RtlCompareMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="RtlCopyMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="RtlFillMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="RtlInstallFunctionTableCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="RtlLookupFunctionEntry" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="RtlAddFunctionTable" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="RtlPcToFileHeader" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="RtlVirtualUnwind" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="RtlRestoreContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="RtlUnwind" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="RtlUnwindEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="RtlCaptureContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="RtlCaptureStackBackTrace" PURGE="0" COMMENT="" />
+</LIBRARY>
+

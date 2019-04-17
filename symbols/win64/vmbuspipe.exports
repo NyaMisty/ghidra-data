@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="vmbuspipe.dll" PATH="C:\Windows\System32\VMBUSPIPE.DLL" DATE="Sat Nov 20 07:23:48 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="VmbusPipeClientEnumeratePipes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="VmbusPipeClientOpenChannel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="VmbusPipeClientWaitChannel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="VmbusPipeGetPipeMode" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="VmbusPipeServerConnectPipe" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="VmbusPipeServerOfferChannel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="VmbusPipeServerPause" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="VmbusPipeServerResume" PURGE="0" COMMENT="" />
+</LIBRARY>
+

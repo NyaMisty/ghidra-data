@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-service-core-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-SERVICE-CORE-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="RegisterServiceCtrlHandlerExW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SetServiceStatus" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="StartServiceCtrlDispatcherW" PURGE="4" COMMENT="" />
+</LIBRARY>
+

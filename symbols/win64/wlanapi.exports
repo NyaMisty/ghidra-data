@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wlanapi.dll" PATH="C:\Windows\System32\WLANAPI.DLL" DATE="Mon Jul 13 06:41:56 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="WlanAllocateMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="WlanCloseHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="WlanConnect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="WlanDeleteProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="WlanDisconnect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="WlanEnumInterfaces" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="WlanExtractPsdIEDataList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="WlanFreeMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="WlanGetAvailableNetworkList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="WlanGetFilterList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="WlanGetInterfaceCapability" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="WlanGetNetworkBssList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="WlanGetProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="WlanGetProfileCustomUserData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="WlanGetProfileList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WlanGetSecuritySettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WlanHostedNetworkForceStart" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WlanHostedNetworkForceStop" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="WlanHostedNetworkInitSettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="WlanHostedNetworkQueryProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="WlanHostedNetworkQuerySecondaryKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="WlanHostedNetworkQueryStatus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="WlanHostedNetworkRefreshSecuritySettings" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="WlanHostedNetworkSetProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="WlanHostedNetworkSetSecondaryKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="WlanHostedNetworkStartUsing" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="WlanHostedNetworkStopUsing" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="WlanIhvControl" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="WlanOpenHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="WlanQueryAutoConfigParameter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="WlanQueryInterface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="WlanReasonCodeToString" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="WlanRegisterNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="WlanRegisterVirtualStationNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="WlanRenameProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="WlanSaveTemporaryProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="WlanScan" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="WlanSetAutoConfigParameter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="WlanSetFilterList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="WlanSetInterface" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="WlanSetProfile" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="WlanSetProfileCustomUserData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="WlanSetProfileEapUserData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="WlanSetProfileEapXmlUserData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="WlanSetProfileList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="WlanSetProfilePosition" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="WlanSetPsdIEDataList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="48" NAME="WlanSetSecuritySettings" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-localregistry-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-CORE-LOCALREGISTRY-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="RegCreateKeyExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="RegCreateKeyExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="RegDeleteKeyExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="RegDeleteKeyExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="RegDeleteTreeA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="RegDeleteTreeW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="RegDeleteValueA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="RegDeleteValueW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="RegDisablePredefinedCacheEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="RegEnumKeyExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="RegEnumKeyExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="RegEnumValueA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="RegEnumValueW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="RegFlushKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="RegGetKeySecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="RegGetValueA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="RegGetValueW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="RegLoadKeyA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="RegLoadKeyW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="RegLoadMUIStringA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="RegLoadMUIStringW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="RegNotifyChangeKeyValue" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="RegOpenCurrentUser" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="RegOpenKeyExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="RegOpenKeyExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="RegOpenUserClassesRoot" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="RegQueryInfoKeyA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="RegQueryInfoKeyW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="RegQueryValueExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="RegQueryValueExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="RegRestoreKeyA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="RegRestoreKeyW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="RegSaveKeyExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="RegSaveKeyExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="RegSetKeySecurity" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="RegSetValueExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="RegSetValueExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="RegUnLoadKeyA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="RegUnLoadKeyW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="RegCloseKey" PURGE="0" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="oleacc.dll" PATH="C:\Windows\System32\OLEACC.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="7.0.0.0 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="AccessibleChildren" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="AccessibleObjectFromEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="AccessibleObjectFromPoint" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="AccessibleObjectFromWindow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CreateStdAccessibleObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CreateStdAccessibleProxyA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CreateStdAccessibleProxyW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="GetOleaccVersionInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GetProcessHandleFromHwnd" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetRoleTextA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetRoleTextW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetStateTextA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="GetStateTextW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="IID_IAccessible" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="IID_IAccessibleHandler" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="LIBID_Accessibility" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="LresultFromObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="ObjectFromLresult" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="PropMgrClient_LookupProp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="WindowFromAccessibleObject" PURGE="0" COMMENT="" />
+</LIBRARY>
+

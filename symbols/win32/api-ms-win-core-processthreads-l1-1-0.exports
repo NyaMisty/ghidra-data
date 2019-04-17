@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-processthreads-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-PROCESSTHREADS-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CreateProcessW" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CreateProcessAsUserW" PURGE="44" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CreateProcessA" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="UpdateProcThreadAttribute" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CreateRemoteThreadEx" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CreateThread" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="ExitProcess" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="ExitThread" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetStartupInfoW" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="FlushProcessWriteBuffers" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="GetCurrentProcessId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="GetCurrentThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GetCurrentThreadId" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="SwitchToThread" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetExitCodeThread" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetThreadPriorityBoost" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="GetProcessId" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="GetProcessIdOfThread" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="GetProcessVersion" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="GetProcessTimes" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="GetThreadId" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="DeleteProcThreadAttributeList" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="GetThreadPriority" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="ResumeThread" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="ProcessIdToSessionId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="OpenThreadToken" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="OpenThread" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="QueueUserAPC" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="InitializeProcThreadAttributeList" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="QueryProcessAffinityUpdateMode" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="SetPriorityClass" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="OpenProcessToken" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="SetThreadStackGuarantee" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="SetProcessAffinityUpdateMode" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="SetProcessShutdownParameters" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="SetThreadPriority" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="SetThreadPriorityBoost" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="SetThreadToken" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="SuspendThread" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="TerminateProcess" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="TlsFree" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="TlsAlloc" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="TerminateThread" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="TlsSetValue" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="GetCurrentProcess" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="TlsGetValue" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="GetPriorityClass" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="48" NAME="GetExitCodeProcess" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="49" NAME="CreateRemoteThread" PURGE="28" COMMENT="" />
+</LIBRARY>
+

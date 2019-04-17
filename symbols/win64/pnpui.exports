@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="pnpui.dll" PATH="C:\Windows\System32\PNPUI.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="5.2.3668.0">
+    <EXPORT ORDINAL="1" NAME="InstallSecurityPrompt" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="InstallSecurityPromptRunDllW" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SimplifiedDINotificationW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

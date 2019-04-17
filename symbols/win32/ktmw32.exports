@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="ktmw32.dll" PATH="C:\Windows\SysWOW64\KTMW32.DLL" DATE="Mon Jul 13 06:15:35 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="CommitComplete" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="CommitEnlistment" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="CommitTransaction" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CommitTransactionAsync" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CreateEnlistment" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="CreateResourceManager" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="CreateTransaction" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CreateTransactionManager" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="GetCurrentClockTransactionManager" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetEnlistmentId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="GetEnlistmentRecoveryInformation" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="GetNotificationResourceManager" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GetNotificationResourceManagerAsync" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetTransactionId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetTransactionInformation" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetTransactionManagerId" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="OpenEnlistment" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="OpenResourceManager" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="OpenTransaction" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="OpenTransactionManager" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="OpenTransactionManagerById" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="PrePrepareComplete" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="PrePrepareEnlistment" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="PrepareComplete" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="PrepareEnlistment" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="PrivCreateTransaction" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="PrivIsLogWritableTransactionManager" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="PrivPropagationComplete" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="PrivPropagationFailed" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="PrivRegisterProtocolAddressInformation" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="ReadOnlyEnlistment" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="RecoverEnlistment" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="RecoverResourceManager" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="RecoverTransactionManager" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="RenameTransactionManager" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="RollbackComplete" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="RollbackEnlistment" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="RollbackTransaction" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="RollbackTransactionAsync" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="RollforwardTransactionManager" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="SetEnlistmentRecoveryInformation" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="SetResourceManagerCompletionPort" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="SetTransactionInformation" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="SinglePhaseReject" PURGE="8" COMMENT="" />
+</LIBRARY>
+

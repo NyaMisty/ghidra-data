@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="tdh.dll" PATH="C:\Windows\System32\TDH.DLL" DATE="Mon Jul 13 06:41:55 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="TdhEnumerateProviderFieldInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="TdhEnumerateProviderFilters" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="TdhEnumerateProviders" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="TdhEnumerateRemoteWBEMProviderFieldInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="TdhEnumerateRemoteWBEMProviders" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="TdhFormatProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="TdhGetAllEventsInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="TdhGetEventInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="TdhGetEventMapInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="TdhGetProperty" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="TdhGetPropertyOffsetAndSize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="TdhGetPropertySize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="TdhLoadManifest" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="TdhQueryProviderFieldInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="TdhQueryRemoteWBEMProviderFieldInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="TdhUnloadManifest" PURGE="0" COMMENT="" />
+</LIBRARY>
+

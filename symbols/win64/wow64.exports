@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wow64.dll" PATH="C:\Windows\System32\WOW64.DLL" DATE="Sat Nov 20 07:24:32 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="1" NAME="Wow64AllocThreadHeap" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Wow64AllocateHeap" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="Wow64AllocateTemp" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Wow64ApcRoutine" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="Wow64CheckIfNXEnabled" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Wow64EmulateAtlThunk" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Wow64FreeHeap" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Wow64FreeThreadHeap" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Wow64GetWow64ImageOption" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="Wow64KiUserCallbackDispatcher" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="Wow64LdrpInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Wow64LogPrint" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="Wow64OpenConfigKey" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="Wow64PrepareForDebuggerAttach" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Wow64PrepareForException" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Wow64RaiseException" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="Wow64ShallowThunkAllocObjectAttributes32TO64_FNC" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="Wow64ShallowThunkAllocSecurityQualityOfService32TO64_FNC" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="Wow64ShallowThunkSIZE_T32TO64" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="Wow64ShallowThunkSIZE_T64TO32" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="Wow64StartupContextToContextX86" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="Wow64SuspendLocalThread" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Wow64SystemService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="Wow64SystemServiceEx" PURGE="0" COMMENT="" />
+</LIBRARY>
+

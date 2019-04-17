@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="pdhui.dll" PATH="C:\Windows\System32\PDHUI.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="PdhUiBrowseCountersA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="PdhUiBrowseCountersExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="PdhUiBrowseCountersExHA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="PdhUiBrowseCountersExHW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="PdhUiBrowseCountersExW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="PdhUiBrowseCountersHA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="PdhUiBrowseCountersHW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="PdhUiBrowseCountersW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="PdhUiSelectDataSourceA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="PdhUiSelectDataSourceW" PURGE="0" COMMENT="" />
+</LIBRARY>
+

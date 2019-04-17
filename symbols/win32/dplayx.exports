@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dplayx.dll" PATH="C:\Windows\SysWOW64\DPLAYX.DLL" DATE="Mon Jul 13 06:15:12 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DirectPlayCreate" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DirectPlayEnumerateA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DirectPlayEnumerateW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DirectPlayLobbyCreateA" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DirectPlayLobbyCreateW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DirectPlayEnumerate" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="gdwDPlaySPRefCount" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1" NAME="Ordinal_1" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

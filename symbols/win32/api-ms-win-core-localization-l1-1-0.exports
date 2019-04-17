@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-localization-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-LOCALIZATION-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="IsValidCodePage" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="GetCalendarInfoEx" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="FindNLSStringEx" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="GetOEMCP" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="GetCPInfoExW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="IsValidLanguageGroup" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="GetNLSVersion" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="GetFileMUIPath" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="LCMapStringW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetLocaleInfoEx" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="FindNLSString" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="GetLocaleInfoW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="GetProcessPreferredUILanguages" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetNLSVersionEx" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="ResolveLocaleName" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="GetSystemDefaultLCID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="GetSystemPreferredUILanguages" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="GetSystemDefaultLangID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="GetThreadLocale" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="GetThreadPreferredUILanguages" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="GetThreadUILanguage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="GetUserPreferredUILanguages" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="GetUserDefaultLCID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="IsNLSDefinedString" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="GetUserDefaultLangID" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="NlsGetCacheUpdateCount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="NlsEventDataDescCreate" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="GetUILanguageInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="IsValidLocaleName" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="IsValidLocale" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="LocaleNameToLCID" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="SetThreadLocale" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="LCMapStringEx" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="GetCalendarInfoW" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="NlsCheckPolicy" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="NlsUpdateLocale" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="SetCalendarInfoW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="GetACP" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="NlsUpdateSystemLocale" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="GetCPInfo" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="NlsWriteEtwEvent" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="SetLocaleInfoW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="GetFileMUIInfo" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="VerLanguageNameA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="ConvertDefaultLocale" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="VerLanguageNameW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="47" NAME="GetCPFileNameFromRegistry" PURGE="12" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="comsvcs.dll" PATH="C:\Windows\SysWOW64\COMSVCS.DLL" DATE="Mon Jul 13 06:15:07 PDT 2009" VERSION="2001.12.8530.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="5" NAME="CosGetCallContext" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="CoCreateActivity" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CoEnterServiceDomain" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="CoLeaveServiceDomain" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="CoLoadServices" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="ComSvcsExceptionFilter" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="ComSvcsLogError" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="DispManGetContext" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="DllGetClassObject" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="DllRegisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="GetMTAThreadPoolMetrics" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="GetManagedExtensions" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="GetObjectContext" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="GetTrkSvrObject" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="MTSCreateActivity" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="MiniDumpW" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="RecycleSurrogate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="SafeRef" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="291" NAME="Ordinal_291" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="292" NAME="Ordinal_292" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="293" NAME="Ordinal_293" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="294" NAME="Ordinal_294" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="283" NAME="Ordinal_283" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="284" NAME="Ordinal_284" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="285" NAME="Ordinal_285" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="286" NAME="Ordinal_286" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="287" NAME="Ordinal_287" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="288" NAME="Ordinal_288" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="289" NAME="Ordinal_289" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="290" NAME="Ordinal_290" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="150" NAME="Ordinal_150" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="149" NAME="Ordinal_149" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="Ordinal_12" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="Ordinal_10" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="411" NAME="Ordinal_411" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Ordinal_23" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="Ordinal_24" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="162" NAME="Ordinal_162" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="277" NAME="Ordinal_277" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="161" NAME="Ordinal_161" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="Ordinal_32" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

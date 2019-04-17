@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="sens.dll" PATH="C:\Windows\System32\SENS.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="ServiceMain" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SvchostPushServiceGlobals" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SensNotifyNetconEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="SensNotifyRasEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="SensNotifyWinlogonEvent" PURGE="0" COMMENT="" />
+</LIBRARY>
+

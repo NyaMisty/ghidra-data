@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-security-sddl-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-SECURITY-SDDL-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="ConvertSidToStringSidW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ConvertStringSecurityDescriptorToSecurityDescriptorW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="ConvertStringSidToSidW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="ConvertSecurityDescriptorToStringSecurityDescriptorW" PURGE="0" COMMENT="" />
+</LIBRARY>
+

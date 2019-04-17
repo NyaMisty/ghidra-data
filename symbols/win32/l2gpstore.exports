@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="l2gpstore.dll" PATH="C:\Windows\SysWOW64\L2GPSTORE.DLL" DATE="Mon Jul 13 06:15:35 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="L2GPPolicyDataDelete" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="L2GPPolicyDataDeleteAll" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="L2GPPolicyDataRead" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="L2GPPolicyDataWrite" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="L2GPPolicyFreeMem" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="L2GPPolicyStoreClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="L2GPPolicyStoreOpen" PURGE="24" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="xolehlp.dll" PATH="C:\Windows\System32\XOLEHLP.DLL" DATE="Mon Jul 13 06:41:59 PDT 2009" VERSION="2001.12.8530.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="4" NAME="GetDtcLocaleResourceHandle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DtcGetTransactionManager" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DtcGetTransactionManagerEx" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DtcGetTransactionManagerC" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="FreezeLocalTransactionManagers" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="ThawLocalTransactionManagers" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DtcGetTransactionManagerExA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DtcGetTransactionManagerExW" PURGE="0" COMMENT="" />
+</LIBRARY>
+

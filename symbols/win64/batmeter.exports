@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="batmeter.dll" PATH="C:\Windows\System32\BATMETER.DLL" DATE="Sat Nov 20 07:24:28 PST 2010" VERSION="6.1.7601.17514 (win7sp1_rtm.101119-1850)">
+    <EXPORT ORDINAL="999" NAME="Ordinal_999" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1000" NAME="BatMeterOnDeviceChange" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1001" NAME="CleanupBatteryData" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1002" NAME="CreateBatteryData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1003" NAME="GetBatMeterIconAnimationState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1004" NAME="GetBatMeterIconAnimationTimeDelay" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1005" NAME="GetBatMeterIconAnimationUpdate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1006" NAME="GetBatteryDetails" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1007" NAME="GetBatteryInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1008" NAME="GetBatteryStatusText" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1009" NAME="GetBatteryWorkingState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1010" NAME="IsBatteryBad" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1011" NAME="IsBatteryHealthWarningEnabled" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1012" NAME="IsBatteryLevelCritical" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1013" NAME="IsBatteryLevelLow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1014" NAME="IsBatteryLevelReserve" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1015" NAME="PowerCapabilities" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1016" NAME="QueryBatteryData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1017" NAME="SetBatteryHealthWarningState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1018" NAME="SetBatteryLevel" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1019" NAME="SetBatteryWorkingState" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1020" NAME="SubscribeBatteryUpdateNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1021" NAME="UnsubscribeBatteryUpdateNotification" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1022" NAME="UpdateBatteryData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1023" NAME="UpdateBatteryDataAsync" PURGE="0" COMMENT="" />
+</LIBRARY>
+

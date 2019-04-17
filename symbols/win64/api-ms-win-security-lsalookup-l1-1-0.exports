@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-security-lsalookup-l1-1-0.dll" PATH="C:\Windows\System32\API-MS-WIN-SECURITY-LSALOOKUP-L1-1-0.DLL" DATE="Mon Jul 13 06:24:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="LookupAccountNameLocalW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="LookupAccountSidLocalA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="LookupAccountSidLocalW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="LsaLookupClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="LsaLookupFreeMemory" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="LsaLookupGetDomainInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="LsaLookupManageSidNameMapping" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="LsaLookupOpenLocalPolicy" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="LsaLookupTranslateNames" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="LsaLookupTranslateSids" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="LookupAccountNameLocalA" PURGE="0" COMMENT="" />
+</LIBRARY>
+

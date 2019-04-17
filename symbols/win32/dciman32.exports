@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="dciman32.dll" PATH="C:\Windows\SysWOW64\DCIMAN32.DLL" DATE="Mon Jul 13 06:15:09 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="DCIBeginAccess" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DCICloseProvider" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DCICreateOffscreen" PURGE="40" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DCISetDestination" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DCICreatePrimary" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DCIDestroy" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DCIDraw" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DCIEndAccess" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="DCIEnum" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DCIOpenProvider" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DCISetClipList" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="DCICreateOverlay" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="DCISetSrcDestClip" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="GetDCRegionData" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="GetWindowRegionData" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WinWatchClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WinWatchDidStatusChange" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WinWatchGetClipList" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="WinWatchNotify" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="WinWatchOpen" PURGE="4" COMMENT="" />
+</LIBRARY>
+

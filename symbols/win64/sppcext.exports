@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="sppcext.dll" PATH="C:\Windows\System32\SPPCEXT.DLL" DATE="Mon Jul 13 06:41:54 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="SLAcquireGenuineTicket" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="SLActivateProduct" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="SLDepositTokenActivationResponse" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="SLFreeTokenActivationCertificates" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="SLFreeTokenActivationGrants" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="SLGenerateTokenActivationChallenge" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="SLGetPackageProductKey" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="SLGetPackageProperties" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="SLGetPackageToken" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="SLGetReferralInformation" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="SLGetServerStatus" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="SLGetTokenActivationCertificates" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="SLGetTokenActivationGrants" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="SLInitialize" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="SLInstallPackage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="SLSignTokenActivationChallenge" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="SLUninstallPackage" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="Ordinal_4" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="Ordinal_24" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="Ordinal_23" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="411" NAME="Ordinal_411" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

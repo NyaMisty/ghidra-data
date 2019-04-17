@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="rasdlg.dll" PATH="C:\Windows\System32\RASDLG.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="RasHandleDiagnostics" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DwTerminalDlg" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="GetRasDialOutProtocols" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="RasAutodialQueryDlgA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="RasAutodialQueryDlgW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="RasDialDlgA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="RasDialDlgW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="RasEntryDlgA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="RasEntryDlgW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="RasPhonebookDlgA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="RasPhonebookDlgW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="RasSrvAddPropPages" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="RasSrvAllowConnectionsConfig" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="RasSrvCleanupService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="RasSrvEnumConnections" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="RasSrvHangupConnection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="RasSrvInitializeService" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="RasSrvIsConnectionConnected" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="RasSrvIsICConfigured" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="RasSrvIsServiceRunning" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="RasUserEnableManualDial" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="RasUserGetManualDial" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="RasUserPrefsDlg" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="RouterEntryDlgA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="RouterEntryDlgW" PURGE="0" COMMENT="" />
+</LIBRARY>
+

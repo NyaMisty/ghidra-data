@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="api-ms-win-core-profile-l1-1-0.dll" PATH="C:\Windows\SysWOW64\API-MS-WIN-CORE-PROFILE-L1-1-0.DLL" DATE="Mon Jul 13 06:03:49 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="QueryPerformanceFrequency" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="QueryPerformanceCounter" PURGE="4" COMMENT="" />
+</LIBRARY>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="magnification.dll" PATH="C:\Windows\System32\MAGNIFICATION.DLL" DATE="Mon Jul 13 06:41:21 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="MagGetColorEffect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="MagGetImageScalingCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="MagGetWindowFilterList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="MagGetWindowSource" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="MagGetWindowTransform" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="MagInitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="MagSetColorEffect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="MagSetImageScalingCallback" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="MagSetWindowFilterList" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="MagSetWindowSource" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="MagSetWindowTransform" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="MagUninitialize" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="1" NAME="Ordinal_1" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1552" NAME="Ordinal_1552" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1550" NAME="Ordinal_1550" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="1005" NAME="Ordinal_1005" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="133" NAME="Ordinal_133" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="100" NAME="Ordinal_100" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="134" NAME="Ordinal_134" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="132" NAME="Ordinal_132" PURGE="-1" COMMENT="" />
+</LIBRARY>
+

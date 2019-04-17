@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="avrt.dll" PATH="C:\Windows\SysWOW64\AVRT.DLL" DATE="Mon Jul 13 06:14:58 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AvQuerySystemResponsiveness" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="AvRevertMmThreadCharacteristics" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="AvRtCreateThreadOrderingGroup" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="AvRtCreateThreadOrderingGroupExA" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="AvRtCreateThreadOrderingGroupExW" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="AvRtDeleteThreadOrderingGroup" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="AvRtJoinThreadOrderingGroup" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="AvRtLeaveThreadOrderingGroup" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="AvRtWaitOnThreadOrderingGroup" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="AvSetMmMaxThreadCharacteristicsA" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="AvSetMmMaxThreadCharacteristicsW" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="AvSetMmThreadCharacteristicsA" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="AvSetMmThreadCharacteristicsW" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="AvSetMmThreadPriority" PURGE="8" COMMENT="" />
+</LIBRARY>
+

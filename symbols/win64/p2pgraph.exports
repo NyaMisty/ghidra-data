@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="p2pgraph.dll" PATH="C:\Windows\System32\P2PGRAPH.DLL" DATE="Mon Jul 13 06:41:53 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="pMemoryHelper" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="PeerGraphAddRecord" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="PeerGraphClose" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="PeerGraphCloseDirectConnection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="PeerGraphConnect" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="PeerGraphCreate" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="PeerGraphDelete" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="PeerGraphDeleteRecord" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="PeerGraphEndEnumeration" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="PeerGraphEnumConnections" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="PeerGraphEnumNodes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="PeerGraphEnumRecords" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="PeerGraphExportDatabase" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="PeerGraphFreeData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="PeerGraphGetEventData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="PeerGraphGetItemCount" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="PeerGraphGetNextItem" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="PeerGraphGetNodeInfo" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="PeerGraphGetProperties" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="PeerGraphGetRecord" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="PeerGraphGetStatus" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="PeerGraphImportDatabase" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="PeerGraphListen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="PeerGraphOpen" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="PeerGraphOpenDirectConnection" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="26" NAME="PeerGraphPeerTimeToUniversalTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="27" NAME="PeerGraphRegisterEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="PeerGraphSearchRecords" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="PeerGraphSendData" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="PeerGraphSetNodeAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="PeerGraphSetPresence" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="PeerGraphSetProperties" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="PeerGraphShutdown" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="PeerGraphStartup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="PeerGraphUniversalTimeToPeerTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="PeerGraphUnregisterEvent" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="PeerGraphUpdateRecord" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="PeerGraphValidateDeferredRecords" PURGE="0" COMMENT="" />
+</LIBRARY>
+

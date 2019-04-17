@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="wevtapi.dll" PATH="C:\Windows\SysWOW64\WEVTAPI.DLL" DATE="Mon Jul 13 06:16:18 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="EvtIntSysprepCleanup" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="EvtSetObjectArrayProperty" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="EvtArchiveExportedLog" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="EvtCancel" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="EvtClearLog" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="EvtClose" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="EvtCreateBookmark" PURGE="4" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="EvtCreateRenderContext" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="EvtExportLog" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="EvtFormatMessage" PURGE="36" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="EvtGetChannelConfigProperty" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="EvtGetEventInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="EvtGetEventMetadataProperty" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="EvtGetExtendedStatus" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="EvtGetLogInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="EvtGetObjectArrayProperty" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="EvtGetObjectArraySize" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="EvtGetPublisherMetadataProperty" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="19" NAME="EvtGetQueryInfo" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="20" NAME="EvtIntAssertConfig" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="EvtIntCreateBinXMLFromCustomXML" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="EvtIntCreateLocalLogfile" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="23" NAME="EvtIntGetClassicLogDisplayName" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="24" NAME="EvtIntRenderResourceEventTemplate" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="25" NAME="EvtIntReportAuthzEventAndSourceAsync" PURGE="44" COMMENT="" FOWARDLIBRARY="NTDLL.DLL" FOWARDSYMBOL="EvtIntReportAuthzEventAndSourceAsync" />
+    <EXPORT ORDINAL="26" NAME="EvtIntReportEventAndSourceAsync" PURGE="44" COMMENT="" FOWARDLIBRARY="NTDLL.DLL" FOWARDSYMBOL="EvtIntReportEventAndSourceAsync" />
+    <EXPORT ORDINAL="27" NAME="EvtIntRetractConfig" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="28" NAME="EvtIntWriteXmlEventToLocalLogfile" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="29" NAME="EvtNext" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="30" NAME="EvtNextChannelPath" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="31" NAME="EvtNextEventMetadata" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="EvtNextPublisherId" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="33" NAME="EvtOpenChannelConfig" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="34" NAME="EvtOpenChannelEnum" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="35" NAME="EvtOpenEventMetadataEnum" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="36" NAME="EvtOpenLog" PURGE="12" COMMENT="" />
+    <EXPORT ORDINAL="37" NAME="EvtOpenPublisherEnum" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="38" NAME="EvtOpenPublisherMetadata" PURGE="20" COMMENT="" />
+    <EXPORT ORDINAL="39" NAME="EvtOpenSession" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="40" NAME="EvtQuery" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="41" NAME="EvtRender" PURGE="28" COMMENT="" />
+    <EXPORT ORDINAL="42" NAME="EvtSaveChannelConfig" PURGE="8" COMMENT="" />
+    <EXPORT ORDINAL="43" NAME="EvtSeek" PURGE="24" COMMENT="" />
+    <EXPORT ORDINAL="44" NAME="EvtSetChannelConfigProperty" PURGE="16" COMMENT="" />
+    <EXPORT ORDINAL="45" NAME="EvtSubscribe" PURGE="32" COMMENT="" />
+    <EXPORT ORDINAL="46" NAME="EvtUpdateBookmark" PURGE="8" COMMENT="" />
+</LIBRARY>
+

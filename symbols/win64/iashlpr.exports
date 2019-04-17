@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="iashlpr.dll" PATH="C:\Windows\System32\IASHLPR.DLL" DATE="Mon Jul 13 06:41:05 PDT 2009" VERSION="6.1.7600.16385 (win7_rtm.090713-1255)">
+    <EXPORT ORDINAL="1" NAME="AllocateAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="ConfigureIas" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="3" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="DllGetClassObject" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="DllRegisterServer" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="DllUnregisterServer" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="DoRequest" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="DoRequestAsync" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="FreeAttributes" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="GetOptionIas" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="InitializeIas" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="MemAllocIas" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="MemFreeIas" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="MemReallocIas" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="SetOptionIas" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="ShutdownIas" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="Ordinal_16" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="21" NAME="Ordinal_21" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="Ordinal_15" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="Ordinal_18" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="22" NAME="Ordinal_22" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="32" NAME="Ordinal_32" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="Ordinal_9" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="Ordinal_6" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="201" NAME="Ordinal_201" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="162" NAME="Ordinal_162" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="Ordinal_8" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="150" NAME="Ordinal_150" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="2" NAME="Ordinal_2" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="Ordinal_7" PURGE="-1" COMMENT="" />
+    <EXPORT ORDINAL="111" NAME="Ordinal_111" PURGE="-1" COMMENT="" />
+</LIBRARY>
+
