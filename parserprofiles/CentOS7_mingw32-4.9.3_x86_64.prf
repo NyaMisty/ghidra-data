@@ -1,4 +1,4 @@
-/home/user/test/gdt/winapi_64
+winapi_64
 
 -I/usr/lib/gcc/x86_64-w64-mingw32/4.9.3/include
 -I/usr/lib/gcc/x86_64-w64-mingw32/4.9.3/include-fixed
