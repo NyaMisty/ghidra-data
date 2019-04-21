@@ -6,6 +6,11 @@
   typedef __builtin_va_list __gnuc_va_list;
   typedef __gnuc_va_list va_list;
 #pragma pack(pop)
+void __attribute__((__cdecl__)) __debugbreak(void);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) void __attribute__((__cdecl__)) __debugbreak(void)
+{
+  /*__asm__*/
+}
 const char *__mingw_get_crt_info (void);
 #pragma pack(push,_CRT_PACKING)
 __extension__ typedef unsigned long long size_t;
@@ -911,7 +916,27 @@ void __movsq(unsigned long long *Destination, unsigned long long const *Source, 
 unsigned long long _umul128(unsigned long long, unsigned long long, unsigned long long *);
 long long _mul128(long long, long long, long long *);
 unsigned long long __shiftleft128(unsigned long long LowPart, unsigned long long HighPart, unsigned char Shift);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+unsigned long long __shiftleft128 (unsigned long long LowPart, unsigned long long HighPart, unsigned char Shift)
+{
+   unsigned long long ret;
+   __asm__ ("shld {%[Shift],%[LowPart],%[HighPart]|%[HighPart], %[LowPart], %[Shift]}"
+      : [ret] "=r" (ret)
+      : [LowPart] "r" (LowPart), [HighPart] "0" (HighPart), [Shift] "Jc" (Shift)
+      : "cc");
+   return ret;
+}
 unsigned long long __shiftright128 (unsigned long long LowPart, unsigned long long HighPart, unsigned char Shift);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+unsigned long long __shiftright128 (unsigned long long LowPart, unsigned long long HighPart, unsigned char Shift)
+{
+   unsigned long long ret;
+   __asm__ ("shrd {%[Shift],%[HighPart],%[LowPart]|%[LowPart], %[HighPart], %[Shift]}"
+      : [ret] "=r" (ret)
+      : [LowPart] "0" (LowPart), [HighPart] "r" (HighPart), [Shift] "Jc" (Shift)
+      : "cc");
+   return ret;
+}
 long _InterlockedAnd(long volatile *, long);
 extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 long _InterlockedAnd(volatile long *Destination, long Value) { return __sync_fetch_and_and(Destination, Value); }
@@ -977,6 +1002,10 @@ void *_InterlockedExchangePointer(void *volatile *Target,void *Value) {
     return __sync_lock_test_and_set(Target, Value);
 }
 void __int2c(void);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+void __int2c(void) {
+    /*__asm__*/
+}
 void __stosb(unsigned char *, unsigned char, size_t);
 extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 void __stosb(unsigned char *Dest, unsigned char Data, size_t Count) { /*__asm__*/ }
@@ -1059,8 +1088,34 @@ void __outdwordstring(unsigned short Port, unsigned long *Buffer, unsigned long 
 extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 void __outdwordstring(unsigned short Port, unsigned long *Buffer, unsigned long Count) { /*__asm__*/ }
 void __cpuid(int CPUInfo[4], int InfoType);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+void __cpuid(int CPUInfo[4], int InfoType) {
+   __asm__ __volatile__ (
+      "cpuid"
+      : "=a" (CPUInfo [0]), "=b" (CPUInfo [1]), "=c" (CPUInfo [2]), "=d" (CPUInfo [3])
+      : "a" (InfoType));
+}
 __extension__ unsigned long long __readmsr(unsigned long);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+unsigned long long __readmsr(unsigned long msr)
+{
+   unsigned long long val1, val2;
+   __asm__ __volatile__(
+      "rdmsr"
+      : "=a" (val1), "=d" (val2)
+      : "c" (msr));
+   return ((unsigned long long) val1) | (((unsigned long long)val2) << 32);
+}
 __extension__ void __writemsr(unsigned long, unsigned long long);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+void __writemsr(unsigned long msr, unsigned long long Value)
+{
+   unsigned long val1 = Value, val2 = Value >> 32;
+   __asm__ __volatile__ (
+      "wrmsr"
+      :
+      : "c" (msr), "a" (val1), "d" (val2));
+}
 void __movsb(unsigned char *Destination, unsigned char const *Source, size_t Count);
 extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 void __movsb(unsigned char *Destination, unsigned char const *Source, size_t Count) { /*__asm__*/ }
@@ -2339,29 +2394,6 @@ typedef struct _DMA_ADAPTER *PADAPTER_OBJECT;
 // Intrinsics (note: taken from our winnt.h)
 // FIXME: 64-bit
 //
-static __inline__ BOOLEAN
-InterlockedBitTestAndSet(
-  LONG volatile *Base,
-  LONG Bit)
-{
-  return (_InterlockedOr(Base, 1 << Bit) >> Bit) & 1;
-}
-static __inline__ BOOLEAN
-InterlockedBitTestAndReset(
-  LONG volatile *Base,
-  LONG Bit)
-{
-  return (_InterlockedAnd(Base, ~(1 << Bit)) >> Bit) & 1;
-}
-//#if !defined(_X86AMD64_) // FIXME: what's _X86AMD64_ used for?
-extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
-LONG64
-_InterlockedAdd64(
-  LONG64 volatile *Addend,
-  LONG64 Value)
-{
-  return _InterlockedExchangeAdd64(Addend, Value) + Value;
-}
 //#endif
 typedef struct _RTL_BITMAP {
   ULONG SizeOfBitMap;

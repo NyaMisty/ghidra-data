@@ -822,6 +822,10 @@ void *_InterlockedExchangePointer(void *volatile *Target,void *Value) {
     return __sync_lock_test_and_set(Target, Value);
 }
 void __int2c(void);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+void __int2c(void) {
+    /*__asm__*/
+}
 void __stosb(unsigned char *, unsigned char, size_t);
 extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 void __stosb(unsigned char *Dest, unsigned char Data, size_t Count) { /*__asm__*/ }
@@ -904,8 +908,34 @@ void __outdwordstring(unsigned short Port, unsigned long *Buffer, unsigned long 
 extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 void __outdwordstring(unsigned short Port, unsigned long *Buffer, unsigned long Count) { /*__asm__*/ }
 void __cpuid(int CPUInfo[4], int InfoType);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+void __cpuid(int CPUInfo[4], int InfoType) {
+   __asm__ __volatile__ (
+      "cpuid"
+      : "=a" (CPUInfo [0]), "=b" (CPUInfo [1]), "=c" (CPUInfo [2]), "=d" (CPUInfo [3])
+      : "a" (InfoType));
+}
 __extension__ unsigned long long __readmsr(unsigned long);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+unsigned long long __readmsr(unsigned long msr)
+{
+   unsigned long val1, val2;
+   __asm__ __volatile__(
+      "rdmsr"
+      : "=a" (val1), "=d" (val2)
+      : "c" (msr));
+   return ((unsigned long long) val1) | (((unsigned long long)val2) << 32);
+}
 __extension__ void __writemsr(unsigned long, unsigned long long);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+void __writemsr(unsigned long msr, unsigned long long Value)
+{
+   unsigned long val1 = Value, val2 = Value >> 32;
+   __asm__ __volatile__ (
+      "wrmsr"
+      :
+      : "c" (msr), "a" (val1), "d" (val2));
+}
 void __movsb(unsigned char *Destination, unsigned char const *Source, size_t Count);
 extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 void __movsb(unsigned char *Destination, unsigned char const *Source, size_t Count) { /*__asm__*/ }
@@ -1402,6 +1432,111 @@ typedef short __v4hi __attribute__ ((__vector_size__ (8)));
 typedef char __v8qi __attribute__ ((__vector_size__ (8)));
 typedef long long __v1di __attribute__ ((__vector_size__ (8)));
 typedef float __v2sf __attribute__ ((__vector_size__ (8)));
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("lzcnt")
+extern __inline unsigned short __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__lzcnt16 (unsigned short __X)
+{
+  return __builtin_clzs (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__lzcnt32 (unsigned int __X)
+{
+  return __builtin_clz (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_lzcnt_u32 (unsigned int __X)
+{
+  return __builtin_clz (__X);
+}
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("bmi")
+extern __inline unsigned short __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__tzcnt_u16 (unsigned short __X)
+{
+  return __builtin_ctzs (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__andn_u32 (unsigned int __X, unsigned int __Y)
+{
+  return ~__X & __Y;
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__bextr_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_bextr_u32 (__X, __Y);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_bextr_u32 (unsigned int __X, unsigned int __Y, unsigned __Z)
+{
+  return __builtin_ia32_bextr_u32 (__X, ((__Y & 0xff) | ((__Z & 0xff) << 8)));
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsi_u32 (unsigned int __X)
+{
+  return __X & -__X;
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsi_u32 (unsigned int __X)
+{
+  return __blsi_u32 (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsmsk_u32 (unsigned int __X)
+{
+  return __X ^ (__X - 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsmsk_u32 (unsigned int __X)
+{
+  return __blsmsk_u32 (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsr_u32 (unsigned int __X)
+{
+  return __X & (__X - 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsr_u32 (unsigned int __X)
+{
+  return __blsr_u32 (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__tzcnt_u32 (unsigned int __X)
+{
+  return __builtin_ctz (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_tzcnt_u32 (unsigned int __X)
+{
+  return __builtin_ctz (__X);
+}
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("bmi2")
+extern __inline unsigned int
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_bzhi_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_bzhi_si (__X, __Y);
+}
+extern __inline unsigned int
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_pdep_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_pdep_si (__X, __Y);
+}
+extern __inline unsigned int
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_pext_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_pext_si (__X, __Y);
+}
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("fma")
 #pragma GCC pop_options
 #pragma GCC push_options
 #pragma GCC target("rtm")
@@ -2044,6 +2179,10 @@ typedef struct _KPROCESS *PKPROCESS;
 typedef struct _KTHREAD *PKTHREAD, *PRKTHREAD;
 typedef struct _CONTEXT *PCONTEXT;
 typedef struct _ADAPTER_OBJECT *PADAPTER_OBJECT;
+//
+// Intrinsics (note: taken from our winnt.h)
+// FIXME: 64-bit
+//
 typedef struct _RTL_BITMAP {
   ULONG SizeOfBitMap;
   PULONG Buffer;

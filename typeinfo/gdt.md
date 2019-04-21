@@ -90,8 +90,8 @@ Additionally delete: `_mulx_u64`
 ## ntddk_32.gdt
 
 ```
-echo "#include <ntddk.h>" > ntddk.c
-i686-w64-mingw32-gcc -I/usr/i686-w64-mingw32/sys-root/mingw/include/ddk -std=c89 -P -E ntddk.c | sed 's/__asm__ .*);/\/\*__asm__\*\//g' > ntddk_32`
+echo -n "#include <ntddk.h>\n#include <wdm.h>\n#include <ntifs.h>" > ntddk.c
+i686-w64-mingw32-gcc -I/usr/i686-w64-mingw32/sys-root/mingw/include/ddk -std=c89 -P -E ntddk.c | sed 's/__asm__ .*);/\/\*__asm__\*\//g' > ntddk_32
 ```
 
 Then remove all `__inline__` functions and everything that uses inline `__asm__`, i.e.
@@ -102,8 +102,8 @@ Then use CentOS7_mingw32-4.9.3_ntddk_i686.prf
 ## ntddk_64.gdt
 
 ```
-echo "#include <ntddk.h>" > ntddk.c
-x86_64-w64-mingw32-gcc -I/usr/i686-w64-mingw32/sys-root/mingw/include/ddk -std=c89 -P -E ntddk.c | sed 's/__asm__ .*);/\/\*__asm__\*\//g' > ntddk_64`
+echo -n "#include <ntddk.h>\n#include <wdm.h>\n#include <ntifs.h>" > ntddk.c
+x86_64-w64-mingw32-gcc -I/usr/i686-w64-mingw32/sys-root/mingw/include/ddk -std=c89 -P -E ntddk.c | sed 's/__asm__ .*);/\/\*__asm__\*\//g' > ntddk_64
 ```
 Then remove all `__inline__` functions and everything that uses inline `__asm__`, i.e.
 the `_mm` and `_m_` inline functions, etc., from `ntddk_32` as CParse complains about them.
