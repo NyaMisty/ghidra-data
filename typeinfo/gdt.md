@@ -83,6 +83,7 @@ cat malware_headers.txt common_headers.txt | while read include; do echo "#inclu
 ```
 
 Then delete all the `_mm...` and `_m_...`  inline functions from `winapi_64`.
+Additionally delete: `_mulx_u64`
 
 # How was X generated?
 
@@ -111,13 +112,13 @@ This has to be done by hand :(.
 
 Then use CentOS7_mingw32-4.9.3_ntddk_x86_64.prf
 
-## ntdiff_ntoskrnl_{Win7_SP1,Win10_1903_19H1}_{x86,x64}
+## ntdiff_..._{Win7_SP1,Win10_1903_19H1}_{x86,x64}
 
 ```
 git clone https://github.com/ntdiff/headers
 ```
 
-Then select your appropriate `ALL.h` file.
+Then select your appropriate `ALL.h` files.
 
 Unfortunately, anything later than `Win10_1903_19H1` won't parse.
 

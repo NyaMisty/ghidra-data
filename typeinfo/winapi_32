@@ -38402,7 +38402,12 @@ typedef struct _PSAPI_WORKING_SET_EX_INFORMATION {
   PVOID VirtualAddress;
   PSAPI_WORKING_SET_EX_BLOCK VirtualAttributes;
 } PSAPI_WORKING_SET_EX_INFORMATION, *PPSAPI_WORKING_SET_EX_INFORMATION;
-#pragma pack(push,8)
+typedef struct in6_addr {
+  union {
+    u_char Byte[16];
+    u_short Word[8];
+  } u;
+} IN6_ADDR, *PIN6_ADDR, *LPIN6_ADDR;
 typedef struct IEnumConnections IEnumConnections;
 typedef struct IConnectionPoint IConnectionPoint;
 typedef struct IEnumConnectionPoints IEnumConnectionPoints;
@@ -42019,6 +42024,2266 @@ ULONG __attribute__((__stdcall__)) HPALETTE_UserSize (ULONG *, ULONG, HPALETTE *
 unsigned char * __attribute__((__stdcall__)) HPALETTE_UserMarshal (ULONG *, unsigned char *, HPALETTE *);
 unsigned char * __attribute__((__stdcall__)) HPALETTE_UserUnmarshal(ULONG *, unsigned char *, HPALETTE *);
 void __attribute__((__stdcall__)) HPALETTE_UserFree (ULONG *, HPALETTE *);
+extern RPC_IF_HANDLE INapTypes_v0_0_c_ifspec;
+extern RPC_IF_HANDLE INapTypes_v0_0_s_ifspec;
+typedef enum tagIsolationState {
+    isolationStateNotRestricted = 1,
+    isolationStateInProbation = 2,
+    isolationStateRestrictedAccess = 3
+} IsolationState;
+typedef enum tagExtendedIsolationState {
+    extendedIsolationStateNoData = 0x0,
+    extendedIsolationStateTransition = 0x1,
+    extendedIsolationStateInfected = 0x2,
+    extendedIsolationStateUnknown = 0x3
+} ExtendedIsolationState;
+typedef enum tagNapTracingLevel {
+    tracingLevelUndefined = 0,
+    tracingLevelBasic = 1,
+    tracingLevelAdvanced = 2,
+    tracingLevelDebug = 3
+} NapTracingLevel;
+typedef enum tagFailureCategory {
+    failureCategoryNone = 0,
+    failureCategoryOther = 1,
+    failureCategoryClientComponent = 2,
+    failureCategoryClientCommunication = 3,
+    failureCategoryServerComponent = 4,
+    failureCategoryServerCommunication = 5
+} FailureCategory;
+typedef enum tagFixupState {
+    fixupStateSuccess = 0,
+    fixupStateInProgress = 1,
+    fixupStateCouldNotUpdate = 2
+} FixupState;
+typedef enum tagNapNotifyType {
+    napNotifyTypeUnknown = 0,
+    napNotifyTypeServiceState = 1,
+    napNotifyTypeQuarState = 2
+} NapNotifyType;
+typedef enum tagRemoteConfigurationType {
+    remoteConfigTypeMachine = 1,
+    remoteConfigTypeConfigBlob = 2
+} RemoteConfigurationType;
+typedef FILETIME ProbationTime;
+typedef UINT32 MessageId;
+typedef UINT32 NapComponentId;
+typedef NapComponentId SystemHealthEntityId;
+typedef NapComponentId EnforcementEntityId;
+typedef struct tagCountedString {
+    UINT16 length;
+    WCHAR *string;
+} CountedString;
+typedef CountedString StringCorrelationId;
+typedef struct tagIsolationInfo {
+    IsolationState isolationState;
+    ProbationTime probEndTime;
+    CountedString failureUrl;
+} IsolationInfo;
+typedef struct tagIsolationInfoEx {
+    IsolationState isolationState;
+    ExtendedIsolationState extendedIsolationState;
+    ProbationTime probEndTime;
+    CountedString failureUrl;
+} IsolationInfoEx;
+typedef struct tagFailureCategoryMapping {
+    WINBOOL mappingCompliance[5];
+} FailureCategoryMapping;
+typedef UINT16 SystemHealthEntityCount;
+typedef UINT16 EnforcementEntityCount;
+typedef struct tagCorrelationId {
+    GUID connId;
+    FILETIME timeStamp;
+} CorrelationId;
+typedef GUID ConnectionId;
+typedef UINT8 Percentage;
+typedef struct tagResultCodes {
+    UINT16 count;
+    HRESULT *results;
+} ResultCodes;
+typedef struct tagIpv4Address {
+    BYTE addr[4];
+} Ipv4Address;
+typedef struct tagIpv6Address {
+    BYTE addr[16];
+} Ipv6Address;
+typedef struct tagFixupInfo {
+    FixupState state;
+    Percentage percentage;
+    ResultCodes resultCodes;
+    MessageId fixupMsgId;
+} FixupInfo;
+typedef struct tagSystemHealthAgentState {
+    SystemHealthEntityId id;
+    ResultCodes shaResultCodes;
+    FailureCategory failureCategory;
+    FixupInfo fixupInfo;
+} SystemHealthAgentState;
+typedef struct tagSoHAttribute {
+    UINT16 type;
+    UINT16 size;
+    BYTE *value;
+} SoHAttribute;
+typedef struct tagSoH {
+    UINT16 count;
+    SoHAttribute *attributes;
+} SoH;
+typedef struct tagSoH SoHRequest;
+typedef struct tagSoH SoHResponse;
+typedef struct tagNetworkSoH {
+    UINT16 size;
+    BYTE *data;
+} NetworkSoH;
+typedef struct tagNetworkSoH NetworkSoHRequest;
+typedef struct tagNetworkSoH NetworkSoHResponse;
+typedef struct tagPrivateData {
+    UINT16 size;
+    BYTE *data;
+} PrivateData;
+typedef struct tagNapComponentRegistrationInfo {
+    NapComponentId id;
+    CountedString friendlyName;
+    CountedString description;
+    CountedString version;
+    CountedString vendorName;
+    CLSID infoClsid;
+    CLSID configClsid;
+    FILETIME registrationDate;
+    UINT32 componentType;
+} NapComponentRegistrationInfo;
+typedef struct in_addr RASIPV4ADDR;
+typedef struct in6_addr RASIPV6ADDR;
+#pragma pack(push,4)
+  struct HRASCONN__ { int unused; }; typedef struct HRASCONN__ *HRASCONN;
+  struct tagRASCONNW {
+    DWORD dwSize;
+    HRASCONN hrasconn;
+    WCHAR szEntryName[256 + 1 ];
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szPhonebook [260 ];
+    DWORD dwSubEntry;
+    GUID guidEntry;
+    DWORD dwFlags;
+    LUID luid;
+  };
+  struct tagRASCONNA {
+    DWORD dwSize;
+    HRASCONN hrasconn;
+    CHAR szEntryName[256 + 1 ];
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szPhonebook [260 ];
+    DWORD dwSubEntry;
+    GUID guidEntry;
+    DWORD dwFlags;
+    LUID luid;
+  };
+  enum tagRASCONNSTATE {
+    RASCS_OpenPort = 0,RASCS_PortOpened,RASCS_ConnectDevice,RASCS_DeviceConnected,RASCS_AllDevicesConnected,RASCS_Authenticate,
+    RASCS_AuthNotify,RASCS_AuthRetry,RASCS_AuthCallback,RASCS_AuthChangePassword,RASCS_AuthProject,RASCS_AuthLinkSpeed,
+    RASCS_AuthAck,RASCS_ReAuthenticate,RASCS_Authenticated,RASCS_PrepareForCallback,RASCS_WaitForModemReset,RASCS_WaitForCallback,RASCS_Projected,
+    RASCS_StartAuthentication,RASCS_CallbackComplete,RASCS_LogonNetwork,RASCS_SubEntryConnected,
+    RASCS_SubEntryDisconnected,RASCS_Interactive = 0x1000,RASCS_RetryAuthentication,RASCS_CallbackSetByCaller,RASCS_PasswordExpired,
+    RASCS_InvokeEapUI,RASCS_Connected = 0x2000,RASCS_Disconnected
+  };
+  struct tagRASCONNSTATUSW {
+    DWORD dwSize;
+    enum tagRASCONNSTATE rasconnstate;
+    DWORD dwError;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szPhoneNumber[128 + 1 ];
+  };
+  struct tagRASCONNSTATUSA {
+    DWORD dwSize;
+    enum tagRASCONNSTATE rasconnstate;
+    DWORD dwError;
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szPhoneNumber[128 + 1 ];
+  };
+  struct tagRASDIALPARAMSW {
+    DWORD dwSize;
+    WCHAR szEntryName[256 + 1 ];
+    WCHAR szPhoneNumber[128 + 1 ];
+    WCHAR szCallbackNumber[128 + 1 ];
+    WCHAR szUserName[256 + 1 ];
+    WCHAR szPassword[256 + 1 ];
+    WCHAR szDomain[15 + 1 ];
+    DWORD dwSubEntry;
+    ULONG_PTR dwCallbackId;
+  };
+  struct tagRASDIALPARAMSA {
+    DWORD dwSize;
+    CHAR szEntryName[256 + 1 ];
+    CHAR szPhoneNumber[128 + 1 ];
+    CHAR szCallbackNumber[128 + 1 ];
+    CHAR szUserName[256 + 1 ];
+    CHAR szPassword[256 + 1 ];
+    CHAR szDomain[15 + 1 ];
+    DWORD dwSubEntry;
+    ULONG_PTR dwCallbackId;
+  };
+  struct tagRASEAPINFO {
+    DWORD dwSizeofEapInfo;
+    BYTE *pbEapInfo;
+  };
+  struct tagRASDIALEXTENSIONS {
+    DWORD dwSize;
+    DWORD dwfOptions;
+    HWND hwndParent;
+    ULONG_PTR reserved;
+    ULONG_PTR reserved1;
+    struct tagRASEAPINFO RasEapInfo;
+  };
+  struct tagRASENTRYNAMEW {
+    DWORD dwSize;
+    WCHAR szEntryName[256 + 1 ];
+    DWORD dwFlags;
+    WCHAR szPhonebookPath[260 + 1];
+  };
+  struct tagRASENTRYNAMEA {
+    DWORD dwSize;
+    CHAR szEntryName[256 + 1 ];
+    DWORD dwFlags;
+    CHAR szPhonebookPath[260 + 1];
+  };
+  enum tagRASPROJECTION {
+    RASP_Amb = 0x10000,RASP_PppNbf = 0x803F,RASP_PppIpx = 0x802B,RASP_PppIp = 0x8021,
+    RASP_PppCcp = 0x80FD,RASP_PppLcp = 0xC021,RASP_Slip = 0x20000
+  };
+  struct tagRASAMBW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szNetBiosError[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASAMBA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szNetBiosError[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASPPPNBFW {
+    DWORD dwSize;
+    DWORD dwError;
+    DWORD dwNetBiosError;
+    WCHAR szNetBiosError[16 + 1 ];
+    WCHAR szWorkstationName[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASPPPNBFA {
+    DWORD dwSize;
+    DWORD dwError;
+    DWORD dwNetBiosError;
+    CHAR szNetBiosError[16 + 1 ];
+    CHAR szWorkstationName[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASIPXW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szIpxAddress[21 + 1 ];
+  };
+  struct tagRASPPPIPXA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szIpxAddress[21 + 1 ];
+  };
+  struct tagRASPPPIPW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szIpAddress[15 + 1 ];
+    WCHAR szServerIpAddress[15 + 1 ];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASPPPIPA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szIpAddress[15 + 1 ];
+    CHAR szServerIpAddress[15 + 1 ];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASPPPLCPW {
+    DWORD dwSize;
+    WINBOOL fBundled;
+    DWORD dwError;
+    DWORD dwAuthenticationProtocol;
+    DWORD dwAuthenticationData;
+    DWORD dwEapTypeId;
+    DWORD dwServerAuthenticationProtocol;
+    DWORD dwServerAuthenticationData;
+    DWORD dwServerEapTypeId;
+    WINBOOL fMultilink;
+    DWORD dwTerminateReason;
+    DWORD dwServerTerminateReason;
+    WCHAR szReplyMessage[1024];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASPPPLCPA {
+    DWORD dwSize;
+    WINBOOL fBundled;
+    DWORD dwError;
+    DWORD dwAuthenticationProtocol;
+    DWORD dwAuthenticationData;
+    DWORD dwEapTypeId;
+    DWORD dwServerAuthenticationProtocol;
+    DWORD dwServerAuthenticationData;
+    DWORD dwServerEapTypeId;
+    WINBOOL fMultilink;
+    DWORD dwTerminateReason;
+    DWORD dwServerTerminateReason;
+    CHAR szReplyMessage[1024];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASSLIPW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szIpAddress[15 + 1 ];
+  };
+  struct tagRASSLIPA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szIpAddress[15 + 1 ];
+  };
+  struct tagRASPPPCCP {
+    DWORD dwSize;
+    DWORD dwError;
+    DWORD dwCompressionAlgorithm;
+    DWORD dwOptions;
+    DWORD dwServerCompressionAlgorithm;
+    DWORD dwServerOptions;
+  };
+  typedef void (__attribute__((__stdcall__)) *RASDIALFUNC)(UINT,enum tagRASCONNSTATE,DWORD);
+  typedef void (__attribute__((__stdcall__)) *RASDIALFUNC1)(HRASCONN,UINT,enum tagRASCONNSTATE,DWORD,DWORD);
+  typedef DWORD (__attribute__((__stdcall__)) *RASDIALFUNC2)(ULONG_PTR,DWORD,HRASCONN,UINT,enum tagRASCONNSTATE,DWORD,DWORD);
+  struct tagRASDEVINFOW {
+    DWORD dwSize;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+  };
+  struct tagRASDEVINFOA {
+    DWORD dwSize;
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+  };
+  struct RASCTRYINFO {
+    DWORD dwSize;
+    DWORD dwCountryID;
+    DWORD dwNextCountryID;
+    DWORD dwCountryCode;
+    DWORD dwCountryNameOffset;
+  };
+  struct RASIPADDR {
+    BYTE a;
+    BYTE b;
+    BYTE c;
+    BYTE d;
+  };
+  struct tagRASENTRYA {
+    DWORD dwSize;
+    DWORD dwfOptions;
+    DWORD dwCountryID;
+    DWORD dwCountryCode;
+    CHAR szAreaCode[10 + 1 ];
+    CHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+    struct RASIPADDR ipaddr;
+    struct RASIPADDR ipaddrDns;
+    struct RASIPADDR ipaddrDnsAlt;
+    struct RASIPADDR ipaddrWins;
+    struct RASIPADDR ipaddrWinsAlt;
+    DWORD dwFrameSize;
+    DWORD dwfNetProtocols;
+    DWORD dwFramingProtocol;
+    CHAR szScript[260 ];
+    CHAR szAutodialDll[260 ];
+    CHAR szAutodialFunc[260 ];
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szX25PadType[32 + 1 ];
+    CHAR szX25Address[200 + 1 ];
+    CHAR szX25Facilities[200 + 1 ];
+    CHAR szX25UserData[200 + 1 ];
+    DWORD dwChannels;
+    DWORD dwReserved1;
+    DWORD dwReserved2;
+    DWORD dwSubEntries;
+    DWORD dwDialMode;
+    DWORD dwDialExtraPercent;
+    DWORD dwDialExtraSampleSeconds;
+    DWORD dwHangUpExtraPercent;
+    DWORD dwHangUpExtraSampleSeconds;
+    DWORD dwIdleDisconnectSeconds;
+    DWORD dwType;
+    DWORD dwEncryptionType;
+    DWORD dwCustomAuthKey;
+    GUID guidId;
+    CHAR szCustomDialDll[260];
+    DWORD dwVpnStrategy;
+    DWORD dwfOptions2;
+    DWORD dwfOptions3;
+    CHAR szDnsSuffix[256];
+    DWORD dwTcpWindowSize;
+    CHAR szPrerequisitePbk[260];
+    CHAR szPrerequisiteEntry[256 + 1];
+    DWORD dwRedialCount;
+    DWORD dwRedialPause;
+  };
+  struct tagRASENTRYW {
+    DWORD dwSize;
+    DWORD dwfOptions;
+    DWORD dwCountryID;
+    DWORD dwCountryCode;
+    WCHAR szAreaCode[10 + 1 ];
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+    struct RASIPADDR ipaddr;
+    struct RASIPADDR ipaddrDns;
+    struct RASIPADDR ipaddrDnsAlt;
+    struct RASIPADDR ipaddrWins;
+    struct RASIPADDR ipaddrWinsAlt;
+    DWORD dwFrameSize;
+    DWORD dwfNetProtocols;
+    DWORD dwFramingProtocol;
+    WCHAR szScript[260 ];
+    WCHAR szAutodialDll[260 ];
+    WCHAR szAutodialFunc[260 ];
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szX25PadType[32 + 1 ];
+    WCHAR szX25Address[200 + 1 ];
+    WCHAR szX25Facilities[200 + 1 ];
+    WCHAR szX25UserData[200 + 1 ];
+    DWORD dwChannels;
+    DWORD dwReserved1;
+    DWORD dwReserved2;
+    DWORD dwSubEntries;
+    DWORD dwDialMode;
+    DWORD dwDialExtraPercent;
+    DWORD dwDialExtraSampleSeconds;
+    DWORD dwHangUpExtraPercent;
+    DWORD dwHangUpExtraSampleSeconds;
+    DWORD dwIdleDisconnectSeconds;
+    DWORD dwType;
+    DWORD dwEncryptionType;
+    DWORD dwCustomAuthKey;
+    GUID guidId;
+    WCHAR szCustomDialDll[260];
+    DWORD dwVpnStrategy;
+    DWORD dwfOptions2;
+    DWORD dwfOptions3;
+    WCHAR szDnsSuffix[256];
+    DWORD dwTcpWindowSize;
+    WCHAR szPrerequisitePbk[260];
+    WCHAR szPrerequisiteEntry[256 + 1];
+    DWORD dwRedialCount;
+    DWORD dwRedialPause;
+  };
+  typedef WINBOOL (__attribute__((__stdcall__)) *ORASADFUNC)(HWND,LPSTR,DWORD,LPDWORD);
+  struct tagRASADPARAMS {
+    DWORD dwSize;
+    HWND hwndOwner;
+    DWORD dwFlags;
+    LONG xDlg;
+    LONG yDlg;
+  };
+  typedef WINBOOL (__attribute__((__stdcall__)) *RASADFUNCA)(LPSTR,LPSTR,struct tagRASADPARAMS*,LPDWORD);
+  typedef WINBOOL (__attribute__((__stdcall__)) *RASADFUNCW)(LPWSTR,LPWSTR,struct tagRASADPARAMS*,LPDWORD);
+  struct tagRASSUBENTRYA {
+    DWORD dwSize;
+    DWORD dwfFlags;
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+  };
+  struct tagRASSUBENTRYW {
+    DWORD dwSize;
+    DWORD dwfFlags;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+  };
+  struct tagRASCREDENTIALSA {
+    DWORD dwSize;
+    DWORD dwMask;
+    CHAR szUserName[256 + 1 ];
+    CHAR szPassword[256 + 1 ];
+    CHAR szDomain[15 + 1 ];
+  };
+  struct tagRASCREDENTIALSW {
+    DWORD dwSize;
+    DWORD dwMask;
+    WCHAR szUserName[256 + 1 ];
+    WCHAR szPassword[256 + 1 ];
+    WCHAR szDomain[15 + 1 ];
+  };
+  struct tagRASAUTODIALENTRYA {
+    DWORD dwSize;
+    DWORD dwFlags;
+    DWORD dwDialingLocation;
+    CHAR szEntry[256 + 1];
+  };
+  struct tagRASAUTODIALENTRYW {
+    DWORD dwSize;
+    DWORD dwFlags;
+    DWORD dwDialingLocation;
+    WCHAR szEntry[256 + 1];
+  };
+  struct tagRASEAPUSERIDENTITYA {
+    CHAR szUserName[256 + 1 ];
+    DWORD dwSizeofEapInfo;
+    BYTE pbEapInfo[1 ];
+  };
+  struct tagRASEAPUSERIDENTITYW {
+    WCHAR szUserName[256 + 1 ];
+    DWORD dwSizeofEapInfo;
+    BYTE pbEapInfo[1 ];
+  };
+  typedef DWORD (__attribute__((__stdcall__)) *PFNRASGETBUFFER) (PBYTE *ppBuffer,PDWORD pdwSize);
+  typedef DWORD (__attribute__((__stdcall__)) *PFNRASFREEBUFFER) (PBYTE pBufer);
+  typedef DWORD (__attribute__((__stdcall__)) *PFNRASSENDBUFFER) (HANDLE hPort,PBYTE pBuffer,DWORD dwSize);
+  typedef DWORD (__attribute__((__stdcall__)) *PFNRASRECEIVEBUFFER) (HANDLE hPort,PBYTE pBuffer,PDWORD pdwSize,DWORD dwTimeOut,HANDLE hEvent);
+  typedef DWORD (__attribute__((__stdcall__)) *PFNRASRETRIEVEBUFFER) (HANDLE hPort,PBYTE pBuffer,PDWORD pdwSize);
+  typedef DWORD (__attribute__((__stdcall__)) *RasCustomScriptExecuteFn) (HANDLE hPort,LPCWSTR lpszPhonebook,LPCWSTR lpszEntryName,PFNRASGETBUFFER pfnRasGetBuffer,PFNRASFREEBUFFER pfnRasFreeBuffer,PFNRASSENDBUFFER pfnRasSendBuffer,PFNRASRECEIVEBUFFER pfnRasReceiveBuffer,PFNRASRETRIEVEBUFFER pfnRasRetrieveBuffer,HWND hWnd,struct tagRASDIALPARAMSA *pRasDialParams,PVOID pvReserved);
+  struct tagRASCOMMSETTINGS {
+    DWORD dwSize;
+    BYTE bParity;
+    BYTE bStop;
+    BYTE bByteSize;
+    BYTE bAlign;
+  };
+  typedef DWORD (__attribute__((__stdcall__)) *PFNRASSETCOMMSETTINGS) (HANDLE hPort,struct tagRASCOMMSETTINGS *pRasCommSettings,PVOID pvReserved);
+  struct tagRASCUSTOMSCRIPTEXTENSIONS {
+    DWORD dwSize;
+    PFNRASSETCOMMSETTINGS pfnRasSetCommSettings;
+  };
+  DWORD __attribute__((__stdcall__)) RasDialA(struct tagRASDIALEXTENSIONS*,LPCSTR,struct tagRASDIALPARAMSA*,DWORD,LPVOID,HRASCONN*);
+  DWORD __attribute__((__stdcall__)) RasDialW(struct tagRASDIALEXTENSIONS*,LPCWSTR,struct tagRASDIALPARAMSW*,DWORD,LPVOID,HRASCONN*);
+  DWORD __attribute__((__stdcall__)) RasEnumConnectionsA(struct tagRASCONNA*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasEnumConnectionsW(struct tagRASCONNW*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasEnumEntriesA(LPCSTR,LPCSTR,struct tagRASENTRYNAMEA*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasEnumEntriesW(LPCWSTR,LPCWSTR,struct tagRASENTRYNAMEW*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetConnectStatusA(HRASCONN,struct tagRASCONNSTATUSA*);
+  DWORD __attribute__((__stdcall__)) RasGetConnectStatusW(HRASCONN,struct tagRASCONNSTATUSW*);
+  DWORD __attribute__((__stdcall__)) RasGetErrorStringA(UINT,LPSTR,DWORD);
+  DWORD __attribute__((__stdcall__)) RasGetErrorStringW(UINT,LPWSTR,DWORD);
+  DWORD __attribute__((__stdcall__)) RasHangUpA(HRASCONN);
+  DWORD __attribute__((__stdcall__)) RasHangUpW(HRASCONN);
+  DWORD __attribute__((__stdcall__)) RasGetProjectionInfoA(HRASCONN,enum tagRASPROJECTION,LPVOID,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetProjectionInfoW(HRASCONN,enum tagRASPROJECTION,LPVOID,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasCreatePhonebookEntryA(HWND,LPCSTR);
+  DWORD __attribute__((__stdcall__)) RasCreatePhonebookEntryW(HWND,LPCWSTR);
+  DWORD __attribute__((__stdcall__)) RasEditPhonebookEntryA(HWND,LPCSTR,LPCSTR);
+  DWORD __attribute__((__stdcall__)) RasEditPhonebookEntryW(HWND,LPCWSTR,LPCWSTR);
+  DWORD __attribute__((__stdcall__)) RasSetEntryDialParamsA(LPCSTR,struct tagRASDIALPARAMSA*,WINBOOL);
+  DWORD __attribute__((__stdcall__)) RasSetEntryDialParamsW(LPCWSTR,struct tagRASDIALPARAMSW*,WINBOOL);
+  DWORD __attribute__((__stdcall__)) RasGetEntryDialParamsA(LPCSTR,struct tagRASDIALPARAMSA*,LPBOOL);
+  DWORD __attribute__((__stdcall__)) RasGetEntryDialParamsW(LPCWSTR,struct tagRASDIALPARAMSW*,LPBOOL);
+  DWORD __attribute__((__stdcall__)) RasEnumDevicesA(struct tagRASDEVINFOA*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasEnumDevicesW(struct tagRASDEVINFOW*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetCountryInfoA(struct RASCTRYINFO*,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetCountryInfoW(struct RASCTRYINFO*,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetEntryPropertiesA(LPCSTR,LPCSTR,struct tagRASENTRYA*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetEntryPropertiesW(LPCWSTR,LPCWSTR,struct tagRASENTRYW*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasSetEntryPropertiesA(LPCSTR,LPCSTR,struct tagRASENTRYA*,DWORD,LPBYTE,DWORD);
+  DWORD __attribute__((__stdcall__)) RasSetEntryPropertiesW(LPCWSTR,LPCWSTR,struct tagRASENTRYW*,DWORD,LPBYTE,DWORD);
+  DWORD __attribute__((__stdcall__)) RasRenameEntryA(LPCSTR,LPCSTR,LPCSTR);
+  DWORD __attribute__((__stdcall__)) RasRenameEntryW(LPCWSTR,LPCWSTR,LPCWSTR);
+  DWORD __attribute__((__stdcall__)) RasDeleteEntryA(LPCSTR,LPCSTR);
+  DWORD __attribute__((__stdcall__)) RasDeleteEntryW(LPCWSTR,LPCWSTR);
+  DWORD __attribute__((__stdcall__)) RasValidateEntryNameA(LPCSTR,LPCSTR);
+  DWORD __attribute__((__stdcall__)) RasValidateEntryNameW(LPCWSTR,LPCWSTR);
+  DWORD __attribute__((__stdcall__)) RasConnectionNotificationA(HRASCONN,HANDLE,DWORD);
+  DWORD __attribute__((__stdcall__)) RasConnectionNotificationW(HRASCONN,HANDLE,DWORD);
+  DWORD __attribute__((__stdcall__)) RasGetSubEntryHandleA(HRASCONN,DWORD,HRASCONN*);
+  DWORD __attribute__((__stdcall__)) RasGetSubEntryHandleW(HRASCONN,DWORD,HRASCONN*);
+  DWORD __attribute__((__stdcall__)) RasGetCredentialsA(LPCSTR,LPCSTR,struct tagRASCREDENTIALSA*);
+  DWORD __attribute__((__stdcall__)) RasGetCredentialsW(LPCWSTR,LPCWSTR,struct tagRASCREDENTIALSW*);
+  DWORD __attribute__((__stdcall__)) RasSetCredentialsA(LPCSTR,LPCSTR,struct tagRASCREDENTIALSA*,WINBOOL);
+  DWORD __attribute__((__stdcall__)) RasSetCredentialsW(LPCWSTR,LPCWSTR,struct tagRASCREDENTIALSW*,WINBOOL);
+  DWORD __attribute__((__stdcall__)) RasGetSubEntryPropertiesA(LPCSTR,LPCSTR,DWORD,struct tagRASSUBENTRYA*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetSubEntryPropertiesW(LPCWSTR,LPCWSTR,DWORD,struct tagRASSUBENTRYW*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasSetSubEntryPropertiesA(LPCSTR,LPCSTR,DWORD,struct tagRASSUBENTRYA*,DWORD,LPBYTE,DWORD);
+  DWORD __attribute__((__stdcall__)) RasSetSubEntryPropertiesW(LPCWSTR,LPCWSTR,DWORD,struct tagRASSUBENTRYW*,DWORD,LPBYTE,DWORD);
+  DWORD __attribute__((__stdcall__)) RasGetAutodialAddressA(LPCSTR,LPDWORD,struct tagRASAUTODIALENTRYA*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetAutodialAddressW(LPCWSTR,LPDWORD,struct tagRASAUTODIALENTRYW*,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasSetAutodialAddressA(LPCSTR,DWORD,struct tagRASAUTODIALENTRYA*,DWORD,DWORD);
+  DWORD __attribute__((__stdcall__)) RasSetAutodialAddressW(LPCWSTR,DWORD,struct tagRASAUTODIALENTRYW*,DWORD,DWORD);
+  DWORD __attribute__((__stdcall__)) RasEnumAutodialAddressesA(LPSTR *,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasEnumAutodialAddressesW(LPWSTR *,LPDWORD,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetAutodialEnableA(DWORD,LPBOOL);
+  DWORD __attribute__((__stdcall__)) RasGetAutodialEnableW(DWORD,LPBOOL);
+  DWORD __attribute__((__stdcall__)) RasSetAutodialEnableA(DWORD,WINBOOL);
+  DWORD __attribute__((__stdcall__)) RasSetAutodialEnableW(DWORD,WINBOOL);
+  DWORD __attribute__((__stdcall__)) RasGetAutodialParamA(DWORD,LPVOID,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasGetAutodialParamW(DWORD,LPVOID,LPDWORD);
+  DWORD __attribute__((__stdcall__)) RasSetAutodialParamA(DWORD,LPVOID,DWORD);
+  DWORD __attribute__((__stdcall__)) RasSetAutodialParamW(DWORD,LPVOID,DWORD);
+  typedef struct _RAS_STATS {
+    DWORD dwSize;
+    DWORD dwBytesXmited;
+    DWORD dwBytesRcved;
+    DWORD dwFramesXmited;
+    DWORD dwFramesRcved;
+    DWORD dwCrcErr;
+    DWORD dwTimeoutErr;
+    DWORD dwAlignmentErr;
+    DWORD dwHardwareOverrunErr;
+    DWORD dwFramingErr;
+    DWORD dwBufferOverrunErr;
+    DWORD dwCompressionRatioIn;
+    DWORD dwCompressionRatioOut;
+    DWORD dwBps;
+    DWORD dwConnectDuration;
+  } RAS_STATS,*PRAS_STATS;
+  typedef DWORD (__attribute__((__stdcall__)) *RasCustomHangUpFn)(HRASCONN hRasConn);
+  typedef DWORD (__attribute__((__stdcall__)) *RasCustomDialFn)(HINSTANCE hInstDll,struct tagRASDIALEXTENSIONS* lpRasDialExtensions,LPCWSTR lpszPhonebook,struct tagRASDIALPARAMSA* lpRasDialParams,DWORD dwNotifierType,LPVOID lpvNotifier,HRASCONN* lphRasConn,DWORD dwFlags);
+  typedef DWORD (__attribute__((__stdcall__)) *RasCustomDeleteEntryNotifyFn)(LPCWSTR lpszPhonebook,LPCWSTR lpszEntry,DWORD dwFlags);
+  DWORD __attribute__((__stdcall__)) RasInvokeEapUI(HRASCONN,DWORD,struct tagRASDIALEXTENSIONS*,HWND);
+  DWORD __attribute__((__stdcall__)) RasGetLinkStatistics(HRASCONN hRasConn,DWORD dwSubEntry,RAS_STATS *lpStatistics);
+  DWORD __attribute__((__stdcall__)) RasGetConnectionStatistics(HRASCONN hRasConn,RAS_STATS *lpStatistics);
+  DWORD __attribute__((__stdcall__)) RasClearLinkStatistics(HRASCONN hRasConn,DWORD dwSubEntry);
+  DWORD __attribute__((__stdcall__)) RasClearConnectionStatistics(HRASCONN hRasConn);
+  DWORD __attribute__((__stdcall__)) RasGetEapUserDataA(HANDLE hToken,LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbEapData,DWORD *pdwSizeofEapData);
+  DWORD __attribute__((__stdcall__)) RasGetEapUserDataW(HANDLE hToken,LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbEapData,DWORD *pdwSizeofEapData);
+  DWORD __attribute__((__stdcall__)) RasSetEapUserDataA(HANDLE hToken,LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbEapData,DWORD dwSizeofEapData);
+  DWORD __attribute__((__stdcall__)) RasSetEapUserDataW(HANDLE hToken,LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbEapData,DWORD dwSizeofEapData);
+  DWORD __attribute__((__stdcall__)) RasGetCustomAuthDataA(LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbCustomAuthData,DWORD *pdwSizeofCustomAuthData);
+  DWORD __attribute__((__stdcall__)) RasGetCustomAuthDataW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbCustomAuthData,DWORD *pdwSizeofCustomAuthData);
+  DWORD __attribute__((__stdcall__)) RasSetCustomAuthDataA(LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbCustomAuthData,DWORD dwSizeofCustomAuthData);
+  DWORD __attribute__((__stdcall__)) RasSetCustomAuthDataW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbCustomAuthData,DWORD dwSizeofCustomAuthData);
+  DWORD __attribute__((__stdcall__)) RasGetEapUserIdentityW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,DWORD dwFlags,HWND hwnd,struct tagRASEAPUSERIDENTITYW* *ppRasEapUserIdentity);
+  DWORD __attribute__((__stdcall__)) RasGetEapUserIdentityA(LPCSTR pszPhonebook,LPCSTR pszEntry,DWORD dwFlags,HWND hwnd,struct tagRASEAPUSERIDENTITYA* *ppRasEapUserIdentity);
+  void __attribute__((__stdcall__)) RasFreeEapUserIdentityW(struct tagRASEAPUSERIDENTITYW* pRasEapUserIdentity);
+  void __attribute__((__stdcall__)) RasFreeEapUserIdentityA(struct tagRASEAPUSERIDENTITYA* pRasEapUserIdentity);
+  DWORD __attribute__((__stdcall__)) RasDeleteSubEntryA(LPCSTR pszPhonebook,LPCSTR pszEntry,DWORD dwSubentryId);
+  DWORD __attribute__((__stdcall__)) RasDeleteSubEntryW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,DWORD dwSubEntryId);
+#pragma pack(pop)
+  typedef enum _ROUTER_INTERFACE_TYPE {
+    ROUTER_IF_TYPE_CLIENT,ROUTER_IF_TYPE_HOME_ROUTER,ROUTER_IF_TYPE_FULL_ROUTER,ROUTER_IF_TYPE_DEDICATED,ROUTER_IF_TYPE_INTERNAL,
+    ROUTER_IF_TYPE_LOOPBACK,ROUTER_IF_TYPE_TUNNEL1,ROUTER_IF_TYPE_DIALOUT
+  } ROUTER_INTERFACE_TYPE;
+  typedef enum _ROUTER_CONNECTION_STATE {
+    ROUTER_IF_STATE_UNREACHABLE,ROUTER_IF_STATE_DISCONNECTED,ROUTER_IF_STATE_CONNECTING,ROUTER_IF_STATE_CONNECTED
+  } ROUTER_CONNECTION_STATE;
+  typedef struct _MPR_INTERFACE_0 {
+    WCHAR wszInterfaceName[256 +1];
+    HANDLE hInterface;
+    WINBOOL fEnabled;
+    ROUTER_INTERFACE_TYPE dwIfType;
+    ROUTER_CONNECTION_STATE dwConnectionState;
+    DWORD fUnReachabilityReasons;
+    DWORD dwLastError;
+  } MPR_INTERFACE_0,*PMPR_INTERFACE_0;
+  typedef struct _MPR_IPINIP_INTERFACE_0 {
+    WCHAR wszFriendlyName[256 +1];
+    GUID Guid;
+  } MPR_IPINIP_INTERFACE_0,*PMPR_IPINIP_INTERFACE_0;
+  typedef struct _MPR_INTERFACE_1 {
+    WCHAR wszInterfaceName[256 +1];
+    HANDLE hInterface;
+    WINBOOL fEnabled;
+    ROUTER_INTERFACE_TYPE dwIfType;
+    ROUTER_CONNECTION_STATE dwConnectionState;
+    DWORD fUnReachabilityReasons;
+    DWORD dwLastError;
+    LPWSTR lpwsDialoutHoursRestriction;
+  } MPR_INTERFACE_1,*PMPR_INTERFACE_1;
+  typedef struct _MPR_INTERFACE_2 {
+    WCHAR wszInterfaceName[256 +1];
+    HANDLE hInterface;
+    WINBOOL fEnabled;
+    ROUTER_INTERFACE_TYPE dwIfType;
+    ROUTER_CONNECTION_STATE dwConnectionState;
+    DWORD fUnReachabilityReasons;
+    DWORD dwLastError;
+    DWORD dwfOptions;
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    PWCHAR szAlternates;
+    DWORD ipaddr;
+    DWORD ipaddrDns;
+    DWORD ipaddrDnsAlt;
+    DWORD ipaddrWins;
+    DWORD ipaddrWinsAlt;
+    DWORD dwfNetProtocols;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szX25PadType[32 + 1 ];
+    WCHAR szX25Address[200 + 1 ];
+    WCHAR szX25Facilities[200 + 1 ];
+    WCHAR szX25UserData[200 + 1 ];
+    DWORD dwChannels;
+    DWORD dwSubEntries;
+    DWORD dwDialMode;
+    DWORD dwDialExtraPercent;
+    DWORD dwDialExtraSampleSeconds;
+    DWORD dwHangUpExtraPercent;
+    DWORD dwHangUpExtraSampleSeconds;
+    DWORD dwIdleDisconnectSeconds;
+    DWORD dwType;
+    DWORD dwEncryptionType;
+    DWORD dwCustomAuthKey;
+    DWORD dwCustomAuthDataSize;
+    LPBYTE lpbCustomAuthData;
+    GUID guidId;
+    DWORD dwVpnStrategy;
+  } MPR_INTERFACE_2,*PMPR_INTERFACE_2;
+  typedef struct _MPR_DEVICE_0 {
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+  } MPR_DEVICE_0,*PMPR_DEVICE_0;
+  typedef struct _MPR_DEVICE_1 {
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    PWCHAR szAlternates;
+  } MPR_DEVICE_1,*PMPR_DEVICE_1;
+  typedef struct _MPR_CREDENTIALSEX_0 {
+    DWORD dwSize;
+    LPBYTE lpbCredentialsInfo;
+  } MPR_CREDENTIALSEX_0,*PMPR_CREDENTIALSEX_0;
+  typedef struct _MPR_CREDENTIALSEX_1 {
+    DWORD dwSize;
+    LPBYTE lpbCredentialsInfo;
+  } MPR_CREDENTIALSEX_1,*PMPR_CREDENTIALSEX_1;
+  typedef struct _MPR_TRANSPORT_0 {
+    DWORD dwTransportId;
+    HANDLE hTransport;
+    WCHAR wszTransportName[40 +1];
+  } MPR_TRANSPORT_0,*PMPR_TRANSPORT_0;
+  typedef struct _MPR_IFTRANSPORT_0
+  {
+    DWORD dwTransportId;
+    HANDLE hIfTransport;
+    WCHAR wszIfTransportName[40 +1];
+  }
+  MPR_IFTRANSPORT_0,*PMPR_IFTRANSPORT_0;
+  typedef struct _MPR_SERVER_0
+  {
+    WINBOOL fLanOnlyMode;
+    DWORD dwUpTime;
+    DWORD dwTotalPorts;
+    DWORD dwPortsInUse;
+  }
+  MPR_SERVER_0,*PMPR_SERVER_0;
+  typedef struct _MPR_SERVER_1 {
+    DWORD dwNumPptpPorts;
+    DWORD dwPptpPortFlags;
+    DWORD dwNumL2tpPorts;
+    DWORD dwL2tpPortFlags;
+  } MPR_SERVER_1,*PMPR_SERVER_1;
+  typedef enum _RAS_PORT_CONDITION {
+    RAS_PORT_NON_OPERATIONAL,RAS_PORT_DISCONNECTED,RAS_PORT_CALLING_BACK,RAS_PORT_LISTENING,RAS_PORT_AUTHENTICATING,RAS_PORT_AUTHENTICATED,
+    RAS_PORT_INITIALIZING
+  } RAS_PORT_CONDITION;
+  typedef enum _RAS_HARDWARE_CONDITION {
+    RAS_HARDWARE_OPERATIONAL,RAS_HARDWARE_FAILURE
+  } RAS_HARDWARE_CONDITION;
+  typedef struct _RAS_PORT_0 {
+    HANDLE hPort;
+    HANDLE hConnection;
+    RAS_PORT_CONDITION dwPortCondition;
+    DWORD dwTotalNumberOfCalls;
+    DWORD dwConnectDuration;
+    WCHAR wszPortName[16 + 1 ];
+    WCHAR wszMediaName[16 + 1 ];
+    WCHAR wszDeviceName[128 + 1 ];
+    WCHAR wszDeviceType[16 + 1 ];
+  } RAS_PORT_0,*PRAS_PORT_0;
+  typedef struct _RAS_PORT_1 {
+    HANDLE hPort;
+    HANDLE hConnection;
+    RAS_HARDWARE_CONDITION dwHardwareCondition;
+    DWORD dwLineSpeed;
+    DWORD dwBytesXmited;
+    DWORD dwBytesRcved;
+    DWORD dwFramesXmited;
+    DWORD dwFramesRcved;
+    DWORD dwCrcErr;
+    DWORD dwTimeoutErr;
+    DWORD dwAlignmentErr;
+    DWORD dwHardwareOverrunErr;
+    DWORD dwFramingErr;
+    DWORD dwBufferOverrunErr;
+    DWORD dwCompressionRatioIn;
+    DWORD dwCompressionRatioOut;
+  } RAS_PORT_1,*PRAS_PORT_1;
+  typedef struct _PPP_NBFCP_INFO {
+    DWORD dwError;
+    WCHAR wszWksta[16 + 1 ];
+  } PPP_NBFCP_INFO;
+  typedef struct _PPP_IPCP_INFO {
+    DWORD dwError;
+    WCHAR wszAddress[15 + 1 ];
+    WCHAR wszRemoteAddress[15 + 1 ];
+  } PPP_IPCP_INFO;
+  typedef struct _PPP_IPCP_INFO2 {
+    DWORD dwError;
+    WCHAR wszAddress[15 + 1 ];
+    WCHAR wszRemoteAddress[15 + 1 ];
+    DWORD dwOptions;
+    DWORD dwRemoteOptions;
+  } PPP_IPCP_INFO2;
+  typedef struct _PPP_IPXCP_INFO {
+    DWORD dwError;
+    WCHAR wszAddress[22 + 1 ];
+  } PPP_IPXCP_INFO;
+  typedef struct _PPP_ATCP_INFO {
+    DWORD dwError;
+    WCHAR wszAddress[32 + 1 ];
+  } PPP_ATCP_INFO;
+  typedef struct _PPP_INFO {
+    PPP_NBFCP_INFO nbf;
+    PPP_IPCP_INFO ip;
+    PPP_IPXCP_INFO ipx;
+    PPP_ATCP_INFO at;
+  } PPP_INFO;
+  typedef struct _PPP_CCP_INFO {
+    DWORD dwError;
+    DWORD dwCompressionAlgorithm;
+    DWORD dwOptions;
+    DWORD dwRemoteCompressionAlgorithm;
+    DWORD dwRemoteOptions;
+  } PPP_CCP_INFO;
+  typedef struct _PPP_LCP_INFO {
+    DWORD dwError;
+    DWORD dwAuthenticationProtocol;
+    DWORD dwAuthenticationData;
+    DWORD dwRemoteAuthenticationProtocol;
+    DWORD dwRemoteAuthenticationData;
+    DWORD dwTerminateReason;
+    DWORD dwRemoteTerminateReason;
+    DWORD dwOptions;
+    DWORD dwRemoteOptions;
+    DWORD dwEapTypeId;
+    DWORD dwRemoteEapTypeId;
+  } PPP_LCP_INFO;
+  typedef struct _PPP_INFO_2 {
+    PPP_NBFCP_INFO nbf;
+    PPP_IPCP_INFO2 ip;
+    PPP_IPXCP_INFO ipx;
+    PPP_ATCP_INFO at;
+    PPP_CCP_INFO ccp;
+    PPP_LCP_INFO lcp;
+  } PPP_INFO_2;
+  typedef struct _RAS_CONNECTION_0 {
+    HANDLE hConnection;
+    HANDLE hInterface;
+    DWORD dwConnectDuration;
+    ROUTER_INTERFACE_TYPE dwInterfaceType;
+    DWORD dwConnectionFlags;
+    WCHAR wszInterfaceName[256 + 1 ];
+    WCHAR wszUserName[256 + 1 ];
+    WCHAR wszLogonDomain[15 + 1 ];
+    WCHAR wszRemoteComputer[16 + 1 ];
+  } RAS_CONNECTION_0,*PRAS_CONNECTION_0;
+  typedef struct _RAS_CONNECTION_1 {
+    HANDLE hConnection;
+    HANDLE hInterface;
+    PPP_INFO PppInfo;
+    DWORD dwBytesXmited;
+    DWORD dwBytesRcved;
+    DWORD dwFramesXmited;
+    DWORD dwFramesRcved;
+    DWORD dwCrcErr;
+    DWORD dwTimeoutErr;
+    DWORD dwAlignmentErr;
+    DWORD dwHardwareOverrunErr;
+    DWORD dwFramingErr;
+    DWORD dwBufferOverrunErr;
+    DWORD dwCompressionRatioIn;
+    DWORD dwCompressionRatioOut;
+  } RAS_CONNECTION_1,*PRAS_CONNECTION_1;
+  typedef struct _RAS_CONNECTION_2 {
+    HANDLE hConnection;
+    WCHAR wszUserName[256 + 1 ];
+    ROUTER_INTERFACE_TYPE dwInterfaceType;
+    GUID guid;
+    PPP_INFO_2 PppInfo2;
+  } RAS_CONNECTION_2,*PRAS_CONNECTION_2;
+  typedef struct _RAS_USER_0 {
+    BYTE bfPrivilege;
+    WCHAR wszPhoneNumber[128 + 1];
+  } RAS_USER_0,*PRAS_USER_0;
+  typedef struct _RAS_USER_1 {
+    BYTE bfPrivilege;
+    WCHAR wszPhoneNumber[128 + 1];
+    BYTE bfPrivilege2;
+  } RAS_USER_1,*PRAS_USER_1;
+  typedef HANDLE RAS_SERVER_HANDLE;
+  typedef HANDLE MPR_SERVER_HANDLE;
+  typedef HANDLE MIB_SERVER_HANDLE;
+  DWORD __attribute__((__stdcall__)) MprAdminConnectionEnum(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,LPBYTE *lplpbBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD __attribute__((__stdcall__)) MprAdminPortEnum(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,HANDLE hConnection,LPBYTE *lplpbBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD __attribute__((__stdcall__)) MprAdminConnectionGetInfo(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,HANDLE hConnection,LPBYTE *lplpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminPortGetInfo(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,HANDLE hPort,LPBYTE *lplpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminConnectionClearStats(RAS_SERVER_HANDLE hRasServer,HANDLE hConnection);
+  DWORD __attribute__((__stdcall__)) MprAdminPortClearStats(RAS_SERVER_HANDLE hRasServer,HANDLE hPort);
+  DWORD __attribute__((__stdcall__)) MprAdminPortReset(RAS_SERVER_HANDLE hRasServer,HANDLE hPort);
+  DWORD __attribute__((__stdcall__)) MprAdminPortDisconnect(RAS_SERVER_HANDLE hRasServer,HANDLE hPort);
+  WINBOOL __attribute__((__stdcall__)) MprAdminAcceptNewConnection(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1);
+  WINBOOL __attribute__((__stdcall__)) MprAdminAcceptNewConnection2(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1,RAS_CONNECTION_2 *pRasConnection2);
+  WINBOOL __attribute__((__stdcall__)) MprAdminAcceptNewLink (RAS_PORT_0 *pRasPort0,RAS_PORT_1 *pRasPort1);
+  void __attribute__((__stdcall__)) MprAdminConnectionHangupNotification(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1);
+  void __attribute__((__stdcall__)) MprAdminConnectionHangupNotification2(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1,RAS_CONNECTION_2 *pRasConnection2);
+  DWORD __attribute__((__stdcall__)) MprAdminConnectionRemoveQuarantine(HANDLE hRasServer,HANDLE hRasConnection,WINBOOL fIsIpAddress);
+  void __attribute__((__stdcall__)) MprAdminLinkHangupNotification (RAS_PORT_0 *pRasPort0,RAS_PORT_1 *pRasPort1);
+  DWORD __attribute__((__stdcall__)) MprAdminGetIpAddressForUser (WCHAR *lpwszUserName,WCHAR *lpwszPortName,DWORD *lpdwIpAddress,WINBOOL *bNotifyRelease);
+  void __attribute__((__stdcall__)) MprAdminReleaseIpAddress (WCHAR *lpszUserName,WCHAR *lpszPortName,DWORD *lpdwIpAddress);
+  DWORD __attribute__((__stdcall__)) MprAdminInitializeDll(void);
+  DWORD __attribute__((__stdcall__)) MprAdminTerminateDll(void);
+  DWORD __attribute__((__stdcall__)) MprAdminUserGetInfo(const WCHAR *lpszServer,const WCHAR *lpszUser,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminUserSetInfo(const WCHAR *lpszServer,const WCHAR *lpszUser,DWORD dwLevel,const LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminSendUserMessage(MPR_SERVER_HANDLE hMprServer,HANDLE hConnection,LPWSTR lpwszMessage);
+  DWORD __attribute__((__stdcall__)) MprAdminGetPDCServer(const WCHAR *lpszDomain,const WCHAR *lpszServer,LPWSTR lpszPDCServer);
+  WINBOOL __attribute__((__stdcall__)) MprAdminIsServiceRunning(LPWSTR lpwsServerName);
+  DWORD __attribute__((__stdcall__)) MprAdminServerConnect(LPWSTR lpwsServerName,MPR_SERVER_HANDLE *phMprServer);
+  void __attribute__((__stdcall__)) MprAdminServerDisconnect(MPR_SERVER_HANDLE hMprServer);
+  DWORD __attribute__((__stdcall__)) MprAdminServerGetCredentials(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminServerSetCredentials(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminBufferFree(LPVOID pBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminGetErrorString(DWORD dwError,LPWSTR *lpwsErrorString);
+  DWORD __attribute__((__stdcall__)) MprAdminServerGetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminServerSetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminEstablishDomainRasServer (PWCHAR pszDomain,PWCHAR pszMachine,WINBOOL bEnable);
+  DWORD __attribute__((__stdcall__)) MprAdminIsDomainRasServer (PWCHAR pszDomain,PWCHAR pszMachine,PBOOL pbIsRasServer);
+  DWORD __attribute__((__stdcall__)) MprAdminTransportCreate(MPR_SERVER_HANDLE hMprServer,DWORD dwTransportId,LPWSTR lpwsTransportName,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize,LPWSTR lpwsDLLPath);
+  DWORD __attribute__((__stdcall__)) MprAdminTransportSetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwTransportId,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize);
+  DWORD __attribute__((__stdcall__)) MprAdminTransportGetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwTransportId,LPBYTE *ppGlobalInfo,LPDWORD lpdwGlobalInfoSize,LPBYTE *ppClientInterfaceInfo,LPDWORD lpdwClientInterfaceInfoSize);
+  DWORD __attribute__((__stdcall__)) MprAdminDeviceEnum(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer,LPDWORD lpdwTotalEntries);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceGetHandle(MPR_SERVER_HANDLE hMprServer,LPWSTR lpwsInterfaceName,HANDLE *phInterface,WINBOOL fIncludeClientInterfaces);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceCreate(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer,HANDLE *phInterface);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceGetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceSetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceDelete(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceDeviceGetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwIndex,DWORD dwLevel,LPBYTE *lplpBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceDeviceSetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwIndex,DWORD dwLevel,LPBYTE lplpBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceTransportRemove(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceTransportAdd(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceTransportGetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId,LPBYTE *ppInterfaceInfo,LPDWORD lpdwpInterfaceInfoSize);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceTransportSetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceEnum(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD __attribute__((__stdcall__)) MprSetupIpInIpInterfaceFriendlyNameEnum(PWCHAR pwszMachineName,LPBYTE *lplpBuffer,LPDWORD lpdwEntriesRead);
+  DWORD __attribute__((__stdcall__)) MprSetupIpInIpInterfaceFriendlyNameFree(LPVOID lpBuffer);
+  DWORD __attribute__((__stdcall__)) MprSetupIpInIpInterfaceFriendlyNameCreate(PWCHAR pwszMachineName,PMPR_IPINIP_INTERFACE_0 pNameInformation);
+  DWORD __attribute__((__stdcall__)) MprSetupIpInIpInterfaceFriendlyNameDelete(PWCHAR pwszMachineName,GUID *pGuid);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceSetCredentials(LPWSTR lpwsServer,LPWSTR lpwsInterfaceName,LPWSTR lpwsUserName,LPWSTR lpwsDomainName,LPWSTR lpwsPassword);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceGetCredentials(LPWSTR lpwsServer,LPWSTR lpwsInterfaceName,LPWSTR lpwsUserName,LPWSTR lpwsPassword,LPWSTR lpwsDomainName);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceSetCredentialsEx(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceGetCredentialsEx(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceConnect(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,HANDLE hEvent,WINBOOL fSynchronous);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceDisconnect(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceUpdateRoutes(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwProtocolId,HANDLE hEvent);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceQueryUpdateResult(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwProtocolId,LPDWORD lpdwUpdateResult);
+  DWORD __attribute__((__stdcall__)) MprAdminInterfaceUpdatePhonebookInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface);
+  DWORD __attribute__((__stdcall__)) MprAdminRegisterConnectionNotification(MPR_SERVER_HANDLE hMprServer,HANDLE hEventNotification);
+  DWORD __attribute__((__stdcall__)) MprAdminDeregisterConnectionNotification(MPR_SERVER_HANDLE hMprServer,HANDLE hEventNotification);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBServerConnect(LPWSTR lpwsServerName,MIB_SERVER_HANDLE *phMibServer);
+  void __attribute__((__stdcall__)) MprAdminMIBServerDisconnect(MIB_SERVER_HANDLE hMibServer);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBEntryCreate(MIB_SERVER_HANDLE hMibServer,DWORD dwPid,DWORD dwRoutingPid,LPVOID lpEntry,DWORD dwEntrySize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBEntryDelete(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpEntry,DWORD dwEntrySize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBEntrySet(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpEntry,DWORD dwEntrySize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBEntryGet(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInEntry,DWORD dwInEntrySize,LPVOID *lplpOutEntry,LPDWORD lpOutEntrySize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBEntryGetFirst(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInEntry,DWORD dwInEntrySize,LPVOID *lplpOutEntry,LPDWORD lpOutEntrySize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBEntryGetNext(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInEntry,DWORD dwInEntrySize,LPVOID *lplpOutEntry,LPDWORD lpOutEntrySize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBGetTrapInfo(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInData,DWORD dwInDataSize,LPVOID *lplpOutData,LPDWORD lpOutDataSize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBSetTrapInfo(DWORD dwProtocolId,DWORD dwRoutingPid,HANDLE hEvent,LPVOID lpInData,DWORD dwInDataSize,LPVOID *lplpOutData,LPDWORD lpOutDataSize);
+  DWORD __attribute__((__stdcall__)) MprAdminMIBBufferFree(LPVOID pBuffer);
+  DWORD __attribute__((__stdcall__)) MprConfigServerInstall(DWORD dwLevel,PVOID pBuffer);
+  DWORD __attribute__((__stdcall__)) MprConfigServerConnect(LPWSTR lpwsServerName,HANDLE *phMprConfig);
+  void __attribute__((__stdcall__)) MprConfigServerDisconnect(HANDLE hMprConfig);
+  DWORD __attribute__((__stdcall__)) MprConfigServerRefresh(HANDLE hMprConfig);
+  DWORD __attribute__((__stdcall__)) MprConfigBufferFree(LPVOID pBuffer);
+  DWORD __attribute__((__stdcall__)) MprConfigServerGetInfo(HANDLE hMprConfig,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprConfigServerSetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprConfigServerBackup(HANDLE hMprConfig,LPWSTR lpwsPath);
+  DWORD __attribute__((__stdcall__)) MprConfigServerRestore(HANDLE hMprConfig,LPWSTR lpwsPath);
+  DWORD __attribute__((__stdcall__)) MprConfigTransportCreate(HANDLE hMprConfig,DWORD dwTransportId,LPWSTR lpwsTransportName,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize,LPWSTR lpwsDLLPath,HANDLE *phRouterTransport);
+  DWORD __attribute__((__stdcall__)) MprConfigTransportDelete(HANDLE hMprConfig,HANDLE hRouterTransport);
+  DWORD __attribute__((__stdcall__)) MprConfigTransportGetHandle(HANDLE hMprConfig,DWORD dwTransportId,HANDLE *phRouterTransport);
+  DWORD __attribute__((__stdcall__)) MprConfigTransportSetInfo(HANDLE hMprConfig,HANDLE hRouterTransport,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize,LPWSTR lpwsDLLPath);
+  DWORD __attribute__((__stdcall__)) MprConfigTransportGetInfo(HANDLE hMprConfig,HANDLE hRouterTransport,LPBYTE *ppGlobalInfo,LPDWORD lpdwGlobalInfoSize,LPBYTE *ppClientInterfaceInfo,LPDWORD lpdwClientInterfaceInfoSize,LPWSTR *lplpwsDLLPath);
+  DWORD __attribute__((__stdcall__)) MprConfigTransportEnum(HANDLE hMprConfig,DWORD dwLevel,LPBYTE *lplpBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceCreate(HANDLE hMprConfig,DWORD dwLevel,LPBYTE lpbBuffer,HANDLE *phRouterInterface);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceDelete(HANDLE hMprConfig,HANDLE hRouterInterface);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceGetHandle(HANDLE hMprConfig,LPWSTR lpwsInterfaceName,HANDLE *phRouterInterface);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceGetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwLevel,LPBYTE *lplpBuffer,LPDWORD lpdwBufferSize);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceSetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceEnum(HANDLE hMprConfig,DWORD dwLevel,LPBYTE *lplpBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceTransportAdd(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwTransportId,LPWSTR lpwsTransportName,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize,HANDLE *phRouterIfTransport);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceTransportRemove(HANDLE hMprConfig,HANDLE hRouterInterface,HANDLE hRouterIfTransport);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceTransportGetHandle(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwTransportId,HANDLE *phRouterIfTransport);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceTransportGetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,HANDLE hRouterIfTransport,LPBYTE *ppInterfaceInfo,LPDWORD lpdwInterfaceInfoSize);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceTransportSetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,HANDLE hRouterIfTransport,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize);
+  DWORD __attribute__((__stdcall__)) MprConfigInterfaceTransportEnum(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwLevel,LPBYTE *lplpBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD __attribute__((__stdcall__)) MprConfigGetFriendlyName(HANDLE hMprConfig,PWCHAR pszGuidName,PWCHAR pszBuffer,DWORD dwBufferSize);
+  DWORD __attribute__((__stdcall__)) MprConfigGetGuidName(HANDLE hMprConfig,PWCHAR pszFriendlyName,PWCHAR pszBuffer,DWORD dwBufferSize);
+  DWORD __attribute__((__stdcall__)) MprInfoCreate(DWORD dwVersion,LPVOID *lplpNewHeader);
+  DWORD __attribute__((__stdcall__)) MprInfoDelete(LPVOID lpHeader);
+  DWORD __attribute__((__stdcall__)) MprInfoRemoveAll(LPVOID lpHeader,LPVOID *lplpNewHeader);
+  DWORD __attribute__((__stdcall__)) MprInfoDuplicate(LPVOID lpHeader,LPVOID *lplpNewHeader);
+  DWORD __attribute__((__stdcall__)) MprInfoBlockAdd(LPVOID lpHeader,DWORD dwInfoType,DWORD dwItemSize,DWORD dwItemCount,LPBYTE lpItemData,LPVOID *lplpNewHeader);
+  DWORD __attribute__((__stdcall__)) MprInfoBlockRemove(LPVOID lpHeader,DWORD dwInfoType,LPVOID *lplpNewHeader);
+  DWORD __attribute__((__stdcall__)) MprInfoBlockSet(LPVOID lpHeader,DWORD dwInfoType,DWORD dwItemSize,DWORD dwItemCount,LPBYTE lpItemData,LPVOID *lplpNewHeader);
+  DWORD __attribute__((__stdcall__)) MprInfoBlockFind(LPVOID lpHeader,DWORD dwInfoType,LPDWORD lpdwItemSize,LPDWORD lpdwItemCount,LPBYTE *lplpItemData);
+  DWORD __attribute__((__stdcall__)) MprInfoBlockQuerySize(LPVOID lpHeader);
+typedef enum {
+  NldsInvalid,
+  NldsTentative,
+  NldsDuplicate,
+  NldsDeprecated,
+  NldsPreferred,
+  IpDadStateInvalid = 0,
+  IpDadStateTentative,
+  IpDadStateDuplicate,
+  IpDadStateDeprecated,
+  IpDadStatePreferred,
+} NL_DAD_STATE;
+typedef enum {
+  RouteProtocolOther = 1,
+  RouteProtocolLocal = 2,
+  RouteProtocolNetMgmt = 3,
+  RouteProtocolIcmp = 4,
+  RouteProtocolEgp = 5,
+  RouteProtocolGgp = 6,
+  RouteProtocolHello = 7,
+  RouteProtocolRip = 8,
+  RouteProtocolIsIs = 9,
+  RouteProtocolEsIs = 10,
+  RouteProtocolCisco = 11,
+  RouteProtocolBbn = 12,
+  RouteProtocolOspf = 13,
+  RouteProtocolBgp = 14,
+  MIB_IPPROTO_OTHER = 1, PROTO_IP_OTHER = 1,
+  MIB_IPPROTO_LOCAL = 2, PROTO_IP_LOCAL = 2,
+  MIB_IPPROTO_NETMGMT = 3, PROTO_IP_NETMGMT = 3,
+  MIB_IPPROTO_ICMP = 4, PROTO_IP_ICMP = 4,
+  MIB_IPPROTO_EGP = 5, PROTO_IP_EGP = 5,
+  MIB_IPPROTO_GGP = 6, PROTO_IP_GGP = 6,
+  MIB_IPPROTO_HELLO = 7, PROTO_IP_HELLO = 7,
+  MIB_IPPROTO_RIP = 8, PROTO_IP_RIP = 8,
+  MIB_IPPROTO_IS_IS = 9, PROTO_IP_IS_IS = 9,
+  MIB_IPPROTO_ES_IS = 10, PROTO_IP_ES_IS = 10,
+  MIB_IPPROTO_CISCO = 11, PROTO_IP_CISCO = 11,
+  MIB_IPPROTO_BBN = 12, PROTO_IP_BBN = 12,
+  MIB_IPPROTO_OSPF = 13, PROTO_IP_OSPF = 13,
+  MIB_IPPROTO_BGP = 14, PROTO_IP_BGP = 14,
+  MIB_IPPROTO_NT_AUTOSTATIC = 10002, PROTO_IP_NT_AUTOSTATIC = 10002,
+  MIB_IPPROTO_NT_STATIC = 10006, PROTO_IP_NT_STATIC = 10006,
+  MIB_IPPROTO_NT_STATIC_NON_DOD = 10007, PROTO_IP_NT_STATIC_NON_DOD = 10007
+} NL_ROUTE_PROTOCOL,*PNL_ROUTE_PROTOCOL;
+typedef enum {
+  IpPrefixOriginOther = 0,
+  IpPrefixOriginManual,
+  IpPrefixOriginWellKnown,
+  IpPrefixOriginDhcp,
+  IpPrefixOriginRouterAdvertisement,
+  IpPrefixOriginUnchanged = 16
+} NL_PREFIX_ORIGIN;
+typedef enum {
+  NlsoOther = 0,
+  NlsoManual,
+  NlsoWellKnown,
+  NlsoDhcp,
+  NlsoLinkLayerAddress,
+  NlsoRandom,
+  IpSuffixOriginOther = 0,
+  IpSuffixOriginManual,
+  IpSuffixOriginWellKnown,
+  IpSuffixOriginDhcp,
+  IpSuffixOriginLinkLayerAddress,
+  IpSuffixOriginRandom,
+  IpSuffixOriginUnchanged = 16
+} NL_SUFFIX_ORIGIN;
+typedef enum {
+  NlatUnspecified,
+  NlatUnicast,
+  NlatAnycast,
+  NlatMulticast,
+  NlatBroadcast,
+  NlatInvalid
+} NL_ADDRESS_TYPE, *PNL_ADDRESS_TYPE;
+typedef enum _NL_ROUTE_ORIGIN {
+  NlroManual,
+  NlroWellKnown,
+  NlroDHCP,
+  NlroRouterAdvertisement,
+  Nlro6to4,
+} NL_ROUTE_ORIGIN, *PNL_ROUTE_ORIGIN;
+typedef enum _NL_NEIGHBOR_STATE {
+  NlnsUnreachable,
+  NlnsIncomplete,
+  NlnsProbe,
+  NlnsDelay,
+  NlnsStale,
+  NlnsReachable,
+  NlnsPermanent,
+  NlnsMaximum,
+} NL_NEIGHBOR_STATE, *PNL_NEIGHBOR_STATE;
+typedef enum _NL_LINK_LOCAL_ADDRESS_BEHAVIOR {
+  LinkLocalAlwaysOff = 0,
+  LinkLocalDelayed,
+  LinkLocalAlwaysOn,
+  LinkLocalUnchanged = -1
+} NL_LINK_LOCAL_ADDRESS_BEHAVIOR;
+typedef enum _NL_ROUTER_DISCOVERY_BEHAVIOR {
+  RouterDiscoveryDisabled = 0,
+  RouterDiscoveryEnabled,
+  RouterDiscoveryDhcp,
+  RouterDiscoveryUnchanged = -1
+} NL_ROUTER_DISCOVERY_BEHAVIOR;
+typedef enum _NL_BANDWIDTH_FLAG {
+  NlbwDisabled = 0,
+  NlbwEnabled,
+  NlbwUnchanged = -1
+} NL_BANDWIDTH_FLAG, *PNL_BANDWIDTH_FLAG;
+typedef enum _NL_INTERFACE_NETWORK_CATEGORY_STATE {
+  NlincCategoryUnknown = 0,
+  NlincPublic = 1,
+  NlincPrivate = 2,
+  NlincDomainAuthenticated = 3,
+  NlincCategoryStateMax
+} NL_INTERFACE_NETWORK_CATEGORY_STATE, *PNL_INTERFACE_NETWORK_CATEGORY_STATE;
+typedef struct _NL_INTERFACE_OFFLOAD_ROD {
+  BOOLEAN NlChecksumSupported : 1;
+  BOOLEAN NlOptionsSupported : 1;
+  BOOLEAN TlDatagramChecksumSupported : 1;
+  BOOLEAN TlStreamChecksumSupported : 1;
+  BOOLEAN TlStreamOptionsSupported : 1;
+  BOOLEAN FastPathCompatible : 1;
+  BOOLEAN TlLargeSendOffloadSupported : 1;
+  BOOLEAN TlGiantSendOffloadSupported : 1;
+} NL_INTERFACE_OFFLOAD_ROD, *PNL_INTERFACE_OFFLOAD_ROD;
+typedef struct _NL_PATH_BANDWIDTH_ROD {
+  ULONG64 Bandwidth;
+  ULONG64 Instability;
+  BOOLEAN BandwidthPeaked;
+} NL_PATH_BANDWIDTH_ROD, *PNL_PATH_BANDWIDTH_ROD;
+typedef enum _NL_NETWORK_CATEGORY {
+  NetworkCategoryPublic,
+  NetworkCategoryPrivate,
+  NetworkCategoryDomainAuthenticated,
+  NetworkCategoryUnchanged = -1,
+  NetworkCategoryUnknown = -1
+} NL_NETWORK_CATEGORY,*PNL_NETWORK_CATEGORY;
+typedef struct _NL_BANDWIDTH_INFORMATION {
+  ULONG64 Bandwidth;
+  ULONG64 Instability;
+  BOOLEAN BandwidthPeaked;
+} NL_BANDWIDTH_INFORMATION, *PNL_BANDWIDTH_INFORMATION;
+typedef ULONG IFTYPE;
+typedef struct _MIB_OPAQUE_QUERY {
+  DWORD dwVarId;
+  DWORD rgdwVarIndex[1];
+} MIB_OPAQUE_QUERY,*PMIB_OPAQUE_QUERY;
+typedef struct _MIB_IFNUMBER {
+  DWORD dwValue;
+} MIB_IFNUMBER,*PMIB_IFNUMBER;
+typedef struct _MIB_IFROW {
+  WCHAR wszName[256];
+  DWORD dwIndex;
+  DWORD dwType;
+  DWORD dwMtu;
+  DWORD dwSpeed;
+  DWORD dwPhysAddrLen;
+  BYTE bPhysAddr[8];
+  DWORD dwAdminStatus;
+  DWORD dwOperStatus;
+  DWORD dwLastChange;
+  DWORD dwInOctets;
+  DWORD dwInUcastPkts;
+  DWORD dwInNUcastPkts;
+  DWORD dwInDiscards;
+  DWORD dwInErrors;
+  DWORD dwInUnknownProtos;
+  DWORD dwOutOctets;
+  DWORD dwOutUcastPkts;
+  DWORD dwOutNUcastPkts;
+  DWORD dwOutDiscards;
+  DWORD dwOutErrors;
+  DWORD dwOutQLen;
+  DWORD dwDescrLen;
+  BYTE bDescr[256];
+} MIB_IFROW,*PMIB_IFROW;
+typedef struct _MIB_IFTABLE {
+  DWORD dwNumEntries;
+  MIB_IFROW table[1];
+} MIB_IFTABLE,*PMIB_IFTABLE;
+typedef struct _MIBICMPSTATS {
+  DWORD dwMsgs;
+  DWORD dwErrors;
+  DWORD dwDestUnreachs;
+  DWORD dwTimeExcds;
+  DWORD dwParmProbs;
+  DWORD dwSrcQuenchs;
+  DWORD dwRedirects;
+  DWORD dwEchos;
+  DWORD dwEchoReps;
+  DWORD dwTimestamps;
+  DWORD dwTimestampReps;
+  DWORD dwAddrMasks;
+  DWORD dwAddrMaskReps;
+} MIBICMPSTATS,*PMIBICMPSTATS;
+typedef struct _MIBICMPINFO {
+  MIBICMPSTATS icmpInStats;
+  MIBICMPSTATS icmpOutStats;
+} MIBICMPINFO;
+typedef struct _MIB_ICMP {
+  MIBICMPINFO stats;
+} MIB_ICMP,*PMIB_ICMP;
+typedef enum {
+  ICMP6_DST_UNREACH = 1,ICMP6_PACKET_TOO_BIG = 2,ICMP6_TIME_EXCEEDED = 3,ICMP6_PARAM_PROB = 4,ICMP6_ECHO_REQUEST = 128,
+  ICMP6_ECHO_REPLY = 129,ICMP6_MEMBERSHIP_QUERY = 130,ICMP6_MEMBERSHIP_REPORT = 131,ICMP6_MEMBERSHIP_REDUCTION = 132,
+  ND_ROUTER_SOLICIT = 133,ND_ROUTER_ADVERT = 134,ND_NEIGHBOR_SOLICIT = 135,ND_NEIGHBOR_ADVERT = 136,ND_REDIRECT = 137
+} ICMP6_TYPE,*PICMP6_TYPE;
+typedef enum {
+  ICMP4_ECHO_REPLY = 0,ICMP4_DST_UNREACH = 3,ICMP4_SOURCE_QUENCH = 4,ICMP4_REDIRECT = 5,ICMP4_ECHO_REQUEST = 8,ICMP4_ROUTER_ADVERT = 9,
+  ICMP4_ROUTER_SOLICIT = 10,ICMP4_TIME_EXCEEDED = 11,ICMP4_PARAM_PROB = 12,ICMP4_TIMESTAMP_REQUEST = 13,ICMP4_TIMESTAMP_REPLY = 14,
+  ICMP4_MASK_REQUEST = 17,ICMP4_MASK_REPLY = 18
+} ICMP4_TYPE,*PICMP4_TYPE;
+typedef struct _MIBICMPSTATS_EX {
+  DWORD dwMsgs;
+  DWORD dwErrors;
+  DWORD rgdwTypeCount[256];
+} MIBICMPSTATS_EX,*PMIBICMPSTATS_EX;
+typedef struct _MIB_ICMP_EX {
+  MIBICMPSTATS_EX icmpInStats;
+  MIBICMPSTATS_EX icmpOutStats;
+} MIB_ICMP_EX,*PMIB_ICMP_EX;
+typedef struct _MIB_UDPSTATS {
+  DWORD dwInDatagrams;
+  DWORD dwNoPorts;
+  DWORD dwInErrors;
+  DWORD dwOutDatagrams;
+  DWORD dwNumAddrs;
+} MIB_UDPSTATS,*PMIB_UDPSTATS;
+typedef struct _MIB_UDPROW {
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+} MIB_UDPROW,*PMIB_UDPROW;
+typedef MIB_UDPROW MIB_UDPROW_BASIC,*PMIB_UDPROW_BASIC;
+typedef struct _MIB_UDPROW_OWNER_PID {
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+} MIB_UDPROW_OWNER_PID,*PMIB_UDPROW_OWNER_PID;
+typedef struct _MIB_UDPROW_OWNER_MODULE {
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  __extension__ union {
+    __extension__ struct {
+      DWORD SpecificPortBind : 1;
+    };
+    DWORD dwFlags;
+  };
+  ULONGLONG OwningModuleInfo[16];
+} MIB_UDPROW_OWNER_MODULE,*PMIB_UDPROW_OWNER_MODULE;
+typedef struct _MIB_UDP6ROW_OWNER_PID {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+} MIB_UDP6ROW_OWNER_PID,*PMIB_UDP6ROW_OWNER_PID;
+typedef struct _MIB_UDP6ROW_OWNER_MODULE {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  __extension__ union {
+    __extension__ struct {
+      DWORD SpecificPortBind : 1;
+    };
+    DWORD dwFlags;
+  };
+  ULONGLONG OwningModuleInfo[16];
+} MIB_UDP6ROW_OWNER_MODULE,*PMIB_UDP6ROW_OWNER_MODULE;
+typedef struct _MIB_UDPTABLE {
+  DWORD dwNumEntries;
+  MIB_UDPROW table[1];
+} MIB_UDPTABLE,*PMIB_UDPTABLE;
+typedef MIB_UDPTABLE MIB_UDPTABLE_BASIC,*PMIB_UDPTABLE_BASIC;
+typedef struct _MIB_UDPTABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_UDPROW_OWNER_PID table[1];
+} MIB_UDPTABLE_OWNER_PID,*PMIB_UDPTABLE_OWNER_PID;
+typedef struct _MIB_UDPTABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_UDPROW_OWNER_MODULE table[1];
+} MIB_UDPTABLE_OWNER_MODULE,*PMIB_UDPTABLE_OWNER_MODULE;
+typedef struct _MIB_UDP6TABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_UDP6ROW_OWNER_PID table[1];
+} MIB_UDP6TABLE_OWNER_PID,*PMIB_UDP6TABLE_OWNER_PID;
+typedef struct _MIB_UDP6TABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_UDP6ROW_OWNER_MODULE table[1];
+} MIB_UDP6TABLE_OWNER_MODULE,*PMIB_UDP6TABLE_OWNER_MODULE;
+typedef struct _MIB_TCPSTATS {
+  DWORD dwRtoAlgorithm;
+  DWORD dwRtoMin;
+  DWORD dwRtoMax;
+  DWORD dwMaxConn;
+  DWORD dwActiveOpens;
+  DWORD dwPassiveOpens;
+  DWORD dwAttemptFails;
+  DWORD dwEstabResets;
+  DWORD dwCurrEstab;
+  DWORD dwInSegs;
+  DWORD dwOutSegs;
+  DWORD dwRetransSegs;
+  DWORD dwInErrs;
+  DWORD dwOutRsts;
+  DWORD dwNumConns;
+} MIB_TCPSTATS,*PMIB_TCPSTATS;
+typedef enum _TCP_TABLE_CLASS {
+  TCP_TABLE_BASIC_LISTENER,
+  TCP_TABLE_BASIC_CONNECTIONS,
+  TCP_TABLE_BASIC_ALL,
+  TCP_TABLE_OWNER_PID_LISTENER,
+  TCP_TABLE_OWNER_PID_CONNECTIONS,
+  TCP_TABLE_OWNER_PID_ALL,
+  TCP_TABLE_OWNER_MODULE_LISTENER,
+  TCP_TABLE_OWNER_MODULE_CONNECTIONS,
+  TCP_TABLE_OWNER_MODULE_ALL
+} TCP_TABLE_CLASS, *PTCP_TABLE_CLASS;
+typedef struct _MIB_TCPROW {
+  DWORD dwState;
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwRemoteAddr;
+  DWORD dwRemotePort;
+} MIB_TCPROW,*PMIB_TCPROW;
+typedef MIB_TCPROW MIB_TCPROW_BASIC,*PMIB_TCPROW_BASIC;
+typedef struct _MIB_TCPROW_OWNER_PID {
+  DWORD dwState;
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwRemoteAddr;
+  DWORD dwRemotePort;
+  DWORD dwOwningPid;
+} MIB_TCPROW_OWNER_PID,*PMIB_TCPROW_OWNER_PID;
+typedef struct _MIB_TCPROW_OWNER_MODULE {
+  DWORD dwState;
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwRemoteAddr;
+  DWORD dwRemotePort;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  ULONGLONG OwningModuleInfo[16];
+} MIB_TCPROW_OWNER_MODULE,*PMIB_TCPROW_OWNER_MODULE;
+typedef struct _MIB_TCP6ROW_OWNER_PID {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  UCHAR ucRemoteAddr[16];
+  DWORD dwRemoteScopeId;
+  DWORD dwRemotePort;
+  DWORD dwState;
+  DWORD dwOwningPid;
+} MIB_TCP6ROW_OWNER_PID,*PMIB_TCP6ROW_OWNER_PID;
+typedef struct _MIB_TCP6ROW_OWNER_MODULE {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  UCHAR ucRemoteAddr[16];
+  DWORD dwRemoteScopeId;
+  DWORD dwRemotePort;
+  DWORD dwState;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  ULONGLONG OwningModuleInfo[16];
+} MIB_TCP6ROW_OWNER_MODULE,*PMIB_TCP6ROW_OWNER_MODULE;
+typedef struct _MIB_TCPTABLE {
+  DWORD dwNumEntries;
+  MIB_TCPROW table[1];
+} MIB_TCPTABLE,*PMIB_TCPTABLE;
+typedef MIB_TCPTABLE MIB_TCPTABLE_BASIC,*PMIB_TCPTABLE_BASIC;
+typedef struct _MIB_TCPTABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_TCPROW_OWNER_PID table[1];
+} MIB_TCPTABLE_OWNER_PID,*PMIB_TCPTABLE_OWNER_PID;
+typedef struct _MIB_TCPTABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_TCPROW_OWNER_MODULE table[1];
+} MIB_TCPTABLE_OWNER_MODULE,*PMIB_TCPTABLE_OWNER_MODULE;
+typedef struct _MIB_TCP6TABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_TCP6ROW_OWNER_PID table[1];
+} MIB_TCP6TABLE_OWNER_PID,*PMIB_TCP6TABLE_OWNER_PID;
+typedef struct _MIB_TCP6TABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_TCP6ROW_OWNER_MODULE table[1];
+} MIB_TCP6TABLE_OWNER_MODULE,*PMIB_TCP6TABLE_OWNER_MODULE;
+typedef struct _MIB_IPSTATS {
+  DWORD dwForwarding;
+  DWORD dwDefaultTTL;
+  DWORD dwInReceives;
+  DWORD dwInHdrErrors;
+  DWORD dwInAddrErrors;
+  DWORD dwForwDatagrams;
+  DWORD dwInUnknownProtos;
+  DWORD dwInDiscards;
+  DWORD dwInDelivers;
+  DWORD dwOutRequests;
+  DWORD dwRoutingDiscards;
+  DWORD dwOutDiscards;
+  DWORD dwOutNoRoutes;
+  DWORD dwReasmTimeout;
+  DWORD dwReasmReqds;
+  DWORD dwReasmOks;
+  DWORD dwReasmFails;
+  DWORD dwFragOks;
+  DWORD dwFragFails;
+  DWORD dwFragCreates;
+  DWORD dwNumIf;
+  DWORD dwNumAddr;
+  DWORD dwNumRoutes;
+} MIB_IPSTATS,*PMIB_IPSTATS;
+typedef struct _MIB_IPADDRROW {
+  DWORD dwAddr;
+  DWORD dwIndex;
+  DWORD dwMask;
+  DWORD dwBCastAddr;
+  DWORD dwReasmSize;
+  unsigned short unused1;
+  unsigned short wType;
+} MIB_IPADDRROW,*PMIB_IPADDRROW;
+typedef struct _MIB_IPADDRTABLE {
+  DWORD dwNumEntries;
+  MIB_IPADDRROW table[1];
+} MIB_IPADDRTABLE,*PMIB_IPADDRTABLE;
+typedef struct _MIB_IPFORWARDNUMBER {
+  DWORD dwValue;
+} MIB_IPFORWARDNUMBER,*PMIB_IPFORWARDNUMBER;
+typedef struct _MIB_IPFORWARDROW {
+  DWORD dwForwardDest;
+  DWORD dwForwardMask;
+  DWORD dwForwardPolicy;
+  DWORD dwForwardNextHop;
+  DWORD dwForwardIfIndex;
+  DWORD dwForwardType;
+  DWORD dwForwardProto;
+  DWORD dwForwardAge;
+  DWORD dwForwardNextHopAS;
+  DWORD dwForwardMetric1;
+  DWORD dwForwardMetric2;
+  DWORD dwForwardMetric3;
+  DWORD dwForwardMetric4;
+  DWORD dwForwardMetric5;
+} MIB_IPFORWARDROW,*PMIB_IPFORWARDROW;
+typedef struct _MIB_IPFORWARDTABLE {
+  DWORD dwNumEntries;
+  MIB_IPFORWARDROW table[1];
+} MIB_IPFORWARDTABLE,*PMIB_IPFORWARDTABLE;
+typedef struct _MIB_IPNETROW {
+  DWORD dwIndex;
+  DWORD dwPhysAddrLen;
+  BYTE bPhysAddr[8];
+  DWORD dwAddr;
+  DWORD dwType;
+} MIB_IPNETROW,*PMIB_IPNETROW;
+typedef struct _MIB_IPNETTABLE {
+  DWORD dwNumEntries;
+  MIB_IPNETROW table[1];
+} MIB_IPNETTABLE,*PMIB_IPNETTABLE;
+typedef struct _MIB_IPMCAST_OIF {
+  DWORD dwOutIfIndex;
+  DWORD dwNextHopAddr;
+  DWORD dwReserved;
+  DWORD dwReserved1;
+} MIB_IPMCAST_OIF,*PMIB_IPMCAST_OIF;
+typedef struct _MIB_IPMCAST_MFE {
+  DWORD dwGroup;
+  DWORD dwSource;
+  DWORD dwSrcMask;
+  DWORD dwUpStrmNgbr;
+  DWORD dwInIfIndex;
+  DWORD dwInIfProtocol;
+  DWORD dwRouteProtocol;
+  DWORD dwRouteNetwork;
+  DWORD dwRouteMask;
+  ULONG ulUpTime;
+  ULONG ulExpiryTime;
+  ULONG ulTimeOut;
+  ULONG ulNumOutIf;
+  DWORD fFlags;
+  DWORD dwReserved;
+  MIB_IPMCAST_OIF rgmioOutInfo[1];
+} MIB_IPMCAST_MFE,*PMIB_IPMCAST_MFE;
+typedef struct _MIB_MFE_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_MFE table[1];
+} MIB_MFE_TABLE,*PMIB_MFE_TABLE;
+typedef struct _MIB_IPMCAST_OIF_STATS {
+  DWORD dwOutIfIndex;
+  DWORD dwNextHopAddr;
+  DWORD dwDialContext;
+  ULONG ulTtlTooLow;
+  ULONG ulFragNeeded;
+  ULONG ulOutPackets;
+  ULONG ulOutDiscards;
+} MIB_IPMCAST_OIF_STATS,*PMIB_IPMCAST_OIF_STATS;
+typedef struct _MIB_IPMCAST_MFE_STATS {
+  DWORD dwGroup;
+  DWORD dwSource;
+  DWORD dwSrcMask;
+  DWORD dwUpStrmNgbr;
+  DWORD dwInIfIndex;
+  DWORD dwInIfProtocol;
+  DWORD dwRouteProtocol;
+  DWORD dwRouteNetwork;
+  DWORD dwRouteMask;
+  ULONG ulUpTime;
+  ULONG ulExpiryTime;
+  ULONG ulNumOutIf;
+  ULONG ulInPkts;
+  ULONG ulInOctets;
+  ULONG ulPktsDifferentIf;
+  ULONG ulQueueOverflow;
+  MIB_IPMCAST_OIF_STATS rgmiosOutStats[1];
+} MIB_IPMCAST_MFE_STATS,*PMIB_IPMCAST_MFE_STATS;
+typedef struct _MIB_MFE_STATS_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_MFE_STATS table[1];
+} MIB_MFE_STATS_TABLE,*PMIB_MFE_STATS_TABLE;
+typedef struct _MIB_IPMCAST_MFE_STATS_EX {
+  DWORD dwGroup;
+  DWORD dwSource;
+  DWORD dwSrcMask;
+  DWORD dwUpStrmNgbr;
+  DWORD dwInIfIndex;
+  DWORD dwInIfProtocol;
+  DWORD dwRouteProtocol;
+  DWORD dwRouteNetwork;
+  DWORD dwRouteMask;
+  ULONG ulUpTime;
+  ULONG ulExpiryTime;
+  ULONG ulNumOutIf;
+  ULONG ulInPkts;
+  ULONG ulInOctets;
+  ULONG ulPktsDifferentIf;
+  ULONG ulQueueOverflow;
+  ULONG ulUninitMfe;
+  ULONG ulNegativeMfe;
+  ULONG ulInDiscards;
+  ULONG ulInHdrErrors;
+  ULONG ulTotalOutPackets;
+  MIB_IPMCAST_OIF_STATS rgmiosOutStats[1];
+} MIB_IPMCAST_MFE_STATS_EX,*PMIB_IPMCAST_MFE_STATS_EX;
+typedef struct _MIB_MFE_STATS_TABLE_EX {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_MFE_STATS_EX table[1];
+} MIB_MFE_STATS_TABLE_EX,*PMIB_MFE_STATS_TABLE_EX;
+typedef struct _MIB_IPMCAST_GLOBAL {
+  DWORD dwEnable;
+} MIB_IPMCAST_GLOBAL,*PMIB_IPMCAST_GLOBAL;
+typedef struct _MIB_IPMCAST_IF_ENTRY {
+  DWORD dwIfIndex;
+  DWORD dwTtl;
+  DWORD dwProtocol;
+  DWORD dwRateLimit;
+  ULONG ulInMcastOctets;
+  ULONG ulOutMcastOctets;
+} MIB_IPMCAST_IF_ENTRY,*PMIB_IPMCAST_IF_ENTRY;
+typedef struct _MIB_IPMCAST_IF_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_IF_ENTRY table[1];
+} MIB_IPMCAST_IF_TABLE,*PMIB_IPMCAST_IF_TABLE;
+typedef struct _MIB_IPMCAST_BOUNDARY {
+  DWORD dwIfIndex;
+  DWORD dwGroupAddress;
+  DWORD dwGroupMask;
+  DWORD dwStatus;
+} MIB_IPMCAST_BOUNDARY,*PMIB_IPMCAST_BOUNDARY;
+typedef struct _MIB_IPMCAST_BOUNDARY_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_BOUNDARY table[1];
+} MIB_IPMCAST_BOUNDARY_TABLE,*PMIB_IPMCAST_BOUNDARY_TABLE;
+typedef struct {
+  DWORD dwGroupAddress;
+  DWORD dwGroupMask;
+} MIB_BOUNDARYROW,*PMIB_BOUNDARYROW;
+typedef struct {
+  DWORD dwTtl;
+  DWORD dwRateLimit;
+} MIB_MCAST_LIMIT_ROW,*PMIB_MCAST_LIMIT_ROW;
+typedef WCHAR SN_CHAR;
+typedef SN_CHAR SCOPE_NAME_BUFFER[255 +1],*SCOPE_NAME;
+typedef struct _MIB_IPMCAST_SCOPE {
+  DWORD dwGroupAddress;
+  DWORD dwGroupMask;
+  SCOPE_NAME_BUFFER snNameBuffer;
+  DWORD dwStatus;
+} MIB_IPMCAST_SCOPE,*PMIB_IPMCAST_SCOPE;
+typedef struct _MIB_IPDESTROW {
+  __extension__ union {
+    DWORD dwForwardDest;
+    DWORD dwForwardMask;
+    DWORD dwForwardPolicy;
+    DWORD dwForwardNextHop;
+    DWORD dwForwardIfIndex;
+    DWORD dwForwardType;
+    DWORD dwForwardProto;
+    DWORD dwForwardAge;
+    DWORD dwForwardNextHopAS;
+    DWORD dwForwardMetric1;
+    DWORD dwForwardMetric2;
+    DWORD dwForwardMetric3;
+    DWORD dwForwardMetric4;
+    DWORD dwForwardMetric5;
+  };
+  DWORD dwForwardPreference;
+  DWORD dwForwardViewSet;
+} MIB_IPDESTROW,*PMIB_IPDESTROW;
+typedef struct _MIB_IPDESTTABLE {
+  DWORD dwNumEntries;
+  MIB_IPDESTROW table[1];
+} MIB_IPDESTTABLE,*PMIB_IPDESTTABLE;
+typedef struct _MIB_BEST_IF {
+  DWORD dwDestAddr;
+  DWORD dwIfIndex;
+} MIB_BEST_IF,*PMIB_BEST_IF;
+typedef struct _MIB_PROXYARP {
+  DWORD dwAddress;
+  DWORD dwMask;
+  DWORD dwIfIndex;
+} MIB_PROXYARP,*PMIB_PROXYARP;
+typedef struct _MIB_IFSTATUS {
+  DWORD dwIfIndex;
+  DWORD dwAdminStatus;
+  DWORD dwOperationalStatus;
+  WINBOOL bMHbeatActive;
+  WINBOOL bMHbeatAlive;
+} MIB_IFSTATUS,*PMIB_IFSTATUS;
+typedef struct _MIB_ROUTESTATE {
+  WINBOOL bRoutesSetToStack;
+} MIB_ROUTESTATE,*PMIB_ROUTESTATE;
+typedef struct _MIB_OPAQUE_INFO {
+  DWORD dwId;
+  __extension__ union {
+    ULONGLONG ullAlign;
+    BYTE rgbyData[1];
+  };
+} MIB_OPAQUE_INFO,*PMIB_OPAQUE_INFO;
+typedef struct _TCPIP_OWNER_MODULE_BASIC_INFO {
+  PWCHAR pModuleName;
+  PWCHAR pModulePath;
+} TCPIP_OWNER_MODULE_BASIC_INFO, *PTCPIP_OWNER_MODULE_BASIC_INFO;
+typedef enum _UDP_TABLE_CLASS {
+  UDP_TABLE_BASIC,
+  UDP_TABLE_OWNER_PID,
+  UDP_TABLE_OWNER_MODULE
+} UDP_TABLE_CLASS, *PUDP_TABLE_CLASS;
+typedef enum _TCPIP_OWNER_MODULE_INFO_CLASS {
+  TCPIP_OWNER_MODULE_INFO_BASIC
+} TCPIP_OWNER_MODULE_INFO_CLASS, *PTCPIP_OWNER_MODULE_INFO_CLASS;
+typedef ULONG IPAddr;
+typedef ULONG IPMask;
+typedef ULONG IP_STATUS;
+typedef struct in6_addr IPv6Addr;
+typedef struct ip_option_information {
+  UCHAR Ttl;
+  UCHAR Tos;
+  UCHAR Flags;
+  UCHAR OptionsSize;
+  PUCHAR OptionsData;
+} IP_OPTION_INFORMATION,*PIP_OPTION_INFORMATION;
+typedef struct icmp_echo_reply {
+  IPAddr Address;
+  ULONG Status;
+  ULONG RoundTripTime;
+  USHORT DataSize;
+  USHORT Reserved;
+  PVOID Data;
+  struct ip_option_information Options;
+} ICMP_ECHO_REPLY,*PICMP_ECHO_REPLY;
+typedef struct arp_send_reply {
+  IPAddr DestAddress;
+  IPAddr SrcAddress;
+} ARP_SEND_REPLY,*PARP_SEND_REPLY;
+typedef struct tcp_reserve_port_range {
+  USHORT UpperRange;
+  USHORT LowerRange;
+} TCP_RESERVE_PORT_RANGE,*PTCP_RESERVE_PORT_RANGE;
+typedef struct _IP_ADAPTER_INDEX_MAP {
+  ULONG Index;
+  WCHAR Name[128];
+} IP_ADAPTER_INDEX_MAP,*PIP_ADAPTER_INDEX_MAP;
+typedef struct _IP_INTERFACE_INFO {
+  LONG NumAdapters;
+  IP_ADAPTER_INDEX_MAP Adapter[1];
+} IP_INTERFACE_INFO,*PIP_INTERFACE_INFO;
+typedef struct _IP_UNIDIRECTIONAL_ADAPTER_ADDRESS {
+  ULONG NumAdapters;
+  IPAddr Address[1];
+} IP_UNIDIRECTIONAL_ADAPTER_ADDRESS,*PIP_UNIDIRECTIONAL_ADAPTER_ADDRESS;
+typedef struct _IP_ADAPTER_ORDER_MAP {
+  ULONG NumAdapters;
+  ULONG AdapterOrder[1];
+} IP_ADAPTER_ORDER_MAP,*PIP_ADAPTER_ORDER_MAP;
+typedef struct _IP_MCAST_COUNTER_INFO {
+  ULONG64 InMcastOctets;
+  ULONG64 OutMcastOctets;
+  ULONG64 InMcastPkts;
+  ULONG64 OutMcastPkts;
+} IP_MCAST_COUNTER_INFO,*PIP_MCAST_COUNTER_INFO;
+typedef struct _IPV6_ADDRESS_EX {
+  USHORT sin6_port;
+  ULONG sin6_flowinfo;
+  USHORT sin6_addr[8];
+  ULONG sin6_scope_id;
+} IPV6_ADDRESS_EX, *PIPV6_ADDRESS_EX;
+#pragma pack(push,_CRT_PACKING)
+  typedef long clock_t;
+  struct tm {
+    int tm_sec;
+    int tm_min;
+    int tm_hour;
+    int tm_mday;
+    int tm_mon;
+    int tm_year;
+    int tm_wday;
+    int tm_yday;
+    int tm_isdst;
+  };
+  extern __attribute__ ((__dllimport__)) int _daylight;
+  extern __attribute__ ((__dllimport__)) long _dstbias;
+  extern __attribute__ ((__dllimport__)) long _timezone;
+  extern __attribute__ ((__dllimport__)) char * _tzname[2];
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_daylight(int *_Daylight);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_dstbias(long *_Daylight_savings_bias);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_timezone(long *_Timezone);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_tzname(size_t *_ReturnValue,char *_Buffer,size_t _SizeInBytes,int _Index);
+  char *__attribute__((__cdecl__)) asctime(const struct tm *_Tm) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) asctime_s (char *_Buf,size_t _SizeInWords,const struct tm *_Tm);
+  char *__attribute__((__cdecl__)) _ctime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ctime32_s (char *_Buf,size_t _SizeInBytes,const __time32_t *_Time);
+  clock_t __attribute__((__cdecl__)) clock(void);
+  double __attribute__((__cdecl__)) _difftime32(__time32_t _Time1,__time32_t _Time2);
+  struct tm *__attribute__((__cdecl__)) _gmtime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _gmtime32_s (struct tm *_Tm,const __time32_t *_Time);
+  struct tm *__attribute__((__cdecl__)) _localtime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _localtime32_s (struct tm *_Tm,const __time32_t *_Time);
+  size_t __attribute__((__cdecl__)) strftime(char * __restrict__ _Buf,size_t _SizeInBytes,const char * __restrict__ _Format,const struct tm * __restrict__ _Tm);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _strftime_l(char * __restrict__ _Buf,size_t _Max_size,const char * __restrict__ _Format,const struct tm * __restrict__ _Tm,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strdate(char *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strdate_s (char *_Buf,size_t _SizeInBytes);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strtime(char *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strtime_s (char *_Buf ,size_t _SizeInBytes);
+  __time32_t __attribute__((__cdecl__)) _time32(__time32_t *_Time);
+  __time32_t __attribute__((__cdecl__)) _mktime32(struct tm *_Tm);
+  __time32_t __attribute__((__cdecl__)) _mkgmtime32(struct tm *_Tm);
+  void __attribute__((__cdecl__)) tzset(void) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _tzset(void);
+  double __attribute__((__cdecl__)) _difftime64(__time64_t _Time1,__time64_t _Time2);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ctime64(const __time64_t *_Time) ;
+  errno_t __attribute__((__cdecl__)) _ctime64_s (char *_Buf,size_t _SizeInBytes,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) struct tm *__attribute__((__cdecl__)) _gmtime64(const __time64_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _gmtime64_s (struct tm *_Tm,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) struct tm *__attribute__((__cdecl__)) _localtime64(const __time64_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _localtime64_s (struct tm *_Tm,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _mktime64(struct tm *_Tm);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _mkgmtime64(struct tm *_Tm);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _time64(__time64_t *_Time);
+  unsigned __attribute__((__cdecl__)) _getsystime(struct tm *_Tm);
+  unsigned __attribute__((__cdecl__)) _setsystime(struct tm *_Tm,unsigned _MilliSec);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wasctime(const struct tm *_Tm);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wasctime_s (wchar_t *_Buf,size_t _SizeInWords,const struct tm *_Tm);
+  wchar_t *__attribute__((__cdecl__)) _wctime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wctime32_s (wchar_t *_Buf,size_t _SizeInWords,const __time32_t *_Time);
+  size_t __attribute__((__cdecl__)) wcsftime(wchar_t * __restrict__ _Buf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,const struct tm * __restrict__ _Tm);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcsftime_l(wchar_t * __restrict__ _Buf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,const struct tm * __restrict__ _Tm,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wstrdate(wchar_t *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wstrdate_s (wchar_t *_Buf,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wstrtime(wchar_t *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wstrtime_s (wchar_t *_Buf,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wctime64(const __time64_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wctime64_s (wchar_t *_Buf,size_t _SizeInWords,const __time64_t *_Time);
+  wchar_t *__attribute__((__cdecl__)) _wctime(const time_t *) ;
+  errno_t __attribute__((__cdecl__)) _wctime_s(wchar_t *, size_t, const time_t *);
+double __attribute__((__cdecl__)) difftime(time_t _Time1,time_t _Time2);
+char *__attribute__((__cdecl__)) ctime(const time_t *_Time) ;
+struct tm *__attribute__((__cdecl__)) gmtime(const time_t *_Time) ;
+struct tm *__attribute__((__cdecl__)) localtime(const time_t *_Time) ;
+time_t __attribute__((__cdecl__)) mktime(struct tm *_Tm);
+time_t __attribute__((__cdecl__)) _mkgmtime(struct tm *_Tm);
+time_t __attribute__((__cdecl__)) time(time_t *_Time);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) errno_t __attribute__((__cdecl__)) localtime_s(struct tm *_Tm,const time_t *_Time) { return _localtime32_s(_Tm,_Time); }
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) errno_t __attribute__((__cdecl__)) gmtime_s(struct tm *_Tm, const time_t *_Time) { return _gmtime32_s(_Tm, _Time); }
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) errno_t __attribute__((__cdecl__)) ctime_s(char *_Buf,size_t _SizeInBytes,const time_t *_Time) { return _ctime32_s(_Buf,_SizeInBytes,_Time); }
+  __attribute__ ((__dllimport__)) extern int daylight;
+  __attribute__ ((__dllimport__)) extern long timezone;
+  __attribute__ ((__dllimport__)) extern char *tzname[2];
+  void __attribute__((__cdecl__)) tzset(void) ;
+struct timezone {
+  int tz_minuteswest;
+  int tz_dsttime;
+};
+  extern int __attribute__((__cdecl__)) mingw_gettimeofday (struct timeval *p, struct timezone *z);
+#pragma pack(pop)
+#pragma pack(push,_CRT_PACKING)
+  struct __timeb32 {
+    __time32_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+  struct timeb {
+    time_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+  struct __timeb64 {
+    __time64_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _ftime64(struct __timeb64 *_Time);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _ftime(struct __timeb32 *);
+struct timespec {
+  time_t tv_sec;
+  long tv_nsec;
+};
+struct itimerspec {
+  struct timespec it_interval;
+  struct timespec it_value;
+};
+  void __attribute__((__cdecl__)) ftime (struct timeb *);
+#pragma pack(pop)
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ftime_s(struct __timeb32 *_Time);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ftime64_s(struct __timeb64 *_Time);
+typedef int clockid_t;
+       
+int __attribute__((__cdecl__)) nanosleep(const struct timespec *request, struct timespec *remain);
+int __attribute__((__cdecl__)) clock_nanosleep(clockid_t clock_id, int flags, const struct timespec *request, struct timespec *remain);
+int __attribute__((__cdecl__)) clock_getres(clockid_t clock_id, struct timespec *res);
+int __attribute__((__cdecl__)) clock_gettime(clockid_t clock_id, struct timespec *tp);
+int __attribute__((__cdecl__)) clock_settime(clockid_t clock_id, const struct timespec *tp);
+       
+typedef UINT32 NET_IF_COMPARTMENT_ID, *PNET_IF_COMPARTMENT_ID;
+typedef ULONG NET_IFINDEX, *PNET_IFINDEX;
+typedef UINT16 NET_IFTYPE, *PNET_IFTYPE;
+typedef NET_IFINDEX IF_INDEX, *PIF_INDEX;
+typedef GUID NET_IF_NETWORK_GUID;
+typedef enum _IF_OPER_STATUS {
+  IfOperStatusUp = 1,
+  IfOperStatusDown,
+  IfOperStatusTesting,
+  IfOperStatusUnknown,
+  IfOperStatusDormant,
+  IfOperStatusNotPresent,
+  IfOperStatusLowerLayerDown
+} IF_OPER_STATUS;
+typedef enum _NET_IF_OPER_STATUS {
+  NET_IF_OPER_STATUS_UP = 1,
+  NET_IF_OPER_STATUS_DOWN,
+  NET_IF_OPER_STATUS_TESTING,
+  NET_IF_OPER_STATUS_UNKNOWN,
+  NET_IF_OPER_STATUS_DORMANT,
+  NET_IF_OPER_STATUS_NOT_PRESENT,
+  NET_IF_OPER_STATUS_LOWER_LAYER_DOWN
+} NET_IF_OPER_STATUS, *PNET_IF_OPER_STATUS;
+typedef enum _NET_IF_ADMIN_STATUS {
+  NET_IF_ADMIN_STATUS_UP = 1,
+  NET_IF_ADMIN_STATUS_DOWN,
+  NET_IF_ADMIN_STATUS_TESTING
+} NET_IF_ADMIN_STATUS, *PNET_IF_ADMIN_STATUS;
+typedef enum _NET_IF_MEDIA_CONNECT_STATE {
+  MediaConnectStateUnknown,
+  MediaConnectStateConnected,
+  MediaConnectStateDisconnected
+} NET_IF_MEDIA_CONNECT_STATE, *PNET_IF_MEDIA_CONNECT_STATE;
+typedef enum _NET_IF_ACCESS_TYPE {
+  NET_IF_ACCESS_LOOPBACK = 1,
+  NET_IF_ACCESS_BROADCAST,
+  NET_IF_ACCESS_POINT_TO_POINT,
+  NET_IF_ACCESS_POINT_TO_MULTI_POINT,
+  NET_IF_ACCESS_MAXIMUM
+} NET_IF_ACCESS_TYPE, *PNET_IF_ACCESS_TYPE;
+typedef enum _NET_IF_CONNECTION_TYPE {
+  NET_IF_CONNECTION_DEDICATED = 1,
+  NET_IF_CONNECTION_PASSIVE,
+  NET_IF_CONNECTION_DEMAND,
+  NET_IF_CONNECTION_MAXIMUM
+} NET_IF_CONNECTION_TYPE, *PNET_IF_CONNECTION_TYPE;
+typedef enum _NET_IF_DIRECTION_TYPE {
+  NET_IF_DIRECTION_SENDRECEIVE,
+  NET_IF_DIRECTION_SENDONLY,
+  NET_IF_DIRECTION_RECEIVEONLY,
+  NET_IF_DIRECTION_MAXIMUM
+} NET_IF_DIRECTION_TYPE, *PNET_IF_DIRECTION_TYPE;
+typedef enum _NET_IF_MEDIA_DUPLEX_STATE {
+  MediaDuplexStateUnknown,
+  MediaDuplexStateHalf,
+  MediaDuplexStateFull
+} NET_IF_MEDIA_DUPLEX_STATE, *PNET_IF_MEDIA_DUPLEX_STATE;
+typedef enum _TUNNEL_TYPE {
+  TUNNEL_TYPE_NONE = 0,
+  TUNNEL_TYPE_OTHER = 1,
+  TUNNEL_TYPE_DIRECT = 2,
+  TUNNEL_TYPE_6TO4 = 11,
+  TUNNEL_TYPE_ISATAP = 13,
+  TUNNEL_TYPE_TEREDO = 14,
+  TUNNEL_TYPE_IPHTTPS = 15
+} TUNNEL_TYPE, *PTUNNEL_TYPE;
+typedef union _NET_LUID {
+  ULONG64 Value;
+  __extension__ struct {
+    ULONG64 Reserved :24;
+    ULONG64 NetLuidIndex :24;
+    ULONG64 IfType :16;
+  } Info;
+} NET_LUID, *PNET_LUID;
+typedef NET_LUID IF_LUID, *PIF_LUID;
+typedef struct _IF_COUNTED_STRING_LH {
+    USHORT Length;
+    WCHAR String[256 + 1];
+} IF_COUNTED_STRING_LH, *PIF_COUNTED_STRING_LH;
+typedef IF_COUNTED_STRING_LH IF_COUNTED_STRING;
+typedef IF_COUNTED_STRING *PIF_COUNTED_STRING;
+typedef struct _IF_PHYSICAL_ADDRESS_LH {
+    USHORT Length;
+    UCHAR Address[32];
+} IF_PHYSICAL_ADDRESS_LH, *PIF_PHYSICAL_ADDRESS_LH;
+typedef IF_PHYSICAL_ADDRESS_LH IF_PHYSICAL_ADDRESS;
+typedef IF_PHYSICAL_ADDRESS *PIF_PHYSICAL_ADDRESS;
+  typedef struct {
+    char String[4*4];
+  } IP_ADDRESS_STRING,*PIP_ADDRESS_STRING,IP_MASK_STRING,*PIP_MASK_STRING;
+  typedef struct _IP_ADDR_STRING {
+    struct _IP_ADDR_STRING *Next;
+    IP_ADDRESS_STRING IpAddress;
+    IP_MASK_STRING IpMask;
+    DWORD Context;
+  } IP_ADDR_STRING,*PIP_ADDR_STRING;
+  typedef struct _IP_ADAPTER_INFO {
+    struct _IP_ADAPTER_INFO *Next;
+    DWORD ComboIndex;
+    char AdapterName[256 + 4];
+    char Description[128 + 4];
+    UINT AddressLength;
+    BYTE Address[8];
+    DWORD Index;
+    UINT Type;
+    UINT DhcpEnabled;
+    PIP_ADDR_STRING CurrentIpAddress;
+    IP_ADDR_STRING IpAddressList;
+    IP_ADDR_STRING GatewayList;
+    IP_ADDR_STRING DhcpServer;
+    WINBOOL HaveWins;
+    IP_ADDR_STRING PrimaryWinsServer;
+    IP_ADDR_STRING SecondaryWinsServer;
+    time_t LeaseObtained;
+    time_t LeaseExpires;
+  } IP_ADAPTER_INFO,*PIP_ADAPTER_INFO;
+  typedef NL_PREFIX_ORIGIN IP_PREFIX_ORIGIN;
+  typedef NL_SUFFIX_ORIGIN IP_SUFFIX_ORIGIN;
+  typedef NL_DAD_STATE IP_DAD_STATE;
+  typedef struct _IP_ADAPTER_UNICAST_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_UNICAST_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+    IP_PREFIX_ORIGIN PrefixOrigin;
+    IP_SUFFIX_ORIGIN SuffixOrigin;
+    IP_DAD_STATE DadState;
+    ULONG ValidLifetime;
+    ULONG PreferredLifetime;
+    ULONG LeaseLifetime;
+  } IP_ADAPTER_UNICAST_ADDRESS_XP,*PIP_ADAPTER_UNICAST_ADDRESS_XP;
+  typedef struct _IP_ADAPTER_UNICAST_ADDRESS_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_UNICAST_ADDRESS_LH *Next;
+    SOCKET_ADDRESS Address;
+    IP_PREFIX_ORIGIN PrefixOrigin;
+    IP_SUFFIX_ORIGIN SuffixOrigin;
+    IP_DAD_STATE DadState;
+    ULONG ValidLifetime;
+    ULONG PreferredLifetime;
+    ULONG LeaseLifetime;
+    UINT8 OnLinkPrefixLength;
+  } IP_ADAPTER_UNICAST_ADDRESS_LH,*PIP_ADAPTER_UNICAST_ADDRESS_LH;
+  typedef IP_ADAPTER_UNICAST_ADDRESS_XP IP_ADAPTER_UNICAST_ADDRESS;
+  typedef IP_ADAPTER_UNICAST_ADDRESS_XP *PIP_ADAPTER_UNICAST_ADDRESS;
+  typedef struct _IP_ADAPTER_ANYCAST_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_ANYCAST_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_ANYCAST_ADDRESS_XP,*PIP_ADAPTER_ANYCAST_ADDRESS_XP;
+  typedef IP_ADAPTER_ANYCAST_ADDRESS_XP IP_ADAPTER_ANYCAST_ADDRESS;
+  typedef IP_ADAPTER_ANYCAST_ADDRESS_XP *PIP_ADAPTER_ANYCAST_ADDRESS;
+  typedef struct _IP_ADAPTER_MULTICAST_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_MULTICAST_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_MULTICAST_ADDRESS_XP,*PIP_ADAPTER_MULTICAST_ADDRESS_XP;
+  typedef IP_ADAPTER_MULTICAST_ADDRESS_XP IP_ADAPTER_MULTICAST_ADDRESS;
+  typedef IP_ADAPTER_MULTICAST_ADDRESS_XP *PIP_ADAPTER_MULTICAST_ADDRESS;
+  typedef struct _IP_ADAPTER_DNS_SERVER_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Reserved;
+      };
+    };
+    struct _IP_ADAPTER_DNS_SERVER_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_DNS_SERVER_ADDRESS_XP,*PIP_ADAPTER_DNS_SERVER_ADDRESS_XP;
+  typedef IP_ADAPTER_DNS_SERVER_ADDRESS_XP IP_ADAPTER_DNS_SERVER_ADDRESS;
+  typedef IP_ADAPTER_DNS_SERVER_ADDRESS_XP *PIP_ADAPTER_DNS_SERVER_ADDRESS;
+  typedef struct _IP_ADAPTER_PREFIX_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_PREFIX_XP *Next;
+    SOCKET_ADDRESS Address;
+    ULONG PrefixLength;
+  } IP_ADAPTER_PREFIX_XP,*PIP_ADAPTER_PREFIX_XP;
+  typedef IP_ADAPTER_PREFIX_XP IP_ADAPTER_PREFIX;
+  typedef IP_ADAPTER_PREFIX_XP *PIP_ADAPTER_PREFIX;
+  typedef struct _IP_ADAPTER_WINS_SERVER_ADDRESS_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Reserved;
+      };
+    };
+    struct _IP_ADAPTER_WINS_SERVER_ADDRESS_LH *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_WINS_SERVER_ADDRESS_LH,*PIP_ADAPTER_WINS_SERVER_ADDRESS_LH;
+  typedef struct _IP_ADAPTER_GATEWAY_ADDRESS_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Reserved;
+      };
+    };
+    struct _IP_ADAPTER_GATEWAY_ADDRESS_LH *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_GATEWAY_ADDRESS_LH,*PIP_ADAPTER_GATEWAY_ADDRESS_LH;
+  typedef struct _IP_ADAPTER_DNS_SUFFIX {
+    struct _IP_ADAPTER_DNS_SUFFIX *Next;
+    WCHAR String[256];
+  } IP_ADAPTER_DNS_SUFFIX, *PIP_ADAPTER_DNS_SUFFIX;
+  typedef struct _IP_ADAPTER_ADDRESSES_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ IF_INDEX IfIndex;
+      };
+    };
+    struct _IP_ADAPTER_ADDRESSES_LH *Next;
+    PCHAR AdapterName;
+    PIP_ADAPTER_UNICAST_ADDRESS_LH FirstUnicastAddress;
+    PIP_ADAPTER_ANYCAST_ADDRESS_XP FirstAnycastAddress;
+    PIP_ADAPTER_MULTICAST_ADDRESS_XP FirstMulticastAddress;
+    PIP_ADAPTER_DNS_SERVER_ADDRESS_XP FirstDnsServerAddress;
+    PWCHAR DnsSuffix;
+    PWCHAR Description;
+    PWCHAR FriendlyName;
+    BYTE PhysicalAddress[8];
+    ULONG PhysicalAddressLength;
+    __extension__ union {
+      ULONG Flags;
+      __extension__ struct {
+ ULONG DdnsEnabled : 1;
+ ULONG RegisterAdapterSuffix : 1;
+ ULONG Dhcpv4Enabled : 1;
+ ULONG ReceiveOnly : 1;
+ ULONG NoMulticast : 1;
+ ULONG Ipv6OtherStatefulConfig : 1;
+ ULONG NetbiosOverTcpipEnabled : 1;
+ ULONG Ipv4Enabled : 1;
+ ULONG Ipv6Enabled : 1;
+ ULONG Ipv6ManagedAddressConfigurationSupported : 1;
+      };
+    };
+    ULONG Mtu;
+    IFTYPE IfType;
+    IF_OPER_STATUS OperStatus;
+    IF_INDEX Ipv6IfIndex;
+    ULONG ZoneIndices[16];
+    PIP_ADAPTER_PREFIX_XP FirstPrefix;
+    ULONG64 TransmitLinkSpeed;
+    ULONG64 ReceiveLinkSpeed;
+    PIP_ADAPTER_WINS_SERVER_ADDRESS_LH FirstWinsServerAddress;
+    PIP_ADAPTER_GATEWAY_ADDRESS_LH FirstGatewayAddress;
+    ULONG Ipv4Metric;
+    ULONG Ipv6Metric;
+    IF_LUID Luid;
+    SOCKET_ADDRESS Dhcpv4Server;
+    NET_IF_COMPARTMENT_ID CompartmentId;
+    NET_IF_NETWORK_GUID NetworkGuid;
+    NET_IF_CONNECTION_TYPE ConnectionType;
+    TUNNEL_TYPE TunnelType;
+    SOCKET_ADDRESS Dhcpv6Server;
+    BYTE Dhcpv6ClientDuid[130];
+    ULONG Dhcpv6ClientDuidLength;
+    ULONG Dhcpv6Iaid;
+  } IP_ADAPTER_ADDRESSES_LH, *PIP_ADAPTER_ADDRESSES_LH;
+  typedef struct _IP_ADAPTER_ADDRESSES_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD IfIndex;
+      };
+    };
+    struct _IP_ADAPTER_ADDRESSES_XP *Next;
+    PCHAR AdapterName;
+    PIP_ADAPTER_UNICAST_ADDRESS_XP FirstUnicastAddress;
+    PIP_ADAPTER_ANYCAST_ADDRESS_XP FirstAnycastAddress;
+    PIP_ADAPTER_MULTICAST_ADDRESS_XP FirstMulticastAddress;
+    PIP_ADAPTER_DNS_SERVER_ADDRESS_XP FirstDnsServerAddress;
+    PWCHAR DnsSuffix;
+    PWCHAR Description;
+    PWCHAR FriendlyName;
+    BYTE PhysicalAddress[8];
+    DWORD PhysicalAddressLength;
+    DWORD Flags;
+    DWORD Mtu;
+    DWORD IfType;
+    IF_OPER_STATUS OperStatus;
+    DWORD Ipv6IfIndex;
+    DWORD ZoneIndices[16];
+    PIP_ADAPTER_PREFIX_XP FirstPrefix;
+  } IP_ADAPTER_ADDRESSES_XP,*PIP_ADAPTER_ADDRESSES_XP;
+  typedef IP_ADAPTER_ADDRESSES_XP IP_ADAPTER_ADDRESSES;
+  typedef IP_ADAPTER_ADDRESSES_XP *PIP_ADAPTER_ADDRESSES;
+  typedef struct _IP_PER_ADAPTER_INFO {
+    UINT AutoconfigEnabled;
+    UINT AutoconfigActive;
+    PIP_ADDR_STRING CurrentDnsServer;
+    IP_ADDR_STRING DnsServerList;
+  } IP_PER_ADAPTER_INFO,*PIP_PER_ADAPTER_INFO;
+  typedef struct {
+    char HostName[128 + 4];
+    char DomainName[128 + 4];
+    PIP_ADDR_STRING CurrentDnsServer;
+    IP_ADDR_STRING DnsServerList;
+    UINT NodeType;
+    char ScopeId[256 + 4];
+    UINT EnableRouting;
+    UINT EnableProxy;
+    UINT EnableDns;
+  } FIXED_INFO,*PFIXED_INFO;
+  typedef struct ip_interface_name_info {
+    ULONG Index;
+    ULONG MediaType;
+    UCHAR ConnectionType;
+    UCHAR AccessType;
+    GUID DeviceGuid;
+    GUID InterfaceGuid;
+  } IP_INTERFACE_NAME_INFO,*PIP_INTERFACE_NAME_INFO;
+  DWORD __attribute__((__stdcall__)) GetNumberOfInterfaces (PDWORD pdwNumIf);
+  DWORD __attribute__((__stdcall__)) GetIfEntry (PMIB_IFROW pIfRow);
+  DWORD __attribute__((__stdcall__)) GetIfTable (PMIB_IFTABLE pIfTable, PULONG pdwSize, WINBOOL bOrder);
+  DWORD __attribute__((__stdcall__)) GetIpAddrTable (PMIB_IPADDRTABLE pIpAddrTable, PULONG pdwSize, WINBOOL bOrder);
+  ULONG __attribute__((__stdcall__)) GetIpNetTable (PMIB_IPNETTABLE IpNetTable, PULONG SizePointer, WINBOOL Order);
+  DWORD __attribute__((__stdcall__)) GetIpForwardTable (PMIB_IPFORWARDTABLE pIpForwardTable, PULONG pdwSize, WINBOOL bOrder);
+  ULONG __attribute__((__stdcall__)) GetTcpTable (PMIB_TCPTABLE TcpTable, PULONG SizePointer, WINBOOL Order);
+  DWORD __attribute__((__stdcall__)) GetExtendedTcpTable (PVOID pTcpTable, PDWORD pdwSize, WINBOOL bOrder, ULONG ulAf, TCP_TABLE_CLASS TableClass, ULONG Reserved);
+  DWORD __attribute__((__stdcall__)) GetOwnerModuleFromTcpEntry (PMIB_TCPROW_OWNER_MODULE pTcpEntry, TCPIP_OWNER_MODULE_INFO_CLASS Class, PVOID pBuffer, PDWORD pdwSize);
+  ULONG __attribute__((__stdcall__)) GetUdpTable (PMIB_UDPTABLE UdpTable, PULONG SizePointer, WINBOOL Order);
+  DWORD __attribute__((__stdcall__)) GetExtendedUdpTable (PVOID pUdpTable, PDWORD pdwSize, WINBOOL bOrder, ULONG ulAf, UDP_TABLE_CLASS TableClass, ULONG Reserved);
+  DWORD __attribute__((__stdcall__)) GetOwnerModuleFromUdpEntry (PMIB_UDPROW_OWNER_MODULE pUdpEntry, TCPIP_OWNER_MODULE_INFO_CLASS Class, PVOID pBuffer, PDWORD pdwSize);
+  DWORD AllocateAndGetTcpExTableFromStack (PVOID *ppTcpTable, WINBOOL bOrder, HANDLE hHeap, DWORD dwFlags, DWORD dwFamily);
+  DWORD AllocateAndGetUdpExTableFromStack (PVOID *ppUdpTable, WINBOOL bOrder, HANDLE hHeap, DWORD dwFlags, DWORD dwFamily);
+  DWORD GetOwnerModuleFromPidAndInfo (ULONG ulPid, ULONGLONG *pInfo, TCPIP_OWNER_MODULE_INFO_CLASS Class, PVOID pBuffer, PDWORD pdwSize);
+  ULONG __attribute__((__stdcall__)) GetIpStatistics (PMIB_IPSTATS Statistics);
+  ULONG __attribute__((__stdcall__)) GetIcmpStatistics (PMIB_ICMP Statistics);
+  ULONG __attribute__((__stdcall__)) GetTcpStatistics (PMIB_TCPSTATS Statistics);
+  ULONG __attribute__((__stdcall__)) GetUdpStatistics (PMIB_UDPSTATS Stats);
+  ULONG __attribute__((__stdcall__)) GetIpStatisticsEx (PMIB_IPSTATS Statistics, ULONG Family);
+  ULONG __attribute__((__stdcall__)) SetIpStatisticsEx (PMIB_IPSTATS Statistics, ULONG Family);
+  ULONG __attribute__((__stdcall__)) GetIcmpStatisticsEx (PMIB_ICMP_EX Statistics, ULONG Family);
+  ULONG __attribute__((__stdcall__)) GetTcpStatisticsEx (PMIB_TCPSTATS Statistics, ULONG Family);
+  ULONG __attribute__((__stdcall__)) GetUdpStatisticsEx (PMIB_UDPSTATS Statistics, ULONG Family);
+  DWORD __attribute__((__stdcall__)) SetIfEntry (PMIB_IFROW pIfRow);
+  DWORD __attribute__((__stdcall__)) CreateIpForwardEntry (PMIB_IPFORWARDROW pRoute);
+  DWORD __attribute__((__stdcall__)) SetIpForwardEntry (PMIB_IPFORWARDROW pRoute);
+  DWORD __attribute__((__stdcall__)) DeleteIpForwardEntry (PMIB_IPFORWARDROW pRoute);
+  DWORD __attribute__((__stdcall__)) SetIpStatistics (PMIB_IPSTATS pIpStats);
+  DWORD __attribute__((__stdcall__)) SetIpTTL (UINT nTTL);
+  DWORD __attribute__((__stdcall__)) CreateIpNetEntry (PMIB_IPNETROW pArpEntry);
+  DWORD __attribute__((__stdcall__)) SetIpNetEntry (PMIB_IPNETROW pArpEntry);
+  DWORD __attribute__((__stdcall__)) DeleteIpNetEntry (PMIB_IPNETROW pArpEntry);
+  DWORD __attribute__((__stdcall__)) FlushIpNetTable (DWORD dwIfIndex);
+  DWORD __attribute__((__stdcall__)) CreateProxyArpEntry (DWORD dwAddress, DWORD dwMask, DWORD dwIfIndex);
+  DWORD __attribute__((__stdcall__)) DeleteProxyArpEntry (DWORD dwAddress, DWORD dwMask, DWORD dwIfIndex);
+  DWORD __attribute__((__stdcall__)) SetTcpEntry (PMIB_TCPROW pTcpRow);
+  DWORD __attribute__((__stdcall__)) GetInterfaceInfo (PIP_INTERFACE_INFO pIfTable, PULONG dwOutBufLen);
+  DWORD __attribute__((__stdcall__)) GetUniDirectionalAdapterInfo (PIP_UNIDIRECTIONAL_ADAPTER_ADDRESS pIPIfInfo, PULONG dwOutBufLen);
+  DWORD __attribute__((__stdcall__)) NhpAllocateAndGetInterfaceInfoFromStack (IP_INTERFACE_NAME_INFO **ppTable, PDWORD pdwCount, WINBOOL bOrder, HANDLE hHeap, DWORD dwFlags);
+  DWORD __attribute__((__stdcall__)) GetBestInterface (IPAddr dwDestAddr, PDWORD pdwBestIfIndex);
+  DWORD __attribute__((__stdcall__)) GetBestInterfaceEx (struct sockaddr *pDestAddr, PDWORD pdwBestIfIndex);
+  DWORD __attribute__((__stdcall__)) GetBestRoute (DWORD dwDestAddr, DWORD dwSourceAddr, PMIB_IPFORWARDROW pBestRoute);
+  DWORD __attribute__((__stdcall__)) NotifyAddrChange (PHANDLE Handle, LPOVERLAPPED overlapped);
+  DWORD __attribute__((__stdcall__)) NotifyRouteChange (PHANDLE Handle, LPOVERLAPPED overlapped);
+  WINBOOL __attribute__((__stdcall__)) CancelIPChangeNotify (LPOVERLAPPED notifyOverlapped);
+  DWORD __attribute__((__stdcall__)) GetAdapterIndex (LPWSTR AdapterName, PULONG IfIndex);
+  DWORD __attribute__((__stdcall__)) AddIPAddress (IPAddr Address, IPMask IpMask, DWORD IfIndex, PULONG NTEContext, PULONG NTEInstance);
+  DWORD __attribute__((__stdcall__)) DeleteIPAddress (ULONG NTEContext);
+  DWORD __attribute__((__stdcall__)) GetNetworkParams (PFIXED_INFO pFixedInfo, PULONG pOutBufLen);
+  ULONG __attribute__((__stdcall__)) GetAdaptersInfo (PIP_ADAPTER_INFO AdapterInfo, PULONG SizePointer);
+  PIP_ADAPTER_ORDER_MAP __attribute__((__stdcall__)) GetAdapterOrderMap (void);
+  ULONG __attribute__((__stdcall__)) GetAdaptersAddresses (ULONG Family, ULONG Flags, PVOID Reserved, PIP_ADAPTER_ADDRESSES AdapterAddresses, PULONG SizePointer);
+  DWORD __attribute__((__stdcall__)) GetPerAdapterInfo (ULONG IfIndex, PIP_PER_ADAPTER_INFO pPerAdapterInfo, PULONG pOutBufLen);
+  DWORD __attribute__((__stdcall__)) IpReleaseAddress (PIP_ADAPTER_INDEX_MAP AdapterInfo);
+  DWORD __attribute__((__stdcall__)) IpRenewAddress (PIP_ADAPTER_INDEX_MAP AdapterInfo);
+  DWORD __attribute__((__stdcall__)) SendARP (IPAddr DestIP, IPAddr SrcIP, PVOID pMacAddr, PULONG PhyAddrLen);
+  WINBOOL __attribute__((__stdcall__)) GetRTTAndHopCount (IPAddr DestIpAddress, PULONG HopCount, ULONG MaxHops, PULONG RTT);
+  DWORD __attribute__((__stdcall__)) GetFriendlyIfIndex (DWORD IfIndex);
+  DWORD __attribute__((__stdcall__)) EnableRouter (HANDLE *pHandle, OVERLAPPED *pOverlapped);
+  DWORD __attribute__((__stdcall__)) UnenableRouter (OVERLAPPED *pOverlapped, LPDWORD lpdwEnableCount);
+  DWORD __attribute__((__stdcall__)) DisableMediaSense (HANDLE *pHandle, OVERLAPPED *pOverLapped);
+  DWORD __attribute__((__stdcall__)) RestoreMediaSense (OVERLAPPED *pOverlapped, LPDWORD lpdwEnableCount);
+#pragma pack(push,8)
 extern const GUID IID_IPropertyFrame;
 extern const GUID CLSID_CFontPropPage;
 extern const GUID CLSID_CColorPropPage;

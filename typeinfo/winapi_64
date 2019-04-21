@@ -1013,649 +1013,6 @@ typedef short __v4hi __attribute__ ((__vector_size__ (8)));
 typedef char __v8qi __attribute__ ((__vector_size__ (8)));
 typedef long long __v1di __attribute__ ((__vector_size__ (8)));
 typedef float __v2sf __attribute__ ((__vector_size__ (8)));
-extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_empty (void)
-{
-  __builtin_ia32_emms ();
-}
-extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_empty (void)
-{
-  _mm_empty ();
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cvtsi32_si64 (int __i)
-{
-  return (__m64) __builtin_ia32_vec_init_v2si (__i, 0);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_from_int (int __i)
-{
-  return _mm_cvtsi32_si64 (__i);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_from_int64 (long long __i)
-{
-  return (__m64) __i;
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cvtsi64_m64 (long long __i)
-{
-  return (__m64) __i;
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cvtsi64x_si64 (long long __i)
-{
-  return (__m64) __i;
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_set_pi64x (long long __i)
-{
-  return (__m64) __i;
-}
-extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cvtsi64_si32 (__m64 __i)
-{
-  return __builtin_ia32_vec_ext_v2si ((__v2si)__i, 0);
-}
-extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_to_int (__m64 __i)
-{
-  return _mm_cvtsi64_si32 (__i);
-}
-extern __inline long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_to_int64 (__m64 __i)
-{
-  return (long long)__i;
-}
-extern __inline long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cvtm64_si64 (__m64 __i)
-{
-  return (long long)__i;
-}
-extern __inline long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cvtsi64_si64x (__m64 __i)
-{
-  return (long long)__i;
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_packs_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_packsswb ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_packsswb (__m64 __m1, __m64 __m2)
-{
-  return _mm_packs_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_packs_pi32 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_packssdw ((__v2si)__m1, (__v2si)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_packssdw (__m64 __m1, __m64 __m2)
-{
-  return _mm_packs_pi32 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_packs_pu16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_packuswb ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_packuswb (__m64 __m1, __m64 __m2)
-{
-  return _mm_packs_pu16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_unpackhi_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_punpckhbw ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_punpckhbw (__m64 __m1, __m64 __m2)
-{
-  return _mm_unpackhi_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_unpackhi_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_punpckhwd ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_punpckhwd (__m64 __m1, __m64 __m2)
-{
-  return _mm_unpackhi_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_unpackhi_pi32 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_punpckhdq ((__v2si)__m1, (__v2si)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_punpckhdq (__m64 __m1, __m64 __m2)
-{
-  return _mm_unpackhi_pi32 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_unpacklo_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_punpcklbw ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_punpcklbw (__m64 __m1, __m64 __m2)
-{
-  return _mm_unpacklo_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_unpacklo_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_punpcklwd ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_punpcklwd (__m64 __m1, __m64 __m2)
-{
-  return _mm_unpacklo_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_unpacklo_pi32 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_punpckldq ((__v2si)__m1, (__v2si)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_punpckldq (__m64 __m1, __m64 __m2)
-{
-  return _mm_unpacklo_pi32 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_add_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_paddb (__m64 __m1, __m64 __m2)
-{
-  return _mm_add_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_add_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_paddw (__m64 __m1, __m64 __m2)
-{
-  return _mm_add_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_add_pi32 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddd ((__v2si)__m1, (__v2si)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_paddd (__m64 __m1, __m64 __m2)
-{
-  return _mm_add_pi32 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_add_si64 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddq ((__v1di)__m1, (__v1di)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_adds_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddsb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_paddsb (__m64 __m1, __m64 __m2)
-{
-  return _mm_adds_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_adds_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddsw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_paddsw (__m64 __m1, __m64 __m2)
-{
-  return _mm_adds_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_adds_pu8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddusb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_paddusb (__m64 __m1, __m64 __m2)
-{
-  return _mm_adds_pu8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_adds_pu16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_paddusw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_paddusw (__m64 __m1, __m64 __m2)
-{
-  return _mm_adds_pu16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sub_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psubb (__m64 __m1, __m64 __m2)
-{
-  return _mm_sub_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sub_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psubw (__m64 __m1, __m64 __m2)
-{
-  return _mm_sub_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sub_pi32 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubd ((__v2si)__m1, (__v2si)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psubd (__m64 __m1, __m64 __m2)
-{
-  return _mm_sub_pi32 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sub_si64 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubq ((__v1di)__m1, (__v1di)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_subs_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubsb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psubsb (__m64 __m1, __m64 __m2)
-{
-  return _mm_subs_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_subs_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubsw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psubsw (__m64 __m1, __m64 __m2)
-{
-  return _mm_subs_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_subs_pu8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubusb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psubusb (__m64 __m1, __m64 __m2)
-{
-  return _mm_subs_pu8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_subs_pu16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_psubusw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psubusw (__m64 __m1, __m64 __m2)
-{
-  return _mm_subs_pu16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_madd_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pmaddwd ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pmaddwd (__m64 __m1, __m64 __m2)
-{
-  return _mm_madd_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_mulhi_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pmulhw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pmulhw (__m64 __m1, __m64 __m2)
-{
-  return _mm_mulhi_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_mullo_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pmullw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pmullw (__m64 __m1, __m64 __m2)
-{
-  return _mm_mullo_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sll_pi16 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_psllw ((__v4hi)__m, (__v4hi)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psllw (__m64 __m, __m64 __count)
-{
-  return _mm_sll_pi16 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_slli_pi16 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_psllwi ((__v4hi)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psllwi (__m64 __m, int __count)
-{
-  return _mm_slli_pi16 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sll_pi32 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_pslld ((__v2si)__m, (__v2si)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pslld (__m64 __m, __m64 __count)
-{
-  return _mm_sll_pi32 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_slli_pi32 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_pslldi ((__v2si)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pslldi (__m64 __m, int __count)
-{
-  return _mm_slli_pi32 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sll_si64 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_psllq ((__v1di)__m, (__v1di)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psllq (__m64 __m, __m64 __count)
-{
-  return _mm_sll_si64 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_slli_si64 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_psllqi ((__v1di)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psllqi (__m64 __m, int __count)
-{
-  return _mm_slli_si64 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sra_pi16 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_psraw ((__v4hi)__m, (__v4hi)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psraw (__m64 __m, __m64 __count)
-{
-  return _mm_sra_pi16 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srai_pi16 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_psrawi ((__v4hi)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrawi (__m64 __m, int __count)
-{
-  return _mm_srai_pi16 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_sra_pi32 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_psrad ((__v2si)__m, (__v2si)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrad (__m64 __m, __m64 __count)
-{
-  return _mm_sra_pi32 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srai_pi32 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_psradi ((__v2si)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psradi (__m64 __m, int __count)
-{
-  return _mm_srai_pi32 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srl_pi16 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_psrlw ((__v4hi)__m, (__v4hi)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrlw (__m64 __m, __m64 __count)
-{
-  return _mm_srl_pi16 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srli_pi16 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_psrlwi ((__v4hi)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrlwi (__m64 __m, int __count)
-{
-  return _mm_srli_pi16 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srl_pi32 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_psrld ((__v2si)__m, (__v2si)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrld (__m64 __m, __m64 __count)
-{
-  return _mm_srl_pi32 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srli_pi32 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_psrldi ((__v2si)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrldi (__m64 __m, int __count)
-{
-  return _mm_srli_pi32 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srl_si64 (__m64 __m, __m64 __count)
-{
-  return (__m64) __builtin_ia32_psrlq ((__v1di)__m, (__v1di)__count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrlq (__m64 __m, __m64 __count)
-{
-  return _mm_srl_si64 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srli_si64 (__m64 __m, int __count)
-{
-  return (__m64) __builtin_ia32_psrlqi ((__v1di)__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_psrlqi (__m64 __m, int __count)
-{
-  return _mm_srli_si64 (__m, __count);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_and_si64 (__m64 __m1, __m64 __m2)
-{
-  return __builtin_ia32_pand (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pand (__m64 __m1, __m64 __m2)
-{
-  return _mm_and_si64 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_andnot_si64 (__m64 __m1, __m64 __m2)
-{
-  return __builtin_ia32_pandn (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pandn (__m64 __m1, __m64 __m2)
-{
-  return _mm_andnot_si64 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_or_si64 (__m64 __m1, __m64 __m2)
-{
-  return __builtin_ia32_por (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_por (__m64 __m1, __m64 __m2)
-{
-  return _mm_or_si64 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_xor_si64 (__m64 __m1, __m64 __m2)
-{
-  return __builtin_ia32_pxor (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pxor (__m64 __m1, __m64 __m2)
-{
-  return _mm_xor_si64 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cmpeq_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pcmpeqb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pcmpeqb (__m64 __m1, __m64 __m2)
-{
-  return _mm_cmpeq_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cmpgt_pi8 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pcmpgtb ((__v8qi)__m1, (__v8qi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pcmpgtb (__m64 __m1, __m64 __m2)
-{
-  return _mm_cmpgt_pi8 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cmpeq_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pcmpeqw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pcmpeqw (__m64 __m1, __m64 __m2)
-{
-  return _mm_cmpeq_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cmpgt_pi16 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pcmpgtw ((__v4hi)__m1, (__v4hi)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pcmpgtw (__m64 __m1, __m64 __m2)
-{
-  return _mm_cmpgt_pi16 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cmpeq_pi32 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pcmpeqd ((__v2si)__m1, (__v2si)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pcmpeqd (__m64 __m1, __m64 __m2)
-{
-  return _mm_cmpeq_pi32 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_cmpgt_pi32 (__m64 __m1, __m64 __m2)
-{
-  return (__m64) __builtin_ia32_pcmpgtd ((__v2si)__m1, (__v2si)__m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pcmpgtd (__m64 __m1, __m64 __m2)
-{
-  return _mm_cmpgt_pi32 (__m1, __m2);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_set_pi32 (int __i1, int __i0)
-{
-  return (__m64) __builtin_ia32_vec_init_v2si (__i0, __i1);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_set_pi16 (short __w3, short __w2, short __w1, short __w0)
-{
-  return (__m64) __builtin_ia32_vec_init_v4hi (__w0, __w1, __w2, __w3);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_set_pi8 (char __b7, char __b6, char __b5, char __b4,
-      char __b3, char __b2, char __b1, char __b0)
-{
-  return (__m64) __builtin_ia32_vec_init_v8qi (__b0, __b1, __b2, __b3,
-            __b4, __b5, __b6, __b7);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_setr_pi32 (int __i0, int __i1)
-{
-  return _mm_set_pi32 (__i1, __i0);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_setr_pi16 (short __w0, short __w1, short __w2, short __w3)
-{
-  return _mm_set_pi16 (__w3, __w2, __w1, __w0);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_setr_pi8 (char __b0, char __b1, char __b2, char __b3,
-       char __b4, char __b5, char __b6, char __b7)
-{
-  return _mm_set_pi8 (__b7, __b6, __b5, __b4, __b3, __b2, __b1, __b0);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_set1_pi32 (int __i)
-{
-  return _mm_set_pi32 (__i, __i);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_set1_pi16 (short __w)
-{
-  return _mm_set_pi16 (__w, __w, __w, __w);
-}
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_set1_pi8 (char __b)
-{
-  return _mm_set_pi8 (__b, __b, __b, __b, __b, __b, __b, __b);
-}
 #pragma pack(push,_CRT_PACKING)
   typedef int (__attribute__((__cdecl__)) *_onexit_t)(void);
   typedef struct _div_t {
@@ -1993,17 +1350,194 @@ _aligned_free(void * aligned_ptr)
   if (aligned_ptr)
     free (((void **) aligned_ptr) [-1]);
 }
-enum _mm_hint
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("lzcnt")
+extern __inline unsigned short __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__lzcnt16 (unsigned short __X)
 {
-  _MM_HINT_ET0 = 7,
-  _MM_HINT_ET1 = 6,
-  _MM_HINT_T0 = 3,
-  _MM_HINT_T1 = 2,
-  _MM_HINT_T2 = 1,
-  _MM_HINT_NTA = 0
-};
-typedef float __m128 __attribute__ ((__vector_size__ (16), __may_alias__));
-typedef float __v4sf __attribute__ ((__vector_size__ (16)));
+  return __builtin_clzs (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__lzcnt32 (unsigned int __X)
+{
+  return __builtin_clz (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_lzcnt_u32 (unsigned int __X)
+{
+  return __builtin_clz (__X);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__lzcnt64 (unsigned long long __X)
+{
+  return __builtin_clzll (__X);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_lzcnt_u64 (unsigned long long __X)
+{
+  return __builtin_clzll (__X);
+}
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("bmi")
+extern __inline unsigned short __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__tzcnt_u16 (unsigned short __X)
+{
+  return __builtin_ctzs (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__andn_u32 (unsigned int __X, unsigned int __Y)
+{
+  return ~__X & __Y;
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__bextr_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_bextr_u32 (__X, __Y);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_bextr_u32 (unsigned int __X, unsigned int __Y, unsigned __Z)
+{
+  return __builtin_ia32_bextr_u32 (__X, ((__Y & 0xff) | ((__Z & 0xff) << 8)));
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsi_u32 (unsigned int __X)
+{
+  return __X & -__X;
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsi_u32 (unsigned int __X)
+{
+  return __blsi_u32 (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsmsk_u32 (unsigned int __X)
+{
+  return __X ^ (__X - 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsmsk_u32 (unsigned int __X)
+{
+  return __blsmsk_u32 (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsr_u32 (unsigned int __X)
+{
+  return __X & (__X - 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsr_u32 (unsigned int __X)
+{
+  return __blsr_u32 (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__tzcnt_u32 (unsigned int __X)
+{
+  return __builtin_ctz (__X);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_tzcnt_u32 (unsigned int __X)
+{
+  return __builtin_ctz (__X);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__andn_u64 (unsigned long long __X, unsigned long long __Y)
+{
+  return ~__X & __Y;
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__bextr_u64 (unsigned long long __X, unsigned long long __Y)
+{
+  return __builtin_ia32_bextr_u64 (__X, __Y);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_bextr_u64 (unsigned long long __X, unsigned int __Y, unsigned int __Z)
+{
+  return __builtin_ia32_bextr_u64 (__X, ((__Y & 0xff) | ((__Z & 0xff) << 8)));
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsi_u64 (unsigned long long __X)
+{
+  return __X & -__X;
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsi_u64 (unsigned long long __X)
+{
+  return __blsi_u64 (__X);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsmsk_u64 (unsigned long long __X)
+{
+  return __X ^ (__X - 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsmsk_u64 (unsigned long long __X)
+{
+  return __blsmsk_u64 (__X);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsr_u64 (unsigned long long __X)
+{
+  return __X & (__X - 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_blsr_u64 (unsigned long long __X)
+{
+  return __blsr_u64 (__X);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__tzcnt_u64 (unsigned long long __X)
+{
+  return __builtin_ctzll (__X);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_tzcnt_u64 (unsigned long long __X)
+{
+  return __builtin_ctzll (__X);
+}
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("bmi2")
+extern __inline unsigned int
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_bzhi_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_bzhi_si (__X, __Y);
+}
+extern __inline unsigned int
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_pdep_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_pdep_si (__X, __Y);
+}
+extern __inline unsigned int
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_pext_u32 (unsigned int __X, unsigned int __Y)
+{
+  return __builtin_ia32_pext_si (__X, __Y);
+}
+extern __inline unsigned long long
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_bzhi_u64 (unsigned long long __X, unsigned long long __Y)
+{
+  return __builtin_ia32_bzhi_di (__X, __Y);
+}
+extern __inline unsigned long long
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_pdep_u64 (unsigned long long __X, unsigned long long __Y)
+{
+  return __builtin_ia32_pdep_di (__X, __Y);
+}
+extern __inline unsigned long long
+__attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_pext_u64 (unsigned long long __X, unsigned long long __Y)
+{
+  return __builtin_ia32_pext_di (__X, __Y);
+}
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("fma")
 #pragma GCC pop_options
 #pragma GCC push_options
 #pragma GCC target("rtm")
@@ -2104,6 +1638,112 @@ _rdrand64_step (unsigned long long *__P)
   return __builtin_ia32_rdrand64_step (__P);
 }
 #pragma GCC pop_options
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("lwp")
+extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__llwpcb (void *pcbAddress)
+{
+  __builtin_ia32_llwpcb (pcbAddress);
+}
+extern __inline void * __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__slwpcb (void)
+{
+  return __builtin_ia32_slwpcb ();
+}
+#pragma GCC pop_options
+#pragma GCC push_options
+#pragma GCC target("tbm")
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcfill_u32 (unsigned int __X)
+{
+  return __X & (__X + 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blci_u32 (unsigned int __X)
+{
+  return __X | ~(__X + 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcic_u32 (unsigned int __X)
+{
+  return ~__X & (__X + 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcmsk_u32 (unsigned int __X)
+{
+  return __X ^ (__X + 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcs_u32 (unsigned int __X)
+{
+  return __X | (__X + 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsfill_u32 (unsigned int __X)
+{
+  return __X | (__X - 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsic_u32 (unsigned int __X)
+{
+  return ~__X | (__X - 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__t1mskc_u32 (unsigned int __X)
+{
+  return ~__X | (__X + 1);
+}
+extern __inline unsigned int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__tzmsk_u32 (unsigned int __X)
+{
+  return ~__X & (__X - 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcfill_u64 (unsigned long long __X)
+{
+  return __X & (__X + 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blci_u64 (unsigned long long __X)
+{
+  return __X | ~(__X + 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcic_u64 (unsigned long long __X)
+{
+  return ~__X & (__X + 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcmsk_u64 (unsigned long long __X)
+{
+  return __X ^ (__X + 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blcs_u64 (unsigned long long __X)
+{
+  return __X | (__X + 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsfill_u64 (unsigned long long __X)
+{
+  return __X | (__X - 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__blsic_u64 (unsigned long long __X)
+{
+  return ~__X | (__X - 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__t1mskc_u64 (unsigned long long __X)
+{
+  return ~__X | (__X + 1);
+}
+extern __inline unsigned long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__tzmsk_u64 (unsigned long long __X)
+{
+  return ~__X & (__X - 1);
+}
 #pragma GCC pop_options
 #pragma GCC push_options
 #pragma GCC target("rdseed")
@@ -39620,7 +39260,12 @@ typedef struct _PSAPI_WORKING_SET_EX_INFORMATION {
   PVOID VirtualAddress;
   PSAPI_WORKING_SET_EX_BLOCK VirtualAttributes;
 } PSAPI_WORKING_SET_EX_INFORMATION, *PPSAPI_WORKING_SET_EX_INFORMATION;
-#pragma pack(push,8)
+typedef struct in6_addr {
+  union {
+    u_char Byte[16];
+    u_short Word[8];
+  } u;
+} IN6_ADDR, *PIN6_ADDR, *LPIN6_ADDR;
 typedef struct IEnumConnections IEnumConnections;
 typedef struct IConnectionPoint IConnectionPoint;
 typedef struct IEnumConnectionPoints IEnumConnectionPoints;
@@ -43237,6 +42882,2282 @@ ULONG HPALETTE_UserSize (ULONG *, ULONG, HPALETTE *);
 unsigned char * HPALETTE_UserMarshal (ULONG *, unsigned char *, HPALETTE *);
 unsigned char * HPALETTE_UserUnmarshal(ULONG *, unsigned char *, HPALETTE *);
 void HPALETTE_UserFree (ULONG *, HPALETTE *);
+extern RPC_IF_HANDLE INapTypes_v0_0_c_ifspec;
+extern RPC_IF_HANDLE INapTypes_v0_0_s_ifspec;
+typedef enum tagIsolationState {
+    isolationStateNotRestricted = 1,
+    isolationStateInProbation = 2,
+    isolationStateRestrictedAccess = 3
+} IsolationState;
+typedef enum tagExtendedIsolationState {
+    extendedIsolationStateNoData = 0x0,
+    extendedIsolationStateTransition = 0x1,
+    extendedIsolationStateInfected = 0x2,
+    extendedIsolationStateUnknown = 0x3
+} ExtendedIsolationState;
+typedef enum tagNapTracingLevel {
+    tracingLevelUndefined = 0,
+    tracingLevelBasic = 1,
+    tracingLevelAdvanced = 2,
+    tracingLevelDebug = 3
+} NapTracingLevel;
+typedef enum tagFailureCategory {
+    failureCategoryNone = 0,
+    failureCategoryOther = 1,
+    failureCategoryClientComponent = 2,
+    failureCategoryClientCommunication = 3,
+    failureCategoryServerComponent = 4,
+    failureCategoryServerCommunication = 5
+} FailureCategory;
+typedef enum tagFixupState {
+    fixupStateSuccess = 0,
+    fixupStateInProgress = 1,
+    fixupStateCouldNotUpdate = 2
+} FixupState;
+typedef enum tagNapNotifyType {
+    napNotifyTypeUnknown = 0,
+    napNotifyTypeServiceState = 1,
+    napNotifyTypeQuarState = 2
+} NapNotifyType;
+typedef enum tagRemoteConfigurationType {
+    remoteConfigTypeMachine = 1,
+    remoteConfigTypeConfigBlob = 2
+} RemoteConfigurationType;
+typedef FILETIME ProbationTime;
+typedef UINT32 MessageId;
+typedef UINT32 NapComponentId;
+typedef NapComponentId SystemHealthEntityId;
+typedef NapComponentId EnforcementEntityId;
+typedef struct tagCountedString {
+    UINT16 length;
+    WCHAR *string;
+} CountedString;
+typedef CountedString StringCorrelationId;
+typedef struct tagIsolationInfo {
+    IsolationState isolationState;
+    ProbationTime probEndTime;
+    CountedString failureUrl;
+} IsolationInfo;
+typedef struct tagIsolationInfoEx {
+    IsolationState isolationState;
+    ExtendedIsolationState extendedIsolationState;
+    ProbationTime probEndTime;
+    CountedString failureUrl;
+} IsolationInfoEx;
+typedef struct tagFailureCategoryMapping {
+    WINBOOL mappingCompliance[5];
+} FailureCategoryMapping;
+typedef UINT16 SystemHealthEntityCount;
+typedef UINT16 EnforcementEntityCount;
+typedef struct tagCorrelationId {
+    GUID connId;
+    FILETIME timeStamp;
+} CorrelationId;
+typedef GUID ConnectionId;
+typedef UINT8 Percentage;
+typedef struct tagResultCodes {
+    UINT16 count;
+    HRESULT *results;
+} ResultCodes;
+typedef struct tagIpv4Address {
+    BYTE addr[4];
+} Ipv4Address;
+typedef struct tagIpv6Address {
+    BYTE addr[16];
+} Ipv6Address;
+typedef struct tagFixupInfo {
+    FixupState state;
+    Percentage percentage;
+    ResultCodes resultCodes;
+    MessageId fixupMsgId;
+} FixupInfo;
+typedef struct tagSystemHealthAgentState {
+    SystemHealthEntityId id;
+    ResultCodes shaResultCodes;
+    FailureCategory failureCategory;
+    FixupInfo fixupInfo;
+} SystemHealthAgentState;
+typedef struct tagSoHAttribute {
+    UINT16 type;
+    UINT16 size;
+    BYTE *value;
+} SoHAttribute;
+typedef struct tagSoH {
+    UINT16 count;
+    SoHAttribute *attributes;
+} SoH;
+typedef struct tagSoH SoHRequest;
+typedef struct tagSoH SoHResponse;
+typedef struct tagNetworkSoH {
+    UINT16 size;
+    BYTE *data;
+} NetworkSoH;
+typedef struct tagNetworkSoH NetworkSoHRequest;
+typedef struct tagNetworkSoH NetworkSoHResponse;
+typedef struct tagPrivateData {
+    UINT16 size;
+    BYTE *data;
+} PrivateData;
+typedef struct tagNapComponentRegistrationInfo {
+    NapComponentId id;
+    CountedString friendlyName;
+    CountedString description;
+    CountedString version;
+    CountedString vendorName;
+    CLSID infoClsid;
+    CLSID configClsid;
+    FILETIME registrationDate;
+    UINT32 componentType;
+} NapComponentRegistrationInfo;
+typedef struct in_addr RASIPV4ADDR;
+typedef struct in6_addr RASIPV6ADDR;
+#pragma pack(push,4)
+  struct HRASCONN__ { int unused; }; typedef struct HRASCONN__ *HRASCONN;
+  struct tagRASCONNW {
+    DWORD dwSize;
+    HRASCONN hrasconn;
+    WCHAR szEntryName[256 + 1 ];
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szPhonebook [260 ];
+    DWORD dwSubEntry;
+    GUID guidEntry;
+    DWORD dwFlags;
+    LUID luid;
+  };
+  struct tagRASCONNA {
+    DWORD dwSize;
+    HRASCONN hrasconn;
+    CHAR szEntryName[256 + 1 ];
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szPhonebook [260 ];
+    DWORD dwSubEntry;
+    GUID guidEntry;
+    DWORD dwFlags;
+    LUID luid;
+  };
+  enum tagRASCONNSTATE {
+    RASCS_OpenPort = 0,RASCS_PortOpened,RASCS_ConnectDevice,RASCS_DeviceConnected,RASCS_AllDevicesConnected,RASCS_Authenticate,
+    RASCS_AuthNotify,RASCS_AuthRetry,RASCS_AuthCallback,RASCS_AuthChangePassword,RASCS_AuthProject,RASCS_AuthLinkSpeed,
+    RASCS_AuthAck,RASCS_ReAuthenticate,RASCS_Authenticated,RASCS_PrepareForCallback,RASCS_WaitForModemReset,RASCS_WaitForCallback,RASCS_Projected,
+    RASCS_StartAuthentication,RASCS_CallbackComplete,RASCS_LogonNetwork,RASCS_SubEntryConnected,
+    RASCS_SubEntryDisconnected,RASCS_Interactive = 0x1000,RASCS_RetryAuthentication,RASCS_CallbackSetByCaller,RASCS_PasswordExpired,
+    RASCS_InvokeEapUI,RASCS_Connected = 0x2000,RASCS_Disconnected
+  };
+  struct tagRASCONNSTATUSW {
+    DWORD dwSize;
+    enum tagRASCONNSTATE rasconnstate;
+    DWORD dwError;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szPhoneNumber[128 + 1 ];
+  };
+  struct tagRASCONNSTATUSA {
+    DWORD dwSize;
+    enum tagRASCONNSTATE rasconnstate;
+    DWORD dwError;
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szPhoneNumber[128 + 1 ];
+  };
+  struct tagRASDIALPARAMSW {
+    DWORD dwSize;
+    WCHAR szEntryName[256 + 1 ];
+    WCHAR szPhoneNumber[128 + 1 ];
+    WCHAR szCallbackNumber[128 + 1 ];
+    WCHAR szUserName[256 + 1 ];
+    WCHAR szPassword[256 + 1 ];
+    WCHAR szDomain[15 + 1 ];
+    DWORD dwSubEntry;
+    ULONG_PTR dwCallbackId;
+  };
+  struct tagRASDIALPARAMSA {
+    DWORD dwSize;
+    CHAR szEntryName[256 + 1 ];
+    CHAR szPhoneNumber[128 + 1 ];
+    CHAR szCallbackNumber[128 + 1 ];
+    CHAR szUserName[256 + 1 ];
+    CHAR szPassword[256 + 1 ];
+    CHAR szDomain[15 + 1 ];
+    DWORD dwSubEntry;
+    ULONG_PTR dwCallbackId;
+  };
+  struct tagRASEAPINFO {
+    DWORD dwSizeofEapInfo;
+    BYTE *pbEapInfo;
+  };
+  struct tagRASDIALEXTENSIONS {
+    DWORD dwSize;
+    DWORD dwfOptions;
+    HWND hwndParent;
+    ULONG_PTR reserved;
+    ULONG_PTR reserved1;
+    struct tagRASEAPINFO RasEapInfo;
+  };
+  struct tagRASENTRYNAMEW {
+    DWORD dwSize;
+    WCHAR szEntryName[256 + 1 ];
+    DWORD dwFlags;
+    WCHAR szPhonebookPath[260 + 1];
+  };
+  struct tagRASENTRYNAMEA {
+    DWORD dwSize;
+    CHAR szEntryName[256 + 1 ];
+    DWORD dwFlags;
+    CHAR szPhonebookPath[260 + 1];
+  };
+  enum tagRASPROJECTION {
+    RASP_Amb = 0x10000,RASP_PppNbf = 0x803F,RASP_PppIpx = 0x802B,RASP_PppIp = 0x8021,
+    RASP_PppCcp = 0x80FD,RASP_PppLcp = 0xC021,RASP_Slip = 0x20000
+  };
+  struct tagRASAMBW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szNetBiosError[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASAMBA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szNetBiosError[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASPPPNBFW {
+    DWORD dwSize;
+    DWORD dwError;
+    DWORD dwNetBiosError;
+    WCHAR szNetBiosError[16 + 1 ];
+    WCHAR szWorkstationName[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASPPPNBFA {
+    DWORD dwSize;
+    DWORD dwError;
+    DWORD dwNetBiosError;
+    CHAR szNetBiosError[16 + 1 ];
+    CHAR szWorkstationName[16 + 1 ];
+    BYTE bLana;
+  };
+  struct tagRASIPXW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szIpxAddress[21 + 1 ];
+  };
+  struct tagRASPPPIPXA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szIpxAddress[21 + 1 ];
+  };
+  struct tagRASPPPIPW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szIpAddress[15 + 1 ];
+    WCHAR szServerIpAddress[15 + 1 ];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASPPPIPA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szIpAddress[15 + 1 ];
+    CHAR szServerIpAddress[15 + 1 ];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASPPPLCPW {
+    DWORD dwSize;
+    WINBOOL fBundled;
+    DWORD dwError;
+    DWORD dwAuthenticationProtocol;
+    DWORD dwAuthenticationData;
+    DWORD dwEapTypeId;
+    DWORD dwServerAuthenticationProtocol;
+    DWORD dwServerAuthenticationData;
+    DWORD dwServerEapTypeId;
+    WINBOOL fMultilink;
+    DWORD dwTerminateReason;
+    DWORD dwServerTerminateReason;
+    WCHAR szReplyMessage[1024];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASPPPLCPA {
+    DWORD dwSize;
+    WINBOOL fBundled;
+    DWORD dwError;
+    DWORD dwAuthenticationProtocol;
+    DWORD dwAuthenticationData;
+    DWORD dwEapTypeId;
+    DWORD dwServerAuthenticationProtocol;
+    DWORD dwServerAuthenticationData;
+    DWORD dwServerEapTypeId;
+    WINBOOL fMultilink;
+    DWORD dwTerminateReason;
+    DWORD dwServerTerminateReason;
+    CHAR szReplyMessage[1024];
+    DWORD dwOptions;
+    DWORD dwServerOptions;
+  };
+  struct tagRASSLIPW {
+    DWORD dwSize;
+    DWORD dwError;
+    WCHAR szIpAddress[15 + 1 ];
+  };
+  struct tagRASSLIPA {
+    DWORD dwSize;
+    DWORD dwError;
+    CHAR szIpAddress[15 + 1 ];
+  };
+  struct tagRASPPPCCP {
+    DWORD dwSize;
+    DWORD dwError;
+    DWORD dwCompressionAlgorithm;
+    DWORD dwOptions;
+    DWORD dwServerCompressionAlgorithm;
+    DWORD dwServerOptions;
+  };
+  typedef void ( *RASDIALFUNC)(UINT,enum tagRASCONNSTATE,DWORD);
+  typedef void ( *RASDIALFUNC1)(HRASCONN,UINT,enum tagRASCONNSTATE,DWORD,DWORD);
+  typedef DWORD ( *RASDIALFUNC2)(ULONG_PTR,DWORD,HRASCONN,UINT,enum tagRASCONNSTATE,DWORD,DWORD);
+  struct tagRASDEVINFOW {
+    DWORD dwSize;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+  };
+  struct tagRASDEVINFOA {
+    DWORD dwSize;
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+  };
+  struct RASCTRYINFO {
+    DWORD dwSize;
+    DWORD dwCountryID;
+    DWORD dwNextCountryID;
+    DWORD dwCountryCode;
+    DWORD dwCountryNameOffset;
+  };
+  struct RASIPADDR {
+    BYTE a;
+    BYTE b;
+    BYTE c;
+    BYTE d;
+  };
+  struct tagRASENTRYA {
+    DWORD dwSize;
+    DWORD dwfOptions;
+    DWORD dwCountryID;
+    DWORD dwCountryCode;
+    CHAR szAreaCode[10 + 1 ];
+    CHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+    struct RASIPADDR ipaddr;
+    struct RASIPADDR ipaddrDns;
+    struct RASIPADDR ipaddrDnsAlt;
+    struct RASIPADDR ipaddrWins;
+    struct RASIPADDR ipaddrWinsAlt;
+    DWORD dwFrameSize;
+    DWORD dwfNetProtocols;
+    DWORD dwFramingProtocol;
+    CHAR szScript[260 ];
+    CHAR szAutodialDll[260 ];
+    CHAR szAutodialFunc[260 ];
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szX25PadType[32 + 1 ];
+    CHAR szX25Address[200 + 1 ];
+    CHAR szX25Facilities[200 + 1 ];
+    CHAR szX25UserData[200 + 1 ];
+    DWORD dwChannels;
+    DWORD dwReserved1;
+    DWORD dwReserved2;
+    DWORD dwSubEntries;
+    DWORD dwDialMode;
+    DWORD dwDialExtraPercent;
+    DWORD dwDialExtraSampleSeconds;
+    DWORD dwHangUpExtraPercent;
+    DWORD dwHangUpExtraSampleSeconds;
+    DWORD dwIdleDisconnectSeconds;
+    DWORD dwType;
+    DWORD dwEncryptionType;
+    DWORD dwCustomAuthKey;
+    GUID guidId;
+    CHAR szCustomDialDll[260];
+    DWORD dwVpnStrategy;
+    DWORD dwfOptions2;
+    DWORD dwfOptions3;
+    CHAR szDnsSuffix[256];
+    DWORD dwTcpWindowSize;
+    CHAR szPrerequisitePbk[260];
+    CHAR szPrerequisiteEntry[256 + 1];
+    DWORD dwRedialCount;
+    DWORD dwRedialPause;
+  };
+  struct tagRASENTRYW {
+    DWORD dwSize;
+    DWORD dwfOptions;
+    DWORD dwCountryID;
+    DWORD dwCountryCode;
+    WCHAR szAreaCode[10 + 1 ];
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+    struct RASIPADDR ipaddr;
+    struct RASIPADDR ipaddrDns;
+    struct RASIPADDR ipaddrDnsAlt;
+    struct RASIPADDR ipaddrWins;
+    struct RASIPADDR ipaddrWinsAlt;
+    DWORD dwFrameSize;
+    DWORD dwfNetProtocols;
+    DWORD dwFramingProtocol;
+    WCHAR szScript[260 ];
+    WCHAR szAutodialDll[260 ];
+    WCHAR szAutodialFunc[260 ];
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szX25PadType[32 + 1 ];
+    WCHAR szX25Address[200 + 1 ];
+    WCHAR szX25Facilities[200 + 1 ];
+    WCHAR szX25UserData[200 + 1 ];
+    DWORD dwChannels;
+    DWORD dwReserved1;
+    DWORD dwReserved2;
+    DWORD dwSubEntries;
+    DWORD dwDialMode;
+    DWORD dwDialExtraPercent;
+    DWORD dwDialExtraSampleSeconds;
+    DWORD dwHangUpExtraPercent;
+    DWORD dwHangUpExtraSampleSeconds;
+    DWORD dwIdleDisconnectSeconds;
+    DWORD dwType;
+    DWORD dwEncryptionType;
+    DWORD dwCustomAuthKey;
+    GUID guidId;
+    WCHAR szCustomDialDll[260];
+    DWORD dwVpnStrategy;
+    DWORD dwfOptions2;
+    DWORD dwfOptions3;
+    WCHAR szDnsSuffix[256];
+    DWORD dwTcpWindowSize;
+    WCHAR szPrerequisitePbk[260];
+    WCHAR szPrerequisiteEntry[256 + 1];
+    DWORD dwRedialCount;
+    DWORD dwRedialPause;
+  };
+  typedef WINBOOL ( *ORASADFUNC)(HWND,LPSTR,DWORD,LPDWORD);
+  struct tagRASADPARAMS {
+    DWORD dwSize;
+    HWND hwndOwner;
+    DWORD dwFlags;
+    LONG xDlg;
+    LONG yDlg;
+  };
+  typedef WINBOOL ( *RASADFUNCA)(LPSTR,LPSTR,struct tagRASADPARAMS*,LPDWORD);
+  typedef WINBOOL ( *RASADFUNCW)(LPWSTR,LPWSTR,struct tagRASADPARAMS*,LPDWORD);
+  struct tagRASSUBENTRYA {
+    DWORD dwSize;
+    DWORD dwfFlags;
+    CHAR szDeviceType[16 + 1 ];
+    CHAR szDeviceName[128 + 1 ];
+    CHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+  };
+  struct tagRASSUBENTRYW {
+    DWORD dwSize;
+    DWORD dwfFlags;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    DWORD dwAlternateOffset;
+  };
+  struct tagRASCREDENTIALSA {
+    DWORD dwSize;
+    DWORD dwMask;
+    CHAR szUserName[256 + 1 ];
+    CHAR szPassword[256 + 1 ];
+    CHAR szDomain[15 + 1 ];
+  };
+  struct tagRASCREDENTIALSW {
+    DWORD dwSize;
+    DWORD dwMask;
+    WCHAR szUserName[256 + 1 ];
+    WCHAR szPassword[256 + 1 ];
+    WCHAR szDomain[15 + 1 ];
+  };
+  struct tagRASAUTODIALENTRYA {
+    DWORD dwSize;
+    DWORD dwFlags;
+    DWORD dwDialingLocation;
+    CHAR szEntry[256 + 1];
+  };
+  struct tagRASAUTODIALENTRYW {
+    DWORD dwSize;
+    DWORD dwFlags;
+    DWORD dwDialingLocation;
+    WCHAR szEntry[256 + 1];
+  };
+  struct tagRASEAPUSERIDENTITYA {
+    CHAR szUserName[256 + 1 ];
+    DWORD dwSizeofEapInfo;
+    BYTE pbEapInfo[1 ];
+  };
+  struct tagRASEAPUSERIDENTITYW {
+    WCHAR szUserName[256 + 1 ];
+    DWORD dwSizeofEapInfo;
+    BYTE pbEapInfo[1 ];
+  };
+  typedef DWORD ( *PFNRASGETBUFFER) (PBYTE *ppBuffer,PDWORD pdwSize);
+  typedef DWORD ( *PFNRASFREEBUFFER) (PBYTE pBufer);
+  typedef DWORD ( *PFNRASSENDBUFFER) (HANDLE hPort,PBYTE pBuffer,DWORD dwSize);
+  typedef DWORD ( *PFNRASRECEIVEBUFFER) (HANDLE hPort,PBYTE pBuffer,PDWORD pdwSize,DWORD dwTimeOut,HANDLE hEvent);
+  typedef DWORD ( *PFNRASRETRIEVEBUFFER) (HANDLE hPort,PBYTE pBuffer,PDWORD pdwSize);
+  typedef DWORD ( *RasCustomScriptExecuteFn) (HANDLE hPort,LPCWSTR lpszPhonebook,LPCWSTR lpszEntryName,PFNRASGETBUFFER pfnRasGetBuffer,PFNRASFREEBUFFER pfnRasFreeBuffer,PFNRASSENDBUFFER pfnRasSendBuffer,PFNRASRECEIVEBUFFER pfnRasReceiveBuffer,PFNRASRETRIEVEBUFFER pfnRasRetrieveBuffer,HWND hWnd,struct tagRASDIALPARAMSA *pRasDialParams,PVOID pvReserved);
+  struct tagRASCOMMSETTINGS {
+    DWORD dwSize;
+    BYTE bParity;
+    BYTE bStop;
+    BYTE bByteSize;
+    BYTE bAlign;
+  };
+  typedef DWORD ( *PFNRASSETCOMMSETTINGS) (HANDLE hPort,struct tagRASCOMMSETTINGS *pRasCommSettings,PVOID pvReserved);
+  struct tagRASCUSTOMSCRIPTEXTENSIONS {
+    DWORD dwSize;
+    PFNRASSETCOMMSETTINGS pfnRasSetCommSettings;
+  };
+  DWORD RasDialA(struct tagRASDIALEXTENSIONS*,LPCSTR,struct tagRASDIALPARAMSA*,DWORD,LPVOID,HRASCONN*);
+  DWORD RasDialW(struct tagRASDIALEXTENSIONS*,LPCWSTR,struct tagRASDIALPARAMSW*,DWORD,LPVOID,HRASCONN*);
+  DWORD RasEnumConnectionsA(struct tagRASCONNA*,LPDWORD,LPDWORD);
+  DWORD RasEnumConnectionsW(struct tagRASCONNW*,LPDWORD,LPDWORD);
+  DWORD RasEnumEntriesA(LPCSTR,LPCSTR,struct tagRASENTRYNAMEA*,LPDWORD,LPDWORD);
+  DWORD RasEnumEntriesW(LPCWSTR,LPCWSTR,struct tagRASENTRYNAMEW*,LPDWORD,LPDWORD);
+  DWORD RasGetConnectStatusA(HRASCONN,struct tagRASCONNSTATUSA*);
+  DWORD RasGetConnectStatusW(HRASCONN,struct tagRASCONNSTATUSW*);
+  DWORD RasGetErrorStringA(UINT,LPSTR,DWORD);
+  DWORD RasGetErrorStringW(UINT,LPWSTR,DWORD);
+  DWORD RasHangUpA(HRASCONN);
+  DWORD RasHangUpW(HRASCONN);
+  DWORD RasGetProjectionInfoA(HRASCONN,enum tagRASPROJECTION,LPVOID,LPDWORD);
+  DWORD RasGetProjectionInfoW(HRASCONN,enum tagRASPROJECTION,LPVOID,LPDWORD);
+  DWORD RasCreatePhonebookEntryA(HWND,LPCSTR);
+  DWORD RasCreatePhonebookEntryW(HWND,LPCWSTR);
+  DWORD RasEditPhonebookEntryA(HWND,LPCSTR,LPCSTR);
+  DWORD RasEditPhonebookEntryW(HWND,LPCWSTR,LPCWSTR);
+  DWORD RasSetEntryDialParamsA(LPCSTR,struct tagRASDIALPARAMSA*,WINBOOL);
+  DWORD RasSetEntryDialParamsW(LPCWSTR,struct tagRASDIALPARAMSW*,WINBOOL);
+  DWORD RasGetEntryDialParamsA(LPCSTR,struct tagRASDIALPARAMSA*,LPBOOL);
+  DWORD RasGetEntryDialParamsW(LPCWSTR,struct tagRASDIALPARAMSW*,LPBOOL);
+  DWORD RasEnumDevicesA(struct tagRASDEVINFOA*,LPDWORD,LPDWORD);
+  DWORD RasEnumDevicesW(struct tagRASDEVINFOW*,LPDWORD,LPDWORD);
+  DWORD RasGetCountryInfoA(struct RASCTRYINFO*,LPDWORD);
+  DWORD RasGetCountryInfoW(struct RASCTRYINFO*,LPDWORD);
+  DWORD RasGetEntryPropertiesA(LPCSTR,LPCSTR,struct tagRASENTRYA*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD RasGetEntryPropertiesW(LPCWSTR,LPCWSTR,struct tagRASENTRYW*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD RasSetEntryPropertiesA(LPCSTR,LPCSTR,struct tagRASENTRYA*,DWORD,LPBYTE,DWORD);
+  DWORD RasSetEntryPropertiesW(LPCWSTR,LPCWSTR,struct tagRASENTRYW*,DWORD,LPBYTE,DWORD);
+  DWORD RasRenameEntryA(LPCSTR,LPCSTR,LPCSTR);
+  DWORD RasRenameEntryW(LPCWSTR,LPCWSTR,LPCWSTR);
+  DWORD RasDeleteEntryA(LPCSTR,LPCSTR);
+  DWORD RasDeleteEntryW(LPCWSTR,LPCWSTR);
+  DWORD RasValidateEntryNameA(LPCSTR,LPCSTR);
+  DWORD RasValidateEntryNameW(LPCWSTR,LPCWSTR);
+  DWORD RasConnectionNotificationA(HRASCONN,HANDLE,DWORD);
+  DWORD RasConnectionNotificationW(HRASCONN,HANDLE,DWORD);
+  DWORD RasGetSubEntryHandleA(HRASCONN,DWORD,HRASCONN*);
+  DWORD RasGetSubEntryHandleW(HRASCONN,DWORD,HRASCONN*);
+  DWORD RasGetCredentialsA(LPCSTR,LPCSTR,struct tagRASCREDENTIALSA*);
+  DWORD RasGetCredentialsW(LPCWSTR,LPCWSTR,struct tagRASCREDENTIALSW*);
+  DWORD RasSetCredentialsA(LPCSTR,LPCSTR,struct tagRASCREDENTIALSA*,WINBOOL);
+  DWORD RasSetCredentialsW(LPCWSTR,LPCWSTR,struct tagRASCREDENTIALSW*,WINBOOL);
+  DWORD RasGetSubEntryPropertiesA(LPCSTR,LPCSTR,DWORD,struct tagRASSUBENTRYA*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD RasGetSubEntryPropertiesW(LPCWSTR,LPCWSTR,DWORD,struct tagRASSUBENTRYW*,LPDWORD,LPBYTE,LPDWORD);
+  DWORD RasSetSubEntryPropertiesA(LPCSTR,LPCSTR,DWORD,struct tagRASSUBENTRYA*,DWORD,LPBYTE,DWORD);
+  DWORD RasSetSubEntryPropertiesW(LPCWSTR,LPCWSTR,DWORD,struct tagRASSUBENTRYW*,DWORD,LPBYTE,DWORD);
+  DWORD RasGetAutodialAddressA(LPCSTR,LPDWORD,struct tagRASAUTODIALENTRYA*,LPDWORD,LPDWORD);
+  DWORD RasGetAutodialAddressW(LPCWSTR,LPDWORD,struct tagRASAUTODIALENTRYW*,LPDWORD,LPDWORD);
+  DWORD RasSetAutodialAddressA(LPCSTR,DWORD,struct tagRASAUTODIALENTRYA*,DWORD,DWORD);
+  DWORD RasSetAutodialAddressW(LPCWSTR,DWORD,struct tagRASAUTODIALENTRYW*,DWORD,DWORD);
+  DWORD RasEnumAutodialAddressesA(LPSTR *,LPDWORD,LPDWORD);
+  DWORD RasEnumAutodialAddressesW(LPWSTR *,LPDWORD,LPDWORD);
+  DWORD RasGetAutodialEnableA(DWORD,LPBOOL);
+  DWORD RasGetAutodialEnableW(DWORD,LPBOOL);
+  DWORD RasSetAutodialEnableA(DWORD,WINBOOL);
+  DWORD RasSetAutodialEnableW(DWORD,WINBOOL);
+  DWORD RasGetAutodialParamA(DWORD,LPVOID,LPDWORD);
+  DWORD RasGetAutodialParamW(DWORD,LPVOID,LPDWORD);
+  DWORD RasSetAutodialParamA(DWORD,LPVOID,DWORD);
+  DWORD RasSetAutodialParamW(DWORD,LPVOID,DWORD);
+  typedef struct _RAS_STATS {
+    DWORD dwSize;
+    DWORD dwBytesXmited;
+    DWORD dwBytesRcved;
+    DWORD dwFramesXmited;
+    DWORD dwFramesRcved;
+    DWORD dwCrcErr;
+    DWORD dwTimeoutErr;
+    DWORD dwAlignmentErr;
+    DWORD dwHardwareOverrunErr;
+    DWORD dwFramingErr;
+    DWORD dwBufferOverrunErr;
+    DWORD dwCompressionRatioIn;
+    DWORD dwCompressionRatioOut;
+    DWORD dwBps;
+    DWORD dwConnectDuration;
+  } RAS_STATS,*PRAS_STATS;
+  typedef DWORD ( *RasCustomHangUpFn)(HRASCONN hRasConn);
+  typedef DWORD ( *RasCustomDialFn)(HINSTANCE hInstDll,struct tagRASDIALEXTENSIONS* lpRasDialExtensions,LPCWSTR lpszPhonebook,struct tagRASDIALPARAMSA* lpRasDialParams,DWORD dwNotifierType,LPVOID lpvNotifier,HRASCONN* lphRasConn,DWORD dwFlags);
+  typedef DWORD ( *RasCustomDeleteEntryNotifyFn)(LPCWSTR lpszPhonebook,LPCWSTR lpszEntry,DWORD dwFlags);
+  DWORD RasInvokeEapUI(HRASCONN,DWORD,struct tagRASDIALEXTENSIONS*,HWND);
+  DWORD RasGetLinkStatistics(HRASCONN hRasConn,DWORD dwSubEntry,RAS_STATS *lpStatistics);
+  DWORD RasGetConnectionStatistics(HRASCONN hRasConn,RAS_STATS *lpStatistics);
+  DWORD RasClearLinkStatistics(HRASCONN hRasConn,DWORD dwSubEntry);
+  DWORD RasClearConnectionStatistics(HRASCONN hRasConn);
+  DWORD RasGetEapUserDataA(HANDLE hToken,LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbEapData,DWORD *pdwSizeofEapData);
+  DWORD RasGetEapUserDataW(HANDLE hToken,LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbEapData,DWORD *pdwSizeofEapData);
+  DWORD RasSetEapUserDataA(HANDLE hToken,LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbEapData,DWORD dwSizeofEapData);
+  DWORD RasSetEapUserDataW(HANDLE hToken,LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbEapData,DWORD dwSizeofEapData);
+  DWORD RasGetCustomAuthDataA(LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbCustomAuthData,DWORD *pdwSizeofCustomAuthData);
+  DWORD RasGetCustomAuthDataW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbCustomAuthData,DWORD *pdwSizeofCustomAuthData);
+  DWORD RasSetCustomAuthDataA(LPCSTR pszPhonebook,LPCSTR pszEntry,BYTE *pbCustomAuthData,DWORD dwSizeofCustomAuthData);
+  DWORD RasSetCustomAuthDataW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,BYTE *pbCustomAuthData,DWORD dwSizeofCustomAuthData);
+  DWORD RasGetEapUserIdentityW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,DWORD dwFlags,HWND hwnd,struct tagRASEAPUSERIDENTITYW* *ppRasEapUserIdentity);
+  DWORD RasGetEapUserIdentityA(LPCSTR pszPhonebook,LPCSTR pszEntry,DWORD dwFlags,HWND hwnd,struct tagRASEAPUSERIDENTITYA* *ppRasEapUserIdentity);
+  void RasFreeEapUserIdentityW(struct tagRASEAPUSERIDENTITYW* pRasEapUserIdentity);
+  void RasFreeEapUserIdentityA(struct tagRASEAPUSERIDENTITYA* pRasEapUserIdentity);
+  DWORD RasDeleteSubEntryA(LPCSTR pszPhonebook,LPCSTR pszEntry,DWORD dwSubentryId);
+  DWORD RasDeleteSubEntryW(LPCWSTR pszPhonebook,LPCWSTR pszEntry,DWORD dwSubEntryId);
+#pragma pack(pop)
+  typedef enum _ROUTER_INTERFACE_TYPE {
+    ROUTER_IF_TYPE_CLIENT,ROUTER_IF_TYPE_HOME_ROUTER,ROUTER_IF_TYPE_FULL_ROUTER,ROUTER_IF_TYPE_DEDICATED,ROUTER_IF_TYPE_INTERNAL,
+    ROUTER_IF_TYPE_LOOPBACK,ROUTER_IF_TYPE_TUNNEL1,ROUTER_IF_TYPE_DIALOUT
+  } ROUTER_INTERFACE_TYPE;
+  typedef enum _ROUTER_CONNECTION_STATE {
+    ROUTER_IF_STATE_UNREACHABLE,ROUTER_IF_STATE_DISCONNECTED,ROUTER_IF_STATE_CONNECTING,ROUTER_IF_STATE_CONNECTED
+  } ROUTER_CONNECTION_STATE;
+  typedef struct _MPR_INTERFACE_0 {
+    WCHAR wszInterfaceName[256 +1];
+    HANDLE hInterface;
+    WINBOOL fEnabled;
+    ROUTER_INTERFACE_TYPE dwIfType;
+    ROUTER_CONNECTION_STATE dwConnectionState;
+    DWORD fUnReachabilityReasons;
+    DWORD dwLastError;
+  } MPR_INTERFACE_0,*PMPR_INTERFACE_0;
+  typedef struct _MPR_IPINIP_INTERFACE_0 {
+    WCHAR wszFriendlyName[256 +1];
+    GUID Guid;
+  } MPR_IPINIP_INTERFACE_0,*PMPR_IPINIP_INTERFACE_0;
+  typedef struct _MPR_INTERFACE_1 {
+    WCHAR wszInterfaceName[256 +1];
+    HANDLE hInterface;
+    WINBOOL fEnabled;
+    ROUTER_INTERFACE_TYPE dwIfType;
+    ROUTER_CONNECTION_STATE dwConnectionState;
+    DWORD fUnReachabilityReasons;
+    DWORD dwLastError;
+    LPWSTR lpwsDialoutHoursRestriction;
+  } MPR_INTERFACE_1,*PMPR_INTERFACE_1;
+  typedef struct _MPR_INTERFACE_2 {
+    WCHAR wszInterfaceName[256 +1];
+    HANDLE hInterface;
+    WINBOOL fEnabled;
+    ROUTER_INTERFACE_TYPE dwIfType;
+    ROUTER_CONNECTION_STATE dwConnectionState;
+    DWORD fUnReachabilityReasons;
+    DWORD dwLastError;
+    DWORD dwfOptions;
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    PWCHAR szAlternates;
+    DWORD ipaddr;
+    DWORD ipaddrDns;
+    DWORD ipaddrDnsAlt;
+    DWORD ipaddrWins;
+    DWORD ipaddrWinsAlt;
+    DWORD dwfNetProtocols;
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szX25PadType[32 + 1 ];
+    WCHAR szX25Address[200 + 1 ];
+    WCHAR szX25Facilities[200 + 1 ];
+    WCHAR szX25UserData[200 + 1 ];
+    DWORD dwChannels;
+    DWORD dwSubEntries;
+    DWORD dwDialMode;
+    DWORD dwDialExtraPercent;
+    DWORD dwDialExtraSampleSeconds;
+    DWORD dwHangUpExtraPercent;
+    DWORD dwHangUpExtraSampleSeconds;
+    DWORD dwIdleDisconnectSeconds;
+    DWORD dwType;
+    DWORD dwEncryptionType;
+    DWORD dwCustomAuthKey;
+    DWORD dwCustomAuthDataSize;
+    LPBYTE lpbCustomAuthData;
+    GUID guidId;
+    DWORD dwVpnStrategy;
+  } MPR_INTERFACE_2,*PMPR_INTERFACE_2;
+  typedef struct _MPR_DEVICE_0 {
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+  } MPR_DEVICE_0,*PMPR_DEVICE_0;
+  typedef struct _MPR_DEVICE_1 {
+    WCHAR szDeviceType[16 + 1 ];
+    WCHAR szDeviceName[128 + 1 ];
+    WCHAR szLocalPhoneNumber[128 + 1 ];
+    PWCHAR szAlternates;
+  } MPR_DEVICE_1,*PMPR_DEVICE_1;
+  typedef struct _MPR_CREDENTIALSEX_0 {
+    DWORD dwSize;
+    LPBYTE lpbCredentialsInfo;
+  } MPR_CREDENTIALSEX_0,*PMPR_CREDENTIALSEX_0;
+  typedef struct _MPR_CREDENTIALSEX_1 {
+    DWORD dwSize;
+    LPBYTE lpbCredentialsInfo;
+  } MPR_CREDENTIALSEX_1,*PMPR_CREDENTIALSEX_1;
+  typedef struct _MPR_TRANSPORT_0 {
+    DWORD dwTransportId;
+    HANDLE hTransport;
+    WCHAR wszTransportName[40 +1];
+  } MPR_TRANSPORT_0,*PMPR_TRANSPORT_0;
+  typedef struct _MPR_IFTRANSPORT_0
+  {
+    DWORD dwTransportId;
+    HANDLE hIfTransport;
+    WCHAR wszIfTransportName[40 +1];
+  }
+  MPR_IFTRANSPORT_0,*PMPR_IFTRANSPORT_0;
+  typedef struct _MPR_SERVER_0
+  {
+    WINBOOL fLanOnlyMode;
+    DWORD dwUpTime;
+    DWORD dwTotalPorts;
+    DWORD dwPortsInUse;
+  }
+  MPR_SERVER_0,*PMPR_SERVER_0;
+  typedef struct _MPR_SERVER_1 {
+    DWORD dwNumPptpPorts;
+    DWORD dwPptpPortFlags;
+    DWORD dwNumL2tpPorts;
+    DWORD dwL2tpPortFlags;
+  } MPR_SERVER_1,*PMPR_SERVER_1;
+  typedef enum _RAS_PORT_CONDITION {
+    RAS_PORT_NON_OPERATIONAL,RAS_PORT_DISCONNECTED,RAS_PORT_CALLING_BACK,RAS_PORT_LISTENING,RAS_PORT_AUTHENTICATING,RAS_PORT_AUTHENTICATED,
+    RAS_PORT_INITIALIZING
+  } RAS_PORT_CONDITION;
+  typedef enum _RAS_HARDWARE_CONDITION {
+    RAS_HARDWARE_OPERATIONAL,RAS_HARDWARE_FAILURE
+  } RAS_HARDWARE_CONDITION;
+  typedef struct _RAS_PORT_0 {
+    HANDLE hPort;
+    HANDLE hConnection;
+    RAS_PORT_CONDITION dwPortCondition;
+    DWORD dwTotalNumberOfCalls;
+    DWORD dwConnectDuration;
+    WCHAR wszPortName[16 + 1 ];
+    WCHAR wszMediaName[16 + 1 ];
+    WCHAR wszDeviceName[128 + 1 ];
+    WCHAR wszDeviceType[16 + 1 ];
+  } RAS_PORT_0,*PRAS_PORT_0;
+  typedef struct _RAS_PORT_1 {
+    HANDLE hPort;
+    HANDLE hConnection;
+    RAS_HARDWARE_CONDITION dwHardwareCondition;
+    DWORD dwLineSpeed;
+    DWORD dwBytesXmited;
+    DWORD dwBytesRcved;
+    DWORD dwFramesXmited;
+    DWORD dwFramesRcved;
+    DWORD dwCrcErr;
+    DWORD dwTimeoutErr;
+    DWORD dwAlignmentErr;
+    DWORD dwHardwareOverrunErr;
+    DWORD dwFramingErr;
+    DWORD dwBufferOverrunErr;
+    DWORD dwCompressionRatioIn;
+    DWORD dwCompressionRatioOut;
+  } RAS_PORT_1,*PRAS_PORT_1;
+  typedef struct _PPP_NBFCP_INFO {
+    DWORD dwError;
+    WCHAR wszWksta[16 + 1 ];
+  } PPP_NBFCP_INFO;
+  typedef struct _PPP_IPCP_INFO {
+    DWORD dwError;
+    WCHAR wszAddress[15 + 1 ];
+    WCHAR wszRemoteAddress[15 + 1 ];
+  } PPP_IPCP_INFO;
+  typedef struct _PPP_IPCP_INFO2 {
+    DWORD dwError;
+    WCHAR wszAddress[15 + 1 ];
+    WCHAR wszRemoteAddress[15 + 1 ];
+    DWORD dwOptions;
+    DWORD dwRemoteOptions;
+  } PPP_IPCP_INFO2;
+  typedef struct _PPP_IPXCP_INFO {
+    DWORD dwError;
+    WCHAR wszAddress[22 + 1 ];
+  } PPP_IPXCP_INFO;
+  typedef struct _PPP_ATCP_INFO {
+    DWORD dwError;
+    WCHAR wszAddress[32 + 1 ];
+  } PPP_ATCP_INFO;
+  typedef struct _PPP_INFO {
+    PPP_NBFCP_INFO nbf;
+    PPP_IPCP_INFO ip;
+    PPP_IPXCP_INFO ipx;
+    PPP_ATCP_INFO at;
+  } PPP_INFO;
+  typedef struct _PPP_CCP_INFO {
+    DWORD dwError;
+    DWORD dwCompressionAlgorithm;
+    DWORD dwOptions;
+    DWORD dwRemoteCompressionAlgorithm;
+    DWORD dwRemoteOptions;
+  } PPP_CCP_INFO;
+  typedef struct _PPP_LCP_INFO {
+    DWORD dwError;
+    DWORD dwAuthenticationProtocol;
+    DWORD dwAuthenticationData;
+    DWORD dwRemoteAuthenticationProtocol;
+    DWORD dwRemoteAuthenticationData;
+    DWORD dwTerminateReason;
+    DWORD dwRemoteTerminateReason;
+    DWORD dwOptions;
+    DWORD dwRemoteOptions;
+    DWORD dwEapTypeId;
+    DWORD dwRemoteEapTypeId;
+  } PPP_LCP_INFO;
+  typedef struct _PPP_INFO_2 {
+    PPP_NBFCP_INFO nbf;
+    PPP_IPCP_INFO2 ip;
+    PPP_IPXCP_INFO ipx;
+    PPP_ATCP_INFO at;
+    PPP_CCP_INFO ccp;
+    PPP_LCP_INFO lcp;
+  } PPP_INFO_2;
+  typedef struct _RAS_CONNECTION_0 {
+    HANDLE hConnection;
+    HANDLE hInterface;
+    DWORD dwConnectDuration;
+    ROUTER_INTERFACE_TYPE dwInterfaceType;
+    DWORD dwConnectionFlags;
+    WCHAR wszInterfaceName[256 + 1 ];
+    WCHAR wszUserName[256 + 1 ];
+    WCHAR wszLogonDomain[15 + 1 ];
+    WCHAR wszRemoteComputer[16 + 1 ];
+  } RAS_CONNECTION_0,*PRAS_CONNECTION_0;
+  typedef struct _RAS_CONNECTION_1 {
+    HANDLE hConnection;
+    HANDLE hInterface;
+    PPP_INFO PppInfo;
+    DWORD dwBytesXmited;
+    DWORD dwBytesRcved;
+    DWORD dwFramesXmited;
+    DWORD dwFramesRcved;
+    DWORD dwCrcErr;
+    DWORD dwTimeoutErr;
+    DWORD dwAlignmentErr;
+    DWORD dwHardwareOverrunErr;
+    DWORD dwFramingErr;
+    DWORD dwBufferOverrunErr;
+    DWORD dwCompressionRatioIn;
+    DWORD dwCompressionRatioOut;
+  } RAS_CONNECTION_1,*PRAS_CONNECTION_1;
+  typedef struct _RAS_CONNECTION_2 {
+    HANDLE hConnection;
+    WCHAR wszUserName[256 + 1 ];
+    ROUTER_INTERFACE_TYPE dwInterfaceType;
+    GUID guid;
+    PPP_INFO_2 PppInfo2;
+  } RAS_CONNECTION_2,*PRAS_CONNECTION_2;
+  typedef struct _RAS_USER_0 {
+    BYTE bfPrivilege;
+    WCHAR wszPhoneNumber[128 + 1];
+  } RAS_USER_0,*PRAS_USER_0;
+  typedef struct _RAS_USER_1 {
+    BYTE bfPrivilege;
+    WCHAR wszPhoneNumber[128 + 1];
+    BYTE bfPrivilege2;
+  } RAS_USER_1,*PRAS_USER_1;
+  typedef HANDLE RAS_SERVER_HANDLE;
+  typedef HANDLE MPR_SERVER_HANDLE;
+  typedef HANDLE MIB_SERVER_HANDLE;
+  DWORD MprAdminConnectionEnum(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,LPBYTE *lplpbBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD MprAdminPortEnum(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,HANDLE hConnection,LPBYTE *lplpbBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD MprAdminConnectionGetInfo(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,HANDLE hConnection,LPBYTE *lplpbBuffer);
+  DWORD MprAdminPortGetInfo(RAS_SERVER_HANDLE hRasServer,DWORD dwLevel,HANDLE hPort,LPBYTE *lplpbBuffer);
+  DWORD MprAdminConnectionClearStats(RAS_SERVER_HANDLE hRasServer,HANDLE hConnection);
+  DWORD MprAdminPortClearStats(RAS_SERVER_HANDLE hRasServer,HANDLE hPort);
+  DWORD MprAdminPortReset(RAS_SERVER_HANDLE hRasServer,HANDLE hPort);
+  DWORD MprAdminPortDisconnect(RAS_SERVER_HANDLE hRasServer,HANDLE hPort);
+  WINBOOL MprAdminAcceptNewConnection(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1);
+  WINBOOL MprAdminAcceptNewConnection2(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1,RAS_CONNECTION_2 *pRasConnection2);
+  WINBOOL MprAdminAcceptNewLink (RAS_PORT_0 *pRasPort0,RAS_PORT_1 *pRasPort1);
+  void MprAdminConnectionHangupNotification(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1);
+  void MprAdminConnectionHangupNotification2(RAS_CONNECTION_0 *pRasConnection0,RAS_CONNECTION_1 *pRasConnection1,RAS_CONNECTION_2 *pRasConnection2);
+  DWORD MprAdminConnectionRemoveQuarantine(HANDLE hRasServer,HANDLE hRasConnection,WINBOOL fIsIpAddress);
+  void MprAdminLinkHangupNotification (RAS_PORT_0 *pRasPort0,RAS_PORT_1 *pRasPort1);
+  DWORD MprAdminGetIpAddressForUser (WCHAR *lpwszUserName,WCHAR *lpwszPortName,DWORD *lpdwIpAddress,WINBOOL *bNotifyRelease);
+  void MprAdminReleaseIpAddress (WCHAR *lpszUserName,WCHAR *lpszPortName,DWORD *lpdwIpAddress);
+  DWORD MprAdminInitializeDll(void);
+  DWORD MprAdminTerminateDll(void);
+  DWORD MprAdminUserGetInfo(const WCHAR *lpszServer,const WCHAR *lpszUser,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD MprAdminUserSetInfo(const WCHAR *lpszServer,const WCHAR *lpszUser,DWORD dwLevel,const LPBYTE lpbBuffer);
+  DWORD MprAdminSendUserMessage(MPR_SERVER_HANDLE hMprServer,HANDLE hConnection,LPWSTR lpwszMessage);
+  DWORD MprAdminGetPDCServer(const WCHAR *lpszDomain,const WCHAR *lpszServer,LPWSTR lpszPDCServer);
+  WINBOOL MprAdminIsServiceRunning(LPWSTR lpwsServerName);
+  DWORD MprAdminServerConnect(LPWSTR lpwsServerName,MPR_SERVER_HANDLE *phMprServer);
+  void MprAdminServerDisconnect(MPR_SERVER_HANDLE hMprServer);
+  DWORD MprAdminServerGetCredentials(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD MprAdminServerSetCredentials(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD MprAdminBufferFree(LPVOID pBuffer);
+  DWORD MprAdminGetErrorString(DWORD dwError,LPWSTR *lpwsErrorString);
+  DWORD MprAdminServerGetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD MprAdminServerSetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD MprAdminEstablishDomainRasServer (PWCHAR pszDomain,PWCHAR pszMachine,WINBOOL bEnable);
+  DWORD MprAdminIsDomainRasServer (PWCHAR pszDomain,PWCHAR pszMachine,PBOOL pbIsRasServer);
+  DWORD MprAdminTransportCreate(MPR_SERVER_HANDLE hMprServer,DWORD dwTransportId,LPWSTR lpwsTransportName,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize,LPWSTR lpwsDLLPath);
+  DWORD MprAdminTransportSetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwTransportId,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize);
+  DWORD MprAdminTransportGetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwTransportId,LPBYTE *ppGlobalInfo,LPDWORD lpdwGlobalInfoSize,LPBYTE *ppClientInterfaceInfo,LPDWORD lpdwClientInterfaceInfoSize);
+  DWORD MprAdminDeviceEnum(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer,LPDWORD lpdwTotalEntries);
+  DWORD MprAdminInterfaceGetHandle(MPR_SERVER_HANDLE hMprServer,LPWSTR lpwsInterfaceName,HANDLE *phInterface,WINBOOL fIncludeClientInterfaces);
+  DWORD MprAdminInterfaceCreate(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer,HANDLE *phInterface);
+  DWORD MprAdminInterfaceGetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD MprAdminInterfaceSetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD MprAdminInterfaceDelete(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface);
+  DWORD MprAdminInterfaceDeviceGetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwIndex,DWORD dwLevel,LPBYTE *lplpBuffer);
+  DWORD MprAdminInterfaceDeviceSetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwIndex,DWORD dwLevel,LPBYTE lplpBuffer);
+  DWORD MprAdminInterfaceTransportRemove(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId);
+  DWORD MprAdminInterfaceTransportAdd(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize);
+  DWORD MprAdminInterfaceTransportGetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId,LPBYTE *ppInterfaceInfo,LPDWORD lpdwpInterfaceInfoSize);
+  DWORD MprAdminInterfaceTransportSetInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwTransportId,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize);
+  DWORD MprAdminInterfaceEnum(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE *lplpbBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD MprSetupIpInIpInterfaceFriendlyNameEnum(PWCHAR pwszMachineName,LPBYTE *lplpBuffer,LPDWORD lpdwEntriesRead);
+  DWORD MprSetupIpInIpInterfaceFriendlyNameFree(LPVOID lpBuffer);
+  DWORD MprSetupIpInIpInterfaceFriendlyNameCreate(PWCHAR pwszMachineName,PMPR_IPINIP_INTERFACE_0 pNameInformation);
+  DWORD MprSetupIpInIpInterfaceFriendlyNameDelete(PWCHAR pwszMachineName,GUID *pGuid);
+  DWORD MprAdminInterfaceSetCredentials(LPWSTR lpwsServer,LPWSTR lpwsInterfaceName,LPWSTR lpwsUserName,LPWSTR lpwsDomainName,LPWSTR lpwsPassword);
+  DWORD MprAdminInterfaceGetCredentials(LPWSTR lpwsServer,LPWSTR lpwsInterfaceName,LPWSTR lpwsUserName,LPWSTR lpwsPassword,LPWSTR lpwsDomainName);
+  DWORD MprAdminInterfaceSetCredentialsEx(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD MprAdminInterfaceGetCredentialsEx(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD MprAdminInterfaceConnect(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,HANDLE hEvent,WINBOOL fSynchronous);
+  DWORD MprAdminInterfaceDisconnect(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface);
+  DWORD MprAdminInterfaceUpdateRoutes(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwProtocolId,HANDLE hEvent);
+  DWORD MprAdminInterfaceQueryUpdateResult(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface,DWORD dwProtocolId,LPDWORD lpdwUpdateResult);
+  DWORD MprAdminInterfaceUpdatePhonebookInfo(MPR_SERVER_HANDLE hMprServer,HANDLE hInterface);
+  DWORD MprAdminRegisterConnectionNotification(MPR_SERVER_HANDLE hMprServer,HANDLE hEventNotification);
+  DWORD MprAdminDeregisterConnectionNotification(MPR_SERVER_HANDLE hMprServer,HANDLE hEventNotification);
+  DWORD MprAdminMIBServerConnect(LPWSTR lpwsServerName,MIB_SERVER_HANDLE *phMibServer);
+  void MprAdminMIBServerDisconnect(MIB_SERVER_HANDLE hMibServer);
+  DWORD MprAdminMIBEntryCreate(MIB_SERVER_HANDLE hMibServer,DWORD dwPid,DWORD dwRoutingPid,LPVOID lpEntry,DWORD dwEntrySize);
+  DWORD MprAdminMIBEntryDelete(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpEntry,DWORD dwEntrySize);
+  DWORD MprAdminMIBEntrySet(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpEntry,DWORD dwEntrySize);
+  DWORD MprAdminMIBEntryGet(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInEntry,DWORD dwInEntrySize,LPVOID *lplpOutEntry,LPDWORD lpOutEntrySize);
+  DWORD MprAdminMIBEntryGetFirst(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInEntry,DWORD dwInEntrySize,LPVOID *lplpOutEntry,LPDWORD lpOutEntrySize);
+  DWORD MprAdminMIBEntryGetNext(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInEntry,DWORD dwInEntrySize,LPVOID *lplpOutEntry,LPDWORD lpOutEntrySize);
+  DWORD MprAdminMIBGetTrapInfo(MIB_SERVER_HANDLE hMibServer,DWORD dwProtocolId,DWORD dwRoutingPid,LPVOID lpInData,DWORD dwInDataSize,LPVOID *lplpOutData,LPDWORD lpOutDataSize);
+  DWORD MprAdminMIBSetTrapInfo(DWORD dwProtocolId,DWORD dwRoutingPid,HANDLE hEvent,LPVOID lpInData,DWORD dwInDataSize,LPVOID *lplpOutData,LPDWORD lpOutDataSize);
+  DWORD MprAdminMIBBufferFree(LPVOID pBuffer);
+  DWORD MprConfigServerInstall(DWORD dwLevel,PVOID pBuffer);
+  DWORD MprConfigServerConnect(LPWSTR lpwsServerName,HANDLE *phMprConfig);
+  void MprConfigServerDisconnect(HANDLE hMprConfig);
+  DWORD MprConfigServerRefresh(HANDLE hMprConfig);
+  DWORD MprConfigBufferFree(LPVOID pBuffer);
+  DWORD MprConfigServerGetInfo(HANDLE hMprConfig,DWORD dwLevel,LPBYTE *lplpbBuffer);
+  DWORD MprConfigServerSetInfo(MPR_SERVER_HANDLE hMprServer,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD MprConfigServerBackup(HANDLE hMprConfig,LPWSTR lpwsPath);
+  DWORD MprConfigServerRestore(HANDLE hMprConfig,LPWSTR lpwsPath);
+  DWORD MprConfigTransportCreate(HANDLE hMprConfig,DWORD dwTransportId,LPWSTR lpwsTransportName,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize,LPWSTR lpwsDLLPath,HANDLE *phRouterTransport);
+  DWORD MprConfigTransportDelete(HANDLE hMprConfig,HANDLE hRouterTransport);
+  DWORD MprConfigTransportGetHandle(HANDLE hMprConfig,DWORD dwTransportId,HANDLE *phRouterTransport);
+  DWORD MprConfigTransportSetInfo(HANDLE hMprConfig,HANDLE hRouterTransport,LPBYTE pGlobalInfo,DWORD dwGlobalInfoSize,LPBYTE pClientInterfaceInfo,DWORD dwClientInterfaceInfoSize,LPWSTR lpwsDLLPath);
+  DWORD MprConfigTransportGetInfo(HANDLE hMprConfig,HANDLE hRouterTransport,LPBYTE *ppGlobalInfo,LPDWORD lpdwGlobalInfoSize,LPBYTE *ppClientInterfaceInfo,LPDWORD lpdwClientInterfaceInfoSize,LPWSTR *lplpwsDLLPath);
+  DWORD MprConfigTransportEnum(HANDLE hMprConfig,DWORD dwLevel,LPBYTE *lplpBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD MprConfigInterfaceCreate(HANDLE hMprConfig,DWORD dwLevel,LPBYTE lpbBuffer,HANDLE *phRouterInterface);
+  DWORD MprConfigInterfaceDelete(HANDLE hMprConfig,HANDLE hRouterInterface);
+  DWORD MprConfigInterfaceGetHandle(HANDLE hMprConfig,LPWSTR lpwsInterfaceName,HANDLE *phRouterInterface);
+  DWORD MprConfigInterfaceGetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwLevel,LPBYTE *lplpBuffer,LPDWORD lpdwBufferSize);
+  DWORD MprConfigInterfaceSetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwLevel,LPBYTE lpbBuffer);
+  DWORD MprConfigInterfaceEnum(HANDLE hMprConfig,DWORD dwLevel,LPBYTE *lplpBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD MprConfigInterfaceTransportAdd(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwTransportId,LPWSTR lpwsTransportName,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize,HANDLE *phRouterIfTransport);
+  DWORD MprConfigInterfaceTransportRemove(HANDLE hMprConfig,HANDLE hRouterInterface,HANDLE hRouterIfTransport);
+  DWORD MprConfigInterfaceTransportGetHandle(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwTransportId,HANDLE *phRouterIfTransport);
+  DWORD MprConfigInterfaceTransportGetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,HANDLE hRouterIfTransport,LPBYTE *ppInterfaceInfo,LPDWORD lpdwInterfaceInfoSize);
+  DWORD MprConfigInterfaceTransportSetInfo(HANDLE hMprConfig,HANDLE hRouterInterface,HANDLE hRouterIfTransport,LPBYTE pInterfaceInfo,DWORD dwInterfaceInfoSize);
+  DWORD MprConfigInterfaceTransportEnum(HANDLE hMprConfig,HANDLE hRouterInterface,DWORD dwLevel,LPBYTE *lplpBuffer,DWORD dwPrefMaxLen,LPDWORD lpdwEntriesRead,LPDWORD lpdwTotalEntries,LPDWORD lpdwResumeHandle);
+  DWORD MprConfigGetFriendlyName(HANDLE hMprConfig,PWCHAR pszGuidName,PWCHAR pszBuffer,DWORD dwBufferSize);
+  DWORD MprConfigGetGuidName(HANDLE hMprConfig,PWCHAR pszFriendlyName,PWCHAR pszBuffer,DWORD dwBufferSize);
+  DWORD MprInfoCreate(DWORD dwVersion,LPVOID *lplpNewHeader);
+  DWORD MprInfoDelete(LPVOID lpHeader);
+  DWORD MprInfoRemoveAll(LPVOID lpHeader,LPVOID *lplpNewHeader);
+  DWORD MprInfoDuplicate(LPVOID lpHeader,LPVOID *lplpNewHeader);
+  DWORD MprInfoBlockAdd(LPVOID lpHeader,DWORD dwInfoType,DWORD dwItemSize,DWORD dwItemCount,LPBYTE lpItemData,LPVOID *lplpNewHeader);
+  DWORD MprInfoBlockRemove(LPVOID lpHeader,DWORD dwInfoType,LPVOID *lplpNewHeader);
+  DWORD MprInfoBlockSet(LPVOID lpHeader,DWORD dwInfoType,DWORD dwItemSize,DWORD dwItemCount,LPBYTE lpItemData,LPVOID *lplpNewHeader);
+  DWORD MprInfoBlockFind(LPVOID lpHeader,DWORD dwInfoType,LPDWORD lpdwItemSize,LPDWORD lpdwItemCount,LPBYTE *lplpItemData);
+  DWORD MprInfoBlockQuerySize(LPVOID lpHeader);
+typedef enum {
+  NldsInvalid,
+  NldsTentative,
+  NldsDuplicate,
+  NldsDeprecated,
+  NldsPreferred,
+  IpDadStateInvalid = 0,
+  IpDadStateTentative,
+  IpDadStateDuplicate,
+  IpDadStateDeprecated,
+  IpDadStatePreferred,
+} NL_DAD_STATE;
+typedef enum {
+  RouteProtocolOther = 1,
+  RouteProtocolLocal = 2,
+  RouteProtocolNetMgmt = 3,
+  RouteProtocolIcmp = 4,
+  RouteProtocolEgp = 5,
+  RouteProtocolGgp = 6,
+  RouteProtocolHello = 7,
+  RouteProtocolRip = 8,
+  RouteProtocolIsIs = 9,
+  RouteProtocolEsIs = 10,
+  RouteProtocolCisco = 11,
+  RouteProtocolBbn = 12,
+  RouteProtocolOspf = 13,
+  RouteProtocolBgp = 14,
+  MIB_IPPROTO_OTHER = 1, PROTO_IP_OTHER = 1,
+  MIB_IPPROTO_LOCAL = 2, PROTO_IP_LOCAL = 2,
+  MIB_IPPROTO_NETMGMT = 3, PROTO_IP_NETMGMT = 3,
+  MIB_IPPROTO_ICMP = 4, PROTO_IP_ICMP = 4,
+  MIB_IPPROTO_EGP = 5, PROTO_IP_EGP = 5,
+  MIB_IPPROTO_GGP = 6, PROTO_IP_GGP = 6,
+  MIB_IPPROTO_HELLO = 7, PROTO_IP_HELLO = 7,
+  MIB_IPPROTO_RIP = 8, PROTO_IP_RIP = 8,
+  MIB_IPPROTO_IS_IS = 9, PROTO_IP_IS_IS = 9,
+  MIB_IPPROTO_ES_IS = 10, PROTO_IP_ES_IS = 10,
+  MIB_IPPROTO_CISCO = 11, PROTO_IP_CISCO = 11,
+  MIB_IPPROTO_BBN = 12, PROTO_IP_BBN = 12,
+  MIB_IPPROTO_OSPF = 13, PROTO_IP_OSPF = 13,
+  MIB_IPPROTO_BGP = 14, PROTO_IP_BGP = 14,
+  MIB_IPPROTO_NT_AUTOSTATIC = 10002, PROTO_IP_NT_AUTOSTATIC = 10002,
+  MIB_IPPROTO_NT_STATIC = 10006, PROTO_IP_NT_STATIC = 10006,
+  MIB_IPPROTO_NT_STATIC_NON_DOD = 10007, PROTO_IP_NT_STATIC_NON_DOD = 10007
+} NL_ROUTE_PROTOCOL,*PNL_ROUTE_PROTOCOL;
+typedef enum {
+  IpPrefixOriginOther = 0,
+  IpPrefixOriginManual,
+  IpPrefixOriginWellKnown,
+  IpPrefixOriginDhcp,
+  IpPrefixOriginRouterAdvertisement,
+  IpPrefixOriginUnchanged = 16
+} NL_PREFIX_ORIGIN;
+typedef enum {
+  NlsoOther = 0,
+  NlsoManual,
+  NlsoWellKnown,
+  NlsoDhcp,
+  NlsoLinkLayerAddress,
+  NlsoRandom,
+  IpSuffixOriginOther = 0,
+  IpSuffixOriginManual,
+  IpSuffixOriginWellKnown,
+  IpSuffixOriginDhcp,
+  IpSuffixOriginLinkLayerAddress,
+  IpSuffixOriginRandom,
+  IpSuffixOriginUnchanged = 16
+} NL_SUFFIX_ORIGIN;
+typedef enum {
+  NlatUnspecified,
+  NlatUnicast,
+  NlatAnycast,
+  NlatMulticast,
+  NlatBroadcast,
+  NlatInvalid
+} NL_ADDRESS_TYPE, *PNL_ADDRESS_TYPE;
+typedef enum _NL_ROUTE_ORIGIN {
+  NlroManual,
+  NlroWellKnown,
+  NlroDHCP,
+  NlroRouterAdvertisement,
+  Nlro6to4,
+} NL_ROUTE_ORIGIN, *PNL_ROUTE_ORIGIN;
+typedef enum _NL_NEIGHBOR_STATE {
+  NlnsUnreachable,
+  NlnsIncomplete,
+  NlnsProbe,
+  NlnsDelay,
+  NlnsStale,
+  NlnsReachable,
+  NlnsPermanent,
+  NlnsMaximum,
+} NL_NEIGHBOR_STATE, *PNL_NEIGHBOR_STATE;
+typedef enum _NL_LINK_LOCAL_ADDRESS_BEHAVIOR {
+  LinkLocalAlwaysOff = 0,
+  LinkLocalDelayed,
+  LinkLocalAlwaysOn,
+  LinkLocalUnchanged = -1
+} NL_LINK_LOCAL_ADDRESS_BEHAVIOR;
+typedef enum _NL_ROUTER_DISCOVERY_BEHAVIOR {
+  RouterDiscoveryDisabled = 0,
+  RouterDiscoveryEnabled,
+  RouterDiscoveryDhcp,
+  RouterDiscoveryUnchanged = -1
+} NL_ROUTER_DISCOVERY_BEHAVIOR;
+typedef enum _NL_BANDWIDTH_FLAG {
+  NlbwDisabled = 0,
+  NlbwEnabled,
+  NlbwUnchanged = -1
+} NL_BANDWIDTH_FLAG, *PNL_BANDWIDTH_FLAG;
+typedef enum _NL_INTERFACE_NETWORK_CATEGORY_STATE {
+  NlincCategoryUnknown = 0,
+  NlincPublic = 1,
+  NlincPrivate = 2,
+  NlincDomainAuthenticated = 3,
+  NlincCategoryStateMax
+} NL_INTERFACE_NETWORK_CATEGORY_STATE, *PNL_INTERFACE_NETWORK_CATEGORY_STATE;
+typedef struct _NL_INTERFACE_OFFLOAD_ROD {
+  BOOLEAN NlChecksumSupported : 1;
+  BOOLEAN NlOptionsSupported : 1;
+  BOOLEAN TlDatagramChecksumSupported : 1;
+  BOOLEAN TlStreamChecksumSupported : 1;
+  BOOLEAN TlStreamOptionsSupported : 1;
+  BOOLEAN FastPathCompatible : 1;
+  BOOLEAN TlLargeSendOffloadSupported : 1;
+  BOOLEAN TlGiantSendOffloadSupported : 1;
+} NL_INTERFACE_OFFLOAD_ROD, *PNL_INTERFACE_OFFLOAD_ROD;
+typedef struct _NL_PATH_BANDWIDTH_ROD {
+  ULONG64 Bandwidth;
+  ULONG64 Instability;
+  BOOLEAN BandwidthPeaked;
+} NL_PATH_BANDWIDTH_ROD, *PNL_PATH_BANDWIDTH_ROD;
+typedef enum _NL_NETWORK_CATEGORY {
+  NetworkCategoryPublic,
+  NetworkCategoryPrivate,
+  NetworkCategoryDomainAuthenticated,
+  NetworkCategoryUnchanged = -1,
+  NetworkCategoryUnknown = -1
+} NL_NETWORK_CATEGORY,*PNL_NETWORK_CATEGORY;
+typedef struct _NL_BANDWIDTH_INFORMATION {
+  ULONG64 Bandwidth;
+  ULONG64 Instability;
+  BOOLEAN BandwidthPeaked;
+} NL_BANDWIDTH_INFORMATION, *PNL_BANDWIDTH_INFORMATION;
+typedef ULONG IFTYPE;
+typedef struct _MIB_OPAQUE_QUERY {
+  DWORD dwVarId;
+  DWORD rgdwVarIndex[1];
+} MIB_OPAQUE_QUERY,*PMIB_OPAQUE_QUERY;
+typedef struct _MIB_IFNUMBER {
+  DWORD dwValue;
+} MIB_IFNUMBER,*PMIB_IFNUMBER;
+typedef struct _MIB_IFROW {
+  WCHAR wszName[256];
+  DWORD dwIndex;
+  DWORD dwType;
+  DWORD dwMtu;
+  DWORD dwSpeed;
+  DWORD dwPhysAddrLen;
+  BYTE bPhysAddr[8];
+  DWORD dwAdminStatus;
+  DWORD dwOperStatus;
+  DWORD dwLastChange;
+  DWORD dwInOctets;
+  DWORD dwInUcastPkts;
+  DWORD dwInNUcastPkts;
+  DWORD dwInDiscards;
+  DWORD dwInErrors;
+  DWORD dwInUnknownProtos;
+  DWORD dwOutOctets;
+  DWORD dwOutUcastPkts;
+  DWORD dwOutNUcastPkts;
+  DWORD dwOutDiscards;
+  DWORD dwOutErrors;
+  DWORD dwOutQLen;
+  DWORD dwDescrLen;
+  BYTE bDescr[256];
+} MIB_IFROW,*PMIB_IFROW;
+typedef struct _MIB_IFTABLE {
+  DWORD dwNumEntries;
+  MIB_IFROW table[1];
+} MIB_IFTABLE,*PMIB_IFTABLE;
+typedef struct _MIBICMPSTATS {
+  DWORD dwMsgs;
+  DWORD dwErrors;
+  DWORD dwDestUnreachs;
+  DWORD dwTimeExcds;
+  DWORD dwParmProbs;
+  DWORD dwSrcQuenchs;
+  DWORD dwRedirects;
+  DWORD dwEchos;
+  DWORD dwEchoReps;
+  DWORD dwTimestamps;
+  DWORD dwTimestampReps;
+  DWORD dwAddrMasks;
+  DWORD dwAddrMaskReps;
+} MIBICMPSTATS,*PMIBICMPSTATS;
+typedef struct _MIBICMPINFO {
+  MIBICMPSTATS icmpInStats;
+  MIBICMPSTATS icmpOutStats;
+} MIBICMPINFO;
+typedef struct _MIB_ICMP {
+  MIBICMPINFO stats;
+} MIB_ICMP,*PMIB_ICMP;
+typedef enum {
+  ICMP6_DST_UNREACH = 1,ICMP6_PACKET_TOO_BIG = 2,ICMP6_TIME_EXCEEDED = 3,ICMP6_PARAM_PROB = 4,ICMP6_ECHO_REQUEST = 128,
+  ICMP6_ECHO_REPLY = 129,ICMP6_MEMBERSHIP_QUERY = 130,ICMP6_MEMBERSHIP_REPORT = 131,ICMP6_MEMBERSHIP_REDUCTION = 132,
+  ND_ROUTER_SOLICIT = 133,ND_ROUTER_ADVERT = 134,ND_NEIGHBOR_SOLICIT = 135,ND_NEIGHBOR_ADVERT = 136,ND_REDIRECT = 137
+} ICMP6_TYPE,*PICMP6_TYPE;
+typedef enum {
+  ICMP4_ECHO_REPLY = 0,ICMP4_DST_UNREACH = 3,ICMP4_SOURCE_QUENCH = 4,ICMP4_REDIRECT = 5,ICMP4_ECHO_REQUEST = 8,ICMP4_ROUTER_ADVERT = 9,
+  ICMP4_ROUTER_SOLICIT = 10,ICMP4_TIME_EXCEEDED = 11,ICMP4_PARAM_PROB = 12,ICMP4_TIMESTAMP_REQUEST = 13,ICMP4_TIMESTAMP_REPLY = 14,
+  ICMP4_MASK_REQUEST = 17,ICMP4_MASK_REPLY = 18
+} ICMP4_TYPE,*PICMP4_TYPE;
+typedef struct _MIBICMPSTATS_EX {
+  DWORD dwMsgs;
+  DWORD dwErrors;
+  DWORD rgdwTypeCount[256];
+} MIBICMPSTATS_EX,*PMIBICMPSTATS_EX;
+typedef struct _MIB_ICMP_EX {
+  MIBICMPSTATS_EX icmpInStats;
+  MIBICMPSTATS_EX icmpOutStats;
+} MIB_ICMP_EX,*PMIB_ICMP_EX;
+typedef struct _MIB_UDPSTATS {
+  DWORD dwInDatagrams;
+  DWORD dwNoPorts;
+  DWORD dwInErrors;
+  DWORD dwOutDatagrams;
+  DWORD dwNumAddrs;
+} MIB_UDPSTATS,*PMIB_UDPSTATS;
+typedef struct _MIB_UDPROW {
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+} MIB_UDPROW,*PMIB_UDPROW;
+typedef MIB_UDPROW MIB_UDPROW_BASIC,*PMIB_UDPROW_BASIC;
+typedef struct _MIB_UDPROW_OWNER_PID {
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+} MIB_UDPROW_OWNER_PID,*PMIB_UDPROW_OWNER_PID;
+typedef struct _MIB_UDPROW_OWNER_MODULE {
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  __extension__ union {
+    __extension__ struct {
+      DWORD SpecificPortBind : 1;
+    };
+    DWORD dwFlags;
+  };
+  ULONGLONG OwningModuleInfo[16];
+} MIB_UDPROW_OWNER_MODULE,*PMIB_UDPROW_OWNER_MODULE;
+typedef struct _MIB_UDP6ROW_OWNER_PID {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+} MIB_UDP6ROW_OWNER_PID,*PMIB_UDP6ROW_OWNER_PID;
+typedef struct _MIB_UDP6ROW_OWNER_MODULE {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  __extension__ union {
+    __extension__ struct {
+      DWORD SpecificPortBind : 1;
+    };
+    DWORD dwFlags;
+  };
+  ULONGLONG OwningModuleInfo[16];
+} MIB_UDP6ROW_OWNER_MODULE,*PMIB_UDP6ROW_OWNER_MODULE;
+typedef struct _MIB_UDPTABLE {
+  DWORD dwNumEntries;
+  MIB_UDPROW table[1];
+} MIB_UDPTABLE,*PMIB_UDPTABLE;
+typedef MIB_UDPTABLE MIB_UDPTABLE_BASIC,*PMIB_UDPTABLE_BASIC;
+typedef struct _MIB_UDPTABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_UDPROW_OWNER_PID table[1];
+} MIB_UDPTABLE_OWNER_PID,*PMIB_UDPTABLE_OWNER_PID;
+typedef struct _MIB_UDPTABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_UDPROW_OWNER_MODULE table[1];
+} MIB_UDPTABLE_OWNER_MODULE,*PMIB_UDPTABLE_OWNER_MODULE;
+typedef struct _MIB_UDP6TABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_UDP6ROW_OWNER_PID table[1];
+} MIB_UDP6TABLE_OWNER_PID,*PMIB_UDP6TABLE_OWNER_PID;
+typedef struct _MIB_UDP6TABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_UDP6ROW_OWNER_MODULE table[1];
+} MIB_UDP6TABLE_OWNER_MODULE,*PMIB_UDP6TABLE_OWNER_MODULE;
+typedef struct _MIB_TCPSTATS {
+  DWORD dwRtoAlgorithm;
+  DWORD dwRtoMin;
+  DWORD dwRtoMax;
+  DWORD dwMaxConn;
+  DWORD dwActiveOpens;
+  DWORD dwPassiveOpens;
+  DWORD dwAttemptFails;
+  DWORD dwEstabResets;
+  DWORD dwCurrEstab;
+  DWORD dwInSegs;
+  DWORD dwOutSegs;
+  DWORD dwRetransSegs;
+  DWORD dwInErrs;
+  DWORD dwOutRsts;
+  DWORD dwNumConns;
+} MIB_TCPSTATS,*PMIB_TCPSTATS;
+typedef enum _TCP_TABLE_CLASS {
+  TCP_TABLE_BASIC_LISTENER,
+  TCP_TABLE_BASIC_CONNECTIONS,
+  TCP_TABLE_BASIC_ALL,
+  TCP_TABLE_OWNER_PID_LISTENER,
+  TCP_TABLE_OWNER_PID_CONNECTIONS,
+  TCP_TABLE_OWNER_PID_ALL,
+  TCP_TABLE_OWNER_MODULE_LISTENER,
+  TCP_TABLE_OWNER_MODULE_CONNECTIONS,
+  TCP_TABLE_OWNER_MODULE_ALL
+} TCP_TABLE_CLASS, *PTCP_TABLE_CLASS;
+typedef struct _MIB_TCPROW {
+  DWORD dwState;
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwRemoteAddr;
+  DWORD dwRemotePort;
+} MIB_TCPROW,*PMIB_TCPROW;
+typedef MIB_TCPROW MIB_TCPROW_BASIC,*PMIB_TCPROW_BASIC;
+typedef struct _MIB_TCPROW_OWNER_PID {
+  DWORD dwState;
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwRemoteAddr;
+  DWORD dwRemotePort;
+  DWORD dwOwningPid;
+} MIB_TCPROW_OWNER_PID,*PMIB_TCPROW_OWNER_PID;
+typedef struct _MIB_TCPROW_OWNER_MODULE {
+  DWORD dwState;
+  DWORD dwLocalAddr;
+  DWORD dwLocalPort;
+  DWORD dwRemoteAddr;
+  DWORD dwRemotePort;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  ULONGLONG OwningModuleInfo[16];
+} MIB_TCPROW_OWNER_MODULE,*PMIB_TCPROW_OWNER_MODULE;
+typedef struct _MIB_TCP6ROW_OWNER_PID {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  UCHAR ucRemoteAddr[16];
+  DWORD dwRemoteScopeId;
+  DWORD dwRemotePort;
+  DWORD dwState;
+  DWORD dwOwningPid;
+} MIB_TCP6ROW_OWNER_PID,*PMIB_TCP6ROW_OWNER_PID;
+typedef struct _MIB_TCP6ROW_OWNER_MODULE {
+  UCHAR ucLocalAddr[16];
+  DWORD dwLocalScopeId;
+  DWORD dwLocalPort;
+  UCHAR ucRemoteAddr[16];
+  DWORD dwRemoteScopeId;
+  DWORD dwRemotePort;
+  DWORD dwState;
+  DWORD dwOwningPid;
+  LARGE_INTEGER liCreateTimestamp;
+  ULONGLONG OwningModuleInfo[16];
+} MIB_TCP6ROW_OWNER_MODULE,*PMIB_TCP6ROW_OWNER_MODULE;
+typedef struct _MIB_TCPTABLE {
+  DWORD dwNumEntries;
+  MIB_TCPROW table[1];
+} MIB_TCPTABLE,*PMIB_TCPTABLE;
+typedef MIB_TCPTABLE MIB_TCPTABLE_BASIC,*PMIB_TCPTABLE_BASIC;
+typedef struct _MIB_TCPTABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_TCPROW_OWNER_PID table[1];
+} MIB_TCPTABLE_OWNER_PID,*PMIB_TCPTABLE_OWNER_PID;
+typedef struct _MIB_TCPTABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_TCPROW_OWNER_MODULE table[1];
+} MIB_TCPTABLE_OWNER_MODULE,*PMIB_TCPTABLE_OWNER_MODULE;
+typedef struct _MIB_TCP6TABLE_OWNER_PID {
+  DWORD dwNumEntries;
+  MIB_TCP6ROW_OWNER_PID table[1];
+} MIB_TCP6TABLE_OWNER_PID,*PMIB_TCP6TABLE_OWNER_PID;
+typedef struct _MIB_TCP6TABLE_OWNER_MODULE {
+  DWORD dwNumEntries;
+  MIB_TCP6ROW_OWNER_MODULE table[1];
+} MIB_TCP6TABLE_OWNER_MODULE,*PMIB_TCP6TABLE_OWNER_MODULE;
+typedef struct _MIB_IPSTATS {
+  DWORD dwForwarding;
+  DWORD dwDefaultTTL;
+  DWORD dwInReceives;
+  DWORD dwInHdrErrors;
+  DWORD dwInAddrErrors;
+  DWORD dwForwDatagrams;
+  DWORD dwInUnknownProtos;
+  DWORD dwInDiscards;
+  DWORD dwInDelivers;
+  DWORD dwOutRequests;
+  DWORD dwRoutingDiscards;
+  DWORD dwOutDiscards;
+  DWORD dwOutNoRoutes;
+  DWORD dwReasmTimeout;
+  DWORD dwReasmReqds;
+  DWORD dwReasmOks;
+  DWORD dwReasmFails;
+  DWORD dwFragOks;
+  DWORD dwFragFails;
+  DWORD dwFragCreates;
+  DWORD dwNumIf;
+  DWORD dwNumAddr;
+  DWORD dwNumRoutes;
+} MIB_IPSTATS,*PMIB_IPSTATS;
+typedef struct _MIB_IPADDRROW {
+  DWORD dwAddr;
+  DWORD dwIndex;
+  DWORD dwMask;
+  DWORD dwBCastAddr;
+  DWORD dwReasmSize;
+  unsigned short unused1;
+  unsigned short wType;
+} MIB_IPADDRROW,*PMIB_IPADDRROW;
+typedef struct _MIB_IPADDRTABLE {
+  DWORD dwNumEntries;
+  MIB_IPADDRROW table[1];
+} MIB_IPADDRTABLE,*PMIB_IPADDRTABLE;
+typedef struct _MIB_IPFORWARDNUMBER {
+  DWORD dwValue;
+} MIB_IPFORWARDNUMBER,*PMIB_IPFORWARDNUMBER;
+typedef struct _MIB_IPFORWARDROW {
+  DWORD dwForwardDest;
+  DWORD dwForwardMask;
+  DWORD dwForwardPolicy;
+  DWORD dwForwardNextHop;
+  DWORD dwForwardIfIndex;
+  DWORD dwForwardType;
+  DWORD dwForwardProto;
+  DWORD dwForwardAge;
+  DWORD dwForwardNextHopAS;
+  DWORD dwForwardMetric1;
+  DWORD dwForwardMetric2;
+  DWORD dwForwardMetric3;
+  DWORD dwForwardMetric4;
+  DWORD dwForwardMetric5;
+} MIB_IPFORWARDROW,*PMIB_IPFORWARDROW;
+typedef struct _MIB_IPFORWARDTABLE {
+  DWORD dwNumEntries;
+  MIB_IPFORWARDROW table[1];
+} MIB_IPFORWARDTABLE,*PMIB_IPFORWARDTABLE;
+typedef struct _MIB_IPNETROW {
+  DWORD dwIndex;
+  DWORD dwPhysAddrLen;
+  BYTE bPhysAddr[8];
+  DWORD dwAddr;
+  DWORD dwType;
+} MIB_IPNETROW,*PMIB_IPNETROW;
+typedef struct _MIB_IPNETTABLE {
+  DWORD dwNumEntries;
+  MIB_IPNETROW table[1];
+} MIB_IPNETTABLE,*PMIB_IPNETTABLE;
+typedef struct _MIB_IPMCAST_OIF {
+  DWORD dwOutIfIndex;
+  DWORD dwNextHopAddr;
+  DWORD dwReserved;
+  DWORD dwReserved1;
+} MIB_IPMCAST_OIF,*PMIB_IPMCAST_OIF;
+typedef struct _MIB_IPMCAST_MFE {
+  DWORD dwGroup;
+  DWORD dwSource;
+  DWORD dwSrcMask;
+  DWORD dwUpStrmNgbr;
+  DWORD dwInIfIndex;
+  DWORD dwInIfProtocol;
+  DWORD dwRouteProtocol;
+  DWORD dwRouteNetwork;
+  DWORD dwRouteMask;
+  ULONG ulUpTime;
+  ULONG ulExpiryTime;
+  ULONG ulTimeOut;
+  ULONG ulNumOutIf;
+  DWORD fFlags;
+  DWORD dwReserved;
+  MIB_IPMCAST_OIF rgmioOutInfo[1];
+} MIB_IPMCAST_MFE,*PMIB_IPMCAST_MFE;
+typedef struct _MIB_MFE_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_MFE table[1];
+} MIB_MFE_TABLE,*PMIB_MFE_TABLE;
+typedef struct _MIB_IPMCAST_OIF_STATS {
+  DWORD dwOutIfIndex;
+  DWORD dwNextHopAddr;
+  DWORD dwDialContext;
+  ULONG ulTtlTooLow;
+  ULONG ulFragNeeded;
+  ULONG ulOutPackets;
+  ULONG ulOutDiscards;
+} MIB_IPMCAST_OIF_STATS,*PMIB_IPMCAST_OIF_STATS;
+typedef struct _MIB_IPMCAST_MFE_STATS {
+  DWORD dwGroup;
+  DWORD dwSource;
+  DWORD dwSrcMask;
+  DWORD dwUpStrmNgbr;
+  DWORD dwInIfIndex;
+  DWORD dwInIfProtocol;
+  DWORD dwRouteProtocol;
+  DWORD dwRouteNetwork;
+  DWORD dwRouteMask;
+  ULONG ulUpTime;
+  ULONG ulExpiryTime;
+  ULONG ulNumOutIf;
+  ULONG ulInPkts;
+  ULONG ulInOctets;
+  ULONG ulPktsDifferentIf;
+  ULONG ulQueueOverflow;
+  MIB_IPMCAST_OIF_STATS rgmiosOutStats[1];
+} MIB_IPMCAST_MFE_STATS,*PMIB_IPMCAST_MFE_STATS;
+typedef struct _MIB_MFE_STATS_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_MFE_STATS table[1];
+} MIB_MFE_STATS_TABLE,*PMIB_MFE_STATS_TABLE;
+typedef struct _MIB_IPMCAST_MFE_STATS_EX {
+  DWORD dwGroup;
+  DWORD dwSource;
+  DWORD dwSrcMask;
+  DWORD dwUpStrmNgbr;
+  DWORD dwInIfIndex;
+  DWORD dwInIfProtocol;
+  DWORD dwRouteProtocol;
+  DWORD dwRouteNetwork;
+  DWORD dwRouteMask;
+  ULONG ulUpTime;
+  ULONG ulExpiryTime;
+  ULONG ulNumOutIf;
+  ULONG ulInPkts;
+  ULONG ulInOctets;
+  ULONG ulPktsDifferentIf;
+  ULONG ulQueueOverflow;
+  ULONG ulUninitMfe;
+  ULONG ulNegativeMfe;
+  ULONG ulInDiscards;
+  ULONG ulInHdrErrors;
+  ULONG ulTotalOutPackets;
+  MIB_IPMCAST_OIF_STATS rgmiosOutStats[1];
+} MIB_IPMCAST_MFE_STATS_EX,*PMIB_IPMCAST_MFE_STATS_EX;
+typedef struct _MIB_MFE_STATS_TABLE_EX {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_MFE_STATS_EX table[1];
+} MIB_MFE_STATS_TABLE_EX,*PMIB_MFE_STATS_TABLE_EX;
+typedef struct _MIB_IPMCAST_GLOBAL {
+  DWORD dwEnable;
+} MIB_IPMCAST_GLOBAL,*PMIB_IPMCAST_GLOBAL;
+typedef struct _MIB_IPMCAST_IF_ENTRY {
+  DWORD dwIfIndex;
+  DWORD dwTtl;
+  DWORD dwProtocol;
+  DWORD dwRateLimit;
+  ULONG ulInMcastOctets;
+  ULONG ulOutMcastOctets;
+} MIB_IPMCAST_IF_ENTRY,*PMIB_IPMCAST_IF_ENTRY;
+typedef struct _MIB_IPMCAST_IF_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_IF_ENTRY table[1];
+} MIB_IPMCAST_IF_TABLE,*PMIB_IPMCAST_IF_TABLE;
+typedef struct _MIB_IPMCAST_BOUNDARY {
+  DWORD dwIfIndex;
+  DWORD dwGroupAddress;
+  DWORD dwGroupMask;
+  DWORD dwStatus;
+} MIB_IPMCAST_BOUNDARY,*PMIB_IPMCAST_BOUNDARY;
+typedef struct _MIB_IPMCAST_BOUNDARY_TABLE {
+  DWORD dwNumEntries;
+  MIB_IPMCAST_BOUNDARY table[1];
+} MIB_IPMCAST_BOUNDARY_TABLE,*PMIB_IPMCAST_BOUNDARY_TABLE;
+typedef struct {
+  DWORD dwGroupAddress;
+  DWORD dwGroupMask;
+} MIB_BOUNDARYROW,*PMIB_BOUNDARYROW;
+typedef struct {
+  DWORD dwTtl;
+  DWORD dwRateLimit;
+} MIB_MCAST_LIMIT_ROW,*PMIB_MCAST_LIMIT_ROW;
+typedef WCHAR SN_CHAR;
+typedef SN_CHAR SCOPE_NAME_BUFFER[255 +1],*SCOPE_NAME;
+typedef struct _MIB_IPMCAST_SCOPE {
+  DWORD dwGroupAddress;
+  DWORD dwGroupMask;
+  SCOPE_NAME_BUFFER snNameBuffer;
+  DWORD dwStatus;
+} MIB_IPMCAST_SCOPE,*PMIB_IPMCAST_SCOPE;
+typedef struct _MIB_IPDESTROW {
+  __extension__ union {
+    DWORD dwForwardDest;
+    DWORD dwForwardMask;
+    DWORD dwForwardPolicy;
+    DWORD dwForwardNextHop;
+    DWORD dwForwardIfIndex;
+    DWORD dwForwardType;
+    DWORD dwForwardProto;
+    DWORD dwForwardAge;
+    DWORD dwForwardNextHopAS;
+    DWORD dwForwardMetric1;
+    DWORD dwForwardMetric2;
+    DWORD dwForwardMetric3;
+    DWORD dwForwardMetric4;
+    DWORD dwForwardMetric5;
+  };
+  DWORD dwForwardPreference;
+  DWORD dwForwardViewSet;
+} MIB_IPDESTROW,*PMIB_IPDESTROW;
+typedef struct _MIB_IPDESTTABLE {
+  DWORD dwNumEntries;
+  MIB_IPDESTROW table[1];
+} MIB_IPDESTTABLE,*PMIB_IPDESTTABLE;
+typedef struct _MIB_BEST_IF {
+  DWORD dwDestAddr;
+  DWORD dwIfIndex;
+} MIB_BEST_IF,*PMIB_BEST_IF;
+typedef struct _MIB_PROXYARP {
+  DWORD dwAddress;
+  DWORD dwMask;
+  DWORD dwIfIndex;
+} MIB_PROXYARP,*PMIB_PROXYARP;
+typedef struct _MIB_IFSTATUS {
+  DWORD dwIfIndex;
+  DWORD dwAdminStatus;
+  DWORD dwOperationalStatus;
+  WINBOOL bMHbeatActive;
+  WINBOOL bMHbeatAlive;
+} MIB_IFSTATUS,*PMIB_IFSTATUS;
+typedef struct _MIB_ROUTESTATE {
+  WINBOOL bRoutesSetToStack;
+} MIB_ROUTESTATE,*PMIB_ROUTESTATE;
+typedef struct _MIB_OPAQUE_INFO {
+  DWORD dwId;
+  __extension__ union {
+    ULONGLONG ullAlign;
+    BYTE rgbyData[1];
+  };
+} MIB_OPAQUE_INFO,*PMIB_OPAQUE_INFO;
+typedef struct _TCPIP_OWNER_MODULE_BASIC_INFO {
+  PWCHAR pModuleName;
+  PWCHAR pModulePath;
+} TCPIP_OWNER_MODULE_BASIC_INFO, *PTCPIP_OWNER_MODULE_BASIC_INFO;
+typedef enum _UDP_TABLE_CLASS {
+  UDP_TABLE_BASIC,
+  UDP_TABLE_OWNER_PID,
+  UDP_TABLE_OWNER_MODULE
+} UDP_TABLE_CLASS, *PUDP_TABLE_CLASS;
+typedef enum _TCPIP_OWNER_MODULE_INFO_CLASS {
+  TCPIP_OWNER_MODULE_INFO_BASIC
+} TCPIP_OWNER_MODULE_INFO_CLASS, *PTCPIP_OWNER_MODULE_INFO_CLASS;
+typedef ULONG IPAddr;
+typedef ULONG IPMask;
+typedef ULONG IP_STATUS;
+typedef struct in6_addr IPv6Addr;
+typedef struct ip_option_information {
+  UCHAR Ttl;
+  UCHAR Tos;
+  UCHAR Flags;
+  UCHAR OptionsSize;
+  PUCHAR OptionsData;
+} IP_OPTION_INFORMATION,*PIP_OPTION_INFORMATION;
+typedef struct ip_option_information32 {
+  UCHAR Ttl;
+  UCHAR Tos;
+  UCHAR Flags;
+  UCHAR OptionsSize;
+  UCHAR *OptionsData;
+} IP_OPTION_INFORMATION32,*PIP_OPTION_INFORMATION32;
+typedef struct icmp_echo_reply {
+  IPAddr Address;
+  ULONG Status;
+  ULONG RoundTripTime;
+  USHORT DataSize;
+  USHORT Reserved;
+  PVOID Data;
+  struct ip_option_information Options;
+} ICMP_ECHO_REPLY,*PICMP_ECHO_REPLY;
+typedef struct icmp_echo_reply32 {
+  IPAddr Address;
+  ULONG Status;
+  ULONG RoundTripTime;
+  USHORT DataSize;
+  USHORT Reserved;
+  void *Data;
+  struct ip_option_information32 Options;
+} ICMP_ECHO_REPLY32,*PICMP_ECHO_REPLY32;
+typedef struct arp_send_reply {
+  IPAddr DestAddress;
+  IPAddr SrcAddress;
+} ARP_SEND_REPLY,*PARP_SEND_REPLY;
+typedef struct tcp_reserve_port_range {
+  USHORT UpperRange;
+  USHORT LowerRange;
+} TCP_RESERVE_PORT_RANGE,*PTCP_RESERVE_PORT_RANGE;
+typedef struct _IP_ADAPTER_INDEX_MAP {
+  ULONG Index;
+  WCHAR Name[128];
+} IP_ADAPTER_INDEX_MAP,*PIP_ADAPTER_INDEX_MAP;
+typedef struct _IP_INTERFACE_INFO {
+  LONG NumAdapters;
+  IP_ADAPTER_INDEX_MAP Adapter[1];
+} IP_INTERFACE_INFO,*PIP_INTERFACE_INFO;
+typedef struct _IP_UNIDIRECTIONAL_ADAPTER_ADDRESS {
+  ULONG NumAdapters;
+  IPAddr Address[1];
+} IP_UNIDIRECTIONAL_ADAPTER_ADDRESS,*PIP_UNIDIRECTIONAL_ADAPTER_ADDRESS;
+typedef struct _IP_ADAPTER_ORDER_MAP {
+  ULONG NumAdapters;
+  ULONG AdapterOrder[1];
+} IP_ADAPTER_ORDER_MAP,*PIP_ADAPTER_ORDER_MAP;
+typedef struct _IP_MCAST_COUNTER_INFO {
+  ULONG64 InMcastOctets;
+  ULONG64 OutMcastOctets;
+  ULONG64 InMcastPkts;
+  ULONG64 OutMcastPkts;
+} IP_MCAST_COUNTER_INFO,*PIP_MCAST_COUNTER_INFO;
+typedef struct _IPV6_ADDRESS_EX {
+  USHORT sin6_port;
+  ULONG sin6_flowinfo;
+  USHORT sin6_addr[8];
+  ULONG sin6_scope_id;
+} IPV6_ADDRESS_EX, *PIPV6_ADDRESS_EX;
+#pragma pack(push,_CRT_PACKING)
+  typedef long clock_t;
+  struct tm {
+    int tm_sec;
+    int tm_min;
+    int tm_hour;
+    int tm_mday;
+    int tm_mon;
+    int tm_year;
+    int tm_wday;
+    int tm_yday;
+    int tm_isdst;
+  };
+  extern __attribute__ ((__dllimport__)) int _daylight;
+  extern __attribute__ ((__dllimport__)) long _dstbias;
+  extern __attribute__ ((__dllimport__)) long _timezone;
+  extern __attribute__ ((__dllimport__)) char * _tzname[2];
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_daylight(int *_Daylight);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_dstbias(long *_Daylight_savings_bias);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_timezone(long *_Timezone);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_tzname(size_t *_ReturnValue,char *_Buffer,size_t _SizeInBytes,int _Index);
+  char *__attribute__((__cdecl__)) asctime(const struct tm *_Tm) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) asctime_s (char *_Buf,size_t _SizeInWords,const struct tm *_Tm);
+  char *__attribute__((__cdecl__)) _ctime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ctime32_s (char *_Buf,size_t _SizeInBytes,const __time32_t *_Time);
+  clock_t __attribute__((__cdecl__)) clock(void);
+  double __attribute__((__cdecl__)) _difftime32(__time32_t _Time1,__time32_t _Time2);
+  struct tm *__attribute__((__cdecl__)) _gmtime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _gmtime32_s (struct tm *_Tm,const __time32_t *_Time);
+  struct tm *__attribute__((__cdecl__)) _localtime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _localtime32_s (struct tm *_Tm,const __time32_t *_Time);
+  size_t __attribute__((__cdecl__)) strftime(char * __restrict__ _Buf,size_t _SizeInBytes,const char * __restrict__ _Format,const struct tm * __restrict__ _Tm);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _strftime_l(char * __restrict__ _Buf,size_t _Max_size,const char * __restrict__ _Format,const struct tm * __restrict__ _Tm,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strdate(char *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strdate_s (char *_Buf,size_t _SizeInBytes);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strtime(char *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strtime_s (char *_Buf ,size_t _SizeInBytes);
+  __time32_t __attribute__((__cdecl__)) _time32(__time32_t *_Time);
+  __time32_t __attribute__((__cdecl__)) _mktime32(struct tm *_Tm);
+  __time32_t __attribute__((__cdecl__)) _mkgmtime32(struct tm *_Tm);
+  void __attribute__((__cdecl__)) tzset(void) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _tzset(void);
+  double __attribute__((__cdecl__)) _difftime64(__time64_t _Time1,__time64_t _Time2);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ctime64(const __time64_t *_Time) ;
+  errno_t __attribute__((__cdecl__)) _ctime64_s (char *_Buf,size_t _SizeInBytes,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) struct tm *__attribute__((__cdecl__)) _gmtime64(const __time64_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _gmtime64_s (struct tm *_Tm,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) struct tm *__attribute__((__cdecl__)) _localtime64(const __time64_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _localtime64_s (struct tm *_Tm,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _mktime64(struct tm *_Tm);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _mkgmtime64(struct tm *_Tm);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _time64(__time64_t *_Time);
+  unsigned __attribute__((__cdecl__)) _getsystime(struct tm *_Tm);
+  unsigned __attribute__((__cdecl__)) _setsystime(struct tm *_Tm,unsigned _MilliSec);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wasctime(const struct tm *_Tm);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wasctime_s (wchar_t *_Buf,size_t _SizeInWords,const struct tm *_Tm);
+  wchar_t *__attribute__((__cdecl__)) _wctime32(const __time32_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wctime32_s (wchar_t *_Buf,size_t _SizeInWords,const __time32_t *_Time);
+  size_t __attribute__((__cdecl__)) wcsftime(wchar_t * __restrict__ _Buf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,const struct tm * __restrict__ _Tm);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcsftime_l(wchar_t * __restrict__ _Buf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,const struct tm * __restrict__ _Tm,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wstrdate(wchar_t *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wstrdate_s (wchar_t *_Buf,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wstrtime(wchar_t *_Buffer) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wstrtime_s (wchar_t *_Buf,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wctime64(const __time64_t *_Time) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wctime64_s (wchar_t *_Buf,size_t _SizeInWords,const __time64_t *_Time);
+  wchar_t *__attribute__((__cdecl__)) _wctime(const time_t *) ;
+  errno_t __attribute__((__cdecl__)) _wctime_s(wchar_t *, size_t, const time_t *);
+double __attribute__((__cdecl__)) difftime(time_t _Time1,time_t _Time2);
+char *__attribute__((__cdecl__)) ctime(const time_t *_Time) ;
+struct tm *__attribute__((__cdecl__)) gmtime(const time_t *_Time) ;
+struct tm *__attribute__((__cdecl__)) localtime(const time_t *_Time) ;
+time_t __attribute__((__cdecl__)) mktime(struct tm *_Tm);
+time_t __attribute__((__cdecl__)) _mkgmtime(struct tm *_Tm);
+time_t __attribute__((__cdecl__)) time(time_t *_Time);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) errno_t __attribute__((__cdecl__)) localtime_s(struct tm *_Tm,const time_t *_Time) { return _localtime64_s(_Tm,_Time); }
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) errno_t __attribute__((__cdecl__)) gmtime_s(struct tm *_Tm, const time_t *_Time) { return _gmtime64_s(_Tm, _Time); }
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) errno_t __attribute__((__cdecl__)) ctime_s(char *_Buf,size_t _SizeInBytes,const time_t *_Time) { return _ctime64_s(_Buf,_SizeInBytes,_Time); }
+  __attribute__ ((__dllimport__)) extern int daylight;
+  __attribute__ ((__dllimport__)) extern long timezone;
+  __attribute__ ((__dllimport__)) extern char *tzname[2];
+  void __attribute__((__cdecl__)) tzset(void) ;
+struct timezone {
+  int tz_minuteswest;
+  int tz_dsttime;
+};
+  extern int __attribute__((__cdecl__)) mingw_gettimeofday (struct timeval *p, struct timezone *z);
+#pragma pack(pop)
+#pragma pack(push,_CRT_PACKING)
+  struct __timeb32 {
+    __time32_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+  struct timeb {
+    time_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+  struct __timeb64 {
+    __time64_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _ftime64(struct __timeb64 *_Time);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _ftime(struct __timeb64 *);
+struct timespec {
+  time_t tv_sec;
+  long tv_nsec;
+};
+struct itimerspec {
+  struct timespec it_interval;
+  struct timespec it_value;
+};
+  void __attribute__((__cdecl__)) ftime (struct timeb *);
+#pragma pack(pop)
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ftime_s(struct __timeb32 *_Time);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ftime64_s(struct __timeb64 *_Time);
+typedef int clockid_t;
+       
+int __attribute__((__cdecl__)) nanosleep(const struct timespec *request, struct timespec *remain);
+int __attribute__((__cdecl__)) clock_nanosleep(clockid_t clock_id, int flags, const struct timespec *request, struct timespec *remain);
+int __attribute__((__cdecl__)) clock_getres(clockid_t clock_id, struct timespec *res);
+int __attribute__((__cdecl__)) clock_gettime(clockid_t clock_id, struct timespec *tp);
+int __attribute__((__cdecl__)) clock_settime(clockid_t clock_id, const struct timespec *tp);
+       
+typedef UINT32 NET_IF_COMPARTMENT_ID, *PNET_IF_COMPARTMENT_ID;
+typedef ULONG NET_IFINDEX, *PNET_IFINDEX;
+typedef UINT16 NET_IFTYPE, *PNET_IFTYPE;
+typedef NET_IFINDEX IF_INDEX, *PIF_INDEX;
+typedef GUID NET_IF_NETWORK_GUID;
+typedef enum _IF_OPER_STATUS {
+  IfOperStatusUp = 1,
+  IfOperStatusDown,
+  IfOperStatusTesting,
+  IfOperStatusUnknown,
+  IfOperStatusDormant,
+  IfOperStatusNotPresent,
+  IfOperStatusLowerLayerDown
+} IF_OPER_STATUS;
+typedef enum _NET_IF_OPER_STATUS {
+  NET_IF_OPER_STATUS_UP = 1,
+  NET_IF_OPER_STATUS_DOWN,
+  NET_IF_OPER_STATUS_TESTING,
+  NET_IF_OPER_STATUS_UNKNOWN,
+  NET_IF_OPER_STATUS_DORMANT,
+  NET_IF_OPER_STATUS_NOT_PRESENT,
+  NET_IF_OPER_STATUS_LOWER_LAYER_DOWN
+} NET_IF_OPER_STATUS, *PNET_IF_OPER_STATUS;
+typedef enum _NET_IF_ADMIN_STATUS {
+  NET_IF_ADMIN_STATUS_UP = 1,
+  NET_IF_ADMIN_STATUS_DOWN,
+  NET_IF_ADMIN_STATUS_TESTING
+} NET_IF_ADMIN_STATUS, *PNET_IF_ADMIN_STATUS;
+typedef enum _NET_IF_MEDIA_CONNECT_STATE {
+  MediaConnectStateUnknown,
+  MediaConnectStateConnected,
+  MediaConnectStateDisconnected
+} NET_IF_MEDIA_CONNECT_STATE, *PNET_IF_MEDIA_CONNECT_STATE;
+typedef enum _NET_IF_ACCESS_TYPE {
+  NET_IF_ACCESS_LOOPBACK = 1,
+  NET_IF_ACCESS_BROADCAST,
+  NET_IF_ACCESS_POINT_TO_POINT,
+  NET_IF_ACCESS_POINT_TO_MULTI_POINT,
+  NET_IF_ACCESS_MAXIMUM
+} NET_IF_ACCESS_TYPE, *PNET_IF_ACCESS_TYPE;
+typedef enum _NET_IF_CONNECTION_TYPE {
+  NET_IF_CONNECTION_DEDICATED = 1,
+  NET_IF_CONNECTION_PASSIVE,
+  NET_IF_CONNECTION_DEMAND,
+  NET_IF_CONNECTION_MAXIMUM
+} NET_IF_CONNECTION_TYPE, *PNET_IF_CONNECTION_TYPE;
+typedef enum _NET_IF_DIRECTION_TYPE {
+  NET_IF_DIRECTION_SENDRECEIVE,
+  NET_IF_DIRECTION_SENDONLY,
+  NET_IF_DIRECTION_RECEIVEONLY,
+  NET_IF_DIRECTION_MAXIMUM
+} NET_IF_DIRECTION_TYPE, *PNET_IF_DIRECTION_TYPE;
+typedef enum _NET_IF_MEDIA_DUPLEX_STATE {
+  MediaDuplexStateUnknown,
+  MediaDuplexStateHalf,
+  MediaDuplexStateFull
+} NET_IF_MEDIA_DUPLEX_STATE, *PNET_IF_MEDIA_DUPLEX_STATE;
+typedef enum _TUNNEL_TYPE {
+  TUNNEL_TYPE_NONE = 0,
+  TUNNEL_TYPE_OTHER = 1,
+  TUNNEL_TYPE_DIRECT = 2,
+  TUNNEL_TYPE_6TO4 = 11,
+  TUNNEL_TYPE_ISATAP = 13,
+  TUNNEL_TYPE_TEREDO = 14,
+  TUNNEL_TYPE_IPHTTPS = 15
+} TUNNEL_TYPE, *PTUNNEL_TYPE;
+typedef union _NET_LUID {
+  ULONG64 Value;
+  __extension__ struct {
+    ULONG64 Reserved :24;
+    ULONG64 NetLuidIndex :24;
+    ULONG64 IfType :16;
+  } Info;
+} NET_LUID, *PNET_LUID;
+typedef NET_LUID IF_LUID, *PIF_LUID;
+typedef struct _IF_COUNTED_STRING_LH {
+    USHORT Length;
+    WCHAR String[256 + 1];
+} IF_COUNTED_STRING_LH, *PIF_COUNTED_STRING_LH;
+typedef IF_COUNTED_STRING_LH IF_COUNTED_STRING;
+typedef IF_COUNTED_STRING *PIF_COUNTED_STRING;
+typedef struct _IF_PHYSICAL_ADDRESS_LH {
+    USHORT Length;
+    UCHAR Address[32];
+} IF_PHYSICAL_ADDRESS_LH, *PIF_PHYSICAL_ADDRESS_LH;
+typedef IF_PHYSICAL_ADDRESS_LH IF_PHYSICAL_ADDRESS;
+typedef IF_PHYSICAL_ADDRESS *PIF_PHYSICAL_ADDRESS;
+  typedef struct {
+    char String[4*4];
+  } IP_ADDRESS_STRING,*PIP_ADDRESS_STRING,IP_MASK_STRING,*PIP_MASK_STRING;
+  typedef struct _IP_ADDR_STRING {
+    struct _IP_ADDR_STRING *Next;
+    IP_ADDRESS_STRING IpAddress;
+    IP_MASK_STRING IpMask;
+    DWORD Context;
+  } IP_ADDR_STRING,*PIP_ADDR_STRING;
+  typedef struct _IP_ADAPTER_INFO {
+    struct _IP_ADAPTER_INFO *Next;
+    DWORD ComboIndex;
+    char AdapterName[256 + 4];
+    char Description[128 + 4];
+    UINT AddressLength;
+    BYTE Address[8];
+    DWORD Index;
+    UINT Type;
+    UINT DhcpEnabled;
+    PIP_ADDR_STRING CurrentIpAddress;
+    IP_ADDR_STRING IpAddressList;
+    IP_ADDR_STRING GatewayList;
+    IP_ADDR_STRING DhcpServer;
+    WINBOOL HaveWins;
+    IP_ADDR_STRING PrimaryWinsServer;
+    IP_ADDR_STRING SecondaryWinsServer;
+    time_t LeaseObtained;
+    time_t LeaseExpires;
+  } IP_ADAPTER_INFO,*PIP_ADAPTER_INFO;
+  typedef NL_PREFIX_ORIGIN IP_PREFIX_ORIGIN;
+  typedef NL_SUFFIX_ORIGIN IP_SUFFIX_ORIGIN;
+  typedef NL_DAD_STATE IP_DAD_STATE;
+  typedef struct _IP_ADAPTER_UNICAST_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_UNICAST_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+    IP_PREFIX_ORIGIN PrefixOrigin;
+    IP_SUFFIX_ORIGIN SuffixOrigin;
+    IP_DAD_STATE DadState;
+    ULONG ValidLifetime;
+    ULONG PreferredLifetime;
+    ULONG LeaseLifetime;
+  } IP_ADAPTER_UNICAST_ADDRESS_XP,*PIP_ADAPTER_UNICAST_ADDRESS_XP;
+  typedef struct _IP_ADAPTER_UNICAST_ADDRESS_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_UNICAST_ADDRESS_LH *Next;
+    SOCKET_ADDRESS Address;
+    IP_PREFIX_ORIGIN PrefixOrigin;
+    IP_SUFFIX_ORIGIN SuffixOrigin;
+    IP_DAD_STATE DadState;
+    ULONG ValidLifetime;
+    ULONG PreferredLifetime;
+    ULONG LeaseLifetime;
+    UINT8 OnLinkPrefixLength;
+  } IP_ADAPTER_UNICAST_ADDRESS_LH,*PIP_ADAPTER_UNICAST_ADDRESS_LH;
+  typedef IP_ADAPTER_UNICAST_ADDRESS_XP IP_ADAPTER_UNICAST_ADDRESS;
+  typedef IP_ADAPTER_UNICAST_ADDRESS_XP *PIP_ADAPTER_UNICAST_ADDRESS;
+  typedef struct _IP_ADAPTER_ANYCAST_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_ANYCAST_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_ANYCAST_ADDRESS_XP,*PIP_ADAPTER_ANYCAST_ADDRESS_XP;
+  typedef IP_ADAPTER_ANYCAST_ADDRESS_XP IP_ADAPTER_ANYCAST_ADDRESS;
+  typedef IP_ADAPTER_ANYCAST_ADDRESS_XP *PIP_ADAPTER_ANYCAST_ADDRESS;
+  typedef struct _IP_ADAPTER_MULTICAST_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_MULTICAST_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_MULTICAST_ADDRESS_XP,*PIP_ADAPTER_MULTICAST_ADDRESS_XP;
+  typedef IP_ADAPTER_MULTICAST_ADDRESS_XP IP_ADAPTER_MULTICAST_ADDRESS;
+  typedef IP_ADAPTER_MULTICAST_ADDRESS_XP *PIP_ADAPTER_MULTICAST_ADDRESS;
+  typedef struct _IP_ADAPTER_DNS_SERVER_ADDRESS_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Reserved;
+      };
+    };
+    struct _IP_ADAPTER_DNS_SERVER_ADDRESS_XP *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_DNS_SERVER_ADDRESS_XP,*PIP_ADAPTER_DNS_SERVER_ADDRESS_XP;
+  typedef IP_ADAPTER_DNS_SERVER_ADDRESS_XP IP_ADAPTER_DNS_SERVER_ADDRESS;
+  typedef IP_ADAPTER_DNS_SERVER_ADDRESS_XP *PIP_ADAPTER_DNS_SERVER_ADDRESS;
+  typedef struct _IP_ADAPTER_PREFIX_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Flags;
+      };
+    };
+    struct _IP_ADAPTER_PREFIX_XP *Next;
+    SOCKET_ADDRESS Address;
+    ULONG PrefixLength;
+  } IP_ADAPTER_PREFIX_XP,*PIP_ADAPTER_PREFIX_XP;
+  typedef IP_ADAPTER_PREFIX_XP IP_ADAPTER_PREFIX;
+  typedef IP_ADAPTER_PREFIX_XP *PIP_ADAPTER_PREFIX;
+  typedef struct _IP_ADAPTER_WINS_SERVER_ADDRESS_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Reserved;
+      };
+    };
+    struct _IP_ADAPTER_WINS_SERVER_ADDRESS_LH *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_WINS_SERVER_ADDRESS_LH,*PIP_ADAPTER_WINS_SERVER_ADDRESS_LH;
+  typedef struct _IP_ADAPTER_GATEWAY_ADDRESS_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD Reserved;
+      };
+    };
+    struct _IP_ADAPTER_GATEWAY_ADDRESS_LH *Next;
+    SOCKET_ADDRESS Address;
+  } IP_ADAPTER_GATEWAY_ADDRESS_LH,*PIP_ADAPTER_GATEWAY_ADDRESS_LH;
+  typedef struct _IP_ADAPTER_DNS_SUFFIX {
+    struct _IP_ADAPTER_DNS_SUFFIX *Next;
+    WCHAR String[256];
+  } IP_ADAPTER_DNS_SUFFIX, *PIP_ADAPTER_DNS_SUFFIX;
+  typedef struct _IP_ADAPTER_ADDRESSES_LH {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ IF_INDEX IfIndex;
+      };
+    };
+    struct _IP_ADAPTER_ADDRESSES_LH *Next;
+    PCHAR AdapterName;
+    PIP_ADAPTER_UNICAST_ADDRESS_LH FirstUnicastAddress;
+    PIP_ADAPTER_ANYCAST_ADDRESS_XP FirstAnycastAddress;
+    PIP_ADAPTER_MULTICAST_ADDRESS_XP FirstMulticastAddress;
+    PIP_ADAPTER_DNS_SERVER_ADDRESS_XP FirstDnsServerAddress;
+    PWCHAR DnsSuffix;
+    PWCHAR Description;
+    PWCHAR FriendlyName;
+    BYTE PhysicalAddress[8];
+    ULONG PhysicalAddressLength;
+    __extension__ union {
+      ULONG Flags;
+      __extension__ struct {
+ ULONG DdnsEnabled : 1;
+ ULONG RegisterAdapterSuffix : 1;
+ ULONG Dhcpv4Enabled : 1;
+ ULONG ReceiveOnly : 1;
+ ULONG NoMulticast : 1;
+ ULONG Ipv6OtherStatefulConfig : 1;
+ ULONG NetbiosOverTcpipEnabled : 1;
+ ULONG Ipv4Enabled : 1;
+ ULONG Ipv6Enabled : 1;
+ ULONG Ipv6ManagedAddressConfigurationSupported : 1;
+      };
+    };
+    ULONG Mtu;
+    IFTYPE IfType;
+    IF_OPER_STATUS OperStatus;
+    IF_INDEX Ipv6IfIndex;
+    ULONG ZoneIndices[16];
+    PIP_ADAPTER_PREFIX_XP FirstPrefix;
+    ULONG64 TransmitLinkSpeed;
+    ULONG64 ReceiveLinkSpeed;
+    PIP_ADAPTER_WINS_SERVER_ADDRESS_LH FirstWinsServerAddress;
+    PIP_ADAPTER_GATEWAY_ADDRESS_LH FirstGatewayAddress;
+    ULONG Ipv4Metric;
+    ULONG Ipv6Metric;
+    IF_LUID Luid;
+    SOCKET_ADDRESS Dhcpv4Server;
+    NET_IF_COMPARTMENT_ID CompartmentId;
+    NET_IF_NETWORK_GUID NetworkGuid;
+    NET_IF_CONNECTION_TYPE ConnectionType;
+    TUNNEL_TYPE TunnelType;
+    SOCKET_ADDRESS Dhcpv6Server;
+    BYTE Dhcpv6ClientDuid[130];
+    ULONG Dhcpv6ClientDuidLength;
+    ULONG Dhcpv6Iaid;
+  } IP_ADAPTER_ADDRESSES_LH, *PIP_ADAPTER_ADDRESSES_LH;
+  typedef struct _IP_ADAPTER_ADDRESSES_XP {
+    __extension__ union {
+      ULONGLONG Alignment;
+      __extension__ struct {
+ ULONG Length;
+ DWORD IfIndex;
+      };
+    };
+    struct _IP_ADAPTER_ADDRESSES_XP *Next;
+    PCHAR AdapterName;
+    PIP_ADAPTER_UNICAST_ADDRESS_XP FirstUnicastAddress;
+    PIP_ADAPTER_ANYCAST_ADDRESS_XP FirstAnycastAddress;
+    PIP_ADAPTER_MULTICAST_ADDRESS_XP FirstMulticastAddress;
+    PIP_ADAPTER_DNS_SERVER_ADDRESS_XP FirstDnsServerAddress;
+    PWCHAR DnsSuffix;
+    PWCHAR Description;
+    PWCHAR FriendlyName;
+    BYTE PhysicalAddress[8];
+    DWORD PhysicalAddressLength;
+    DWORD Flags;
+    DWORD Mtu;
+    DWORD IfType;
+    IF_OPER_STATUS OperStatus;
+    DWORD Ipv6IfIndex;
+    DWORD ZoneIndices[16];
+    PIP_ADAPTER_PREFIX_XP FirstPrefix;
+  } IP_ADAPTER_ADDRESSES_XP,*PIP_ADAPTER_ADDRESSES_XP;
+  typedef IP_ADAPTER_ADDRESSES_XP IP_ADAPTER_ADDRESSES;
+  typedef IP_ADAPTER_ADDRESSES_XP *PIP_ADAPTER_ADDRESSES;
+  typedef struct _IP_PER_ADAPTER_INFO {
+    UINT AutoconfigEnabled;
+    UINT AutoconfigActive;
+    PIP_ADDR_STRING CurrentDnsServer;
+    IP_ADDR_STRING DnsServerList;
+  } IP_PER_ADAPTER_INFO,*PIP_PER_ADAPTER_INFO;
+  typedef struct {
+    char HostName[128 + 4];
+    char DomainName[128 + 4];
+    PIP_ADDR_STRING CurrentDnsServer;
+    IP_ADDR_STRING DnsServerList;
+    UINT NodeType;
+    char ScopeId[256 + 4];
+    UINT EnableRouting;
+    UINT EnableProxy;
+    UINT EnableDns;
+  } FIXED_INFO,*PFIXED_INFO;
+  typedef struct ip_interface_name_info {
+    ULONG Index;
+    ULONG MediaType;
+    UCHAR ConnectionType;
+    UCHAR AccessType;
+    GUID DeviceGuid;
+    GUID InterfaceGuid;
+  } IP_INTERFACE_NAME_INFO,*PIP_INTERFACE_NAME_INFO;
+  DWORD GetNumberOfInterfaces (PDWORD pdwNumIf);
+  DWORD GetIfEntry (PMIB_IFROW pIfRow);
+  DWORD GetIfTable (PMIB_IFTABLE pIfTable, PULONG pdwSize, WINBOOL bOrder);
+  DWORD GetIpAddrTable (PMIB_IPADDRTABLE pIpAddrTable, PULONG pdwSize, WINBOOL bOrder);
+  ULONG GetIpNetTable (PMIB_IPNETTABLE IpNetTable, PULONG SizePointer, WINBOOL Order);
+  DWORD GetIpForwardTable (PMIB_IPFORWARDTABLE pIpForwardTable, PULONG pdwSize, WINBOOL bOrder);
+  ULONG GetTcpTable (PMIB_TCPTABLE TcpTable, PULONG SizePointer, WINBOOL Order);
+  DWORD GetExtendedTcpTable (PVOID pTcpTable, PDWORD pdwSize, WINBOOL bOrder, ULONG ulAf, TCP_TABLE_CLASS TableClass, ULONG Reserved);
+  DWORD GetOwnerModuleFromTcpEntry (PMIB_TCPROW_OWNER_MODULE pTcpEntry, TCPIP_OWNER_MODULE_INFO_CLASS Class, PVOID pBuffer, PDWORD pdwSize);
+  ULONG GetUdpTable (PMIB_UDPTABLE UdpTable, PULONG SizePointer, WINBOOL Order);
+  DWORD GetExtendedUdpTable (PVOID pUdpTable, PDWORD pdwSize, WINBOOL bOrder, ULONG ulAf, UDP_TABLE_CLASS TableClass, ULONG Reserved);
+  DWORD GetOwnerModuleFromUdpEntry (PMIB_UDPROW_OWNER_MODULE pUdpEntry, TCPIP_OWNER_MODULE_INFO_CLASS Class, PVOID pBuffer, PDWORD pdwSize);
+  DWORD AllocateAndGetTcpExTableFromStack (PVOID *ppTcpTable, WINBOOL bOrder, HANDLE hHeap, DWORD dwFlags, DWORD dwFamily);
+  DWORD AllocateAndGetUdpExTableFromStack (PVOID *ppUdpTable, WINBOOL bOrder, HANDLE hHeap, DWORD dwFlags, DWORD dwFamily);
+  DWORD GetOwnerModuleFromPidAndInfo (ULONG ulPid, ULONGLONG *pInfo, TCPIP_OWNER_MODULE_INFO_CLASS Class, PVOID pBuffer, PDWORD pdwSize);
+  ULONG GetIpStatistics (PMIB_IPSTATS Statistics);
+  ULONG GetIcmpStatistics (PMIB_ICMP Statistics);
+  ULONG GetTcpStatistics (PMIB_TCPSTATS Statistics);
+  ULONG GetUdpStatistics (PMIB_UDPSTATS Stats);
+  ULONG GetIpStatisticsEx (PMIB_IPSTATS Statistics, ULONG Family);
+  ULONG SetIpStatisticsEx (PMIB_IPSTATS Statistics, ULONG Family);
+  ULONG GetIcmpStatisticsEx (PMIB_ICMP_EX Statistics, ULONG Family);
+  ULONG GetTcpStatisticsEx (PMIB_TCPSTATS Statistics, ULONG Family);
+  ULONG GetUdpStatisticsEx (PMIB_UDPSTATS Statistics, ULONG Family);
+  DWORD SetIfEntry (PMIB_IFROW pIfRow);
+  DWORD CreateIpForwardEntry (PMIB_IPFORWARDROW pRoute);
+  DWORD SetIpForwardEntry (PMIB_IPFORWARDROW pRoute);
+  DWORD DeleteIpForwardEntry (PMIB_IPFORWARDROW pRoute);
+  DWORD SetIpStatistics (PMIB_IPSTATS pIpStats);
+  DWORD SetIpTTL (UINT nTTL);
+  DWORD CreateIpNetEntry (PMIB_IPNETROW pArpEntry);
+  DWORD SetIpNetEntry (PMIB_IPNETROW pArpEntry);
+  DWORD DeleteIpNetEntry (PMIB_IPNETROW pArpEntry);
+  DWORD FlushIpNetTable (DWORD dwIfIndex);
+  DWORD CreateProxyArpEntry (DWORD dwAddress, DWORD dwMask, DWORD dwIfIndex);
+  DWORD DeleteProxyArpEntry (DWORD dwAddress, DWORD dwMask, DWORD dwIfIndex);
+  DWORD SetTcpEntry (PMIB_TCPROW pTcpRow);
+  DWORD GetInterfaceInfo (PIP_INTERFACE_INFO pIfTable, PULONG dwOutBufLen);
+  DWORD GetUniDirectionalAdapterInfo (PIP_UNIDIRECTIONAL_ADAPTER_ADDRESS pIPIfInfo, PULONG dwOutBufLen);
+  DWORD NhpAllocateAndGetInterfaceInfoFromStack (IP_INTERFACE_NAME_INFO **ppTable, PDWORD pdwCount, WINBOOL bOrder, HANDLE hHeap, DWORD dwFlags);
+  DWORD GetBestInterface (IPAddr dwDestAddr, PDWORD pdwBestIfIndex);
+  DWORD GetBestInterfaceEx (struct sockaddr *pDestAddr, PDWORD pdwBestIfIndex);
+  DWORD GetBestRoute (DWORD dwDestAddr, DWORD dwSourceAddr, PMIB_IPFORWARDROW pBestRoute);
+  DWORD NotifyAddrChange (PHANDLE Handle, LPOVERLAPPED overlapped);
+  DWORD NotifyRouteChange (PHANDLE Handle, LPOVERLAPPED overlapped);
+  WINBOOL CancelIPChangeNotify (LPOVERLAPPED notifyOverlapped);
+  DWORD GetAdapterIndex (LPWSTR AdapterName, PULONG IfIndex);
+  DWORD AddIPAddress (IPAddr Address, IPMask IpMask, DWORD IfIndex, PULONG NTEContext, PULONG NTEInstance);
+  DWORD DeleteIPAddress (ULONG NTEContext);
+  DWORD GetNetworkParams (PFIXED_INFO pFixedInfo, PULONG pOutBufLen);
+  ULONG GetAdaptersInfo (PIP_ADAPTER_INFO AdapterInfo, PULONG SizePointer);
+  PIP_ADAPTER_ORDER_MAP GetAdapterOrderMap (void);
+  ULONG GetAdaptersAddresses (ULONG Family, ULONG Flags, PVOID Reserved, PIP_ADAPTER_ADDRESSES AdapterAddresses, PULONG SizePointer);
+  DWORD GetPerAdapterInfo (ULONG IfIndex, PIP_PER_ADAPTER_INFO pPerAdapterInfo, PULONG pOutBufLen);
+  DWORD IpReleaseAddress (PIP_ADAPTER_INDEX_MAP AdapterInfo);
+  DWORD IpRenewAddress (PIP_ADAPTER_INDEX_MAP AdapterInfo);
+  DWORD SendARP (IPAddr DestIP, IPAddr SrcIP, PVOID pMacAddr, PULONG PhyAddrLen);
+  WINBOOL GetRTTAndHopCount (IPAddr DestIpAddress, PULONG HopCount, ULONG MaxHops, PULONG RTT);
+  DWORD GetFriendlyIfIndex (DWORD IfIndex);
+  DWORD EnableRouter (HANDLE *pHandle, OVERLAPPED *pOverlapped);
+  DWORD UnenableRouter (OVERLAPPED *pOverlapped, LPDWORD lpdwEnableCount);
+  DWORD DisableMediaSense (HANDLE *pHandle, OVERLAPPED *pOverLapped);
+  DWORD RestoreMediaSense (OVERLAPPED *pOverlapped, LPDWORD lpdwEnableCount);
+#pragma pack(push,8)
 extern const GUID IID_IPropertyFrame;
 extern const GUID CLSID_CFontPropPage;
 extern const GUID CLSID_CColorPropPage;
