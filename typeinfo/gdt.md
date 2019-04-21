@@ -111,8 +111,21 @@ This has to be done by hand :(.
 
 Then use CentOS7_mingw32-4.9.3_ntddk_x86_64.prf
 
+## ntdiff_ntoskrnl_{Win7_SP1,Win10_1903_19H1}_{x86,x64}
+
+```
+git clone https://github.com/ntdiff/headers
+```
+
+Then select your appropriate `ALL.h` file.
+
+Unfortunately, anything later than `Win10_1903_19H1` won't parse.
 
 # How to contribute?
 
 Generate `.gdt` files for other common libraries.
+
+- Suggestions:
+	- Generate a `.gdt` from https://github.com/ntdiff/headers combining `hal.dd`, `ntdll.h` and `ntoskrnl`.
+
 
