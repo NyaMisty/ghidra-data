@@ -1,4 +1,4 @@
-winapi_64
+/home/user/github/ghidra-data/typeinfo/winapi_64
 
 -I/usr/lib/gcc/x86_64-w64-mingw32/4.9.3/include
 -I/usr/lib/gcc/x86_64-w64-mingw32/4.9.3/include-fixed
