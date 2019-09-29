@@ -126,7 +126,8 @@ Unfortunately, anything later than `Win10_1903_19H1` won't parse.
 
 Generate `.gdt` files for other common libraries.
 
-- Suggestions:
-	- Generate a `.gdt` from https://github.com/ntdiff/headers combining `hal.dd`, `ntdll.h` and `ntoskrnl`.
+# TODO
+
+- Now that Ghidra can parse GNU asm (see https://github.com/NationalSecurityAgency/ghidra/pull/1082) do a proper regeneration of the .gdt files
 
 
