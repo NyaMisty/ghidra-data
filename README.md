@@ -8,7 +8,8 @@ correct signatures via these files.
 
 ## GDT Source
 
-- 
+- https://github.com/NyaMisty/ghidra_ida_til (Last Check: 20230310)
+    - GDT Converted from IDA Type Library `*.til`
 
 - https://github.com/egore/ghidra-data (Last Check: 20230305)
     - Continuation of https://github.com/0x6d696368/ghidra-data
