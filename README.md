@@ -1,16 +1,26 @@
-# Ghidra Data
+# Ghidra Data Type (GDT)
 
-This is a companion repository to the Ghidra source code [repository].
-As such, it is governed by the same licensing and contribution guidelines as Ghidra.
-This repository is meant to be used by Ghidra users and developers alike, as a place to put data sets that improve Ghidra.
-This could include FID databases and data type archives.
+## What is this?
 
-This repository is designed more for human consumption than machine.
-There are no build scripts.
-Rather the desired portions are manually copied to prepare a build or extend an existing installation.
-Only a select portion of this repo is included in official builds.
-If you are building your own copy of Ghidra, you may incorporate whichever portions of this repo you'd like by copying files into the appropriate directories in the source tree before building.
-If you are a Ghidra user, you may add whichever portions of this repo you'd like to your installation by copying files into the appropriate directories.
+`.gdt` files are data type archives. They contain data type to symbol correlation
+data. When applied to e.g. imported functions, the functions will be assigned the
+correct signatures via these files.
 
-[repository]: https://github.com/NationalSecurityAgency/ghidra
+## GDT Source
 
+- 
+
+- https://github.com/egore/ghidra-data (Last Check: 20230305)
+    - Continuation of https://github.com/0x6d696368/ghidra-data
+    - Many OSS library (zlib/libpng/...), Windows Stuffs (ntapi), Graphics Stuffs (D3D/ADL/VFW/OVR)
+
+- https://github.com/kohnakagawa/gdt_archive (Last Check: 20230305)
+    - ALPC.gdt winternl64.gdt, winternl32.gdt
+    - It contains the data types defined in x86\_64-w64-mingw32/include/winternl.h
+
+- https://github.com/knifeyspoony/ghidra-data (Last Check: 20230305)
+    - ph_ntapi_x64_06_2021.gdt
+
+- https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type (Last Check: 20230305)
+    - Continuation of https://github.com/0x6d696368/ghidra-data
+    - Added WINHTTP APIs to winapi_32.gdt
